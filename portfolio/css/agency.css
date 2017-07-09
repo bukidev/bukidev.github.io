@@ -814,6 +814,8 @@ body {
 .black-bg {
     background-color: black;
     opacity: .8;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .about-img {
     overflow: hidden;
