@@ -21,6 +21,7 @@
     <!-- Theme CSS -->
     <link href="css/agency.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet">
+    <link href="css/preload.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -31,6 +32,14 @@
 </head>
 
 <body id="page-top" class="index">
+    
+    <!-- start preload -->
+    <div class="preload-overlay">
+        <img src="img/logo_preload.gif" class="preload-img animated fadeInLeft" alt="Loaing...">
+        <br>
+        <h4 class="text-center preload-text">... LOADING ...</h4>
+    </div>
+    <!-- end preload -->
 
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -74,8 +83,8 @@
             <header>
                 <div class="container-fluid">
                     <div class="intro-text">
-                        <div class="intro-heading animated rollIn animation-delay"><strong>Chainuwat</strong> Chuaykongtong</div>
-                        <div class="intro-lead-in animated rollIn animation-delay">Graphic Designer <strong>&amp;</strong> Front-End Developer</div>
+                        <div class="animated rollIn animation-delay"><p class="intro-heading"><strong>Chainuwat</strong> Chuaykongtong</p></div>
+                        <div class="animated rollIn animation-delay"><p class="intro-lead-in">Graphic Designer <strong>&amp;</strong> Front-End Developer</p></div>
                         <a href="#about" class="page-scroll btn btn-xl animated fadeInUp animation-delay-2s">SEE ME MORE</a>
                     </div>
                 </div>
@@ -180,8 +189,8 @@
                             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                         </div>
                     </div>
-                    <div class="row slide">
-                        <div class="col-lg-12 portfolio-item">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-item">
                             <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" style="width:100%;">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content">
@@ -195,9 +204,63 @@
                                 <p class="text-muted">Graphic Design</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="slide col-xs-12 portfolio-item">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-item">
+                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4>Startup Framework</h4>
+                                <p class="text-muted">Website Design</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-item">
+                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4>Startup Framework</h4>
+                                <p class="text-muted">Website Design</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-item">
+                            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" style="width:100%;">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4>Round Icons</h4>
+                                <p class="text-muted">Graphic Design</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-item">
+                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4>Startup Framework</h4>
+                                <p class="text-muted">Website Design</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-item">
                             <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content">
@@ -212,7 +275,49 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-item">
+                            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" style="width:100%;">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4>Round Icons</h4>
+                                <p class="text-muted">Graphic Design</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-item">
+                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4>Startup Framework</h4>
+                                <p class="text-muted">Website Design</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-item">
+                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4>Startup Framework</h4>
+                                <p class="text-muted">Website Design</p>
+                            </div>
+                        </div>
+                    </div>
             </section>
         </div>
         
@@ -517,6 +622,12 @@
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
+    <script>
+        $(function() {   
+            $('.preload-overlay').addClass('loaded');
+            $('.preload-text,.preload-img').css('display', 'none');
+        });
+    </script>
 </body>
 
 </html>
