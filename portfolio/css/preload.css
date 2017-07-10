@@ -23,3 +23,11 @@
 .loaded {
     width: 0;
 }
+
+.about-img, .about-text, .black-bg, #skills {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
