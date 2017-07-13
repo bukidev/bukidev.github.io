@@ -40,7 +40,7 @@
         <!-- Slider Start
         ============================================================== -->
         
-        <div id="preload" class="form-overlay right preload-bg active"></div>
+        <!--<div id="preload" class="form-overlay right preload-bg active"></div>-->
         
         <div id="formOverlay" class="form-overlay left bg">
             <button class="x-btn" onclick="closeConsult();">close</button>
@@ -57,7 +57,7 @@
                     <div class="col-md-12">
                         <div class="row">
                             <div class="video-wrap">
-                                <video class="video-overlay" src="assets/vdo/jong-u-sok.mp4" preload="metadata"  autoplay></video>
+                                <video id="jongVideo" class="video-overlay" src="assets/vdo/jong-u-sok.mp4" preload="metadata" autoplay></video>
                                 <img class="frame-overlay" src="assets/img/video-overlay.png">
                             </div>
                         </div>
@@ -433,7 +433,10 @@
 
 
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
         <script src="assets/js/owl.carousel.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/plugins.js"></script>
@@ -446,10 +449,12 @@
             }); 
             
             function consult() {
-                $('#formOverlay').addClass('active');
+                //$('#formOverlay').addClass('active');
+                document.getElementById('jongVideo').play();
             };
             function closeConsult() {
-                $('#formOverlay').removeClass('active');
+                //$('#formOverlay').removeClass('active');
+                document.getElementById('jongVideo').pause();
             };
                 
                 
