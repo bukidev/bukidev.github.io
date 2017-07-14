@@ -198,7 +198,7 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
-                    <img onclick="test360();" src="assets/img/360-model-3.png" class="img-resp model-active">
+                    <img src="assets/img/360-model-3.png" class="img-resp model-active">
                     <img src="assets/img/360-model-1.png" class="img-resp model-hidden">
                     <img src="assets/img/360-model-2.png" class="img-resp model-hidden">
                     <img src="assets/img/360-model-3.png" class="img-resp model-hidden">
@@ -448,6 +448,7 @@
         <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
         <script src="assets/js/jquery.waypoint.js"></script>
         <script src="assets/js/jquery.mousewheel.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         <script src="assets/js/owl.carousel.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/plugins.js"></script>
@@ -487,10 +488,15 @@
             
             //for mobile and smart phone
             
-                var mobileSwipe = $('.model-active').on('swipe', function() {
-                    $('.model-active').attr('src','assets/img/360-model-' + i + '.png');
-                    console.log(x);
+                $('.model-active').on('swipe', function() {
                     i++;
+                    if (i < 3 && i <= 5) {
+                        i = i++;
+                    } else if (i > 5) {
+                        i = 1;
+                    }
+                    $('.model-active').attr('src','assets/img/360-model-' + i + '.png');
+                    console.log('swipe');
                 });
                 
             //////////////////// end model turn//////////////////////////
@@ -502,7 +508,7 @@
                     $('#preload').removeClass('active');
                     if(window.innerWidth >= 1025) {
                         doctorVideo.play();
-                    }
+                    };
                 }, 3000);
                 
                 //waypoint
