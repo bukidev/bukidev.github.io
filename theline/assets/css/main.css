@@ -620,29 +620,56 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;}
 /*=========================
 	6) Gallery Start
 ===========================*/
-
-#gallery{padding-top: 100px ; padding-bottom: 120px}
-.block-top{}
-.gallery-area{text-align: center;}
-.gallery-area h1{font-size: 36px; color:#636C6C; font-family: 'Raleway', sans-serif; font-weight: 700; margin: 0px; }
-.gallery-area p{color: #AFB8B8; font-size: 16px; font-family: 'Raleway', sans-serif; font-weight: 400; margin: 0px; padding-top:24px }
-#gallery .block-bottom{text-align: center;padding-top: 50px;}
-.gallery-list{}
-.gallery-items{}
-.gallery-img{}
-.gallery-items-text{}
-.gallery-items-text p{color: #9ea5a5; font-size: 14px; margin: 0; padding-top: 45px;font-family: 'Raleway', sans-serif; font-weight: 400;}
-#gallery .owl-carousel .owl-controls{left: 0; margin-top: -40px; position: absolute; text-align: left; top: 50%; 
-width: 100%;}
-#gallery .owl-carousel .owl-controls .owl-buttons{}
-#gallery .owl-carousel .owl-controls .owl-buttons div{color: #9fa9a9;font-size: 50px; display: inline-block}
-#gallery .owl-carousel .owl-controls .owl-buttons div.owl-prev{margin-left: 0px;}
-#gallery .owl-carousel .owl-controls .owl-buttons div.owl-next{position: absolute;right: 0px;}
-#gallery .owl-carousel .owl-controls .owl-buttons div i{}
-#gallery .owl-carousel .owl-controls .owl-buttons div i.fa-angle-left{}
-#gallery .owl-carousel .owl-controls .owl-buttons div i.fa-angle-right{}
-#owl-demo .item{margin: 3px; padding: 30px;}
-#owl-demo .item img{display: block;width: 100%;height: auto;}
+@media(min-width: 300px) {
+    #gallery{padding-top: 100px ; padding-bottom: 120px; background-color: #ffcfd7;}
+    .block-top{}
+    .gallery-area{text-align: center;}
+    .gallery-area h1{font-size: 36px; color:#ff728d;margin: 0px; }
+    .gallery-area p{color: #AFB8B8; font-size: 16px;margin: 0px; padding-top:24px }
+    #gallery .block-bottom{text-align: center;padding-top: 50px;}
+    .gallery-list{}
+    .gallery-items{}
+    .gallery-img{}
+    .gallery-items-text{}
+    .gallery-items-text p{color: #9ea5a5; font-size: 14px; margin: 0; padding-top: 45px;font-family: 'Raleway', sans-serif; font-weight: 400;}
+    #gallery .owl-carousel .owl-controls{left: 0; margin-top: -40px; position: absolute; text-align: left; top: 50%; 
+    width: 100%;}
+    #gallery .owl-carousel .owl-controls .owl-buttons{}
+    #gallery .owl-carousel .owl-controls .owl-buttons div{color: #9fa9a9;font-size: 50px; display: inline-block}
+    #gallery .owl-carousel .owl-controls .owl-buttons div.owl-prev{margin-left: 0px;}
+    #gallery .owl-carousel .owl-controls .owl-buttons div.owl-next{position: absolute;right: 0px;}
+    #gallery .owl-carousel .owl-controls .owl-buttons div i{}
+    #gallery .owl-carousel .owl-controls .owl-buttons div i.fa-angle-left{}
+    #gallery .owl-carousel .owl-controls .owl-buttons div i.fa-angle-right{}
+    #owl-demo .item{margin: 3px; padding: 30px;}
+    #owl-demo .item img{display: block;width: 100%;height: auto;}
+}
+@media(min-width: 768px) {}
+@media(min-width: 1024px) {}
+@media(min-width: 1280px) {
+    #gallery{padding-top: 100px ; padding-bottom: 120px}
+    .block-top{}
+    .gallery-area{text-align: center;}
+    .gallery-area h1{font-size: 36px; color:#636C6C; margin: 0px; }
+    .gallery-area p{color: #fff; font-size: 16px; margin: 0px; padding-top:24px }
+    #gallery .block-bottom{text-align: center;padding-top: 50px;}
+    .gallery-list{}
+    .gallery-items{}
+    .gallery-img{}
+    .gallery-items-text{}
+    .gallery-items-text p{color: #9ea5a5; font-size: 14px; margin: 0; padding-top: 45px;font-family: 'Raleway', sans-serif; font-weight: 400;}
+    #gallery .owl-carousel .owl-controls{left: 0; margin-top: -40px; position: absolute; text-align: left; top: 50%; 
+    width: 100%;}
+    #gallery .owl-carousel .owl-controls .owl-buttons{}
+    #gallery .owl-carousel .owl-controls .owl-buttons div{color: #9fa9a9;font-size: 50px; display: inline-block}
+    #gallery .owl-carousel .owl-controls .owl-buttons div.owl-prev{margin-left: 0px;}
+    #gallery .owl-carousel .owl-controls .owl-buttons div.owl-next{position: absolute;right: 0px;}
+    #gallery .owl-carousel .owl-controls .owl-buttons div i{}
+    #gallery .owl-carousel .owl-controls .owl-buttons div i.fa-angle-left{}
+    #gallery .owl-carousel .owl-controls .owl-buttons div i.fa-angle-right{}
+    #owl-demo .item{margin: 3px; padding: 30px;}
+    #owl-demo .item img{display: block;width: 100%;height: auto;}
+}
 
 /*=========================
 	 Gallery close
@@ -682,7 +709,7 @@ width: 102px;}
 #testimonial .block{}
 .testimonial-area{}
 .tm-header{}
-.tm-header h2{font-size: 36px;font-family: 'Raleway', sans-serif; font-weight: 700;color:#636C6C; margin: 0px; padding-bottom: 38px}
+.tm-header h2{font-size: 36px;color:#fff; margin: 0px; padding-bottom: 38px}
 .tm-contant{}
 .tm-contant-items{}
 .tm-contant-list{}
@@ -856,7 +883,7 @@ width: 42px;}
 /*preload*/
 .preload-bg {background-image: url(../img/logo_preload_thai.gif);background-position: center center;background-repeat: no-repeat;}
 
-img-resp {
+.img-resp {
     width: 100%;
     height: auto;
 }
@@ -884,3 +911,7 @@ img-resp {
 /*=========================
 	 grid CLOSE
 ===========================*/
+
+
+/*for model*/
+.model-hidden {display: none;}
