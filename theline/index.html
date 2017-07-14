@@ -57,7 +57,7 @@
                     <div class="col-md-12">
                         <div class="row">
                             <div class="video-wrap">
-                                <video id="jongVideo" class="video-overlay md-hidden sm-hidden xs-hidden" src="assets/vdo/jong-u-sok.mp4" preload="metadata" autoplay></video>
+                                <video id="jongVideo" class="video-overlay md-hidden sm-hidden xs-hidden" src="assets/vdo/jong-u-sok.mp4" preload="metadata" loop></video>
                                 <img class="frame-overlay md-hidden sm-hidden xs-hidden" src="assets/img/video-overlay.png">
                                 <div class="lg-hidden" onclick="playVideo();">
                                     <img class="img-resp" src="assets/img/video-thumbnail.png" alt="โรงพยาบาลศัลยกรรมเดอะไลน์">
@@ -94,7 +94,7 @@
                         <div class="block-top">
                             <div class="service-header">
                                 <h1>มาตรฐานความปลอดภัย<br><span><strong>ที่ได้รับการรับรองจากทั่วโลก</strong></span></h1>
-                                <p>Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu. <br /> Vestibulum varius non dui at pulvinar. Ut egestas orci in quam sollicitudin aliquet.</p>
+                                <p>โรงพยาบาลศัลยกรรม Theline ได้รับการยอมรับในระดับสากล พร้อมด้วยการรับรองมาตรฐานระดับโลก<br>อีกทั้งยังได้รับการรับรองความปลอดภัยจาก<br>Joint Commission International (JCI) สถาบันจากสหรัฐอเมริกา</p>
                             </div>
                         </div>
                     </div>
@@ -437,10 +437,8 @@
 
 
 
-        <script
-  src="https://code.jquery.com/jquery-1.12.4.min.js"
-  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-  crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script src="assets/js/jquery.waypoint.js"></script>
         <script src="assets/js/owl.carousel.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/plugins.js"></script>
@@ -448,23 +446,40 @@
 
         <script>
             
+            var doctorVideo = document.getElementById('jongVideo');
+            
             $(function() {
                 setTimeout(function() {
                     $('#preload').removeClass('active');
+                    document.getElementById('jongVideo').play();
                 }, 3000);
+                
+                //waypoint
+                var section1 = $('#jongVideo');
+                section1.waypoint(function(direction) {
+                    if(direction == 'down') {
+                        console.log('pause video');
+                        doctorVideo.pause();
+                    } else {
+                        console.log('play video');
+                        doctorVideo.play();
+                    };
+                    
+                });
             }); 
             
             function consult() {
                 $('#formOverlay').addClass('active');
+                doctorVideo.pause();
                 
             };
             function closeConsult() {
                 $('#formOverlay').removeClass('active');
-                //document.getElementById('jongVideo').pause();
+                doctorVideo.play();
             };
             
             function playVideo() {
-                document.getElementById('jongVideo').play();
+                docterVideo.play();
             };
                 
                 
