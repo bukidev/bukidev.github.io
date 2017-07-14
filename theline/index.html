@@ -491,13 +491,13 @@
                 
                 var accX = Math.round(event.accelerationIncludingGravity.x*10) / 10
                 
-                if (accX == 5) {
+                if (accX >= 5) {
                     if (i < 3 && i <= 5) {
                         i = i++;
                     } else if (i > 5) {
                         i = 1;
                     }
-                } else if (accX == -5) {
+                } else if (accX >= -5) {
                     if (i > 5) {
                         i = 1;
                     } else if (i <= 5) {
