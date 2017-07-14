@@ -621,7 +621,7 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;}
 	6) Gallery Start
 ===========================*/
 @media(min-width: 300px) {
-    #gallery{padding-top: 100px ; padding-bottom: 120px; background-color: #ffcfd7;}
+    #gallery{padding-top: 100px ; padding-bottom: 0px; background-color: #ffcfd7;}
     .block-top{}
     .gallery-area{text-align: center;}
     .gallery-area h1{font-size: 36px; color:#ff728d;margin: 0px; }
@@ -647,7 +647,7 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;}
 @media(min-width: 768px) {}
 @media(min-width: 1024px) {}
 @media(min-width: 1280px) {
-    #gallery{padding-top: 100px ; padding-bottom: 120px}
+    #gallery{padding-top: 100px ; padding-bottom: 0px}
     .block-top{}
     .gallery-area{text-align: center;}
     .gallery-area h1{font-size: 36px; color:#636C6C; margin: 0px; }
@@ -887,6 +887,8 @@ width: 42px;}
     width: 100%;
     height: auto;
 }
+
+.play-video {position: absolute;top: 15%;z-index: 999;width:20%;}
 
 /*=========================
 	9) grid Start

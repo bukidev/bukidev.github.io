@@ -460,6 +460,7 @@
             ///////////////////for model turn/////////////////
             var i = 3;
             
+            //for pc
             $('.model-active').on('mousewheel', function(event) {
                 console.log(event.deltaY);
                 event.preventDefault();
@@ -482,26 +483,42 @@
                 var debug = $('.model-active').attr('src','assets/img/360-model-' + i + '.png');
                 console.log(i);
                 i++;
-            })
+            });
+            
+            //for mobile and smart phone
+            window.ondevicemotion = function (event) {
+                var x = event.accelerationIncludingGravity.x;
+                
+                if (x == 5) {
+                    if (i < 3 && i <= 5) {
+                        i = i++;
+                    } else if (i > 5) {
+                        i = 1;
+                    }
+                } else if (x == -5) {
+                    if (i > 5) {
+                        i = 1;
+                    } else if (i <= 5) {
+                        i = i--;
+                    } else if (i == 0) {
+                        i = 5;
+                    }
+                };
+                
+                var debug = $('.model-active').attr('src','assets/img/360-model-' + i + '.png');
+                console.log(i);
+                i++;
+            }
             //////////////////// end model turn//////////////////////////
             
-            /*function test360() {
-                
-                if (i <= 5) {
-                    var debug = $('.model-active').attr('src','assets/img/360-model-' + i + '.png');
-                    console.log(i);
-                    i++;
-                }
-                
-                    
-                
-                    
-            };*/
+            
             
             $(function() {
                 setTimeout(function() {
                     $('#preload').removeClass('active');
-                    document.getElementById('jongVideo').play();
+                    if(window.innerWidth >= 1025) {
+                        doctorVideo.play();
+                    }
                 }, 3000);
                 
                 //waypoint
@@ -509,11 +526,15 @@
                 section1.waypoint(function(direction) {
                     if(direction == 'down') {
                         console.log('pause video');
-                        doctorVideo.pause();
-                    } else {
-                        console.log('play video');
-                        doctorVideo.play();
-                    };
+                        
+                        if(window.innerWidth >= 1025) {
+                            doctorVideo.pause();
+                        }
+                    } else if (direction == 'up') {
+                        if(window.innerWidth >= 1025) {
+                            doctorVideo.play();
+                        }
+                    }
                     
                 });
                 
