@@ -59,7 +59,7 @@
                             <div class="video-wrap">
                                 <video id="jongVideo" class="video-overlay md-hidden sm-hidden xs-hidden" src="assets/vdo/jong-u-sok.mp4" preload="metadata" autoplay></video>
                                 <img class="frame-overlay md-hidden sm-hidden xs-hidden" src="assets/img/video-overlay.png">
-                                <div class="lg-hidden">
+                                <div class="lg-hidden" onclick="playVideo();">
                                     <img class="img-resp" src="assets/img/video-thumbnail.png" alt="โรงพยาบาลศัลยกรรมเดอะไลน์">
                                     <p class="text-center play-video-btn">เล่นวิดีโอ</p>
                                 </div>
@@ -454,12 +454,16 @@
             }); 
             
             function consult() {
-                //$('#formOverlay').addClass('active');
-                document.getElementById('jongVideo').play();
+                $('#formOverlay').addClass('active');
+                
             };
             function closeConsult() {
-                //$('#formOverlay').removeClass('active');
-                document.getElementById('jongVideo').pause();
+                $('#formOverlay').removeClass('active');
+                //document.getElementById('jongVideo').pause();
+            };
+            
+            function playVideo() {
+                document.getElementById('jongVideo').play();
             };
                 
                 
