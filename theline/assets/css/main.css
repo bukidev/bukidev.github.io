@@ -546,7 +546,7 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;}
     height: 2px;
     position: absolute;
     width: 102px;}
-    .contant-1-head h1{ font-size: 36px;font-family: 'Raleway', sans-serif; font-weight: 700;color: #5DCA88;}
+    .contant-1-head h1{ font-size: 36px;color: #5DCA88;}
     .contant-1-text{padding-top: 40px}
     .contant-1-text h2{color:#8C9494; font-size: 35px; font-family: 'Raleway', sans-serif; font-weight: 400; padding-bottom: 25px}
     .contant-1-text p{color:#ABB2B4; font-size: 16px; font-family: 'Raleway', sans-serif; font-weight: 400; margin:0px;}
@@ -573,10 +573,10 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;}
     height: 2px;
     position: absolute;
     width: 102px;}
-    .contant-1-head h1{ font-size: 36px;font-family: 'Raleway', sans-serif; font-weight: 700;color: #5DCA88;}
+    .contant-1-head h1{ font-size: 36px;color: #5DCA88;}
     .contant-1-text{padding-top: 40px}
-    .contant-1-text h2{color:#8C9494; font-size: 35px; font-family: 'Raleway', sans-serif; font-weight: 400; padding-bottom: 25px}
-    .contant-1-text p{color:#ABB2B4; font-size: 16px; font-family: 'Raleway', sans-serif; font-weight: 400; margin:0px;}
+    .contant-1-text h2{color:#8C9494; font-size: 35px; padding-bottom: 25px}
+    .contant-1-text p{color:#ABB2B4; font-size: 16px; margin:0px;}
     .edit-button-2{background: none; border: 2px solid #fff; border-radius: 30px; color: #fff;padding: 8px 50px;font-size: 21px;margin-top: 30px;margin-bottom: 50px;}
     .edit-button-2:hover{background: #fff;border: 2px solid #fff; color: #e27886;}
     #contant-1 .block-right{ text-align: center}
@@ -600,12 +600,12 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;}
     height: 2px;
     position: absolute;
     width: 102px;}
-    .contant-1-head h1{ font-size: 36px;font-family: 'Raleway', sans-serif; font-weight: 700;color: #5DCA88;}
+    .contant-1-head h1{ font-size: 36px;color: #5DCA88;}
     .contant-1-text{padding-top: 40px}
-    .contant-1-text h2{color:#8C9494; font-size: 35px; font-family: 'Raleway', sans-serif; font-weight: 400; padding-bottom: 25px}
-    .contant-1-text p{color:#ABB2B4; font-size: 16px; font-family: 'Raleway', sans-serif; font-weight: 400; margin:0px;}
-    .edit-button-2{background: none; border: 3px solid #AAB2B5; border-radius: 30px; color: #636c6c;padding: 8px 50px;font-size: 21px;margin-top: 30px}
-    .edit-button-2:hover{background: none;border: 3px solid #AAB2B5; color: #636c6c;}
+    .contant-1-text h2{color:#8C9494; font-size: 35px; padding-bottom: 25px}
+    .contant-1-text p{color:#ABB2B4; font-size: 16px; margin:0px;}
+    .edit-button-2{background: none; border: 2px solid #fff; border-radius: 30px; color: #fff;padding: 8px 50px;font-size: 21px;margin-top: 30px}
+    .edit-button-2:hover{background: #fff;border: 2px solid #fff; color: #e27886;}
     #contant-1 .block-right{ text-align: center}
     #contant-1 .block-right-img{}
     #contant-1 .block-right-img img{}
