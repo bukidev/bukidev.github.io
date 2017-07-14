@@ -372,7 +372,7 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;}
     .main-logo {text-align: center;width: 100%;}
     .main-logo>img {width: 60%;}
     
-    #slider{position: relative;padding-bottom: 100px;padding-top: 50px;}
+    #slider{position: relative;padding-bottom: 100px;padding-top: 0px;}
     #slider .block{}
     #slider .block h2{color: #fff;font-weight: 700; margin:0px; font-size: 36px}
     .slider-text-area{}
@@ -801,3 +801,32 @@ width: 42px;}
 
 /*preload*/
 .preload-bg {background-image: url(../img/logo_preload_thai.gif);background-position: center center;background-repeat: no-repeat;}
+
+img-resp {
+    width: 100%;
+    height: auto;
+}
+
+/*=========================
+	9) grid Start
+===========================*/
+
+@media(min-width:300px) {
+    .xs-hidden {display: none;}
+}
+@media(min-width:768px) {
+    .sm-hidden {display: none;}
+}
+@media(min-width:1024px) {
+    .md-hidden {display: none;}
+}
+@media(min-width:1280px) {
+    .lg-hidden {display: none;}
+    .md-hidden {display: block;}
+    .sm-hidden {display: block;}
+    .xs-hidden {display: block;}
+}
+
+/*=========================
+	 grid CLOSE
+===========================*/
