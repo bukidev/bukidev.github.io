@@ -483,7 +483,7 @@
             
             //for mobile and smart phone
             
-            $('.model-active').on('swiperight', function(e) {
+            $(document).on('swiperight', '.model-active', function(e) {
                 if (i < 5) {
                     i = i += 1;
                 }
@@ -492,7 +492,7 @@
                 console.log('swiperight' + i);
             });
             
-            $('.model-active').on('swipeleft', function(e) {
+            $(document).on('swipeleft', '.model-active', function(e) {
                 if (i > 1) {
                     i = i -= 1;
                 }
