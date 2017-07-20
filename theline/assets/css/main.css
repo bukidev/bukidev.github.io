@@ -621,17 +621,24 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;}
 	6) Gallery Start
 ===========================*/
 @media(min-width: 300px) {
-    #gallery{padding-top: 100px ; padding-bottom: 0px; background-color: #ffcfd7;}
+    #review {
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+        padding-top: 20px;
+    }
+    #gallery{padding-top: 20px ; padding-bottom: 0px; background-color: #ffcfd7;margin-bottom: 0px;}
     .block-top{}
     .gallery-area{text-align: center;}
-    .gallery-area h1{font-size: 36px; color:#ff728d;margin: 0px; }
-    .gallery-area p{color: #AFB8B8; font-size: 16px;margin: 0px; padding-top:24px }
-    #gallery .block-bottom{text-align: center;padding-top: 50px;}
+    .gallery-area h1{font-size: 25px; color:#ff728d;margin: 0px; }
+    .gallery-area p{color: #444; font-size: 16px;margin: 0px; padding-top:24px }
+    #gallery .block-bottom{text-align: center;padding-top: 0px;}
     .gallery-list{}
     .gallery-items{}
-    .gallery-img{}
+    .gallery-img{width: 50%;display: block;margin: auto;}
+    .gallery-img>img{width: 50%;}
     .gallery-items-text{}
-    .gallery-items-text p{color: #9ea5a5; font-size: 14px; margin: 0; padding-top: 45px;font-family: 'Raleway', sans-serif; font-weight: 400;}
+    .gallery-items-text p{color: #9ea5a5; font-size: 14px; margin: 0;font-family: 'Raleway', sans-serif; font-weight: 400;}
     #gallery .owl-carousel .owl-controls{left: 0; margin-top: -40px; position: absolute; text-align: left; top: 50%; 
     width: 100%;}
     #gallery .owl-carousel .owl-controls .owl-buttons{}
@@ -643,21 +650,45 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;}
     #gallery .owl-carousel .owl-controls .owl-buttons div i.fa-angle-right{}
     #owl-demo .item{margin: 3px; padding: 30px;}
     #owl-demo .item img{display: block;width: 100%;height: auto;}
+    .img-half {width: 50%;}
+    .review-header{font-size: 25px; color:#636C6C;}
+    
+    .review-header strong{color:#ff728d;}
 }
-@media(min-width: 768px) {}
-@media(min-width: 1024px) {}
+@media(min-width: 768px) {
+    #review {
+        -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    }
+    #gallery{padding-top: 100px ; padding-bottom: 0px; margin-bottom: -100px;background-image: url(../img/galaxy-bg.jpg);background-position: center;background-size: cover;background-repeat: no-repeat;background-blend-mode: screen;}
+}
+@media(min-width: 1024px) {
+    #review {
+        -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    }
+    #gallery{padding-top: 100px ; padding-bottom: 0px; margin-bottom: -100px;background-image: url(../img/galaxy-bg.jpg);background-position: center;background-size: cover;background-repeat: no-repeat;background-blend-mode: screen;}
+}
 @media(min-width: 1280px) {
-    #gallery{padding-top: 100px ; padding-bottom: 0px}
+    .scroll-icon {width: 50px;display: block;margin-left: auto;margin-right: auto;filter: grayscale(1);}
+    #review {
+        -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    }
+    #gallery{padding-top: 100px ; padding-bottom: 0px; margin-bottom: -100px;background-image: url(../img/galaxy-bg.jpg);background-position: center;background-size: cover;background-repeat: no-repeat;background-blend-mode: screen;}
     .block-top{}
     .gallery-area{text-align: center;}
-    .gallery-area h1{font-size: 36px; color:#636C6C; margin: 0px; }
-    .gallery-area p{color: #fff; font-size: 16px; margin: 0px; padding-top:24px }
+    .gallery-area h1{font-size: 36px; color:#ff728d; margin: 0px; }
+    .gallery-area p{color: #444; font-size: 16px; margin: 0px; padding-top:24px }
     #gallery .block-bottom{text-align: center;padding-top: 50px;}
     .gallery-list{}
     .gallery-items{}
     .gallery-img{}
     .gallery-items-text{}
-    .gallery-items-text p{color: #9ea5a5; font-size: 14px; margin: 0; padding-top: 45px;font-family: 'Raleway', sans-serif; font-weight: 400;}
+    .gallery-items-text p{color: #9ea5a5; font-size: 14px; margin: 0;font-family: 'Raleway', sans-serif; font-weight: 400;}
     #gallery .owl-carousel .owl-controls{left: 0; margin-top: -40px; position: absolute; text-align: left; top: 50%; 
     width: 100%;}
     #gallery .owl-carousel .owl-controls .owl-buttons{}
@@ -669,6 +700,7 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;}
     #gallery .owl-carousel .owl-controls .owl-buttons div i.fa-angle-right{}
     #owl-demo .item{margin: 3px; padding: 30px;}
     #owl-demo .item img{display: block;width: 100%;height: auto;}
+    .review-header{font-size: 36px;}
 }
 
 /*=========================
@@ -734,12 +766,12 @@ width: 11px;}
 	9) Submit Start
 ===========================*/
 
-#submit-area{ background: #F3F5F5; padding-top: 90px; padding-bottom: 120px}
+#submit-area{ background: #ff728d; padding-top: 90px; padding-bottom: 120px}
 #submit-area .block{}
 .submit-contant{}
 .submit-header{text-align: center; padding-bottom: 50px; }
 .submit-header i{ font-size: 36px; margin-right: 20px; color: #8C9494;}
-.submit-header h3{color:#8C9494; font-size: 36px; font-family: 'Raleway', sans-serif; font-weight: 700; display: inline}
+.submit-header h3{color:#fff; font-size: 36px; font-family: 'Raleway', sans-serif; font-weight: 700; display: inline}
 .submit-area{margin-left: 180px;}
 .submit-bottom{border: 2px solid #BBC3C2; float: left;  border-radius: 40px;height: 71px; background: #FFFFFF}
 .submit-bottom form{}
