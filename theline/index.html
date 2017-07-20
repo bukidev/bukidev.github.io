@@ -456,6 +456,9 @@
 
         <script>
             'use strict'
+            
+            $('.ui-loader').hide();
+            
             var doctorVideo = document.getElementById('jongVideo');
             
             ///////////////////for model turn/////////////////
@@ -547,8 +550,6 @@
             function playVideo() {
                 doctorVideo.play();
             };
-                
-            $.mobile.loadingMessage = false;   
             
         </script>
     </body>
