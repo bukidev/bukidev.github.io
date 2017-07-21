@@ -536,7 +536,7 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;}
     .tm-text p span{font-style: normal; display: block; color: #5DCA88;padding-top: 28px }
     
     .before-model {margin-top: -100px;z-index: -1;}
-    .label-pink {position: absolute;margin-top: 100px;right: -70%;height: 100%;display: block;}
+    .label-pink {position: absolute;margin-top: 50px;right: -70%;height: 100%;display: block;}
     
     #contant-1{background: #e27886;padding: 0px 0px}
     .block-left{}
@@ -563,7 +563,7 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;}
     .tm-text p span{font-style: normal; display: block; color: #5DCA88;padding-top: 28px }
     
     .before-model {margin-top: -100px;z-index: -1;}
-    .label-pink {position: absolute;margin-top: 100px;right: -70%;height: 100%;display: block;}
+    .label-pink {position: absolute;margin-top: 50px;right: -70%;height: 100%;display: block;}
     
     #contant-1{background: #e27886;padding: 0px 0px}
     .block-left{}
@@ -590,7 +590,7 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;}
     .tm-text p span{font-style: normal; display: block; color: #5DCA88;padding-top: 28px }
     
     .before-model {margin-top: -200px;z-index: -1;}
-    .label-pink {position: absolute;margin-top: 200px;right: -70%;height: 100%;}
+    .label-pink {position: absolute;margin-top: 150px;right: -70%;height: 100%;}
     
     #contant-1{background: #e27886;padding: 0px 0px}
     .block-left{}
@@ -737,26 +737,103 @@ width: 102px;}
 	8) testimonial Start
 ===========================*/
 
-#testimonial{text-align: center;padding-bottom: 110px;padding-top: 100px;}
-#testimonial .block{}
-.testimonial-area{}
-.tm-header{}
-.tm-header h2{font-size: 36px;color:#fff; margin: 0px; padding-bottom: 38px}
-.tm-contant{}
-.tm-contant-items{}
-.tm-contant-list{}
-.tm-img{}
-.tm-img img{border-radius: 500px;margin: 0 auto;width: 100px; height: 100px;}
+@media (min-width: 300px) {
+    .showcase-bg {background-image: url(../img/showcase-bg.jpg);background-position: center top;background-repeat: no-repeat;background-size:cover;}
+    
+    #testimonial{text-align: center;padding-bottom: 110px;padding-top: 20px;}
+    #testimonial .block{}
+    .testimonial-area{padding-top: 0px;}
+    .tm-header{}
+    .tm-header h2{font-size: 25px;color:#fff; margin: 0px; padding-bottom: 38px}
+    .tm-contant{}
+    .tm-contant-items{}
+    .tm-contant-list{}
+    .tm-img{}
+    .tm-img img{border-radius: 500px;margin: 0 auto;width: 100px; height: 100px;}
 
-#testimonial .owl-carousel .owl-controls{}
-#testimonial .owl-carousel .owl-controls .owl-pagination{text-align: center}
-#testimonial .owl-carousel .owl-controls .owl-pagination div{background:#8c9494;
-border-radius: 500px;
-display: inline-block;
-height: 11px;
-margin: 0 5px;
-width: 11px;}
-#testimonial .owl-carousel .owl-controls .owl-pagination  div.active{background: #5DCA88}
+    #testimonial .owl-carousel .owl-controls{}
+    #testimonial .owl-carousel .owl-controls .owl-pagination{text-align: center}
+    #testimonial .owl-carousel .owl-controls .owl-pagination div{background:#8c9494;
+    border-radius: 500px;
+    display: inline-block;
+    height: 11px;
+    margin: 0 5px;
+    width: 11px;}
+    #testimonial .owl-carousel .owl-controls .owl-pagination  div.active{background: #5DCA88}
+}
+
+@media (min-width: 768px) {
+    .showcase-bg {background-image: url(../img/showcase-bg.jpg);background-position: center top;background-repeat: no-repeat;background-size:auto;}
+    
+    #testimonial{text-align: center;padding-bottom: 110px;padding-top: 100px;}
+    #testimonial .block{}
+    .testimonial-area{padding-top: 50px;}
+    .tm-header{}
+    .tm-header h2{font-size: 36px;color:#fff; margin: 0px; padding-bottom: 38px}
+    .tm-contant{}
+    .tm-contant-items{}
+    .tm-contant-list{}
+    .tm-img{}
+    .tm-img img{border-radius: 500px;margin: 0 auto;width: 100px; height: 100px;}
+
+    #testimonial .owl-carousel .owl-controls{}
+    #testimonial .owl-carousel .owl-controls .owl-pagination{text-align: center}
+    #testimonial .owl-carousel .owl-controls .owl-pagination div{background:#8c9494;
+    border-radius: 500px;
+    display: inline-block;
+    height: 11px;
+    margin: 0 5px;
+    width: 11px;}
+    #testimonial .owl-carousel .owl-controls .owl-pagination  div.active{background: #5DCA88}
+    }
+
+@media (min-width: 1024px) {
+    #testimonial{text-align: center;padding-bottom: 110px;padding-top: 100px;}
+    #testimonial .block{}
+    .testimonial-area{padding-top: 50px;}
+    .tm-header{}
+    .tm-header h2{font-size: 36px;color:#fff; margin: 0px; padding-bottom: 38px}
+    .tm-contant{}
+    .tm-contant-items{}
+    .tm-contant-list{}
+    .tm-img{}
+    .tm-img img{border-radius: 500px;margin: 0 auto;width: 100px; height: 100px;}
+
+    #testimonial .owl-carousel .owl-controls{}
+    #testimonial .owl-carousel .owl-controls .owl-pagination{text-align: center}
+    #testimonial .owl-carousel .owl-controls .owl-pagination div{background:#8c9494;
+    border-radius: 500px;
+    display: inline-block;
+    height: 11px;
+    margin: 0 5px;
+    width: 11px;}
+    #testimonial .owl-carousel .owl-controls .owl-pagination  div.active{background: #5DCA88}
+}
+
+@media (min-width: 1280px) {
+    .showcase-bg {background-image: url(../img/showcase-bg.jpg);background-position: center top;background-repeat: no-repeat;background-size:contain;}
+    
+    #testimonial{text-align: center;padding-bottom: 110px;padding-top: 100px;}
+    #testimonial .block{}
+    .testimonial-area{padding-top: 50px;}
+    .tm-header{}
+    .tm-header h2{font-size: 36px;color:#fff; margin: 0px; padding-bottom: 38px}
+    .tm-contant{}
+    .tm-contant-items{}
+    .tm-contant-list{}
+    .tm-img{}
+    .tm-img img{border-radius: 500px;margin: 0 auto;width: 100px; height: 100px;}
+
+    #testimonial .owl-carousel .owl-controls{}
+    #testimonial .owl-carousel .owl-controls .owl-pagination{text-align: center}
+    #testimonial .owl-carousel .owl-controls .owl-pagination div{background:#8c9494;
+    border-radius: 500px;
+    display: inline-block;
+    height: 11px;
+    margin: 0 5px;
+    width: 11px;}
+    #testimonial .owl-carousel .owl-controls .owl-pagination  div.active{background: #5DCA88}
+}
 
 /*=========================
 	 testimonial CLOSE
@@ -901,16 +978,6 @@ width: 42px;}
 	 form CLOSE
 ===========================*/
 
-/*=========================
-	9) showcase Start
-===========================*/
-@media(min-width:300px) {
-    .showcase-bg {background-image: url(../img/showcase-bg.jpg);background-position: left top;background-repeat: no-repeat;background-size:contain;}
-}
-
-/*=========================
-	 showcase CLOSE
-===========================*/
 
 /*preload*/
 .preload-bg {background-image: url(../img/logo_preload_thai.gif);background-position: center center;background-repeat: no-repeat;}
