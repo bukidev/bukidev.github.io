@@ -401,7 +401,7 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;}
     #slider .block h2{color: #fff;margin:0px; font-size: 36px}
     .slider-text-area{}
     .sub-slider-text{margin: 0px; font-size: 36px; color:#C7D0D5;line-height: 43px;}
-    .slider-p{margin: 0px; color:#636C6C; font-size: 18px;padding-top: 40px;text-align: center;}
+    .slider-p{margin: 0px; color:#636C6C; font-size: 22px;padding-top: 40px;text-align: center;}
     
     .edit-button-1{background: #ff728d; color: #FFF; border-radius: 50px;padding: 20px 72px; display: block; overflow: heidden; margin-top: 50px;font-size: 24px;}
     .edit-button-1:hover{background: #f36681; color: #fff;}
@@ -473,8 +473,8 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;}
     #service{ padding: 0px 0px 250px 0px;}
     #service .block-top{text-align: center;}
     #service .service-header{margin: 0px}
-    #service .service-header h1{color:#636C6C; font-size: 30px; line-height: 40px;}
-    #service .service-header h1 span {font-size: 36px;}
+    #service .service-header h1{color:#636C6C; font-size: 48px; line-height: 72px;}
+    #service .service-header h1 span {font-size: 60px;}
     #service .service-header p{color:#AFB8B8; font-size: 16px; line-height: 24px}
     .cer {padding: 50px 0;}
 }
@@ -530,8 +530,8 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;}
     #contant-1 .block-right-img img{}
 }
 @media(min-width:768px) {
-    .tm-text{margin-top: 0px;color: #fff;padding-top: 150px;text-align: left;margin-left: -30px;}
-    .tm-text h2 {font-size: 24px;}
+    .tm-text{margin-top: 0px;color: #fff;padding-top: 120px;text-align: center;margin-left: -40px;}
+    .tm-text h2 {font-size: 18px; line-height: 28px;}
     .tm-text p{color:#fff;font-size: 16px; line-height: 24px;margin: 0;padding-bottom: 10px;padding-top: 10px;}
     .tm-text p span{font-style: normal; display: block; color: #5DCA88;padding-top: 28px }
     
@@ -550,15 +550,15 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;}
     .contant-1-text{padding-top: 40px}
     .contant-1-text h2{color:#8C9494; font-size: 35px; font-family: 'Raleway', sans-serif; font-weight: 400; padding-bottom: 25px}
     .contant-1-text p{color:#ABB2B4; font-size: 16px; font-family: 'Raleway', sans-serif; font-weight: 400; margin:0px;}
-    .edit-button-2{background: none; border: 2px solid #fff; border-radius: 30px; color: #fff;padding: 8px 50px;font-size: 21px;margin-top: 10px;margin-bottom: 50px;}
+    .edit-button-2{background: none; border: 2px solid #fff; border-radius: 30px; color: #fff;padding: 8px 50px;font-size: 18px;margin-top: 10px;margin-bottom: 0px;}
     .edit-button-2:hover{background: #fff;border: 2px solid #fff; color: #e27886;}
     #contant-1 .block-right{ text-align: center}
     #contant-1 .block-right-img{}
     #contant-1 .block-right-img img{}
 }
 @media(min-width:1024px) {
-    .tm-text{margin-top: 0px;color: #fff;padding-top: 200px;text-align: left;margin-left: -30px;}
-    .tm-text h2 {font-size: 30px;}
+    .tm-text{margin-top: 0px;color: #fff;padding-top: 200px;text-align: center;margin-left: -30px;}
+    .tm-text h2 {font-size: 24px;line-height: 34px;}
     .tm-text p{color:#fff;font-size: 20px; line-height: 30px;margin: 0;padding-bottom: 10px;padding-top: 10px;}
     .tm-text p span{font-style: normal; display: block; color: #5DCA88;padding-top: 28px }
     
@@ -584,8 +584,8 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;}
     #contant-1 .block-right-img img{}
 }
 @media(min-width:1280px) {
-    .tm-text{margin-top: 0px;color: #fff;padding-top: 300px;text-align: left;}
-    .tm-text h2 {font-size: 36px;}
+    .tm-text{margin-top: 0px;color: #fff;padding-top: 22.5%;text-align: center;}
+    .tm-text h2 {font-size: 30px;line-height: 40px;}
     .tm-text p{color:#fff;font-size: 18px; line-height: 28px;margin: 0;padding-bottom: 10px;padding-top: 10px;}
     .tm-text p span{font-style: normal; display: block; color: #5DCA88;padding-top: 28px }
     
@@ -662,6 +662,8 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;}
         box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
     }
     #gallery{padding-top: 100px ; padding-bottom: 0px; margin-bottom: -100px;background-image: url(../img/galaxy-bg.jpg);background-position: center;background-size: cover;background-repeat: no-repeat;background-blend-mode: screen;}
+    .gallery-area h1{font-size: 48px; color:#ff728d;margin: 0px; }
+    .review-header {font-size: 48px;}
 }
 @media(min-width: 1024px) {
     #review {
@@ -738,13 +740,13 @@ width: 102px;}
 ===========================*/
 
 @media (min-width: 300px) {
-    .showcase-bg {background-image: url(../img/showcase-bg.jpg);background-position: center top;background-repeat: no-repeat;background-size:cover;}
+    .showcase-bg {background-image: url(../img/showcase-bg_m.jpg);background-position: center top;background-repeat: no-repeat;background-size:contain;}
     
     #testimonial{text-align: center;padding-bottom: 110px;padding-top: 20px;}
     #testimonial .block{}
     .testimonial-area{padding-top: 0px;}
     .tm-header{}
-    .tm-header h2{font-size: 25px;color:#fff; margin: 0px; padding-bottom: 38px}
+    .tm-header h2{font-size: 25px;color:#fff; margin: 0px; padding-bottom: 25px}
     .tm-contant{}
     .tm-contant-items{}
     .tm-contant-list{}
@@ -763,7 +765,7 @@ width: 102px;}
 }
 
 @media (min-width: 768px) {
-    .showcase-bg {background-image: url(../img/showcase-bg.jpg);background-position: center top;background-repeat: no-repeat;background-size:auto;}
+    .showcase-bg {background-image: url(../img/showcase-bg_m.jpg);background-position: center top;background-repeat: no-repeat;background-size:contain;}
     
     #testimonial{text-align: center;padding-bottom: 110px;padding-top: 100px;}
     #testimonial .block{}
@@ -792,7 +794,7 @@ width: 102px;}
     #testimonial .block{}
     .testimonial-area{padding-top: 50px;}
     .tm-header{}
-    .tm-header h2{font-size: 36px;color:#fff; margin: 0px; padding-bottom: 38px}
+    .tm-header h2{font-size: 48px;color:#fff; margin: 0px; padding-bottom: 38px}
     .tm-contant{}
     .tm-contant-items{}
     .tm-contant-list{}
