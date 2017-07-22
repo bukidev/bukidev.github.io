@@ -1077,7 +1077,7 @@ width: 102px;}
     .form-overlay.right {right: 0;}
     .form-overlay>img {display: none;}
     .form-overlay.active {width: 100%;padding: 10px;}
-    .form-overlay.bg {background-image: url(../img/form-model.png);background-position: center top;background-repeat: no-repeat;background-size:cover;}
+    .form-overlay.bg {/*background-image: url(../img/form-model.png);background-position: center top;background-repeat: no-repeat;background-size:cover;*/}
     
     .x-btn {width: 50px;height: 50px;border:0;}
     .btn-circle {border-radius: 50%;}
