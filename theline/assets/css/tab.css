@@ -5,6 +5,24 @@ Licensed under MIT
 ***/
 
 @media(min-width:300px) {
+    .edit-button-4 {
+        background: #ff728d;
+        color: #FFF;
+        font-weight: 600;
+        border-radius: 50px;
+        padding: 20px 40px;
+        display: block;
+        overflow: heidden;
+        margin-top: 50px;
+        font-size: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    
+    .surgery-header {font-size: 25px;margin-top: 25px;}
+    
     .surgery-icon {width: 25px;margin-left: auto;margin-right: auto;}
     /* Tabs panel */
     .tabbable-panel {
@@ -20,7 +38,7 @@ Licensed under MIT
     .tabbable-line > .nav-tabs > li {
       margin-right: 0px;
       text-align: center;
-      width: 12.5%;
+      width: 16.66666666666667%;
       float: left;
     }
     .tabbable-line > .nav-tabs > li > a {
@@ -95,6 +113,24 @@ Licensed under MIT
 }
 
 @media(min-width:768px) {
+    .edit-button-4 {
+        background: #ff728d;
+        color: #FFF;
+        font-weight: 600;
+        border-radius: 50px;
+        padding: 24px 75px;
+        display: block;
+        overflow: heidden;
+        margin-top: 50px;
+        font-size: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    
+    .surgery-header {font-size: 36px;margin-top: 25px;}
+    
     .surgery-icon {width: 40px;margin-left: auto;margin-right: auto;}
     /* Tabs panel */
     .tabbable-panel {
@@ -181,6 +217,8 @@ Licensed under MIT
 }
 
 @media(min-width:1024px) {
+    .surgery-header {font-size: 40px;margin-top: 25px;}
+    
     .surgery-icon {width: 50px;margin-left: auto;margin-right: auto;}
     /* Tabs panel */
     .tabbable-panel {
@@ -280,15 +318,15 @@ Licensed under MIT
       margin: 0px;
     }
     .tabbable-line > .nav-tabs > li {
-      margin-right: 2px;
-        width: auto;
+      margin-right: 0px;
+/*      width: auto;*/
     }
     .tabbable-line > .nav-tabs > li > a {
       font-size: 16px;
       border: 0;
       margin-right: 0;
       color: #737373;
-      padding: 10px 35px;
+      /*padding: 10px 40px;*/
     }
     .tabbable-line > .nav-tabs > li > a > i {
       color: #a6a6a6;

@@ -7,11 +7,7 @@
 cols    1     2      3      4      5      6      7      8      9      10
 px      68    160    252    344    436    528    620    712    804    896    */
 
-@media (max-width: 767px) {
 
-.submit-bottom form input[type=text]{}
-
-}
 
 
 
@@ -29,7 +25,6 @@ px      68    160    252    344    436    528    620    712    */
 	#header .block-right{}
 	.contact-area{text-align: center}
 	#service .service-header p{font-size: 15px}
-	.submit-bottom form input[type=text]{width: 200px;}
 	#service .service-tab ul{margin-right: 50px;}
 	.edit-tab h1{padding-bottom: 10px; padding-top:0px;font-size: 22px;}
 	#service .service-tab ul li a{font-size: 15px;}
@@ -52,7 +47,6 @@ px      68    160    252    */
 @media only screen and (max-width: 767px) {
 
 .contact-area{text-align: center}
-.submit-bottom form input[type=text]{width: 200px;}
 #service .service-tab ul{margin-right: 50px;}
 .edit-tab h1{padding-bottom: 10px; padding-top:0px;font-size: 22px;}
 #service .service-tab ul li a{font-size: 15px;padding-right: 20px;}
@@ -69,7 +63,6 @@ px      68    160    252    */
 .tm-header h2{font-size: 25px}
 .submit-area{margin-left: 0px}
 .submit-bottom form input[type="submit"]{display:block}
-.submit-bottom form input[type=text]{margin-right: 34px;margin-top: 7px;}
 .submit-bottom form input[type="submit"]{display: block;margin-top: 20px;}
 #service .service-tab ul{float:none}
 #service .service-tab ul{margin-right: 0;}
