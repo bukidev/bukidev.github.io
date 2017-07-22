@@ -1121,11 +1121,26 @@
             };
             
             function playVideo() {
-                $('#videoScreen').hide();
+                /*$('#videoScreen').hide();
                 $('#jongVideo').show();
-                $('.slider-text').css('paddingTop', 200)
-                doctorVideo.play();
+                $('.slider-text').css('paddingTop', 230);
+                doctorVideo.play();*/
+                doctorVideo.click();
             };
+            
+            
+            var video = $('#jongVideo');
+            video.on('click', function(e){
+                var vid = video[0];
+                vid.play();
+                if (vid.requestFullscreen) {
+                  vid.requestFullscreen();
+                } else if (vid.mozRequestFullScreen) {
+                  vid.mozRequestFullScreen();
+                } else if (vid.webkitRequestFullscreen) {
+                  vid.webkitRequestFullscreen();
+                }
+            });
             
         </script>
     </body>
