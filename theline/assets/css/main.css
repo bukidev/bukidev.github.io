@@ -1076,7 +1076,7 @@ width: 102px;}
     .form-overlay.left {left: 0;}
     .form-overlay.right {right: 0;}
     .form-overlay>img {display: none;}
-    .form-overlay.active {width: 100%;padding: 10px;}
+    .form-overlay.active {width: 100%;padding: 10px;overflow-y: scroll;}
     .form-overlay.bg {/*background-image: url(../img/form-model.png);background-position: center top;background-repeat: no-repeat;background-size:cover;*/}
     
     .x-btn {width: 50px;height: 50px;border:0;}
@@ -1093,7 +1093,7 @@ width: 102px;}
     .form-overlay.right {right: 0;}
     .form-overlay>img {display: none;}
     .form-overlay.active {width: 100%;padding: 20px;}
-    .form-overlay.bg {background-image: url(../img/form-model.png);background-position: right top;background-repeat: no-repeat;background-size:cover;}
+    .form-overlay.bg {/*background-image: url(../img/form-model.png);background-position: right top;background-repeat: no-repeat;background-size:cover;*/}
     
     .x-btn {width: 80px;height: 80px;border:0;font-size: 24px;}
     .btn-circle {border-radius: 50%;}
@@ -1109,7 +1109,7 @@ width: 102px;}
     .form-overlay.right {right: 0;}
     .form-overlay>img {display: none;}
     .form-overlay.active {width: 100%;padding: 20px;}
-    .form-overlay.bg {background-image: url(../img/form-model.png);background-position: right top;background-repeat: no-repeat;background-size:cover;}
+    .form-overlay.bg {/*background-image: url(../img/form-model.png);background-position: right top;background-repeat: no-repeat;background-size:cover;*/}
     
     .x-btn {width: 100px;height: 100px;border:0;font-size:30px;}
     .btn-circle {border-radius: 50%;}
@@ -1125,7 +1125,7 @@ width: 102px;}
     .form-overlay.right {right: 0;}
     .form-overlay>img {display: none;}
     .form-overlay.active {width: 100%;padding: 20px;}
-    .form-overlay.bg {background-image: url(../img/form-model.png);background-position: left center;background-repeat: no-repeat;background-size:contain;}
+    .form-overlay.bg {/*background-image: url(../img/form-model.png);background-position: left center;background-repeat: no-repeat;background-size:contain;*/padding-top:2%;}
     
     .x-btn {width: 80px;height: 80px;border:0;font-size:30px;}
     .btn-circle {border-radius: 50%;}

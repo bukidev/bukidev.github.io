@@ -43,108 +43,51 @@
         
         <div id="preload" class="form-overlay right preload-bg active"></div>
         
-        <div id="formOverlay" class="form-overlay left bg" style="display:none;">
+        <div id="formOverlay" class="form-overlay left bg">
             <button class="x-btn btn-circle btn-dark btn-right" onclick="closeConsult();">X</button>
             
-            <div class="container">
-                <div class="row">    
-                    <div class="col-xs-12 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">  
+            <div id="form-container" class="">
+                <div class="row">   
+                    <div class="col-xs-12 col-md-12 col-sm-12 col-lg-5" style="background-color:white;">  
                         
-                        <form class="form">
-                            <label class="form-label">หน้าตรง / กางแขน กางขา ด้านหน้าตรง (สำหรับดูดไขมัน)</label>
-                            <div class="input-group image-preview">
-                                <input type="text" class="form-control image-preview-filename" disabled="disabled"> <!-- don't give a name === doesn't send on POST/GET -->
-                                <span class="input-group-btn">
-                                    <!-- image-preview-clear button -->
-                                    <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
-                                        <span class="glyphicon glyphicon-remove"></span> Clear
-                                    </button>
-                                    <!-- image-preview-input -->
-                                    <div class="btn btn-default image-preview-input">
-                                        <span class="glyphicon glyphicon-folder-open"></span>
-                                        <span class="image-preview-input-title">Browse</span>
-                                        <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview"/> <!-- rename it -->
-                                    </div>
-                                </span>
-                            </div>
-
-                            <label class="form-label">ด้านซ้าย / หุบแขนแนบลำตัวด้านซ้าย (สำหรับดูดไขมัน)</label>
-                            <div class="input-group image-preview">
-                                <input type="text" class="form-control image-preview-filename" disabled="disabled"> <!-- don't give a name === doesn't send on POST/GET -->
-                                <span class="input-group-btn">
-                                    <!-- image-preview-clear button -->
-                                    <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
-                                        <span class="glyphicon glyphicon-remove"></span> Clear
-                                    </button>
-                                    <!-- image-preview-input -->
-                                    <div class="btn btn-default image-preview-input">
-                                        <span class="glyphicon glyphicon-folder-open"></span>
-                                        <span class="image-preview-input-title">Browse</span>
-                                        <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview"/> <!-- rename it -->
-                                    </div>
-                                </span>
-                            </div>
-
-                            <label class="form-label">ด้านขวา / หุบแขนแนบลำตัวด้านขวา (สำหรับดูดไขมัน)</label>
-                            <div class="input-group image-preview">
-                                <input type="text" class="form-control image-preview-filename" disabled="disabled"> <!-- don't give a name === doesn't send on POST/GET -->
-                                <span class="input-group-btn">
-                                    <!-- image-preview-clear button -->
-                                    <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
-                                        <span class="glyphicon glyphicon-remove"></span> Clear
-                                    </button>
-                                    <!-- image-preview-input -->
-                                    <div class="btn btn-default image-preview-input">
-                                        <span class="glyphicon glyphicon-folder-open"></span>
-                                        <span class="image-preview-input-title">Browse</span>
-                                        <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview"/> <!-- rename it -->
-                                    </div>
-                                </span>
-                            </div>
-
-                            <label class="form-label">มุมก้ม / กางแขน กางขา ด้านหน้าหลัง (สำหรับดูดไขมัน)</label>
-                            <div class="input-group image-preview">
-                                <input type="text" class="form-control image-preview-filename" disabled="disabled"> <!-- don't give a name === doesn't send on POST/GET -->
-                                <span class="input-group-btn">
-                                    <!-- image-preview-clear button -->
-                                    <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
-                                        <span class="glyphicon glyphicon-remove"></span> Clear
-                                    </button>
-                                    <!-- image-preview-input -->
-                                    <div class="btn btn-default image-preview-input">
-                                        <span class="glyphicon glyphicon-folder-open"></span>
-                                        <span class="image-preview-input-title">Browse</span>
-                                        <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview"/> <!-- rename it -->
-                                    </div>
-                                </span>
-                            </div>
-
-                            <label class="form-label">มุมเงย</label>
-                            <div class="input-group image-preview">
-                                <input type="text" class="form-control image-preview-filename" disabled="disabled"> <!-- don't give a name === doesn't send on POST/GET -->
-                                <span class="input-group-btn">
-                                    <!-- image-preview-clear button -->
-                                    <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
-                                        <span class="glyphicon glyphicon-remove"></span> Clear
-                                    </button>
-                                    <!-- image-preview-input -->
-                                    <div class="btn btn-default image-preview-input">
-                                        <span class="glyphicon glyphicon-folder-open"></span>
-                                        <span class="image-preview-input-title">Browse</span>
-                                        <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview"/> <!-- rename it -->
-                                    </div>
-                                </span>
-                            </div>
+                        <form id="consultForm" style="display:none;">
                             
-                            <label class="form-label">ชื่อ - นามสกุล</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control">
+                            <label class="control-label">อัพโหลดภาพหน้าตรง / ด้านซ้าย / ด้านขวา / มุมเงย / มุมก้ม
+                                <br>
+                                (สำหรับการศัลยกรรมบนใบหน้า)
+                                <br>
+                                <br>
+                                ภาพเต็มตัวกางแขนกางขาด้านหน้าตรง / ด้านหลัง / ภาพแขนแนบชิดลำตัวด้านข้างซ้ายและขวา
+                                <br>
+                                (สำหรับการดูดไขมัน)</label>
+                            <div class="form-group">
+                                <input id="file-4" class="file" type="file" multiple data-preview-file-type="any" data-upload-url="#">
                             </div>
-                            <label class="form-label">Line ID</label>
-                            <label class="form-label">อีเมล</label>
-                            <label class="form-label">หัวข้อเรื่องที่อยากปรึกษา</label>
-                            <label class="form-label">เรื่องราวที่อยากปรึกษา</label>
+                    
+                            <div class="half form-left cf">
+                                <input type="text" id="input-name" placeholder="Name">
+                                <input type="email" id="input-email" placeholder="Email address">
+                                <input type="text" id="input-subject" placeholder="Line ID">
+                            </div>
+                            <div class="half form-right cf">
+                                <input type="text" id="input-subject" placeholder="Subject">
+                                <textarea name="message" type="text" id="input-message" placeholder="Message" rows="4"></textarea>
+                            </div>  
+                            <input type="submit" value="Submit" id="input-submit">
+                           
+                            
                         </form>
+                    </div>
+                    
+                    <div class="col-xs-12 col-md-12 col-sm-12 col-lg-7">
+                        <div class="video-wrap">
+                            <video id="choVideo" class="video-overlay md-hidden sm-hidden xs-hidden" src="assets/vdo/jong-u-sok.mp4" preload="metadata" loop></video>
+                            <img class="frame-overlay md-hidden sm-hidden xs-hidden" src="assets/img/video-overlay.png">
+                            <div id="videoScreen" class="lg-hidden" onclick="playVideo();">
+                                <img class="img-resp" src="assets/img/video-thumbnail.png" alt="โรงพยาบาลศัลยกรรมเดอะไลน์">
+                                <p class="text-center play-video-btn">เล่นวิดีโอ</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -968,6 +911,7 @@
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="assets/js/form.js"></script>
+        <script src="assets/js/dropzone.js"></script>
 
         <script>
             'use strict'
@@ -975,6 +919,7 @@
             $.mobile.loading().hide();
             
             var doctorVideo = document.getElementById('jongVideo');
+            var doctorChoVideo = document.getElementById('choVideo');
             
             ///////////////////for model turn/////////////////
             var i = 3;
@@ -1048,18 +993,26 @@
                     
                 });
                 
-                
+                $("#input-4").fileinput({showCaption: false});
                     
             }); 
             
             function consult() {
                 $('#formOverlay').addClass('active');
+                setTimeout(function() {
+                    $('#form-container').addClass('container-fluid');
+                    $('#consultForm').css('display', 'block');
+                }, 150);
                 doctorVideo.pause();
+                doctorChoVideo.play();
                 
             };
             function closeConsult() {
                 $('#formOverlay').removeClass('active');
+                $('#form-container').removeClass('container-fluid');
+                $('#consultForm').css('display', 'none');
                 //doctorVideo.play();
+                doctorChoVideo.pause();
             };
             
             function playVideo() {
