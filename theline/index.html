@@ -81,11 +81,11 @@
                     
                     <div class="col-xs-12 col-md-12 col-sm-12 col-lg-7">
                         <div class="video-wrap">
-                            <video id="choVideo" class="video-overlay md-hidden sm-hidden xs-hidden" src="assets/vdo/jong-u-sok.mp4" preload="metadata" loop></video>
+                            <video id="choVideo" class="video-overlay md-hidden sm-hidden xs-hidden" src="assets/vdo/cho-jae-ho.mp4" preload="metadata" loop></video>
                             <img class="frame-overlay md-hidden sm-hidden xs-hidden" src="assets/img/video-overlay.png">
-                            <div id="videoScreen" class="lg-hidden" onclick="playVideo();">
-                                <img class="img-resp" src="assets/img/video-thumbnail.png" alt="โรงพยาบาลศัลยกรรมเดอะไลน์">
-                                <p class="text-center play-video-btn">เล่นวิดีโอ</p>
+                            <div id="videoScreen" class="lg-hidden" onclick="playVideo2();">
+                                <p id="playChoVdoBtn" class="play-video-btn">เล่นวิดีโอ</p>
+                                <img class="img-resp" src="assets/img/video-thumbnail-2.png" alt="โรงพยาบาลศัลยกรรมเดอะไลน์">
                             </div>
                         </div>
                     </div>
@@ -1004,8 +1004,13 @@
                     $('#consultForm').css('display', 'block');
                 }, 150);
                 doctorVideo.pause();
-                doctorChoVideo.play();
+                if(window.innerWidth >= 1025) {
+                    doctorChoVideo.play();
+                }
                 
+                if(window.innerWidth <= 1025) {
+                    $('#playChoVdoBtn').css('display','block');
+                }
             };
             function closeConsult() {
                 $('#formOverlay').removeClass('active');
@@ -1018,9 +1023,12 @@
             function playVideo() {
                 doctorVideo.click();
             };
+            function playVideo2() {
+                doctorChoVideo.click();
+            };
             
             
-            var video = $('#jongVideo');
+            var video = $('#jongVideo,#choVideo');
             video.on('click', function(e){
                 var vid = video[0];
                 vid.play();

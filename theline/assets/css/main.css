@@ -1148,6 +1148,8 @@ width: 102px;}
 }
 
 .play-video {position: absolute;top: 15%;z-index: 999;width:20%;}
+.play-video-btn {text-align: center;}
+#playChoVdoBtn {display: none;}
 
 /*=========================
 	9) grid Start
