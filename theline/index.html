@@ -83,7 +83,7 @@
                         <div class="video-wrap">
                             <video id="choVideo" class="video-overlay md-hidden sm-hidden xs-hidden" src="assets/vdo/cho-jae-ho.mp4" preload="metadata" loop></video>
                             <img class="frame-overlay md-hidden sm-hidden xs-hidden" src="assets/img/video-overlay.png">
-                            <div id="videoScreen" class="lg-hidden" onclick="playVideo2();">
+                            <div id="choVideoScreen" class="lg-hidden" onclick="playChoVideo();">
                                 <p id="playChoVdoBtn" class="play-video-btn">เล่นวิดีโอ</p>
                                 <img class="img-resp" src="assets/img/video-thumbnail-2.png" alt="โรงพยาบาลศัลยกรรมเดอะไลน์">
                             </div>
@@ -992,6 +992,7 @@
                     
                 });
                 
+                
                 $("#input-4").fileinput({showCaption: false});
                     
             }); 
@@ -1007,7 +1008,7 @@
                     doctorChoVideo.play();
                 }
                 
-                if(window.innerWidth <= 1025) {
+                if(window.innerWidth < 1025) {
                     $('#playChoVdoBtn').css('display','block');
                 }
             };
@@ -1017,19 +1018,37 @@
                 $('#consultForm').css('display', 'none');
                 //doctorVideo.play();
                 doctorChoVideo.pause();
+                
+                if(window.innerWidth < 1025) {
+                    $('#playChoVdoBtn').css('display','none');
+                }
             };
             
             function playVideo() {
                 doctorVideo.click();
             };
-            function playVideo2() {
+            
+            function playChoVideo() {
                 doctorChoVideo.click();
             };
             
             
-            var video = $('#jongVideo,#choVideo');
+            var video = $('#jongVideo');
             video.on('click', function(e){
                 var vid = video[0];
+                vid.play();
+                if (vid.requestFullscreen) {
+                  vid.requestFullscreen();
+                } else if (vid.mozRequestFullScreen) {
+                  vid.mozRequestFullScreen();
+                } else if (vid.webkitRequestFullscreen) {
+                  vid.webkitRequestFullscreen();
+                }
+            });
+            
+            var video2 = $('#choVideo');
+            video2.on('click', function(e){
+                var vid = video2[0];
                 vid.play();
                 if (vid.requestFullscreen) {
                   vid.requestFullscreen();

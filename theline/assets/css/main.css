@@ -959,9 +959,9 @@ width: 102px;}
         margin-bottom: 20px;
         padding-left: 40px;
         padding-right: 40px;
-        width: 300px;
+        width: 700px;
     }
-    .submit-bottom form input[type=submit]{border: none; padding: 21px 55px; background: transparent; color:#fff; font-size: 20px;text-transform: uppercase;border-radius: 40px;border: 2px solid #fff;}
+    .submit-bottom form input[type=submit]{border: none; padding: 21px 55px; background: transparent; color:#fff; font-size: 20px;text-transform: uppercase;border-radius: 40px;border: 2px solid #fff;width: 280px;}
     .submit-bottom form input[type=submit]:hover {background: #fff;color: #ff728d;}
 
 }
