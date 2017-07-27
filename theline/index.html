@@ -28,6 +28,24 @@
         <style>
             @import url(//fonts.googleapis.com/css?family=Mitr:200,400,600);
             *,h1,h2,h3,h4,h5,h6,p,body {font-family: 'Mitr', sans-serif;}
+            .form-control { height: 30px;padding-top: 0; }
+            
+            ::-webkit-scrollbar-track
+            {
+                background-color: transparent;;
+            }
+
+            ::-webkit-scrollbar
+            {
+                width: 10px;
+                background-color: transparent;
+            }
+
+            ::-webkit-scrollbar-thumb
+            {
+                border-radius: 5px;
+                background-color: #ff91a5;	
+            }
         </style>
     </head>
     <body>
@@ -43,58 +61,159 @@
         
         <div id="preload" class="form-overlay right preload-bg active"></div>
         
+        
+        <!-- Form Start
+        ============================================================== -->
         <div id="formOverlay" class="form-overlay left bg">
             <button class="x-btn btn-circle btn-dark btn-right" onclick="closeConsult();">X</button>
             
             <div id="form-container" class="">
-                <div class="row">   
-                    <div class="col-xs-12 col-md-12 col-sm-12 col-lg-5" style="background-color:white;">  
+                
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">  
                         
-                        <form id="consultForm" style="display:none;">
+                        <form class="form" id="consultForm" style="display:none;">
                             
-                            <label class="control-label">อัพโหลดภาพหน้าตรง / ด้านซ้าย / ด้านขวา / มุมเงย / มุมก้ม
+                            <div class="col-lg-12">
+                                    <h1 class="text-center review-header" style="color:#000;">ลงทะเบียนขอรับคำปรึกษาออนไลน์</h1>
+                                </div>
                                 <br>
-                                (สำหรับการศัลยกรรมบนใบหน้า)
+                                <hr>
                                 <br>
-                                <br>
-                                ภาพเต็มตัวกางแขนกางขาด้านหน้าตรง / ด้านหลัง / ภาพแขนแนบชิดลำตัวด้านข้างซ้ายและขวา
-                                <br>
-                                (สำหรับการดูดไขมัน)</label>
-                            <div class="form-group">
-                                <input id="file-4" class="file" type="file" multiple data-preview-file-type="any" data-upload-url="#">
-                            </div>
-                    
-                            <div class="half form-left cf">
-                                <input type="text" id="input-name" placeholder="ชื่อ - นามสกุล">
-                                <input type="email" id="input-email" placeholder="อีเมล : example@thelineclinicth@gmail.com">
-                                <input type="text" id="input-subject" placeholder="Line ID">
-                            </div>
-                            <div class="half form-right cf">
-                                <input type="text" id="input-subject" placeholder="หัวข้อเรื่องที่ต้องการปรึกษา">
-                                <textarea name="message" type="text" id="input-message" placeholder="เรื่องที่ต้องการปรึกษา" rows="4"></textarea>
-                            </div>  
-                            <input type="submit" value="ยืนยัน" id="input-submit">
-                           
                             
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="col-lg-12">
+                                        <h3 class="text-center">ข้อมูลเบื้องต้น</h3>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-contorl" type="text" id="input-name" placeholder="ชื่อ - นามสกุล" required>
+                                        <input type="email" id="input-email" placeholder="อีเมล : example@thelineclinicth@gmail.com" required>
+                                        <input type="text" id="input-subject" placeholder="Line ID" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" id="input-subject" placeholder="หัวข้อเรื่องที่ต้องการปรึกษา">
+                                        <textarea name="message" type="text" id="input-message" placeholder="เรื่องที่ต้องการปรึกษา" rows="4" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="video-wrap">
+                                        <video id="choVideo" class="video-overlay md-hidden sm-hidden xs-hidden" src="assets/vdo/cho-jae-ho.mp4" preload="metadata" loop></video>
+                                        <img class="frame-overlay md-hidden sm-hidden xs-hidden" src="assets/img/video-overlay.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <!-- start face upload photo form -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h3 class="text-center">ภาพถ่ายใบหน้าเพื่อประกอบการพิจารณา</h3>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                    <label class="control-label">ภาพหน้าตรง</label>
+                                    <div class="form-group">
+                                        <input class="file" type="file" data-preview-file-type="any" data-upload-url="#">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                    <label class="control-label">ภาพใบหน้าด้านซ้าย</label>
+                                    <div class="form-group">
+                                        <input class="file" type="file" data-preview-file-type="any" data-upload-url="#">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                    <label class="control-label">ภาพใบหน้าด้านขวา</label>
+                                    <div class="form-group">
+                                        <input class="file" type="file" data-preview-file-type="any" data-upload-url="#">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                    <label class="control-label">ภาพใบหน้ามุมเงย</label>
+                                    <div class="form-group">
+                                        <input class="file" type="file" data-preview-file-type="any" data-upload-url="#">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                    <label class="control-label">ภาพใบหน้ามุมก้ม</label>
+                                    <div class="form-group">
+                                        <input class="file" type="file" data-preview-file-type="any" data-upload-url="#">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end face upload photo form -->
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <!-- start body upload photo form -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h3 class="text-center">ภาพถ่ายเต็มตัวเพื่อประกอบการพิจารณา</h3>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                    <label class="control-label">ภาพด้านหน้า กางแขนและเท้ากางออกประมาณหัวไหล่</label>
+                                    <div class="form-group">
+                                        <input class="file" type="file" data-preview-file-type="any" data-upload-url="#">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                    <label class="control-label">ภาพด้านหลัง กางแขนและเท้ากางออกประมาณหัวไหล่</label>
+                                    <div class="form-group">
+                                        <input class="file" type="file" data-preview-file-type="any" data-upload-url="#">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                    <label class="control-label">ภาพด้านซ้าย แขนแนบชิดลำตัวและเท้าชิดกัน</label>
+                                    <div class="form-group">
+                                        <input class="file" type="file" data-preview-file-type="any" data-upload-url="#">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                    <label class="control-label">ภาพด้านขวา แขนแนบชิดลำตัวและเท้าชิดกัน</label>
+                                    <div class="form-group">
+                                        <input class="file" type="file" data-preview-file-type="any" data-upload-url="#">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end body upload photo form -->
+                            <br>
+                            <hr>
+                            <br>
+                            <!-- start submit button -->
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-lg-offset-3">
+                                    <input class="btn btn-default edit-button-1" type="submit" value="ลงทะเบียน" id="input-submit">
+                                </div>
+                            </div>
+                            <!-- end submit button -->
                         </form>
                     </div>
                     
-                    <div class="col-xs-12 col-md-12 col-sm-12 col-lg-7">
-                        <div class="video-wrap">
-                            <video id="choVideo" class="video-overlay md-hidden sm-hidden xs-hidden" src="assets/vdo/cho-jae-ho.mp4" preload="metadata" loop></video>
-                            <img class="frame-overlay md-hidden sm-hidden xs-hidden" src="assets/img/video-overlay.png">
-                            <div id="choVideoScreen" class="lg-hidden" onclick="playChoVideo();">
-                                <p id="playChoVdoBtn" class="play-video-btn">เล่นวิดีโอ</p>
-                                <img class="img-resp" src="assets/img/video-thumbnail-2.png" alt="โรงพยาบาลศัลยกรรมเดอะไลน์">
-                            </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+                        <div id="choVideoScreen" class="lg-hidden" onclick="playChoVideo();">
+                            <p id="playChoVdoBtn" class="play-video-btn">เล่นวิดีโอ</p>
+                            <img class="img-resp" src="assets/img/video-thumbnail-2.png" alt="โรงพยาบาลศัลยกรรมเดอะไลน์">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-         
-
+        
         <!-- Slider Start
         ============================================================== -->
 
@@ -147,17 +266,23 @@
                     </div>
                 </div>
 				<div class="row">
-					<div class="col-xs-6 col-sm-3 cer">
-						<img class="img-responsive" src="assets/img/bttm-cer-1.jpg">
+					<!--<div class="col-xs-12 col-sm-6 col-md-6 col-lg-offset-2 cer text-center">
+						<img class="img-resp" src="assets/img/bttm-cer-1.jpg" style="width:80%;">
 					</div>
-                    <div class="col-xs-6 col-sm-3 cer">
-						<img class="img-responsive" src="assets/img/bttm-cer-2.jpg">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 cer text-center">
+						<img class="img-resp" src="assets/img/jci_logo.png" style="width:80%;">
+					</div>-->
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 cer text-center">
+						<img class="img-resp" src="assets/img/bttm-cer-1.jpg">
 					</div>
-                    <div class="col-xs-6 col-sm-3 cer">
-						<img class="img-responsive" src="assets/img/bttm-cer-3.jpg">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 cer text-center">
+						<img class="img-resp" src="assets/img/bttm-cer-2.jpg">
 					</div>
-                    <div class="col-xs-6 col-sm-3 cer">
-						<img class="img-responsive" src="assets/img/bttm-cer-4.jpg">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 cer text-center">
+						<img class="img-resp" src="assets/img/bttm-cer-3.jpg">
+					</div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 cer text-center">
+						<img class="img-resp" src="assets/img/bttm-cer-4.jpg">
 					</div>
 				</div>
             </div>
@@ -887,10 +1012,11 @@
                                 <h3>ติดตาม Theline ผ่านช่องทางอื่นได้ที่</h3>
                                 <div class="social-icon">
                                     <a href="https://www.facebook.com/thelineclinicthailand/" target="_blank"><i class="fa fa-facebook"></i></a>
-                                    <a href="mailto:thelineclicnicth@gmail.com"><i class="fa fa-google"></i></a>
                                     <a href="https://www.youtube.com/channel/UCCGLjOLklw1oVGYOg3ENUQA" target="_blank"><i class="fa fa-youtube"></i></a>
                                 </div>
                                 <div class="support-link">
+                                    <p>E-mail : thelineclicnicth@gmail.com   |   Tel. : 02-002-1919, 095-638-5238, 095-264-1224</p>
+                                    <br>
                                     <p>&copy; 2017 Theline Plastic Surgery.</p>
                                 </div>
                             </div>
@@ -1000,7 +1126,7 @@
             function consult() {
                 $('#formOverlay').addClass('active');
                 setTimeout(function() {
-                    $('#form-container').addClass('container-fluid');
+                    $('#form-container').addClass('container');
                     $('#consultForm').css('display', 'block');
                 }, 150);
                 doctorVideo.pause();
@@ -1014,7 +1140,7 @@
             };
             function closeConsult() {
                 $('#formOverlay').removeClass('active');
-                $('#form-container').removeClass('container-fluid');
+                $('#form-container').removeClass('container');
                 $('#consultForm').css('display', 'none');
                 //doctorVideo.play();
                 doctorChoVideo.pause();
