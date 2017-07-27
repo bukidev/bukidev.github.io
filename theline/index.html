@@ -204,7 +204,7 @@
                 
                 <div class="row">
                     <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
-                        <div id="choVideoScreen" class="lg-hidden" onclick="playChoVideo();">
+                        <div id="choVideoScreen" class="lg-hidden" onclick="playChoVideo();" style="display:none;">
                             <p id="playChoVdoBtn" class="play-video-btn">เล่นวิดีโอ</p>
                             <img class="img-resp" src="assets/img/video-thumbnail-2.png" alt="โรงพยาบาลศัลยกรรมเดอะไลน์">
                         </div>
@@ -1136,6 +1136,7 @@
                 
                 if(window.innerWidth < 1025) {
                     $('#playChoVdoBtn').css('display','block');
+                    $('#choVideoScreen').css('display','block');
                 }
             };
             function closeConsult() {
@@ -1147,6 +1148,7 @@
                 
                 if(window.innerWidth < 1025) {
                     $('#playChoVdoBtn').css('display','none');
+                    $('#choVideoScreen').css('display','none');
                 }
             };
             
