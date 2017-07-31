@@ -10,8 +10,6 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         
         <link rel="stylesheet" href="assets/css/slicknav.css">
         <link rel="stylesheet" href="assets/css/owl.carousel.css">
@@ -22,7 +20,6 @@
         <link rel="stylesheet" href="assets/css/video-overlay.css">
         <link rel="stylesheet" href="assets/css/tab.css">
         <link rel="stylesheet" href="assets/css/form.css">
-        <!--<link href="//fonts.googleapis.com/css?family=Mitr:200,400,600" rel="stylesheet">-->
         <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
         
         <style>
@@ -48,22 +45,12 @@
             }
         </style>
     </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Add your site or application content here -->
-         
-        
-        <!-- Preload Start
-        ============================================================== -->
-        
+    <body>                 
+        <!-- Preload Start -->
         <div id="preload" class="form-overlay right preload-bg active"></div>
+        <!-- Preload End -->
         
-        
-        <!-- Form Start
-        ============================================================== -->
+        <!-- Form Start -->
         <div id="formOverlay" class="form-overlay left bg">
             <button class="x-btn btn-circle btn-dark btn-right" onclick="closeConsult();">X</button>
             
@@ -212,11 +199,9 @@
                 </div>
             </div>
         </div>
-
+        <!-- Form End -->
         
-        <!-- Slider Start
-        ============================================================== -->
-
+        <!-- Main Section Start -->
         <section id="slider">
             <div class="container">
                 <div class="row">
@@ -248,11 +233,10 @@
                     </div><!-- .col-md-12 close -->
                 </div><!-- .row close -->
             </div><!-- .container close -->
-        </section><!-- #slider close -->
-
-        <!-- Service Start 
-        ============================================================= -->
-
+        </section>
+        <!-- Main Section End -->
+        
+        <!-- Service Start -->
         <section id="service">
             <div class="container">
                 <div class="row">
@@ -286,12 +270,10 @@
 					</div>
 				</div>
             </div>
-        </section><!-- #service close -->
+        </section>
+        <!-- Service End -->
 
-
-        <!-- contant-1 start
-        ===================================================== -->
-
+        <!-- contant-1 Start -->
         <section id="contant-1">
             <div class="container">
                 <div class="row">
@@ -366,12 +348,10 @@
                     </div>
                 </div>
             </div>
-        </section><!-- #contant-1 close -->
+        </section>
+        <!-- contant-1 End -->
 
-
-        <!-- Gallery Start
-        ============================================================= -->
-
+        <!-- contant-2 Start -->
         <section id="gallery">
             <div class="container">
                 <div class="row">
@@ -463,8 +443,10 @@
                     </div>
                 </div>
             </div>
-        </section><!-- #gallery close -->
-
+        </section>
+        <!-- contant-2 End -->
+        
+        <!-- Testimonial Start -->
         <section id="testimonial" class="showcase-bg">
             <div class="container">
                 <div class="row">
@@ -969,12 +951,10 @@
                     </div>
                 </div>
             </div><!-- .container close -->
-        </section><!-- #testimonial close -->
+        </section>
+        <!-- Testimonial End -->
 
-
-        <!-- Submit Start
-        ======================================================== -->
-
+        <!-- Subscribe Start  -->
         <section id="submit-area">
             <div class="container">
                 <div class="row">
@@ -997,12 +977,10 @@
                     </div><!-- .col-md-12 -->
                 </div><!-- .row close -->
             </div><!-- .container close -->
-        </section><!-- #submit close -->
+        </section>
+        <!-- Subscribe End  -->
 
-
-        <!-- footer Start
-        ====================================================================== -->
-
+        <!-- footer Start -->
         <section id="footer">
             <div class="container">
                 <div class="row">
@@ -1024,8 +1002,8 @@
                     </div><!-- col-md-12 -->
                 </div><!-- .row -->
             </div><!-- .container -->
-        </section><!-- #footer -->
-
+        </section>
+        <!-- footer End -->
 
         <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
         <script src="assets/js/jquery.waypoint.js"></script>
@@ -1037,156 +1015,7 @@
         <script src="assets/js/main.js"></script>
         <script src="assets/js/form.js"></script>
         <script src="assets/js/dropzone.js"></script>
-
-        <script>
-            'use strict'
-            
-            $.mobile.loading().hide();
-            
-            var doctorVideo = document.getElementById('jongVideo');
-            var doctorChoVideo = document.getElementById('choVideo');
-            
-            ///////////////////for model turn/////////////////
-            var i = 3;
-            
-            //for pc
-            $('.model-active').on('mousewheel', function(event) {
-                console.log(event.deltaY + ' mouse wheel option work!');
-                
-                event.preventDefault();
-                
-                if (event.deltaY > 0) {
-                    if (i < 5) {
-                        i = i += 1;
-                    }
-                } else {
-                    if (i > 1) {
-                        i = i -= 1;
-                    }
-                }
-                
-                var debug = $('.model-active').attr('src','assets/img/360-model-' + i + '.png');
-                console.log(i);
-            });
-            
-            //for mobile and smart phone
-            
-            $(document).on('swiperight', '.model-active', function(e) {
-                if (i < 5) {
-                    i = i += 1;
-                }
-                
-                $('.model-active').attr('src','assets/img/360-model-' + i + '.png');
-                console.log('swiperight' + i);
-            });
-            
-            $(document).on('swipeleft', '.model-active', function(e) {
-                if (i > 1) {
-                    i = i -= 1;
-                }
-                
-                $('.model-active').attr('src','assets/img/360-model-' + i + '.png');
-                console.log('swipeleft' + i);
-            });
-                
-            //////////////////// end model turn//////////////////////////
-            
-            
-            
-            $(function() {
-                setTimeout(function() {
-                    $('#preload').removeClass('active');
-                    if(window.innerWidth >= 1025) {
-                        doctorVideo.play();
-                    };
-                }, 3000);
-                
-                //waypoint
-                var section1 = $('#jongVideo');
-                section1.waypoint(function(direction) {
-                    if(direction == 'down') {
-                        console.log('pause video');
-                        
-                        if(window.innerWidth >= 1025) {
-                            doctorVideo.pause();
-                        }
-                    } else if (direction == 'up') {
-                        if(window.innerWidth >= 1025) {
-                            doctorVideo.play();
-                        }
-                    }
-                    
-                });
-                
-                
-                $("#input-4").fileinput({showCaption: false});
-                    
-            }); 
-            
-            function consult() {
-                $('#formOverlay').addClass('active');
-                setTimeout(function() {
-                    $('#form-container').addClass('container');
-                    $('#consultForm').css('display', 'block');
-                }, 150);
-                doctorVideo.pause();
-                if(window.innerWidth >= 1025) {
-                    doctorChoVideo.play();
-                }
-                
-                if(window.innerWidth < 1025) {
-                    $('#playChoVdoBtn').css('display','block');
-                    $('#choVideoScreen,#choVideoScreen>img').css('display','block');
-                }
-            };
-            function closeConsult() {
-                $('#formOverlay').removeClass('active');
-                $('#form-container').removeClass('container');
-                $('#consultForm').css('display', 'none');
-                //doctorVideo.play();
-                doctorChoVideo.pause();
-                
-                if(window.innerWidth < 1025) {
-                    $('#playChoVdoBtn').css('display','none');
-                    $('#choVideoScreen,#choVideoScreen>img').css('display','none');
-                }
-            };
-            
-            function playVideo() {
-                doctorVideo.click();
-            };
-            
-            function playChoVideo() {
-                doctorChoVideo.click();
-            };
-            
-            
-            var video = $('#jongVideo');
-            video.on('click', function(e){
-                var vid = video[0];
-                vid.play();
-                if (vid.requestFullscreen) {
-                  vid.requestFullscreen();
-                } else if (vid.mozRequestFullScreen) {
-                  vid.mozRequestFullScreen();
-                } else if (vid.webkitRequestFullscreen) {
-                  vid.webkitRequestFullscreen();
-                }
-            });
-            
-            var video2 = $('#choVideo');
-            video2.on('click', function(e){
-                var vid = video2[0];
-                vid.play();
-                if (vid.requestFullscreen) {
-                  vid.requestFullscreen();
-                } else if (vid.mozRequestFullScreen) {
-                  vid.mozRequestFullScreen();
-                } else if (vid.webkitRequestFullscreen) {
-                  vid.webkitRequestFullscreen();
-                }
-            });
-            
-        </script>
+        <script src="assets/js/model-move.js"></script>
+        <script src="assets/js/main-function.js"></script>
     </body>
 </html>
