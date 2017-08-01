@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Theline - โปรโมชั่นทำหน้าอก</title>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/grid-hidden.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/bic_calendar.css" rel="stylesheet">
+
+  </head>
+  <body>
+      <!-- modal start -->
+      <div id="myModal" class="modal fade">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                      <h4 class="modal-title" id="myModalLabel">Login to site.com</h4>
+                  </div>
+                  <div class="modal-body">
+                      <div class="row">
+                          <div class="col-lg-12">
+                              <div class="well">
+                                  <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+                                      <div class="form-group">
+                                          <input type="text" class="form-control" id="promotionInput" name="" value="" readonly>
+                                          <span class="help-block"></span>
+                                      </div>
+                                      <div class="form-group">
+                                          <input type="text" class="form-control" required placeholder="ชื่อ - นามสกุล">
+                                          <span class="help-block"></span>
+                                      </div>
+                                      <div class="form-group">
+                                          <input type="tel" class="form-control" required placeholder="เบอร์โทรศัพท์">
+                                          <span class="help-block"></span>
+                                      </div>
+                                      <div class="form-group">
+                                          <input type="text" class="form-control" required placeholder="Line ID">
+                                          <span class="help-block"></span>
+                                      </div>
+                                      <div class="form-group">
+                                          <input type="email" class="form-control" required placeholder="อีเมล">
+                                          <span class="help-block"></span>
+                                      </div>
+                                      <div id="calendari_lateral1"></div>
+                                      
+                                      <div class="checkbox">
+                                          <label>
+                                              <input type="checkbox" name="remember" id="remember"> Remember login
+                                          </label>
+                                          <p class="help-block">(if this is a private computer)</p>
+                                      </div>
+                                      <button type="submit" class="btn btn-success btn-block">Login</button>
+                                      <a href="/forgot/" class="btn btn-default btn-block">Help to login</a>
+                                  </form>
+                              </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div id="calendari_lateral1"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div><!-- modal end -->
+      
+      <!-- main content start -->
+      <section class="bg">
+            <div class="container">
+                <div class="row wrap animated fadeInLeft">
+                    <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-11">
+                        <img src="assets/img/model.png" class="xs-hidden sm-hidden md-hidden img-resp">
+                        <img src="assets/img/model_m.png" class="lg-hidden img-resp">
+                    </div>
+                </div>
+
+                <div class="row label-wrap pd-top animated fadeInRight">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-7">
+                        <img src="assets/img/heading.png" class="img-label-resp">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-offset-7 label-wrap">
+                        <img id="pro_01" src="assets/img/labe-01.png" class="img-label-resp pro-btn">
+                        <div id="pro_01_check" class="pro-check">
+                            <img src="assets/img/checking.gif" style="display:none;">
+                            <img id="pro_check_img_01" src="" class="img-resp">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-offset-7 label-wrap">
+                        <img id="pro_02" src="assets/img/label-02.png" class="img-label-resp pro-btn">
+                        <div id="pro_02_check" class="pro-check">
+                            <img id="pro_check_img_02" src="" class="img-resp">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-5 col-lg-offset-7 label-wrap">
+                        <div class="col-lg-12">
+                            <img id="pro_03" src="assets/img/label-03.png" class="img-label-resp label-wrap pro-btn">
+                            <div id="pro_03_check" class="pro-check last">
+                                <img id="pro_check_img_03" src="" class="img-resp">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row label-wrap text-center animated fadeInUp">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-4 col-lg-offset-4">
+                        <button id="bookingBtn" class="btn btn-primary btn-block"><strong>จองคิวเข้ารับการทำศัลยกรรม</strong></button>
+                        <button id="booking" class="btn btn-primary btn-block btn-lg" data-target="#myModal" data-toggle="modal" style=display:none;><strong>จองคิวเข้ารับการทำศัลยกรรม</strong></button>
+                    </div>
+                </div>
+            </div>
+        </section><!-- main content end -->
+      
+      <!-- script section -->
+      <script src="assets/js/jquery-3.2.1.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/bic_calendar.js"></script>
+      <script>
+          $(document).ready(function() {
+              //for bic_calendar
+              var monthNames = ["มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม"];
+              var dayNames = ["อา", "จ", "อ", "พ", "พฤ", "ศ", "ส"];
+              var events = [
+                  {
+                      date: "28/10/2013",
+                      title: 'SPORT & WELLNESS',
+                      link: '',
+                      color: '',
+                      content: '<img src="http://gettingcontacts.com/upload/jornadas/sport-wellness_portada.png" ><br>06-11-2013 - 09:00 <br> Tecnocampus Mataró Auditori',
+                      class: '',
+                  }
+              ];
+              $('#calendari_lateral1').bic_calendar({
+                  //list of events in array
+                  events: events,
+                  //enable select
+                  enableSelect: true,
+                  //enable multi-select
+                  multiSelect: false,
+                  //set day names
+                  dayNames: dayNames,
+                  //set month names
+                  monthNames: monthNames,
+                  //show dayNames
+                  showDays: true,
+                  //set ajax call
+                  reqAjax: {
+                      type: 'get',
+                      url: 'http://bic.cat/bic_calendar/index.php'
+                  }
+                  //set popover options
+                  //popoverOptions: {}
+                  //set tooltip options
+                  //tooltipOptions: {}
+              });
+              
+              //for promotion btn
+              var promotions = ['ศัยลยกรรมหน้าอก Microtexture - 250,000 บาท', 'ศัลยกรรมหน้าอก Motiva - 380,000 บาท', 'ฉีดไขมันปรับรูปหน้า Heartline 2 ครั้ง - 79,000 บาท'];
+              var proBtn = ['#pro_01', $('#pro_02'), $('#pro_03')];
+              var checkStatus = false;
+              
+              $('#pro_01').click(function() {
+                  $('.pro-check').removeClass('show');
+                  $('#pro_check_img_01').attr('src', 'assets/img/checking.gif');
+                  $('#pro_01_check').addClass('show');
+                  
+                  for(i = 0; i < proBtn.length; i++) { 
+                    $(proBtn[i]).css('filter', 'sepia(0)');
+                  }
+                  
+                  $(this).css('filter', 'sepia(.5)');
+                  $('#promotionInput').val(promotions[0]);
+                  
+                  checkStatus = true;
+              });
+              $('#pro_02').click(function() {
+                  $('.pro-check').removeClass('show');
+                  $('#pro_check_img_02').attr('src', 'assets/img/checking.gif');
+                  $('#pro_02_check').addClass('show');
+                  
+                  for(i = 0; i < proBtn.length; i++) { 
+                    $(proBtn[i]).css('filter', 'sepia(0)');
+                  }
+                  
+                  $(this).css('filter', 'sepia(.5)');
+                  $('#promotionInput').val(promotions[1]);
+                  
+                  checkStatus = true;
+              });
+              $('#pro_03').click(function() {
+                  $('.pro-check').removeClass('show');
+                  $('#pro_check_img_03').attr('src', 'assets/img/checking.gif');
+                  $('#pro_03_check').addClass('show');
+                  
+                  for(i = 0; i < proBtn.length; i++) { 
+                    $(proBtn[i]).css('filter', 'sepia(0)');
+                  }
+                  
+                  $(this).css('filter', 'sepia(.5)');
+                  $('#promotionInput').val(promotions[2]);
+                  
+                  checkStatus = true;
+              });
+              
+              //for booking btn
+              $('#bookingBtn').click(function() {
+                  
+                  if (!checkStatus) {
+                      alert('กรุณาเลือกโปรโมชั่น');
+                  } else {
+                      $('#booking').click();
+                  }
+                  
+              });
+          });
+      </script>
+  </body>
+</html>
