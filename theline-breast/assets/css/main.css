@@ -102,8 +102,8 @@
     }
     .img-label-resp {
         width: 90%;
-        display: block;
-        margin-left: auto;
+        /*display: block;*/
+        margin-left: 5%;
         margin-right: auto;
     }
 }
