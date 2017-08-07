@@ -661,7 +661,7 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;}
         -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
         box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
     }
-    #gallery{padding-top: 100px ; padding-bottom: 0px; margin-bottom: -100px;background-image: url(../img/galaxy-bg.jpg);background-position: center;background-size: cover;background-repeat: no-repeat;background-blend-mode: screen;}
+    #gallery{padding-top: 100px ; padding-bottom: 50px;background-image: url(../img/galaxy-bg.jpg);background-position: center;background-size: cover;background-repeat: no-repeat;background-blend-mode: screen;}
     .gallery-area h1{font-size: 48px; color:#ff728d;margin: 0px; }
     .review-header {font-size: 48px;}
 }
@@ -671,7 +671,7 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;}
         -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
         box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
     }
-    #gallery{padding-top: 100px ; padding-bottom: 0px; margin-bottom: -100px;background-image: url(../img/galaxy-bg.jpg);background-position: center;background-size: cover;background-repeat: no-repeat;background-blend-mode: screen;}
+    #gallery{padding-top: 100px ; padding-bottom: 50px;background-image: url(../img/galaxy-bg.jpg);background-position: center;background-size: cover;background-repeat: no-repeat;background-blend-mode: screen;}
 }
 @media(min-width: 1280px) {
     .scroll-icon {width: 50px;display: block;margin-left: auto;margin-right: auto;filter: grayscale(1);}
@@ -680,7 +680,7 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;}
         -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
         box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
     }
-    #gallery{padding-top: 100px ; padding-bottom: 0px; margin-bottom: -100px;background-image: url(../img/galaxy-bg.jpg);background-position: center;background-size: cover;background-repeat: no-repeat;background-blend-mode: screen;}
+    #gallery{padding-top: 100px ; padding-bottom: 100px;background-image: url(../img/galaxy-bg.jpg);background-position: center;background-size: cover;background-repeat: no-repeat;background-blend-mode: screen;}
     .block-top{}
     .gallery-area{text-align: center;}
     .gallery-area h1{font-size: 36px; color:#ff728d; margin: 0px; }
@@ -1164,18 +1164,70 @@ width: 102px;}
 }
 @media(min-width:1024px) {
     .md-hidden {display: none;}
+    
 }
 @media(min-width:1280px) {
     .lg-hidden {display: none;}
     .md-hidden {display: block;}
     .sm-hidden {display: block;}
     .xs-hidden {display: block;}
+    
 }
 
 /*=========================
 	 grid CLOSE
 ===========================*/
 
+/*=========================
+	6) Promotion Start
+===========================*/
+@media(min-width:300px) {
+    .promotion {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: auto;
+    }
+    
+    .promotion-m {
+        display: block;
+    }
+    .promotion-sm {
+        display: none;
+    }
+}
+@media(min-width:768px) {
+    .promotion-m {
+        display: none;
+    }
+    .promotion-sm {
+        display: block;
+    }
+}
+@media(min-width:1024px) {
+    .promotion-sm {
+        display: block;
+    }
+}
+@media(min-width:1280px) {
+    .promotion {
+        height: 400px;
+        background-image: url(../img/promotion_01.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .promotion-sm {
+        display: none;
+    }
+}
+/*=========================
+	6) Promotion End
+===========================*/
 
 /*for model*/
 .model-hidden {display: none;}
+
+/*i {
+    color: #7e49f9;
+}*/

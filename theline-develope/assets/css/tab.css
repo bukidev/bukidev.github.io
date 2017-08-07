@@ -18,7 +18,7 @@ Licensed under MIT
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 20px;
+        margin-top: 40px;
     }
     
     .surgery-header {font-size: 25px;margin-top: 25px;}
@@ -126,10 +126,10 @@ Licensed under MIT
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 20px;
+        margin-top: 50px;
     }
     
-    .surgery-header {font-size: 36px;margin-top: 25px;}
+    .surgery-header {font-size: 36px;margin-top: 25px;color: #7e49f9;}
     
     .surgery-icon {width: 40px;margin-left: auto;margin-right: auto;}
     /* Tabs panel */
@@ -217,7 +217,7 @@ Licensed under MIT
 }
 
 @media(min-width:1024px) {
-    .surgery-header {font-size: 40px;margin-top: 25px;}
+    .surgery-header {font-size: 40px;margin-top: 10px;}
     
     .surgery-icon {width: 50px;margin-left: auto;margin-right: auto;}
     /* Tabs panel */
