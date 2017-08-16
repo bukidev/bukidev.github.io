@@ -95,25 +95,64 @@
                             <!-- start face upload photo form -->
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <h3 class="text-center">ภาพถ่ายใบหน้าเพื่อประกอบการพิจารณา</h3>
+                                    <h3 class="text-center">ตัวอย่างภาพถ่ายเพื่อประกอบการพิจารณา</h3>
                                 </div>
                             </div>
                             <hr>
+                            <!-- face photo example -->
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="col-lg-12">
+                                        <label class="control-label text-center">กรณีปรึกษาเกี่ยวกับใบหน้า</label>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <img class="img-resp" src="assets/img/face_exam_left.jpg">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <img class="img-resp" src="assets/img/face_exam_front.jpg">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <img class="img-resp" src="assets/img/face_exam_right.jpg">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <img class="img-resp" src="assets/img/face_exam_45.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="col-lg-12">
+                                        <label class="control-label text-center">กรณีปรึกษาเกี่ยวกับรูปร่าง</label>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <img class="img-resp" src="assets/img/body_exam_left.jpg">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <img class="img-resp" src="assets/img/body_exam_front.jpg">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <img class="img-resp" src="assets/img/body_exam_back.jpg">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <img class="img-resp" src="assets/img/body_exam_right.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <br>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                    <label class="control-label">ภาพหน้าตรง</label>
+                                    <label class="control-label">ภาพหน้าตรง หรือ ภาพเต็มตัวหน้าตรง</label>
                                     <div class="form-group">
                                         <input class="file" type="file" data-preview-file-type="any" data-upload-url="#">
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                    <label class="control-label">ภาพใบหน้าด้านซ้าย</label>
+                                    <label class="control-label">ภาพใบหน้าด้านซ้าย หรือ ภาพเต็มตัวด้านซ้าย</label>
                                     <div class="form-group">
                                         <input class="file" type="file" data-preview-file-type="any" data-upload-url="#">
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                    <label class="control-label">ภาพใบหน้าด้านขวา</label>
+                                    <label class="control-label">ภาพใบหน้าด้านขวา หรือ ภาพเต็มตัวด้านขวา</label>
                                     <div class="form-group">
                                         <input class="file" type="file" data-preview-file-type="any" data-upload-url="#">
                                     </div>
@@ -121,13 +160,13 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                    <label class="control-label">ภาพใบหน้ามุมเงย</label>
+                                    <label class="control-label">ภาพใบหน้ามุมเงย หรือ ภาพเต็มตัวด้านหลัง</label>
                                     <div class="form-group">
                                         <input class="file" type="file" data-preview-file-type="any" data-upload-url="#">
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                    <label class="control-label">ภาพใบหน้ามุมก้ม</label>
+                                    <label class="control-label">ภาพใบหน้ามุมก้ม (ถ้ามี)</label>
                                     <div class="form-group">
                                         <input class="file" type="file" data-preview-file-type="any" data-upload-url="#">
                                     </div>
@@ -138,7 +177,7 @@
                             <br>
                             <br>
                             <br>
-                            <!-- start body upload photo form -->
+                            <!-- start body upload photo form
                             <div class="row">
                                 <div class="col-lg-12">
                                     <h3 class="text-center">ภาพถ่ายเต็มตัวเพื่อประกอบการพิจารณา</h3>
@@ -449,8 +488,65 @@
         
         <!-- promotion section start -->
         <section class="promotion">
-            <img src="assets/img/promotion_01_m.jpg" class="img-resp promotion-m">
-            <img src="assets/img/promotion_01_sm.jpg" class="img-resp promotion-sm">
+            <!--<img src="assets/img/promotion_01_m.jpg" class="img-resp promotion-m">
+            <img src="assets/img/promotion_01_sm.jpg" class="img-resp promotion-sm">-->
+            
+            <div id="promotionSlide" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#promotionSlide" data-slide-to="0" class="active"></li>
+                <li data-target="#promotionSlide" data-slide-to="1" class=""></li>
+                <li data-target="#promotionSlide" data-slide-to="2"></li>
+                <li data-target="#promotionSlide" data-slide-to="3"></li>
+                <li data-target="#promotionSlide" data-slide-to="4"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <div>
+                      <a href="#"><img src="assets/img/promotion_05_m.jpg" class="img-resp promotion-m"></a>
+                      <a href="#"><img src="assets/img/promotion_05_sm.jpg" class="img-resp promotion-sm"></a>
+                      <a href="#"><img src="assets/img/promotion_05.jpg" class="img-resp promotion-pc"></a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div>
+                      <a href="#"><img src="assets/img/promotion_01_m.jpg" class="img-resp promotion-m"></a>
+                      <a href="#"><img src="assets/img/promotion_01_sm.jpg" class="img-resp promotion-sm"></a>
+                      <a href="#"><img src="assets/img/promotion_01.jpg" class="img-resp promotion-pc"></a>
+                  </div>
+                </div>
+                
+                <div class="item">
+                  <div>
+                      <a href="#"><img src="assets/img/promotion_04_m.jpg" class="img-resp promotion-m"></a>
+                      <a href="#"><img src="assets/img/promotion_04_sm.jpg" class="img-resp promotion-sm"></a>
+                      <a href="#"><img src="assets/img/promotion_04.jpg" class="img-resp promotion-pc"></a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div>
+                      <a href="#"><img src="assets/img/promotion_02_m.jpg" class="img-resp promotion-m"></a>
+                      <a href="#"><img src="assets/img/promotion_02_sm.jpg" class="img-resp promotion-sm"></a>
+                      <a href="#"><img src="assets/img/promotion_02.jpg" class="img-resp promotion-pc"></a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div>
+                      <a href="#"><img src="assets/img/promotion_03_m.jpg" class="img-resp promotion-m"></a>
+                      <a href="#"><img src="assets/img/promotion_03_sm.jpg" class="img-resp promotion-sm"></a>
+                      <a href="#"><img src="assets/img/promotion_03.jpg" class="img-resp promotion-pc"></a>
+                  </div>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#promotionSlide" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#promotionSlide" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
         </section>
         <!-- promotion section end -->
         

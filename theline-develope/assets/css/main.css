@@ -1188,6 +1188,9 @@ width: 102px;}
         margin: 0;
         height: auto;
     }
+    .promotion-pc {
+        display: none;
+    }
     
     .promotion-m {
         display: block;
@@ -1210,12 +1213,8 @@ width: 102px;}
     }
 }
 @media(min-width:1280px) {
-    .promotion {
-        height: 400px;
-        background-image: url(../img/promotion_01.jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    .promotion-pc {
+        display: block;
     }
     .promotion-sm {
         display: none;
