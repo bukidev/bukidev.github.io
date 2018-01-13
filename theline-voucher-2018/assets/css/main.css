@@ -127,6 +127,9 @@
     .pd-top {
         padding-top: 0%;
     }
+    .lebel-wrap {
+        margin-top: inherit;
+    }
     .margin-minus {
         margin-top: -50px;
     }
@@ -142,7 +145,7 @@
 }
 @media(min-width:1200px) {
     .pd-top {
-        padding-top: 5%;
+        padding-top: 2%;
     }
     .bg {
         background-image: url(../img/bg.jpg);
@@ -167,7 +170,6 @@
         position: fixed;
     }
     .label-wrap {
-        margin-top: 10px;
     }
     .img-resp {
         width: 100%;
