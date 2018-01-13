@@ -28,7 +28,7 @@
     }
     
     .bg {
-        background-image: url(../img/bg.jpg);
+        background-image: url(../img/bg_m.jpg);
         background-position: center bottom;
         background-size: cover;
         position: static;
@@ -131,6 +131,9 @@
 @media(min-width:1024px) {
     .pd-top {
         padding-top: 0%;
+    }
+    .bg {
+        background-image: url(../img/bg.jpg);
     }
 }
 @media(min-width:1200px) {
