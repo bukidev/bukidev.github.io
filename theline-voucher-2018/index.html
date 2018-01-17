@@ -117,6 +117,24 @@
           </div> 
       </div><!-- modal end -->
       
+      <!-- Trigger the modal with a button -->
+      <button id="openVoucherModal" type="button" style="display: none;" data-toggle="modal" data-target="#voucherModal">Open Modal</button>
+      
+      <!-- Modal -->
+      <div id="voucherModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                  <div class="modal-body" style="padding: 0;">
+                      <img class="img-resp" src="assets/img/e-vochuer-02.jpg">
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
       <!-- main content start -->
       <section class="bg">
           <div class="container">
@@ -167,7 +185,7 @@
                           </div>
                           <div class="form-group">
                               <div class="col-lg-10 col-lg-offset-1">
-                                  <button id="btn_save" class="btn btn-block btn-gradient"><h4><strong>ยืนยัน</strong></h4></button>
+                                  <a id="btn_save" class="btn btn-block btn-gradient"><h4><strong>ยืนยัน</strong></h4></a>
                               </div>
                           </div>
                           <br>
@@ -197,6 +215,7 @@
           };
           
           $(document).ready(function() {
+              $("#openVoucherModal").click();
               
               $("#btn_save").click(function(){
                 if($("#name").val() == ""){
@@ -223,6 +242,7 @@
                     alert("กรุณากดยินยอมให้ใช้ข้อมูลส่วนบุคคล.");
                     $("#chk_agree").focus();
                     $("#chk_agree").attr('checked', true);
+                    
                     return false;
                 }
               });
