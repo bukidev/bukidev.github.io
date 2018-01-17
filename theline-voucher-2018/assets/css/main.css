@@ -27,6 +27,12 @@
         color: #fff;
     }
     
+    .voucher-bg {
+        background-image: url(../img/voucher_bg-01.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    
     .bg {
         background-image: url(../img/bg_m.jpg);
         background-position: center bottom;

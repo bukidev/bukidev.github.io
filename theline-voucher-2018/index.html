@@ -125,8 +125,34 @@
           <div class="modal-dialog">
               <!-- Modal content-->
               <div class="modal-content">
-                  <div class="modal-body" style="padding: 0;">
-                      <img class="img-resp" src="assets/img/e-vochuer-02.jpg">
+                  <div class="modal-body voucher-bg" style="padding-bottom: 0;">
+                      <div class="row">
+                          <div class="col-xs-7">
+                              <div class="row">
+                                  <img class="img-resp" src="assets/img/voucher_model-01.png">
+                              </div>
+                          </div>
+                          <div class="col-xs-5 pd-top">
+                              <div class="row">
+                                  <div class="col-xs-5 col-xs-offset-7">
+                                      <img class="img-resp" src="assets/img/theline-logo.png">
+                                  </div>
+                              </div>
+                              <br>
+                              <div class="row">
+                                  <div class="col-xs-12">
+                                      <h3 class="pd-top">Name and Surname</h3>
+                                      <p>Code : #034654123102341</p>
+                                  </div>
+                              </div>
+                              <br>
+                              <div class="row">
+                                  <div class="col-xs-11">
+                                      <img class="img-resp" src="assets/img/voucher_text-01.png">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
                   </div>
                   <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -215,7 +241,6 @@
           };
           
           $(document).ready(function() {
-              $("#openVoucherModal").click();
               
               $("#btn_save").click(function(){
                 if($("#name").val() == ""){
@@ -245,6 +270,8 @@
                     
                     return false;
                 }
+                
+                $("#openVoucherModal").click();//--show the coupon pop up
               });
           });
       </script>
