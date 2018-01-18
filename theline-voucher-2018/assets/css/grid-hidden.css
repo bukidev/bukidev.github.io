@@ -12,8 +12,8 @@
 }
 @media(min-width:1024px) {
     .md-hidden {display: none;}
-    .voucher-model { /*display: block;*/ position: inherit; bottom: 0; left: 0; opacity: 1;width: 60%;}
-    .voucher-text { width: 40%; }
+    .voucher-model { /*display: block;*/ position: inherit; bottom: 0; left: 0; opacity: 1;width: 50%;}
+    .voucher-text { width: 50%; }
 }
 @media(min-width:1280px) {
     .lg-hidden {display: none;}
