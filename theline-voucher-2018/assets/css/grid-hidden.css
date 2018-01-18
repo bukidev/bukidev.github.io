@@ -1,12 +1,19 @@
 @media(min-width:300px) {
     .xs-hidden {display: none;}
-    img-resp {width: 100%;}
+    .img-resp {width: 100%;}
+    .voucher-model { display: inline;  position: absolute; bottom: 0;opacity: .25; width: 100%; padding-left: 15px; padding-right: 15px; float: left;}
+    .voucher-text { display: inline; width: 100%; padding-left: 15px; padding-right: 15px; float: left; position: static;}
+    
 }
 @media(min-width:768px) {
     .sm-hidden {display: none;}
+    .voucher-model { /*display: block;*/ position: relative; bottom: 0; left: 0; opacity: 1;width: 60%;}
+    .voucher-text { width: 40%; }
 }
 @media(min-width:1024px) {
     .md-hidden {display: none;}
+    .voucher-model { /*display: block;*/ position: inherit; bottom: 0; left: 0; opacity: 1;width: 60%;}
+    .voucher-text { width: 40%; }
 }
 @media(min-width:1280px) {
     .lg-hidden {display: none;}
