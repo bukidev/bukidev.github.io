@@ -3,7 +3,6 @@
     .img-resp {width: 100%;}
     .voucher-model { display: inline;  position: absolute; bottom: 0;opacity: .25; width: 100%; padding-left: 15px; padding-right: 15px; float: left;}
     .voucher-text { display: inline; width: 100%; padding-left: 15px; padding-right: 15px; float: left; position: static;}
-    
 }
 @media(min-width:768px) {
     .sm-hidden {display: none;}
