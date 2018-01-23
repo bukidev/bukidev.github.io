@@ -26,6 +26,8 @@
     <!-- END HEAD -->
 
     <body id="body" data-spy="scroll" data-target=".header">
+        
+        <div id="app">
 
         <!--========== HEADER ==========-->
         <header class="header navbar-fixed-top">
@@ -58,6 +60,9 @@
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#experience">Experience</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Work</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" v-on:click="changeLang(en)">en</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" v-on:click="changeLang(th)">th</a></li>
                             </ul>
                         </div>
                     </div>
@@ -69,7 +74,7 @@
         <!--========== END HEADER ==========-->
 
         <!--========== SLIDER ==========-->
-        <div class="promo-block parallax-window" data-parallax="scroll" data-image-src="assets/img/1920x1080/01.jpg">
+        <div class="promo-block parallax-window" data-parallax="scroll" data-image-src="..assets/img/1920x1080/01.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
@@ -475,6 +480,8 @@
 
         <!-- Back To Top -->
         <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+            
+        </div>
 
         <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
         <!-- CORE PLUGINS -->
@@ -497,6 +504,40 @@
         <script src="assets/js/components/progress-bar.min.js" type="text/javascript"></script>
         <script src="assets/js/components/masonry.min.js" type="text/javascript"></script>
         <script src="assets/js/components/wow.min.js" type="text/javascript"></script>
+        
+        <script src="assets/js/vue.min.js"></script>
+        <script src="assets/js/components/langpack/en.js"></script>
+        <script>
+
+
+            var th = {
+                header: '1 Day Breast Surgery',
+                subhead: 'การเสริมหน้าอกแบบเจ็บน้อยจบในเวลาแค่ 1 วัน โดยไม่ต้องนอนพักฟื้นที่โรงพยาบาลข้ามคืน',
+                t1: 'ทำไมต้องศัลยกรรมหน้าอกกับ BongBong?',
+                t2: 'ศัลยแพทย์เกาหลีของ BongBong มีความเชี่ยวชาญและประสบการณ์สูง เอื้อให้สามารถผ่าตัดแบบ Oneday Breast Surgery หรือ การเสริมหน้าอกแบบเจ็บน้อยจบได้ในเวลาแค่ 1 วัน โดยไม่ต้องนอนพักฟื้นที่โรงพยาบาลข้ามคืน'
+            }
+
+
+            var app = new Vue({
+              el: '#app',
+              data: {
+                  lang: th
+              },
+                methods: {}
+
+                /*methods: {
+                    changeLang: function (lang) {
+                        lang = en;
+                    }
+                }*/
+
+            })
+
+            function changeLang(langCode) {
+                console.log ("Change Language! to");
+                app.lang = langCode
+            } 
+        </script>
 
     </body>
 </html>
