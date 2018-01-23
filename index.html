@@ -55,12 +55,11 @@
                     <div class="collapse navbar-collapse nav-collapse">
                         <div class="menu-container">
                             <ul class="nav navbar-nav navbar-nav-right">
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">About</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#experience">Experience</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Work</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">{{ lang.navbar[0] }}</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">{{ lang.navbar[1] }}</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#experience">{{ lang.navbar[2] }}</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">{{ lang.navbar[3] }}</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">{{ lang.navbar[4] }}</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" v-on:click="changeLang(en)">en</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" v-on:click="changeLang(th)">th</a></li>
                             </ul>
@@ -103,7 +102,7 @@
                 <div class="row">
                     <div class="col-sm-3 sm-margin-b-30">
                         <div class="text-right sm-text-left">
-                            <h2 class="margin-b-0">Intro</h2>
+                            <h2 class="margin-b-0">{{ lang.head1 }}</h2>
                             <p>What I am all about.</p>
                         </div>
                     </div>
@@ -507,18 +506,8 @@
         
         <script src="assets/js/vue.min.js"></script>
         <script src="assets/js/components/langpack/en.js"></script>
+        <script src="assets/js/components/langpack/th.js"></script>
         <script>
-
-
-            var th = {
-                name: 'ชัยนุวัตร',
-                surname: 'ช่วยคงทอง',
-                job: 'Web Designer & Front-end Developer',
-                subhead: 'การเสริมหน้าอกแบบเจ็บน้อยจบในเวลาแค่ 1 วัน โดยไม่ต้องนอนพักฟื้นที่โรงพยาบาลข้ามคืน',
-                t1: 'ทำไมต้องศัลยกรรมหน้าอกกับ BongBong?',
-                t2: 'ศัลยแพทย์เกาหลีของ BongBong มีความเชี่ยวชาญและประสบการณ์สูง เอื้อให้สามารถผ่าตัดแบบ Oneday Breast Surgery หรือ การเสริมหน้าอกแบบเจ็บน้อยจบได้ในเวลาแค่ 1 วัน โดยไม่ต้องนอนพักฟื้นที่โรงพยาบาลข้ามคืน'
-            }
-
 
             var app = new Vue({
               el: '#app',
