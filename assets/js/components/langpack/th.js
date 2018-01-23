@@ -28,6 +28,12 @@ var th = {
         }
     },
     
+    works: {
+        heading: 'ผลงาน',
+        subhead: '',
+        
+    },
+    
     contact: {
         heading: 'ติดต่อ',
         subhead: '',
