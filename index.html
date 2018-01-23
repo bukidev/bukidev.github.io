@@ -60,8 +60,8 @@
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#experience">{{ lang.navbar[2] }}</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">{{ lang.navbar[3] }}</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">{{ lang.navbar[4] }}</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" v-on:click="changeLang(en)">en</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" v-on:click="changeLang(th)">th</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#" v-on:click="alert('Sorry! English version will comming, soon.')">en</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#" v-on:click="changeLang(th)">th</a></li>
                             </ul>
                         </div>
                     </div>
@@ -387,13 +387,13 @@
                     <div class="row">
                         <div class="col-sm-3 sm-margin-b-30">
                             <div class="text-right sm-text-left">
-                                <h2 class="margin-b-0">{{ lang.contacts.heading }}</h2>
-                                <p>{{ lang.contacts.subhead }}</p>
+                                <h2 class="margin-b-0">{{ lang.contact.heading }}</h2>
+                                <p>{{ lang.contact.subhead }}</p>
                             </div>
                         </div>
-                        <div class="col-sm-8 col-sm-offset-1" v-for="(value, key, index) in lang.contacts.detail">
+                        <div class="col-sm-8 col-sm-offset-1">
                             <div class="row">
-                                <div class="col-md-3 col-xs-6 md-margin-b-30">
+                                <div class="col-md-3 col-xs-6 md-margin-b-30" v-for="(value, key, index) in lang.contact.detail">
                                     <h5>{{ key }}</h5>
                                     <a href="http://keenthemes.com/">{{ value }}</a>
                                 </div>
@@ -415,7 +415,7 @@
                         <img class="footer-logo" src="assets/img/logo-dark.png" alt="Aircv Logo">
                     </div>
                     <div class="col-xs-6 text-right sm-text-left">
-                        <p class="margin-b-0"><a class="fweight-700" href="http://keenthemes.com/preview/aircv/">Aircv</a> Theme Powered by: <a class="fweight-700" href="http://www.keenthemes.com/">KeenThemes.com</a></p>
+                        <p class="margin-b-0">Version: {{ v }}</p>
                     </div>
                 </div>
                 <!--// end row -->
@@ -458,7 +458,8 @@
             var app = new Vue({
               el: '#app',
               data: {
-                  lang: th
+                  lang: th,
+                  v: '0.0.9'
               },
                 methods: {}
 

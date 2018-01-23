@@ -22,13 +22,13 @@ var th = {
         heading: 'ประสบการณ์',
         subhead: 'รายละเอียดการทำงาน',
         company: {
-            'บริษัท บ้านผู้นำ จำกัด': 'asdkjfsalkdjf;lsakjf;lsakdfj;slafj',
+            'บริษัท บ้านผู้น กรุ๊ป จำกัด': 'asdkjfsalkdjf;lsakjf;lsakdfj;slafj',
             'บริษัท เอกลักษณ์อินเตอร์ปรินท์ จำกัด': 'asdkjfsalkdjf;lsakjf;lsakdfj;slafj',
             'บริษัท เอชีย บิวตี้ เซ็นเตอร์ จำกัด': 'asdkjfsalkdjf;lsakjf;lsakdfj;slafj'
         }
     },
     
-    contacts: {
+    contact: {
         heading: 'ติดต่อ',
         subhead: '',
         detail: {
