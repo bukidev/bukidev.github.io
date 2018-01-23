@@ -5,6 +5,37 @@ var th = {
     job: 'Graphic & Web Designer',
     head1: 'แนะนำตัว',
     subhead1: '',
-    t1: 'ทำไมต้องศัลยกรรมหน้าอกกับ BongBong?',
-    t2: 'ศัลยแพทย์เกาหลีของ BongBong มีความเชี่ยวชาญและประสบการณ์สูง เอื้อให้สามารถผ่าตัดแบบ Oneday Breast Surgery หรือ การเสริมหน้าอกแบบเจ็บน้อยจบได้ในเวลาแค่ 1 วัน โดยไม่ต้องนอนพักฟื้นที่โรงพยาบาลข้ามคืน'
+    
+    
+    skills: {
+        Photoshop: 90,
+        Illustrator: 90,
+        Indesign: 80,
+        AfterEffect: 75,
+        PremierPro: 70,
+        HTML5: 90,
+        CSS3: 90,
+        Javascript: 80
+    },
+    
+    exps: {
+        heading: 'ประสบการณ์',
+        subhead: 'รายละเอียดการทำงาน',
+        company: {
+            'บริษัท บ้านผู้นำ จำกัด': 'asdkjfsalkdjf;lsakjf;lsakdfj;slafj',
+            'บริษัท เอกลักษณ์อินเตอร์ปรินท์ จำกัด': 'asdkjfsalkdjf;lsakjf;lsakdfj;slafj',
+            'บริษัท เอชีย บิวตี้ เซ็นเตอร์ จำกัด': 'asdkjfsalkdjf;lsakjf;lsakdfj;slafj'
+        }
+    },
+    
+    contacts: {
+        heading: 'ติดต่อ',
+        subhead: '',
+        detail: {
+            'ที่อยู่': 'กรุงเทพฯ, ประเทศไทย',
+            โทรศัพท์: '08-5365-8949',
+            อีเมล: 'dilstudio29@gmail.com',
+            ไลน์: ''
+        }
+    }
 };
