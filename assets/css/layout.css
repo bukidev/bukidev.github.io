@@ -321,7 +321,7 @@ fieldset[disabled] .btn-theme {
 
 .promo-block .promo-block-title {
   font-size: 70px;
-  color: #fff;
+  color: dimgray;
   line-height: 1;
 }
 
@@ -333,7 +333,7 @@ fieldset[disabled] .btn-theme {
 
 .promo-block .promo-block-text {
   font-size: 25px;
-  color: #fff;
+  color: darkgray;
 }
 
 .promo-block .promo-block-divider {

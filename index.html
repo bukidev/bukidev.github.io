@@ -10,7 +10,7 @@
         <meta content="" name="author"/>
 
         <!-- GLOBAL MANDATORY STYLES -->
-        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Kanit:200,400" rel="stylesheet">
         <link href="assets/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css"/>
         <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/preload.css" rel="stylesheet" type="text/css"/>
@@ -23,6 +23,11 @@
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico"/>
+        <style>
+            .header .nav-item-child, .link, a, body, em, h1, h2, h3, h4, h5, h6, li, li a, p, span {
+                font-family: 'Kanit', sans-serif;
+            }
+        </style>
     </head>
     <!-- END HEAD -->
 
@@ -49,8 +54,9 @@
                         <!-- Logo -->
                         <div class="logo">
                             <a class="logo-wrap" href="#body">
-                                <img class="logo-img logo-img-main" src="assets/img/logo.png" alt="Asentus Logo">
-                                <img class="logo-img logo-img-active" src="assets/img/logo-dark.png" alt="Asentus Logo">
+                                <h1>{{ logo }}</h1>
+                                <!--<img class="logo-img logo-img-main" src="assets/img/logo.png" alt="Asentus Logo">
+                                <img class="logo-img logo-img-active" src="assets/img/logo-dark.png" alt="Asentus Logo">-->
                             </a>
                         </div>
                         <!-- End Logo -->
@@ -173,8 +179,8 @@
                 <div class="row">
                     <div class="col-sm-3 sm-margin-b-30">
                         <div class="text-right sm-text-left">
-                            <h2 class="margin-b-0">Works</h2>
-                            <p>I build the real value.</p>
+                            <h2 class="margin-b-0">{{ lang.works.heading }}</h2>
+                            <p>{{ lang.works.subhead }}</p>
                         </div>
                     </div>
                     <div class="col-sm-8 col-sm-offset-1">
@@ -464,7 +470,8 @@
               el: '#app',
               data: {
                   lang: th,
-                  v: '0.0.9'
+                  v: '0.0.9',
+                  logo: 'BukiDev'
               },
                 methods: {}
 
