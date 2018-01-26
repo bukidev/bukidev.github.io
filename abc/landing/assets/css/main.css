@@ -14,9 +14,12 @@
     width: 100%;
     height: auto;
 }
-.bg-full-1 {
-    background-image: url(../img/01/bg-full-1.png);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
+
+@media (min-width: 1px) {
+    .bg-full-1 {
+        background-image: url(../img/01/bg-full-1.png);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
