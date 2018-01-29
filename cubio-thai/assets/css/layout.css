@@ -1,12 +1,12 @@
-@charset "utf-8";
+/*@charset "utf-8";
 @import url("http://fonts.googleapis.com/earlyaccess/notosanskr.css");
 @import url("http://fonts.googleapis.com/earlyaccess/notosanssc.css");
-/* ------------------------------------------------------------
+ ------------------------------------------------------------
  * Name     : layout.css
  * Desc     : type E
  * Created  : 2015-08-13 ACUS by NaKyoung
  * Updated  :
- ------------------------------------------------------------ */
+ ------------------------------------------------------------ 
 @font-face{font-family:'NotoSanskr'; src:url('/fonts/NotoSansCJKkr-Black.otf')}
 @font-face{font-family:'NotoSans'; src:url('/fonts/NotoSans-Regular.ttf')}
 @font-face {font-family:'NanumGothic'; src: url('fonts/NanumGothic.eot');}  
@@ -21,7 +21,11 @@
 @font-face {font-family:'Noto Sans SC'; src:url('fonts/NotoSansCJKsc-Light.otf');}
 @font-face {font-family:'Noto Sans SC'; src: url('fonts/NotoSansCJKsc-Medium.otf');}  
 @font-face {font-family:'Noto Sans SC'; src:url('fonts/NotoSansCJKsc-Regular.otf');}
-@font-face {font-family:'Noto Sans SC'; src:url('fonts/NotoSansCJKsc-Thin.otf');}
+@font-face {font-family:'Noto Sans SC'; src:url('fonts/NotoSansCJKsc-Thin.otf');}*/
+
+@import url('https://fonts.googleapis.com/css?family=Kanit:200,500');
+
+h1,h2,h3,h4,h5,h6 { font-family: 'kanit', sans-serif;}
 
 /* header */
 #header{width:100%; height:120px; position:relative;}
@@ -133,6 +137,7 @@
 /* leftBox */
 #leftBox{position:relative; width:55px; float:left; height:100%; }
 #leftBox h1{min-width:210px;  min-height:60px; line-height:80px; color:#fff; font-size:20px;}
+#leftBox ul li a{color: darkgray;}
 #leftBox ul li.active{background:#fff;}
 /*
 #leftBox ul>li>ul>li{width:182px; height:23px; margin:10px 0 0 10px; font-size:12px;}
@@ -144,8 +149,8 @@
 #leftBox ul.sidemenu>li{min-height:21px; line-height: 34px;cursor:pointer; font-size:10pt;  font-weight: bold;}
 line-height: 34px; setting
 */
-#leftBox ul.sidemenu>li{min-height:21px; cursor:pointer; font-size:10pt;  font-weight: bold; width:210px; height:auto;}
-#leftBox ul.sidemenu li a{ padding-top:10px;}
+#leftBox ul.sidemenu>li{min-height:21px; cursor:pointer; font-size:10pt;  font-weight: bold; width:210px; height:40px; border-bottom: 1px solid #ececec; padding-left: 20px; padding-top: 15px;}
+#leftBox ul.sidemenu li a{ padding-top:10px; }
 
 #leftBox ul.sidemenu_v2 li{height:36px; padding:0 0 0 18px;}
 

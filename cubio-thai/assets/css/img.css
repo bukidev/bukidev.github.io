@@ -1,0 +1,80 @@
+#img_id1{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    z-index: 99;
+    margin-top: 366px;
+    margin-left: 244px;
+}
+#img_id2{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    z-index: 99;
+    margin-top: 366px;
+    margin-left: 690px;
+}
+#img_id3{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    z-index: 99;
+    margin-top: 2130px;
+    margin-left: 234px;
+}
+#img_id4{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    z-index: 99;
+    margin-top: 2028px;
+    margin-left: 273px;
+}
+#img_id5{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    z-index: 99;
+    margin-top: 293px;
+    margin-left: 249px;
+}
+
+#img_cable1{
+    position: absolute;
+    width: 130px;
+    height: 50px;
+    z-index: 99;
+    margin-top: 3870px;
+    margin-left: 228px;
+	
+}
+
+#img_cable2{
+    position: absolute;
+    width: 130px;
+    height: 50px;
+    z-index: 99;
+    margin-top: 3870px;
+    margin-left: 368px;
+	
+}
+
+#img_teflon1{
+    position: absolute;
+    width: 130px;
+    height: 50px;
+    z-index: 99;
+    margin-top: 3335px;
+    margin-left: 228px;
+	
+}
+
+#img_teflon2{
+    position: absolute;
+    width: 130px;
+    height: 50px;
+    z-index: 99;
+    margin-top: 3335px;
+    margin-left:368px;
+	
+}

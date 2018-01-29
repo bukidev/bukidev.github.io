@@ -1,0 +1,41 @@
+#con{
+		padding:60px 40px 100px 40px; width:890px;	height:400px;				background:url('http://admin.acus.kr/secure_zone/upFile/cubebio/editor/20171443213_editor_image.jpg');
+	}
+	#con .tit{
+		font-family: NanumBarunGothic;
+		font-size: 23px;
+		/*text-transform: uppercase;*/
+		color: #000;
+		font-weight:400;
+		margin:0;
+		text-align:left;
+	}
+	#con .tit_s{
+		font-family: Arial;
+		font-size: 12px;
+		text-transform: uppercase;
+		color: #cecece;
+		margin-left:10px;
+	}
+
+	#con .con_box{
+		margin-top:30px;
+		font-family: NanumBarunGothic;
+		font-size: 16px;
+		color: #000;
+		line-height:27px;
+		text-align:justify;
+		font-weight:400;
+	}
+	#con .con_box ul{margin:0; padding:0;}
+	#con .con_box ul li{
+		width:290px;
+		margin-top:135px;
+		float:left;
+		text-align:center; list-style:none;
+		margin-left:5px;
+		line-height:30px;
+	}
+	#con .con_box ul li:nth-child(1){margin-left:5px;}
+	#con .con_box ul li:nth-child(3){margin-top:150px;}
+	#con .con_box ul li span{color:#5674b9; font-size:22px;}

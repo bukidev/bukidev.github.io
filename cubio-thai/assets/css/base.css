@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/earlyaccess/notosanskr.css");
+/*@import url("http://fonts.googleapis.com/earlyaccess/notosanskr.css");
 @import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
 @import url("https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css"); 
 @font-face {font-family:'NanumGothic'; src: url('fonts/NanumGothic.eot');}  
@@ -11,14 +11,8 @@
 @font-face {font-family:'Noto Sans SC'; src:url('fonts/NotoSansCJKsc-Light.otf');}
 @font-face {font-family:'Noto Sans SC'; src: url('fonts/NotoSansCJKsc-Medium.otf');}  
 @font-face {font-family:'Noto Sans SC'; src:url('fonts/NotoSansCJKsc-Regular.otf');}
-@font-face {font-family:'Noto Sans SC'; src:url('fonts/NotoSansCJKsc-Thin.otf');}
+@font-face {font-family:'Noto Sans SC'; src:url('fonts/NotoSansCJKsc-Thin.otf');}*/
 
-@font-face {
-		font-family: 'NanumBarunGothic';
-		src: url('fonts/NanumBarunGothic.eot');
-		src: local(※), url('fonts/NanumBarunGothic.woff') format('woff');
-	}
-@import(https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css);
 
 /* default */
 *{margin:0; padding:0;/* font-family: Dotum, Sans-serif;*/} 
@@ -36,7 +30,7 @@ textarea {font-size:12px;color:#777;padding:5px;}
 /* 하이퍼링크 */
 a,a:link, a:visited, a:active,a:hover, a:active, a:focus{text-decoration:none; cursor:pointer;}
 
-body{}
+body{ font-family: 'Kanit', sans-serif !important; }
 
 
 

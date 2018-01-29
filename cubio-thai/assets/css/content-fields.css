@@ -1,0 +1,137 @@
+#con{
+		padding:60px 40px 100px 40px; width:890px; height:800px;						background:url('http://admin.acus.kr/secure_zone/upFile/cubebio_en/editor/20172153111_editor_image.jpg')no-repeat;
+	}
+
+	#con .tit{
+		font-family: NanumBarunGothic;
+		font-size: 23px;
+		/*text-transform: uppercase;*/
+		color: #000;
+		font-weight:400;
+		margin:0;
+		text-align:left;
+	}
+
+	/* 콘텐츠영역 */
+	#con .con_box{margin-top:40px;}
+
+	#con .con_box .txt{
+		font-family: NanumBarunGothic;
+		font-size: 14px;
+		color: #000;
+		text-align:center;
+		font-weight:600;
+		line-height:18px;
+	}
+
+	/*암마커연구*/
+	#con .con_txt1{
+		font-family: NanumBarunGothic;
+		font-size: 14px;
+		color: #000;
+		line-height:24px;
+		letter-spacing:-0.21px;
+		position:absolute;
+		margin:13px 0 0 50px;
+	}
+	
+	#con .con_txt1 p{
+		font-size:16px;
+		font-weight:400;
+		width: 210px;
+		height: 25px;
+		-webkit-border-radius: 12px 13px 13px 12px/12px 12px 13px 13px;
+		-moz-border-radius: 12px 13px 13px 12px/12px 12px 13px 13px;
+		border-radius: 12px 13px 13px 12px/12px 12px 13px 13px;
+		background-color: #7aa8e4;
+		text-align:center;
+		color:#fff;
+	}
+
+	#con .con_txt1 span{
+		position:relative;
+		float:left;
+		padding-left:20px;
+		margin-top:10px;
+		text-align:left;
+	}
+
+	/*암진단kit*/
+	#con .con_txt2{
+		font-family: NanumBarunGothic;
+		font-size: 14px;
+		color: #000;
+		line-height:24px;
+		letter-spacing:-0.21px;
+		position:absolute;
+		margin:416px 0 0 300px;
+	}
+
+	#con .con_txt2 p{
+		font-size:16px;
+		font-weight:400;
+		width: 170px;
+		height: 25px;
+		-webkit-border-radius: 12px 13px 13px 12px/12px 12px 13px 13px;
+		-moz-border-radius: 12px 13px 13px 12px/12px 12px 13px 13px;
+		border-radius: 12px 13px 13px 12px/12px 12px 13px 13px;
+		background-color: #5674b9;
+		text-align:center;
+		color:#fff;
+	}
+
+	#con .con_txt2 span{
+		position:relative;
+		float:left;
+		padding-left:20px;
+		margin-top:10px;
+		text-align:left;
+	}
+
+	/* 데이터사업 */
+	#con .con_txt3{
+		font-family: NanumBarunGothic;
+		font-size: 14px;
+		color: #000;
+		line-height:24px;
+		letter-spacing:-0.21px;
+		position:absolute;
+		margin:75px 0 0 620px;
+	}
+
+	#con .con_txt3 p{
+		font-size:16px;
+		font-weight:400;
+		width: 180px;
+		height: 25px;
+		-webkit-border-radius: 12px 13px 13px 12px/12px 12px 13px 13px;
+		-moz-border-radius: 12px 13px 13px 12px/12px 12px 13px 13px;
+		border-radius: 12px 13px 13px 12px/12px 12px 13px 13px;
+		background-color: #5674b9;
+		text-align:center;
+		color:#fff;
+	}
+
+	#con .con_txt3 span{
+		position:relative;
+		float:left;
+		padding-left:20px;
+		margin-top:10px;
+		text-align:left;
+	}
+	
+	/* 맨아래 박스 */
+	.text_box{
+		width:690px;
+		border:3px solid #5674b9;
+		position:absolute;
+		text-align:center;
+		margin:580px 0 0 100px;
+		padding:20px 0;
+		font-family:nanumbarungothic;
+		font-size:16px;
+		line-height:27px;
+	}
+
+	.text_box span{background:#5674b9; color:#fff; padding:3px; font-weight:600;}
+	/* 맨아래 박스// */
