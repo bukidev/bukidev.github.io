@@ -139,16 +139,12 @@ h1,h2,h3,h4,h5,h6 { font-family: 'kanit', sans-serif;}
 #leftBox h1{min-width:210px;  min-height:60px; line-height:80px; color:#fff; font-size:20px;}
 #leftBox ul li a{color: darkgray;}
 #leftBox ul li.active{background:#fff;}
-/*
-#leftBox ul>li>ul>li{width:182px; height:23px; margin:10px 0 0 10px; font-size:12px;}
-*/
+
+
 /*#leftBox ul>li>ul>li{width:182px; height:34px; margin-left:auto; }
 #leftBox ul>li>ul>li:last-child{padding-bottom:0;}
 #leftBox ul.sidemenu li.active a{color:#000;}*/
-/*
-#leftBox ul.sidemenu>li{min-height:21px; line-height: 34px;cursor:pointer; font-size:10pt;  font-weight: bold;}
-line-height: 34px; setting
-*/
+
 #leftBox ul.sidemenu>li{min-height:21px; cursor:pointer; font-size:10pt;  font-weight: bold; width:210px; height:40px; border-bottom: 1px solid #ececec; padding-left: 20px; padding-top: 15px;}
 #leftBox ul.sidemenu li a{ padding-top:10px; }
 
