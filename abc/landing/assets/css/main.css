@@ -23,3 +23,43 @@
         background-size: contain;
     }
 }
+
+@media (min-width: 1px) {
+    .footer {
+        position: fixed;
+        bottom: -428px;
+        left: 0;
+        width: 100%;
+        transition: all .5s;
+    }
+}
+@media (min-width: 1110px) {
+    .footer {
+        position: fixed;
+        bottom: -405px;
+        left: 0;
+        width: 100%;
+        transition: all .5s;
+    }
+}
+
+
+.footer.open {
+    bottom: 0;
+}
+
+.bottom-btn {
+    width: 300px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+.form-content {
+    width: 100%;
+    padding: 20px;
+}
+
+.bg-white {
+    background: white;
+}
