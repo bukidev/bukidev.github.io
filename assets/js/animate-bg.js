@@ -3,7 +3,7 @@ var canvas = document.getElementById('nokey'),
    can_h = parseInt(canvas.getAttribute('height')),
    ctx = canvas.getContext('2d');
 
-// console.log(typeof can_w);
+console.log(typeof can_w);
 
 var ball = {
       x: 0,
@@ -21,7 +21,7 @@ var ball = {
    },
    R = 3,
    balls = [],
-   alpha_f = 0.03,
+   alpha_f = 0.1,
    alpha_phase = 0,
     
 // Line

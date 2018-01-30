@@ -11,7 +11,6 @@ html, body{
     overflow-y: auto;
 }
 canvas{
-    background-color: #eee;
+    background-color: #fff;
     position: absolute;
-    top: 0;
 }

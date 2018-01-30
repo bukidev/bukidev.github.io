@@ -30,6 +30,7 @@
                 font-family: 'Kanit', sans-serif;
             }
             .btn { border-radius: 0px; }
+            .bg-color-sky-light { background: #ececec !important; }
             .bg-color-base {
                 background: #1e5799 !important; /* Old browsers */
                 background: -moz-linear-gradient(left, #1e5799 0%, #ff89c6 100%) !important; /* FF3.6-15 */
@@ -44,7 +45,7 @@
     <body id="body" data-spy="scroll" data-target=".header">
         
         <!-- Preload Start here -->
-        <!--<div id="preload" class="preload-overlay top preload-bg active"></div>-->
+        <div id="preload" class="preload-overlay top preload-bg active"></div>
         <!-- Preload End here -->
         
         <div id="app">
@@ -112,8 +113,8 @@
                             <!--<li><a href="https://twitter.com/keenthemes" class="social-icons"><i class="icon-social-facebook"></i></a></li>
                             <li><a href="https://twitter.com/keenthemes" class="social-icons"><i class="icon-social-twitter"></i></a></li>
                             <li><a href="https://dribbble.com/keenthemes" class="social-icons"><i class="icon-social-dribbble"></i></a></li>-->
-                            <li><a href="https://www.behance.net/chainuwat" class="social-icons"><i class="icon-social-behance"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/chainuwat-chuaykongtong-a92a73137/" class="social-icons"><i class="icon-social-linkedin"></i></a></li>
+                            <!--<li><a href="https://www.behance.net/chainuwat" class="social-icons"><i class="icon-social-behance"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/chainuwat-chuaykongtong-a92a73137/" class="social-icons"><i class="icon-social-linkedin"></i></a></li>-->
                         </ul>
                     </div>
                 </div>
@@ -166,7 +167,7 @@
                             </div>
                         </div>
                         <div class="col-sm-8 col-sm-offset-1">
-                            <div class="row row-space-2 margin-b-4">
+                            <div class="row row-space-2 margin-b-2">
                                 <div class="col-md-12 md-margin-b-1" v-for="(value, key, index) in lang.exps.company">
                                     <div class="service" data-height="height">
                                         <div class="service-element">
@@ -178,6 +179,7 @@
                                             <p class="margin-b-3">{{ value[1] }}</p>
                                         </div>  
                                     </div>
+                                    <hr style="background: #ececec;">
                                 </div>
                             </div>
                             <!--// end row -->
@@ -466,7 +468,7 @@
         <script src="assets/vendor/jquery.back-to-top.js" type="text/javascript"></script>
         <script src="assets/vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
         <script src="assets/vendor/jquery.wow.min.js" type="text/javascript"></script>
-        <script src="assets/vendor/jquery.parallax.min.js" type="text/javascript"></script>
+        <!--<script src="assets/vendor/jquery.parallax.min.js" type="text/javascript"></script>-->
         <script src="assets/vendor/jquery.appear.js" type="text/javascript"></script>
         <script src="assets/vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
         <script src="assets/vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
