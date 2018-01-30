@@ -320,18 +320,12 @@
     </head>
 
     <body style="overflow-x: hidden; overflow-y: auto; font-family: nanumgothic !important;">
-        
         <div>
-                
-                
-                <!-- ////////////////// Roll Area Start ////////////////// -->
+            <!-- ////////////////// Roll Area Start ////////////////// -->
             <div id="roll"></div>
-                <!-- ////////////////// Roll Area End ////////////////// -->
+            <!-- ////////////////// Roll Area End ////////////////// -->
             <div id="wrapper_main" style="background: url(assets/img/main_bg_cubebio.jpg) no-repeat;background-position: 50% 0%;; background-size: px  px">
-                        
-            
-                
-            <script>
+                <script>
             var size = "";
             $(window).resize(function(){
                 size = window.innerWidth;
@@ -586,239 +580,228 @@
                 }
             });
             </script>
-
-
-
-
-
-            <div id="header" style="z-index:9999999999;background-color:;"><!-- 헤더 선색 조절 -->
-
-
-
-
-
-                <div class="header_top" style="border-bottom:1px solid #e1e1e1;"><!-- 맨위 선 -->
-                    <div style="width:1200px; margin:0 auto;height:32px">
-                        <!-- top navbar -->
-                        <ul class="top_gnb">
-                            <li><a href="index.html" style="color:#000000; margin-right:10px;">หน้าหลัก</a></li>
-                            <li><a href="view/login.html" style="color:#000000; margin-right:10px;">ลงชื่อเข้าใช้</a></li>
-                            <li><a href="view/join.html" style="color:#000000; margin-right:10px;">สมัครสมาชิก</a></li>
-                            <li style="margin-right:10px;">
-                                <a href="view/sitemap.html" style="color:#000;">แผนผังเว็บไซต์</a>
-                            </li>
-                            <li style="margin-right:10px;"><a href="view/contact.html" style="color:#000000;">ติดต่อเรา</a></li>
-                            <li>
-                                <script>
-                                function version(v){
-                                    if(v == "KO"){
-                                        location.replace("http://cubebio.co.kr/");
-                                    }else if(v == "CH"){
-                                        location.replace("http://ch.cubebio.co.kr/");
+                <div id="header" style="z-index:9999999999;background-color:;">
+                    <div class="header_top" style="border-bottom:1px solid #e1e1e1;">
+                        <div style="width:1200px; margin:0 auto;height:32px">
+                            <!-- top navbar -->
+                            <ul class="top_gnb">
+                                <li><a href="index.html" style="color:#000000; margin-right:10px;">หน้าหลัก</a></li>
+                                <li><a href="view/login.html" style="color:#000000; margin-right:10px;">ลงชื่อเข้าใช้</a></li>
+                                <li><a href="view/join.html" style="color:#000000; margin-right:10px;">สมัครสมาชิก</a></li>
+                                <li style="margin-right:10px;">
+                                    <a href="view/sitemap.html" style="color:#000;">แผนผังเว็บไซต์</a>
+                                </li>
+                                <li style="margin-right:10px;"><a href="view/contact.html" style="color:#000000;">ติดต่อเรา</a></li>
+                                <li>
+                                    <script>
+                                    function version(v){
+                                        if(v == "KO"){
+                                            location.replace("http://cubebio.co.kr/");
+                                        }else if(v == "CH"){
+                                            location.replace("http://ch.cubebio.co.kr/");
+                                        }
                                     }
-                                }
-                                </script>
-                                <select style="margin-top:-5px;" onchange="version(this.value);">
-                                    <option>Language</option>
-                                    <option value="KO">Korean</option>
-                                    <option value="CH">China</option>
-                                </select>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-
-
-                <!-- gnb menu -->
-                <!-- bottom navbar -->
-                <div class="header">
-                    <div style="clear:both;">
-                        <div class="logo">
-                            <div>
-                                <a href="index.html"><img src="./assets/img/1486962982646624.png" alt="logo"></a>
-                            </div>
-                        </div>
-                        <div id="gnb_menu">
-                            <ul style="margin-top: -14px;">
-
-                                <li class="gnb_top_menu" id="number2" style="padding: 52px 0px 27px; float: left; margin: -40px 0px; font-size: 16px; border-right: 1px solid rgb(225, 225, 225); font-family: nanumbarungothic; border-left: 1px solid rgb(225, 225, 225);">
-                                    <a href="view/greeting.html" target="_self" style="color: rgb(0, 0, 0);"> <b>เกี่ยวกับเรา</b></a>
-                                </li>
-                                <li class="gnb_top_menu" id="number3" style="padding: 52px 0px 27px; float: left; margin: -40px 0px; font-size: 16px; border-right: 1px solid rgb(225, 225, 225); font-family: nanumbarungothic;">
-                                    <a href="view/diagnosis-kit.html" target="_self" style="color: rgb(0, 0, 0);"> <b>แนะนำสินค้า</b></a>
-                                </li>
-                                <li class="gnb_top_menu" id="number4" style="padding: 52px 0px 27px; float: left; margin: -40px 0px; font-size: 16px; border-right: 1px solid rgb(225, 225, 225); font-family: nanumbarungothic;">
-                                    <a href="view/research.html" target="_self" style="color: rgb(0, 0, 0);"> <b>วิจัยและพัฒนา</b></a>
-                                </li>
-                                <li class="gnb_top_menu" id="number5" style="padding: 52px 0px 27px; float: left; margin: -40px 0px; font-size: 16px; border-right: 1px solid rgb(225, 225, 225); font-family: nanumbarungothic;">
-                                    <a href="view/news.html" target="_self" style="color: rgb(0, 0, 0);"> <b>ประชาสัมพันธ์</b></a>
-                                </li>
-                                <li class="gnb_top_menu" id="number6" style="padding: 52px 0px 27px; float: left; margin: -40px 0px; font-size: 16px; border-right: 1px solid rgb(225, 225, 225); font-family: nanumbarungothic;">
-                                    <a href="view/news.html" target="_self" style="color: rgb(0, 0, 0);"> <b>ข่าวสาร</b></a>
-                                </li>
-                                <li class="gnb_top_menu" id="number7" style="padding: 52px 0px 27px; float: left; margin: -40px 0px; font-size: 16px; border-right: 1px solid rgb(225, 225, 225); font-family: nanumbarungothic;">
-                                    <a href="view/qa.html" target="_self" style="color: rgb(0, 0, 0);"> <b>บริการลูกค้า</b></a>
+                                    </script>
+                                    <select style="margin-top:-5px;" onchange="version(this.value);">
+                                        <option>Language</option>
+                                        <option value="KO">Korean</option>
+                                        <option value="CH">China</option>
+                                    </select>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                 </div>
-                <!-- sub navbar -->
-                <div id="gnb_sub_menu" class="gnb_ab" style="z-index:9999999999;padding-top:10px; display:none ">
-                   <div id="gnb_menu_sub" style="">
-                        <ul id="sub_menu_ul5">
-                            <li class="sub_menu_text_hover" style=""><a href="view/qa.html" target="_self">Q&amp;A</a></li>
-                            <li class="sub_menu_text_hover" style=""><a href="view/faq.html" target="_self">FAQ</a></li>
-                            <li class="sub_menu_text_hover" style=""><a href="view/contact.html" target="_self">ติดต่อเรา</a></li>
-                        </ul>
-                        <ul id="sub_menu_ul4">
-                            <li class="sub_menu_text_hover" style=""><a href="view/reqruit.html" target="_self">Recruit information</a></li>
-                        </ul>
-                        <ul id="sub_menu_ul3">
-                            <li class="sub_menu_text_hover" style=""><a href="view/news.html" target="_self">ข่าวสารจาก CUBEBIO</a></li>
-                            <li class="sub_menu_text_hover" style=""><a href="view/press.html" target="_self">ข่าวจากสื่อมวลชน</a></li>
-                            <li class="sub_menu_text_hover" style=""><a href="view/showroom.html" target="_self">โชว์รูม</a></li>
-                            <li class="sub_menu_text_hover" style=""><a href="view/division.html" target="_self">แนะนำสำนักงานสาขา</a></li>
-                        </ul>
-                        <ul id="sub_menu_ul2">
-                            <li class="sub_menu_text_hover" style=""><a href="view/research.html" target="_self">วิจัยและพัฒนา</a></li>
-                        </ul>
-                        <ul id="sub_menu_ul1">
-                            <li class="sub_menu_text_hover" style=""><a href="view/diagnosis-kit.html" target="_self">ชุดตรวจโรคมะเร็ง</a></li>
-                        </ul>
-                        <ul id="sub_menu_ul0">
-                            <li class="sub_menu_text_hover" style=""><a href="view/greeting.html" target="_self">ทักทาย</a></li>
-                            <li class="sub_menu_text_hover" style=""><a href="view/overview.html" target="_self">ภาพรวมและประวัติ</a></li>
-                            <li class="sub_menu_text_hover" style=""><a href="view/fields.html" target="_self">สาขาธุรกิจ</a></li>
-                            <li class="sub_menu_text_hover" style=""><a href="view/vision.html" target="_self">วิสัยทัศน์</a></li>
-                            <li class="sub_menu_text_hover" style=""><a href="view/center.html" target="_self">ศูนย์วิจัย</a></li>
-                            <li class="sub_menu_text_hover" style=""><a href="view/certificate.html" target="_self">ใบรับรองและสิทธิบัตร</a></li>
-                            <li class="sub_menu_text_hover" style=""><a href="view/map.html" target="_self">ที่ตั้งบริษัท</a></li>
-                        </ul>
+                    
+                    <!-- gnb menu -->
+                    <!-- bottom navbar -->
+                    <div class="header">
+                        <div style="clear:both;">
+                            <div class="logo">
+                                <div>
+                                    <a href="index.html"><img src="./assets/img/1486962982646624.png" alt="logo"></a>
+                                </div>
+                            </div>
+                            <div id="gnb_menu">
+                                <ul style="margin-top: -14px;">
+
+                                    <li class="gnb_top_menu" id="number2" style="padding: 52px 0px 27px; float: left; margin: -40px 0px; font-size: 16px; border-right: 1px solid rgb(225, 225, 225); font-family: nanumbarungothic; border-left: 1px solid rgb(225, 225, 225);">
+                                        <a href="view/greeting.html" target="_self" style="color: rgb(0, 0, 0);"> <b>เกี่ยวกับเรา</b></a>
+                                    </li>
+                                    <li class="gnb_top_menu" id="number3" style="padding: 52px 0px 27px; float: left; margin: -40px 0px; font-size: 16px; border-right: 1px solid rgb(225, 225, 225); font-family: nanumbarungothic;">
+                                        <a href="view/diagnosis-kit.html" target="_self" style="color: rgb(0, 0, 0);"> <b>แนะนำสินค้า</b></a>
+                                    </li>
+                                    <li class="gnb_top_menu" id="number4" style="padding: 52px 0px 27px; float: left; margin: -40px 0px; font-size: 16px; border-right: 1px solid rgb(225, 225, 225); font-family: nanumbarungothic;">
+                                        <a href="view/research.html" target="_self" style="color: rgb(0, 0, 0);"> <b>วิจัยและพัฒนา</b></a>
+                                    </li>
+                                    <li class="gnb_top_menu" id="number5" style="padding: 52px 0px 27px; float: left; margin: -40px 0px; font-size: 16px; border-right: 1px solid rgb(225, 225, 225); font-family: nanumbarungothic;">
+                                        <a href="view/news.html" target="_self" style="color: rgb(0, 0, 0);"> <b>ประชาสัมพันธ์</b></a>
+                                    </li>
+                                    <li class="gnb_top_menu" id="number6" style="padding: 52px 0px 27px; float: left; margin: -40px 0px; font-size: 16px; border-right: 1px solid rgb(225, 225, 225); font-family: nanumbarungothic;">
+                                        <a href="view/news.html" target="_self" style="color: rgb(0, 0, 0);"> <b>ข่าวสาร</b></a>
+                                    </li>
+                                    <li class="gnb_top_menu" id="number7" style="padding: 52px 0px 27px; float: left; margin: -40px 0px; font-size: 16px; border-right: 1px solid rgb(225, 225, 225); font-family: nanumbarungothic;">
+                                        <a href="view/qa.html" target="_self" style="color: rgb(0, 0, 0);"> <b>บริการลูกค้า</b></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                     </div>
+                    
+                    <!-- sub navbar -->
+                    <div id="gnb_sub_menu" class="gnb_ab" style="z-index:9999999999;padding-top:10px; display:none ">
+                       <div id="gnb_menu_sub" style="">
+                            <ul id="sub_menu_ul5">
+                                <li class="sub_menu_text_hover" style=""><a href="view/qa.html" target="_self">Q&amp;A</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="view/faq.html" target="_self">FAQ</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="view/contact.html" target="_self">ติดต่อเรา</a></li>
+                            </ul>
+                            <ul id="sub_menu_ul4">
+                                <li class="sub_menu_text_hover" style=""><a href="view/reqruit.html" target="_self">Recruit information</a></li>
+                            </ul>
+                            <ul id="sub_menu_ul3">
+                                <li class="sub_menu_text_hover" style=""><a href="view/news.html" target="_self">ข่าวสารจาก CUBEBIO</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="view/press.html" target="_self">ข่าวจากสื่อมวลชน</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="view/showroom.html" target="_self">โชว์รูม</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="view/division.html" target="_self">แนะนำสำนักงานสาขา</a></li>
+                            </ul>
+                            <ul id="sub_menu_ul2">
+                                <li class="sub_menu_text_hover" style=""><a href="view/research.html" target="_self">วิจัยและพัฒนา</a></li>
+                            </ul>
+                            <ul id="sub_menu_ul1">
+                                <li class="sub_menu_text_hover" style=""><a href="view/diagnosis-kit.html" target="_self">ชุดตรวจโรคมะเร็ง</a></li>
+                            </ul>
+                            <ul id="sub_menu_ul0">
+                                <li class="sub_menu_text_hover" style=""><a href="view/greeting.html" target="_self">ทักทาย</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="view/overview.html" target="_self">ภาพรวมและประวัติ</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="view/fields.html" target="_self">สาขาธุรกิจ</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="view/vision.html" target="_self">วิสัยทัศน์</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="view/center.html" target="_self">ศูนย์วิจัย</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="view/certificate.html" target="_self">ใบรับรองและสิทธิบัตร</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="view/map.html" target="_self">ที่ตั้งบริษัท</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
 
 
-            <script>
-                $(document).ready(function(){
-                    var agent = navigator.userAgent.toLowerCase();
+                <script>
+                    $(document).ready(function(){
+                        var agent = navigator.userAgent.toLowerCase();
 
-                    if( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
-                        $(".nav-dots").css("top","860px");
-                        $("blockquote").css("top","513px");
-                        $(".sl-slider h2").css("top","2px");
-                    }
-                });
-                jQuery(function(){
-                    jQuery('#camera_wrap_4').camera({
-                        height: 'auto',
-                        loader: 'bar',
-                        pagination: false,
-                        thumbnails: true,
-                        time: 2000,
-                        transPeriod: 1000,
-                        hover: false,
-                        opacityOnGrid: false,
-                        imagePath: 'images/'
+                        if( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+                            $(".nav-dots").css("top","860px");
+                            $("blockquote").css("top","513px");
+                            $(".sl-slider h2").css("top","2px");
+                        }
                     });
-                });
-            </script>
+                    jQuery(function(){
+                        jQuery('#camera_wrap_4').camera({
+                            height: 'auto',
+                            loader: 'bar',
+                            pagination: false,
+                            thumbnails: true,
+                            time: 2000,
+                            transPeriod: 1000,
+                            hover: false,
+                            opacityOnGrid: false,
+                            imagePath: 'images/'
+                        });
+                    });
+                </script>
 
-            <div class="fluid_container">
-                
-                <div class="camera_wrap" id="camera_wrap_4">
-                    <div data-thumb="images/thum_1471424419389543.jpg" data-src="images/b1.jpg"></div>           
-                    <div data-thumb="images/thum_1471424419390401.jpg" data-src="images/b2.jpg"></div>           
-                    <div data-thumb="images/thum_1471424419390972.jpg" data-src="images/b3.jpg"></div>           
+                <div class="fluid_container">
+
+                    <div class="camera_wrap" id="camera_wrap_4">
+                        <div data-thumb="images/thum_1471424419389543.jpg" data-src="images/b1.jpg"></div>           
+                        <div data-thumb="images/thum_1471424419390401.jpg" data-src="images/b2.jpg"></div>           
+                        <div data-thumb="images/thum_1471424419390972.jpg" data-src="images/b3.jpg"></div>           
+                    </div>
+
                 </div>
+
+                <style>
+                #img_id1{
+                    position: absolute;
+                    width: 100px;
+                    height: 50px;
+                    z-index: 99;
+                    margin-top: 366px;
+                    margin-left: 244px;
+                }
+                #img_id2{
+                    position: absolute;
+                    width: 100px;
+                    height: 50px;
+                    z-index: 99;
+                    margin-top: 366px;
+                    margin-left: 690px;
+                }
+                #img_id3{
+                    position: absolute;
+                    width: 100px;
+                    height: 50px;
+                    z-index: 99;
+                    margin-top: 2130px;
+                    margin-left: 234px;
+                }
+                #img_id4{
+                    position: absolute;
+                    width: 100px;
+                    height: 50px;
+                    z-index: 99;
+                    margin-top: 2028px;
+                    margin-left: 273px;
+                }
+                #img_id5{
+                    position: absolute;
+                    width: 100px;
+                    height: 50px;
+                    z-index: 99;
+                    margin-top: 293px;
+                    margin-left: 249px;
+                }
+
+                #img_cable1{
+                    position: absolute;
+                    width: 130px;
+                    height: 50px;
+                    z-index: 99;
+                    margin-top: 3870px;
+                    margin-left: 228px;
+
+                }
+
+                #img_cable2{
+                    position: absolute;
+                    width: 130px;
+                    height: 50px;
+                    z-index: 99;
+                    margin-top: 3870px;
+                    margin-left: 368px;
+
+                }
+
+                #img_teflon1{
+                    position: absolute;
+                    width: 130px;
+                    height: 50px;
+                    z-index: 99;
+                    margin-top: 3335px;
+                    margin-left: 228px;
+
+                }
+
+                #img_teflon2{
+                    position: absolute;
+                    width: 130px;
+                    height: 50px;
+                    z-index: 99;
+                    margin-top: 3335px;
+                    margin-left:368px;
+
+                }
+                </style>
                 
-            </div>
-                
-            <style>
-            #img_id1{
-                position: absolute;
-                width: 100px;
-                height: 50px;
-                z-index: 99;
-                margin-top: 366px;
-                margin-left: 244px;
-            }
-            #img_id2{
-                position: absolute;
-                width: 100px;
-                height: 50px;
-                z-index: 99;
-                margin-top: 366px;
-                margin-left: 690px;
-            }
-            #img_id3{
-                position: absolute;
-                width: 100px;
-                height: 50px;
-                z-index: 99;
-                margin-top: 2130px;
-                margin-left: 234px;
-            }
-            #img_id4{
-                position: absolute;
-                width: 100px;
-                height: 50px;
-                z-index: 99;
-                margin-top: 2028px;
-                margin-left: 273px;
-            }
-            #img_id5{
-                position: absolute;
-                width: 100px;
-                height: 50px;
-                z-index: 99;
-                margin-top: 293px;
-                margin-left: 249px;
-            }
-
-            #img_cable1{
-                position: absolute;
-                width: 130px;
-                height: 50px;
-                z-index: 99;
-                margin-top: 3870px;
-                margin-left: 228px;
-
-            }
-
-            #img_cable2{
-                position: absolute;
-                width: 130px;
-                height: 50px;
-                z-index: 99;
-                margin-top: 3870px;
-                margin-left: 368px;
-
-            }
-
-            #img_teflon1{
-                position: absolute;
-                width: 130px;
-                height: 50px;
-                z-index: 99;
-                margin-top: 3335px;
-                margin-left: 228px;
-
-            }
-
-            #img_teflon2{
-                position: absolute;
-                width: 130px;
-                height: 50px;
-                z-index: 99;
-                margin-top: 3335px;
-                margin-left:368px;
-
-            }
-            </style>
-
                 <div id="content">
                     <div class="content">
                         <div id="grid_area" style="height:1739px;">
@@ -904,44 +887,44 @@
                                 <div class="dragEleDiv" style="z-index: 999999;">
                                     <div class="makeContent2" style="z-index: 1;">
                                         <style type="text/css">
-            .wrap-img, .wrap-img2 { width:400px; height:400px; overflow:hidden; }
+                                            .wrap-img, .wrap-img2 { width:400px; height:400px; overflow:hidden; }
 
-            /* 마우스 오버시 효과 */
-            .wrap-img:hover img {
-            transform:scale(1.2);
-            -webkit-transform:scale(1.2);
-            -moz-transform:scale(1.2);
-            -o-transform:scale(1.2);
-            -webkit-transition:2s;
-            -moz-transition:2s;
-            -ms-transition:2s
-            }
+                                            /* 마우스 오버시 효과 */
+                                            .wrap-img:hover img {
+                                            transform:scale(1.2);
+                                            -webkit-transform:scale(1.2);
+                                            -moz-transform:scale(1.2);
+                                            -o-transform:scale(1.2);
+                                            -webkit-transition:2s;
+                                            -moz-transition:2s;
+                                            -ms-transition:2s
+                                            }
 
-            /* 마우스 아웃시 효과 */
-            .wrap-img img {
-            transform:scale(1);
-            -webkit-transform:scale(1);
-            -moz-transform:scale(1);
-            -o-transform:scale(1);
-            -webkit-transition:2s;
-            -moz-transition:2s;
-            -ms-transition:2s
-            }
+                                            /* 마우스 아웃시 효과 */
+                                            .wrap-img img {
+                                            transform:scale(1);
+                                            -webkit-transform:scale(1);
+                                            -moz-transform:scale(1);
+                                            -o-transform:scale(1);
+                                            -webkit-transition:2s;
+                                            -moz-transition:2s;
+                                            -ms-transition:2s
+                                            }
 
-            .img{position:relative; float:left;}
+                                            .img{position:relative; float:left;}
 
-            .text{position:absolute; z-index:1; text-align:center; font-family:Noto Sans 'Noto Sans KR', sans-serif; font-size:25px; color:#fff; margin-top:120px; width:400px; padding:0;}
+                                            .text{position:absolute; z-index:1; text-align:center; font-family:Noto Sans 'Noto Sans KR', sans-serif; font-size:25px; color:#fff; margin-top:120px; width:400px; padding:0;}
 
-            .text_s{position:absolute; z-index:1; text-align:center; font-family:Noto Sans 'Noto Sans KR', sans-serif; font-size:14px; color:#fff; margin-top:170px; line-height:20px; width:400px; padding:0;}
+                                            .text_s{position:absolute; z-index:1; text-align:center; font-family:Noto Sans 'Noto Sans KR', sans-serif; font-size:14px; color:#fff; margin-top:170px; line-height:20px; width:400px; padding:0;}
 
-            a .btn{z-index:1; position:absolute; color:#fff;; border:#fff solid 1px; width:95px; height:25px; text-align:center; font-family:arial; font-size:14px; font-weight:bold; margin:0 auto; float:left; margin-left:150px; padding-bottom:13px; margin-top:245px;}
-            /*
-             a:hover .btn{z-index:1; position:absolute; margin-top:245px; color:#000;; border:#fff solid 1px; width:95px; height:25px; text-align:center; font-family:arial; font-size:14px; font-weight:bold; margin:0 auto; float:left; margin-left:150px; background:#fff;padding-bottom:13px;}*/
+                                            a .btn{z-index:1; position:absolute; color:#fff;; border:#fff solid 1px; width:95px; height:25px; text-align:center; font-family:arial; font-size:14px; font-weight:bold; margin:0 auto; float:left; margin-left:150px; padding-bottom:13px; margin-top:245px;}
+                                            /*
+                                             a:hover .btn{z-index:1; position:absolute; margin-top:245px; color:#000;; border:#fff solid 1px; width:95px; height:25px; text-align:center; font-family:arial; font-size:14px; font-weight:bold; margin:0 auto; float:left; margin-left:150px; background:#fff;padding-bottom:13px;}*/
 
-             .wrap-img:hover .btn:hover{z-index:1; position:absolute; color:#000;; border:#fff solid 1px; width:95px; height:25px; text-align:center; font-family:arial; font-size:14px; font-weight:bold; margin:0 auto; float:left; margin-left:150px; background:#fff;padding-bottom:13px; margin-top:245px;}
+                                             .wrap-img:hover .btn:hover{z-index:1; position:absolute; color:#000;; border:#fff solid 1px; width:95px; height:25px; text-align:center; font-family:arial; font-size:14px; font-weight:bold; margin:0 auto; float:left; margin-left:150px; background:#fff;padding-bottom:13px; margin-top:245px;}
 
-            </style>
-
+                                        </style>
+                                        
                                         <div id="cube">
                                             <div style="width:400px;">
                                                 <p class="text" style="padding:0;">เกี่ยวกับเรา</p>
@@ -1055,65 +1038,58 @@
                                 <div class="dragEleDiv" style="z-index: 999999;">
                                     <div class="makeContent9" style="z-index: 1;">
                                         <style>
-                                                    .footer_s_t{
-                                                    font-family: NanumBarunGothic;
-                                                    font-size:13px;
-                                                    font-weight: bold;
-                                                    color: #fff;
-                                                    text-align:left;
-                                                    }
-
-                                                    .sitemap_txt{
-                                                    width:130px;
-                                                    text-align:left;
-                                                    }
-
-                                                    .sitemap_txt a{
-                                                    font-family: NanumBarunGothic;
-                                                    font-size:13px;
-                                                    color: #fff;
-                                                    line-height:24px;
-                                                    text-align:left;
-                                                    font-weight:lighter;
-                                                    text-decoration:none;
-                                                    }
-
-                                                    .sitemap_txt a:hover{
-                                                    font-family: NanumBarunGothic;
-                                                    font-size:13px;
-                                                    color: #fff;
-                                                    line-height:24px;
-                                                    text-align:left;
-                                                    font-weight:lighter;
-                                                    text-decoration:underline;
-                                                    }
-
-                                                    .sitemap_txt_f{
-                                                    width:130px;
-                                                    text-align:left;
-                                                    }
-
-                                                    .sitemap_txt_f a{
-                                                    font-family: NanumBarunGothic;
-                                                    font-size:13px;
-                                                    color: #fff;
-                                                    line-height:24px;
-                                                    text-align:left;
-                                                    font-weight:lighter;
-                                                    text-decoration:none;
-                                                    }
-
-                                                    .sitemap_txt_f a:hover{
-                                                    font-family: NanumBarunGothic;
-                                                    font-size:13px;
-                                                    color: #fff;
-                                                    line-height:24px;
-                                                    text-align:left;
-                                                    font-weight:lighter;
-                                                    text-decoration:underline;
-                                                    }
-
-                                                </style>
+                                            .footer_s_t{
+                                                font-family: NanumBarunGothic;
+                                                font-size:13px;
+                                                font-weight: bold;
+                                                color: #fff;
+                                                text-align:left;
+                                            }
+                                            .sitemap_txt{
+                                                width:130px;
+                                                text-align:left;
+                                            }
+                                            .sitemap_txt a{
+                                                font-family: NanumBarunGothic;
+                                                font-size:13px;
+                                                color: #fff;
+                                                line-height:24px;
+                                                text-align:left;
+                                                font-weight:lighter;
+                                                text-decoration:none;
+                                            }
+                                            .sitemap_txt a:hover{
+                                                font-family: NanumBarunGothic;
+                                                font-size:13px;
+                                                color: #fff;
+                                                line-height:24px;
+                                                text-align:left;
+                                                font-weight:lighter;
+                                                text-decoration:underline;
+                                            }
+                                            .sitemap_txt_f{
+                                                width:130px;
+                                                text-align:left;
+                                            }
+                                            .sitemap_txt_f a{
+                                                font-family: NanumBarunGothic;
+                                                font-size:13px;
+                                                color: #fff;
+                                                line-height:24px;
+                                                text-align:left;
+                                                font-weight:lighter;
+                                                text-decoration:none;
+                                            }
+                                            .sitemap_txt_f a:hover{
+                                                font-family: NanumBarunGothic;
+                                                font-size:13px;
+                                                color: #fff;
+                                                line-height:24px;
+                                                text-align:left;
+                                                font-weight:lighter;
+                                                text-decoration:underline;
+                                            }
+                                        </style>
 
                                         <div style="float:left; width:160px;">
                                             <p class="footer_s_t">เกี่ยวกับเรา</p>
@@ -1141,289 +1117,165 @@
                                                 </li>
                                             </ul>
                                         </div>
-
-                                                <div style="float:left; width:160px;">
-                                                    <p class="footer_s_t">แนะนำสินค้า</p>
-                                                    <ul style="width:130px; list-style:none;">
-                                                        <li class="sitemap_txt">
-                                                            <a href="view/diagnosis-kit.html">ชุดตรวจโรคมะเร็ง</a>
-                                                        </li>
-                                                    </ul>
-
-                                                    <p class="footer_s_t" style="padding-top:125px; line-height:20px;">วิจัยและพัฒนา</p>
-                                                    <ul style="width:130px; list-style:none;">
-                                                        <li class="sitemap_txt">
-                                                            <a href="view/research.html" style="line-height:18px; float:left; margin-top:10px;">วิจัยและพัฒนา</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-
-                                                <div style="float:left; width:160px;">
-                                                    <p class="footer_s_t">ประชาสัมพันธ์</p>
-                                                    <ul style="width:130px; list-style:none;">
-                                                        <li class="sitemap_txt">
-                                                            <a href="http://en.cubebio.co.kr/bbs/board.php?bo_table=b_cubebio_en">ข่าวสารจาก CUBEBIO</a>
-                                                        </li>
-                                                        <li class="sitemap_txt">
-                                                            <a href="view/press.html">ข่าวจากสื่อมวลชน</a>
-                                                        </li>
-                                                        <li class="sitemap_txt">
-                                                            <a href="view/showroom.html">โชว์รูม</a>
-                                                        </li>
-                                                        <li class="sitemap_txt">
-                                                            <a href="view/division.html">สำนักงานภาคธุรกิจ</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-
-                                                <div style="float:left; width:160px;">
-                                                    <p class="footer_s_t">ข่าวสาร</p>
-                                                    <ul style="width:80px; list-style:none;">
-                                                        <li class="sitemap_txt">
-                                                            <a href="view/reqruit.html">รับสมัครงาน</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-
-                                                <div style="float:left;">
-                                                    <p class="footer_s_t">บริการลูกค้า</p>
-                                                    <ul style="list-style:none; width:130px;">
-                                                        <li class="sitemap_txt_f">
-                                                            <a href="view/qa.html">Q&amp;A</a>
-                                                        </li>
-                                                        <li class="sitemap_txt_f">
-                                                            <a href="view/faq.html">FAQ</a>
-                                                        </li>
-                                                        <li class="sitemap_txt_f">
-                                                            <a href="view/contact.html">ติดต่อเรา</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                        <div style="float:left; width:160px;">
+                                            <p class="footer_s_t">แนะนำสินค้า</p>
+                                            <ul style="width:130px; list-style:none;">
+                                                <li class="sitemap_txt">
+                                                    <a href="view/diagnosis-kit.html">ชุดตรวจโรคมะเร็ง</a>
+                                                </li>
+                                            </ul>
+                                            
+                                            <p class="footer_s_t" style="padding-top:125px; line-height:20px;">วิจัยและพัฒนา</p>
+                                            <ul style="width:130px; list-style:none;">
+                                                <li class="sitemap_txt">
+                                                    <a href="view/research.html" style="line-height:18px; float:left; margin-top:10px;">วิจัยและพัฒนา</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div style="float:left; width:160px;">
+                                            <p class="footer_s_t">ประชาสัมพันธ์</p>
+                                            <ul style="width:130px; list-style:none;">
+                                                <li class="sitemap_txt">
+                                                    <a href="http://en.cubebio.co.kr/bbs/board.php?bo_table=b_cubebio_en">ข่าวสารจาก CUBEBIO</a>
+                                                </li>
+                                                <li class="sitemap_txt">
+                                                    <a href="view/press.html">ข่าวจากสื่อมวลชน</a>
+                                                </li>
+                                                <li class="sitemap_txt">
+                                                    <a href="view/showroom.html">โชว์รูม</a>
+                                                </li>
+                                                <li class="sitemap_txt">
+                                                    <a href="view/division.html">สำนักงานภาคธุรกิจ</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div style="float:left; width:160px;">
+                                            <p class="footer_s_t">ข่าวสาร</p>
+                                            <ul style="width:80px; list-style:none;">
+                                                <li class="sitemap_txt">
+                                                    <a href="view/reqruit.html">รับสมัครงาน</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div style="float:left;">
+                                            <p class="footer_s_t">บริการลูกค้า</p>
+                                            <ul style="list-style:none; width:130px;">
+                                                <li class="sitemap_txt_f">
+                                                    <a href="view/qa.html">Q&amp;A</a>
+                                                </li>
+                                                <li class="sitemap_txt_f">
+                                                    <a href="view/faq.html">FAQ</a>
+                                                </li>
+                                                <li class="sitemap_txt_f">
+                                                    <a href="view/contact.html">ติดต่อเรา</a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
-                        </div>
-
-
-                    </div>
-
-
-
-                </div>
-
-
-            <!-- /////////////////////////// footer /////////////////////////// -->
-                    <div id="footer" style="background-color:#252525;clear:both;">
-                        <div class="footer">
-                            <div id="footer_area">
-                                <p style="text-align:center; font-family:arial; color:#a8a8a8; line-height:20px; font-size:13px;">
-                                    Copyright (C) 2016 CUBEBIO. All Rights Reserved
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-
-
-            <!-- /////////////////////////// footer /////////////////////////// -->
-
                 </div>
+                
+                <!-- /////////////////////////// footer /////////////////////////// -->
+                <div id="footer" style="background-color:#252525;clear:both;">
+                    <div class="footer">
+                        <div id="footer_area">
+                            <p style="text-align:center; font-family:arial; color:#a8a8a8; line-height:20px; font-size:13px;">
+                                Copyright (C) 2016 CUBEBIO. All Rights Reserved
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /////////////////////////// footer /////////////////////////// -->
+            </div>
 
 
             <script type="text/javascript" language="javascript"> 
-            function initMoving(target, position, topLimit, btmLimit) {
-                if (!target){
-                    return false;
-                }
+                function initMoving(target, position, topLimit, btmLimit) {
+                    if (!target){
+                        return false;
+                    }
 
-                var obj = target;
-                obj.initTop = position;
-                obj.topLimit = topLimit;
-                obj.bottomLimit = document.body.scrollHeight - btmLimit;
-                obj.style.position = "absolute";
-                obj.top = obj.initTop;
-                obj.left = obj.initLeft;
+                    var obj = target;
+                    obj.initTop = position;
+                    obj.topLimit = topLimit;
+                    obj.bottomLimit = document.body.scrollHeight - btmLimit;
+                    obj.style.position = "absolute";
+                    obj.top = obj.initTop;
+                    obj.left = obj.initLeft;
 
-                if (typeof(window.pageYOffset) == "number") {
-                    obj.getTop = function() {
-                        return window.pageYOffset;
-                    }
-                } 
-                else if (typeof(document.documentElement.scrollTop) == "number") {
-                    obj.getTop = function() {
-                        return document.documentElement.scrollTop;
-                    }
-                }
-                else {
-                    obj.getTop = function() {
-                        return 0;
-                    }
-                }
-
-                if (self.innerHeight) {
-                    obj.getHeight = function() {
-                        return self.innerHeight;
-                    }
-                }
-                else if(document.documentElement.clientHeight) {
-                    obj.getHeight = function() {
-                        return document.documentElement.clientHeight;
-                    }
-                }
-                else {
-                    obj.getHeight = function() {
-                        return 500;
-                    }
-                }
-
-                obj.move = setInterval(function() {
-                    if (obj.initTop > 0) {
-                        pos = obj.getTop() + obj.initTop;
+                    if (typeof(window.pageYOffset) == "number") {
+                        obj.getTop = function() {
+                            return window.pageYOffset;
+                        }
+                    } 
+                    else if (typeof(document.documentElement.scrollTop) == "number") {
+                        obj.getTop = function() {
+                            return document.documentElement.scrollTop;
+                        }
                     }
                     else {
-                        pos = obj.getTop() + obj.getHeight() + obj.initTop;
+                        obj.getTop = function() {
+                            return 0;
+                        }
                     }
 
-                    if (pos > obj.bottomLimit)
-                        pos = obj.bottomLimit;
+                    if (self.innerHeight) {
+                        obj.getHeight = function() {
+                            return self.innerHeight;
+                        }
+                    }
+                    else if(document.documentElement.clientHeight) {
+                        obj.getHeight = function() {
+                            return document.documentElement.clientHeight;
+                        }
+                    }
+                    else {
+                        obj.getHeight = function() {
+                            return 500;
+                        }
+                    }
 
-                    if (pos < obj.topLimit)
-                        pos = obj.topLimit;
+                    obj.move = setInterval(function() {
+                        if (obj.initTop > 0) {
+                            pos = obj.getTop() + obj.initTop;
+                        }
+                        else {
+                            pos = obj.getTop() + obj.getHeight() + obj.initTop;
+                        }
 
-                    interval = obj.top - pos;
-                    obj.top = obj.top - interval / 3;
-                    obj.style.top = obj.top + "px";
-                }, 30)
-            }
+                        if (pos > obj.bottomLimit)
+                            pos = obj.bottomLimit;
+
+                        if (pos < obj.topLimit)
+                            pos = obj.topLimit;
+
+                        interval = obj.top - pos;
+                        obj.top = obj.top - interval / 3;
+                        obj.style.top = obj.top + "px";
+                    }, 30)
+                }
             </script>
 
             <script type="text/javascript">initMoving(document.getElementById("sideQuick"), 80, 10, 0);</script>
             <script type="text/javascript">
-            $(function() {
-                // glvision 사이드 퀵메뉴 위치
-                if (location.href.indexOf("glvision") >= 0) {
-                    $('#sideQuick').attr("style","position:absolute; width:50px; overflow:hidden; z-index:2147483647; right:100px;");
-                    initMoving(document.getElementById("sideQuick"), 750, 10, 0);
-                }
-            });
+                $(function() {
+                    // glvision 사이드 퀵메뉴 위치
+                    if (location.href.indexOf("glvision") >= 0) {
+                        $('#sideQuick').attr("style","position:absolute; width:50px; overflow:hidden; z-index:2147483647; right:100px;");
+                        initMoving(document.getElementById("sideQuick"), 750, 10, 0);
+                    }
+                });
             </script>
             <map name="ImageMapxxx">
                 <area shape="rect" coords="147, 12, 230, 25" href="javascript:pops1(100,100,700,490,&#39;/clients/content/acus_service.php?bs=1&#39;);">
                 <area shape="rect" coords="235, 10, 323, 28" href="javascript:pops1(100,100,700,490,&#39;/clients/content/acus_service.php?bs=2&#39;);">
             </map>
-
-
-            <script>
-            /*!
-             * jQuery Cookie Plugin v1.3.1
-             * https://github.com/carhartl/jquery-cookie
-             *
-             * Copyright 2013 Klaus Hartl
-             * Released under the MIT license
-             */
-            (function (factory) {
-                if (typeof define === 'function' && define.amd) {
-                    // AMD. Register as anonymous module.
-                    define(['jquery'], factory);
-                } else {
-                    // Browser globals.
-                    factory(jQuery);
-                }
-            }(function ($) {
-
-                var pluses = /\+/g;
-
-                function decode(s) {
-                    if (config.raw) {
-                        return s;
-                    }
-                    try {
-                        // If we can't decode the cookie, ignore it, it's unusable.
-                        return decodeURIComponent(s.replace(pluses, ' '));
-                    } catch(e) {}
-                }
-
-                function decodeAndParse(s) {
-                    if (s.indexOf('"') === 0) {
-                        // This is a quoted cookie as according to RFC2068, unescape...
-                        s = s.slice(1, -1).replace(/\\"/g, '"').replace(/\\\\/g, '\\');
-                    }
-
-                    s = decode(s);
-
-                    try {
-                        // If we can't parse the cookie, ignore it, it's unusable.
-                        return config.json ? JSON.parse(s) : s;
-                    } catch(e) {}
-                }
-
-                var config = $.cookie = function (key, value, options) {
-
-                    // Write
-                    if (value !== undefined) {
-                        options = $.extend({}, config.defaults, options);
-
-                        if (typeof options.expires === 'number') {
-                            var days = options.expires, t = options.expires = new Date();
-                            t.setDate(t.getDate() + days);
-                        }
-
-                        value = config.json ? JSON.stringify(value) : String(value);
-
-                        return (document.cookie = [
-                            config.raw ? key : encodeURIComponent(key),
-                            '=',
-                            config.raw ? value : encodeURIComponent(value),
-                            options.expires ? '; expires=' + options.expires.toUTCString() : '', // use expires attribute, max-age is not supported by IE
-                            options.path    ? '; path=' + options.path : '',
-                            options.domain  ? '; domain=' + options.domain : '',
-                            options.secure  ? '; secure' : ''
-                        ].join(''));
-                    }
-
-                    // Read
-
-                    var result = key ? undefined : {};
-
-                    // To prevent the for loop in the first place assign an empty array
-                    // in case there are no cookies at all. Also prevents odd result when
-                    // calling $.cookie().
-                    var cookies = document.cookie ? document.cookie.split('; ') : [];
-
-                    for (var i = 0, l = cookies.length; i < l; i++) {
-                        var parts = cookies[i].split('=');
-                        var name = decode(parts.shift());
-                        var cookie = parts.join('=');
-
-                        if (key && key === name) {
-                            result = decodeAndParse(cookie);
-                            break;
-                        }
-
-                        // Prevent storing a cookie that we couldn't decode.
-                        if (!key && (cookie = decodeAndParse(cookie)) !== undefined) {
-                            result[name] = cookie;
-                        }
-                    }
-
-                    return result;
-                };
-
-                config.defaults = {};
-
-                $.removeCookie = function (key, options) {
-                    if ($.cookie(key) !== undefined) {
-                        // Must not alter options, thus extending a fresh object...
-                        $.cookie(key, '', $.extend({}, options, { expires: -1 }));
-                        return true;
-                    }
-                    return false;
-                };
-
-            }));	
-            </script>
         </div>
-        
-        
     </body>
 </html>
