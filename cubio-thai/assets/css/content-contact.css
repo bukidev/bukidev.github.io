@@ -1,0 +1,59 @@
+#con{padding:60px 40px 150px 40px; width:890px; float:left; font-family:'nanumbarungothic', sans-serif;}
+	
+	#con .tit{
+		font-family: NanumBarunGothic;
+		font-size: 23px;
+		color: #000;
+		font-weight:400;
+		margin:0;
+		text-align:left;
+	}
+	#con .tit_s{
+		font-family: Arial;
+		font-size: 12px;
+		text-transform: uppercase;
+		color: #cecece;
+		margin-left:10px;
+	}
+
+	#con .h1{
+		font-family: NanumBarunGothic;
+		font-size: 18px;
+		/*text-transform: uppercase;*/
+		color: #000;
+		font-weight:normal;
+		line-height:40px;
+		margin-top:60px;
+		text-align:left;
+	}
+	#con .h1 span{color:#5674b9;}
+
+	#con .con_box{margin-top:30px;}
+	#con .con_txt img{float:left;/* 이미지 */ width:108px; height:108px;}
+
+	#con .st{/* 작은제목 */
+		font-size: 20px;
+		/*text-transform: uppercase;*/
+		color: #000;
+		font-weight:500;
+		margin:0;
+		padding-bottom:10px;
+	}
+
+	#con .con_txt{
+		font-family: NanumBarunGothic;
+		font-size: 14px;
+		color: #000;
+		line-height:22px;
+		text-align:justify;
+		float:left;
+		width:445px;
+		margin-bottom:60px;
+	}
+	.text_box{width:250px; float:left; padding-left:40px;}
+	.text_box span{padding-top:3px; float:left; width:240px;}
+	.text_box .btn{width:300px; float:left; margin-top:10px;}
+	.text_box .btn a{text-decoration:none;}
+	.text_box .btn a div{
+		background:#5674b9; width:100px; text-align:center; padding:8px 0; font-size:16px; color:#fff;
+	}
