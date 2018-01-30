@@ -14,6 +14,7 @@
         <link href="assets/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css"/>
         <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/main.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/animate-bg.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/preload.css" rel="stylesheet" type="text/css"/>
 
         <!-- PAGE LEVEL PLUGIN STYLES -->
@@ -43,7 +44,7 @@
     <body id="body" data-spy="scroll" data-target=".header">
         
         <!-- Preload Start here -->
-        <div id="preload" class="preload-overlay top preload-bg active"></div>
+        <!--<div id="preload" class="preload-overlay top preload-bg active"></div>-->
         <!-- Preload End here -->
         
         <div id="app">
@@ -92,8 +93,11 @@
         </header>
         <!--========== END HEADER ==========-->
 
+        <canvas id="nokey" width="1440" height="745"></canvas>
+            
         <!--========== SLIDER ==========-->
-        <div class="promo-block parallax-window" data-parallax="scroll" data-image-src="assets/img/1920x1080/01.png">
+        <div class="promo-block">
+            
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
@@ -163,14 +167,15 @@
                         </div>
                         <div class="col-sm-8 col-sm-offset-1">
                             <div class="row row-space-2 margin-b-4">
-                                <div class="col-md-4 md-margin-b-4" v-for="(value, key, index) in lang.exps.company">
+                                <div class="col-md-12 md-margin-b-1" v-for="(value, key, index) in lang.exps.company">
                                     <div class="service" data-height="height">
                                         <div class="service-element">
                                             <i class="service-icon icon-chemistry"></i>
                                         </div>
                                         <div class="service-info">
                                             <h4>{{ key }}</h4>
-                                            <p class="margin-b-5">{{ value }}</p>
+                                            <p class="margin-b-1">{{ value[0] }}</p>
+                                            <p class="margin-b-3">{{ value[1] }}</p>
                                         </div>  
                                     </div>
                                 </div>
@@ -471,6 +476,7 @@
         <script src="assets/js/components/progress-bar.min.js" type="text/javascript"></script>
         <script src="assets/js/components/masonry.min.js" type="text/javascript"></script>
         <script src="assets/js/components/wow.min.js" type="text/javascript"></script>
+        <script src="assets/js/animate-bg.js" type="text/javascript"></script>
         <script src="assets/js/preload.min.js" type="text/javascript"></script>
         
         <script src="assets/js/vue.min.js"></script>
