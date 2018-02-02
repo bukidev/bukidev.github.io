@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="th">
     <head>
@@ -40,6 +42,15 @@
 
     <body style="overflow-x:hidden; overflow-y:auto;font-family:nanumgothic !important;">
         
+        <?php 
+                                
+            if (!$_SESSION["USER_ID"]){ // check ว่าล๊อกอินหรือเปล่า 
+                require "header.php";
+            } else {
+                require "header_admin.php";
+            }
+        ?>
+        
         <div>
             <div id="roll"></div>
             
@@ -59,37 +70,7 @@
                     <div class="content">
                         
                         <!-- /////////////////////////////  left menu /////////////////////////////////-->
-                        <div id="leftBox" style="background-color:;min-height:500px;">
-                            <h1 style="text-align:left; font-size: 36px;color: #5674b9;">ข้อมูลบริษัท
-                                <!--<img src="../assets/img/greeting/1486974450661154.jpg" alt="banner_img" class="banner01" width="210px" height="100px">-->
-                            </h1>
-                            
-                            <ul class="sidemenu">
-                                <li id="leftLi">
-                                    <a href="greeting.html"><h3>ทักทาย</h3></a>
-                                </li>
-                                <li id="leftLi">
-                                    <a href="overview.html"><h3>ภาพรวมและประวัติ</h3></a>
-                                </li>
-                                <li id="leftLi">
-                                    <a href="fields.html"><h3>สาขาธุรกิจ</h3></a>
-                                </li>
-                                <li id="leftLi">
-                                    <a href="vision.html"><h3>วิสัยทัศน์</h3></a>
-                                </li>
-                                <li id="leftLi">
-                                    <a href="center.html"><h3>แนะนำศูนย์วิจัย</h3></a>
-                                </li>
-                                <li id="leftLi">
-                                    <a href="certificate.html"><h3>ใบรับรองและสิทธิบัตร</h3></a>
-                                </li>
-                                <li id="leftLi">
-                                    <a href="map.html"><h3>ที่ตั้งบริษัท</h3></a>
-                                </li>
-                            </ul>
-                            <div style="clear:both; margin-top:70px;"></div>
-                            <p></p>
-                        </div>
+                        <?php include("sidebar_01.php"); ?>
                         
                         
                         

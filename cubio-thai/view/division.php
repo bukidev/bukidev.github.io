@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="th">
     <head>
@@ -46,6 +48,15 @@
     </head>
 
     <body style="overflow-x:hidden; overflow-y:auto;font-family:nanumgothic !important;">
+        
+        <?php 
+                                
+            if (!$_SESSION["USER_ID"]){ // check ว่าล๊อกอินหรือเปล่า 
+                require "header.php";
+            } else {
+                require "header_admin.php";
+            }
+        ?>
         
         <div>
             <div id="roll"></div>

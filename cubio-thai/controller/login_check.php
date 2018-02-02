@@ -1,6 +1,6 @@
 <?php
 
-    //session_start();
+    session_start();
     
     echo "checking... <br>";
 
@@ -14,9 +14,16 @@
     $count = mysqli_num_rows($result);
 
     if ($count == 1) {
-        echo "login successfull";
+        //echo "login successfull";
+        
+        $row = mysqli_fetch_array($result);
+        $_SESSION["USER_ID"] = $row["USER_ID"];
+        $_SESSION["NAME"] = $row["NAME"];
+        
+        header('Location: http://cubebio.asia/');
     } else {
-        echo "your pasword is incorrect!";
+        //echo "your password is incorrect!";
+        header('Location: http://cubebio.asia/view/login-wrong.php');
         
     }
     $conn->close();

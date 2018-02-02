@@ -1,30 +1,32 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="th">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>cubebio_en</title>
+        <title>CUBEBIO-ASIA</title>
 	
         <link rel="shortcut icon" href="http://en.cubebio.co.kr/img/favicon.ico">
 
-        <link rel="stylesheet" href="./assets/css/base.css">
-        <link rel="stylesheet" href="./assets/css/layout.css">
-        <link rel="stylesheet" href="./assets/css/jquery-ui.css"> 
-        <link rel="stylesheet" href="./assets/css/navbar-bottom.css"> 
-        <link rel="stylesheet" href="./assets/css/gnb.css"> 
+        <link rel="stylesheet" href="http://cubebio.asia/assets/css/base.css">
+        <link rel="stylesheet" href="http://cubebio.asia/assets/css/layout.css">
+        <link rel="stylesheet" href="http://cubebio.asia/assets/css/jquery-ui.css"> 
+        <link rel="stylesheet" href="http://cubebio.asia/assets/css/navbar-bottom.css"> 
+        <link rel="stylesheet" href="http://cubebio.asia/assets/css/gnb.css"> 
 
-        <!--<script async="" src="./assets/js/analytics.js"></script>-->
-        <script type="text/javascript" src="./assets/js/jquery-1.8.3.min.js"></script>
-        <script type="text/javascript" src="./assets/js/jquery-ui-1.8.16.custom.min.js"></script>
-        <script type="text/javascript" src="./assets/js/jquery.slides.min.js"></script>
-        <script type="text/javascript" src="./assets/js/client.js"></script>
-        <script type="text/javascript" src="./assets/js/popup.js"></script>
-        <script type="text/javascript" src="./assets/js/jquery.cookie.js"></script>
-        <script type="text/javascript" src="./assets/js/jquery.bpopup.min.js"></script>
-        <script src="./assets/js/js.js"></script>
+        <!--<script async="" src="http://cubebio.asia/assets/js/analytics.js"></script>-->
+        <script type="text/javascript" src="http://cubebio.asia/assets/js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="http://cubebio.asia/assets/js/jquery-ui-1.8.16.custom.min.js"></script>
+        <script type="text/javascript" src="http://cubebio.asia/assets/js/jquery.slides.min.js"></script>
+        <script type="text/javascript" src="http://cubebio.asia/assets/js/client.js"></script>
+        <script type="text/javascript" src="http://cubebio.asia/assets/js/popup.js"></script>
+        <script type="text/javascript" src="http://cubebio.asia/assets/js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="http://cubebio.asia/assets/js/jquery.bpopup.min.js"></script>
+        <script src="http://cubebio.asia/assets/js/js.js"></script>
         
-        <link rel="stylesheet" type="text/css" href="./assets/css/styleNoJS.css">
-        <link rel="stylesheet" type="text/css" href="./assets/css/camera-act.css">
+        <link rel="stylesheet" type="text/css" href="http://cubebio.asia/assets/css/styleNoJS.css">
+        <link rel="stylesheet" type="text/css" href="http://cubebio.asia/assets/css/camera-act.css">
 
         <!--<script type="text/javascript" language="javascript">
             var exrSeq = "";
@@ -308,15 +310,15 @@
         </style>
 
         
-        <script type="text/javascript" charset="UTF-8" src="./assets/js/common.js"></script>
-        <script type="text/javascript" charset="UTF-8" src="./assets/js/util.js"></script>
-        <script type="text/javascript" charset="UTF-8" src="./assets/js/stats.js"></script>
+        <script type="text/javascript" charset="UTF-8" src="http://cubebio.asia/assets/js/common.js"></script>
+        <script type="text/javascript" charset="UTF-8" src="http://cubebio.asia/assets/js/util.js"></script>
+        <script type="text/javascript" charset="UTF-8" src="http://cubebio.asia/assets/js/stats.js"></script>
         
-        <link rel="stylesheet" id="camera-css" href="./assets/css/camera.css" type="text/css" media="all"> 
-        <script type="text/javascript" src="./assets/js/jquery-1.8.3.min.js"></script>
-        <script type="text/javascript" src="./assets/js/jquery.mobile.customized.min.js"></script>
-        <script type="text/javascript" src="./assets/js/jquery.easing.1.3.js"></script> 
-        <script type="text/javascript" src="./assets/js/camera.min.js"></script> 
+        <link rel="stylesheet" id="camera-css" href="http://cubebio.asia/assets/css/camera.css" type="text/css" media="all"> 
+        <script type="text/javascript" src="http://cubebio.asia/assets/js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="http://cubebio.asia/assets/js/jquery.mobile.customized.min.js"></script>
+        <script type="text/javascript" src="http://cubebio.asia/assets/js/jquery.easing.1.3.js"></script> 
+        <script type="text/javascript" src="http://cubebio.asia/assets/js/camera.min.js"></script> 
     </head>
 
     <body style="overflow-x: hidden; overflow-y: auto; font-family: nanumgothic !important;">
@@ -324,7 +326,7 @@
             <!-- ////////////////// Roll Area Start ////////////////// -->
             <div id="roll"></div>
             <!-- ////////////////// Roll Area End ////////////////// -->
-            <div id="wrapper_main" style="background: url(assets/img/main_bg_cubebio.jpg) no-repeat;background-position: 50% 0%;; background-size: px  px">
+            <div id="wrapper_main" style="background: url(http://cubebio.asia/assets/img/main_bg_cubebio.jpg) no-repeat;background-position: 50% 0%;; background-size: px  px">
                 <script>
             var size = "";
             $(window).resize(function(){
@@ -580,134 +582,18 @@
                 }
             });
             </script>
-                <div id="header" style="z-index:9999999999;background-color:;">
-                    <div class="header_top" style="border-bottom:1px solid #e1e1e1;">
-                        <div style="width:1200px; margin:0 auto;height:32px">
-                            <!-- top navbar -->
-                            <ul class="top_gnb">
-                                <li><a href="index.html" style="color:#000000; margin-right:10px;">หน้าหลัก</a></li>
-                                <li><a href="view/login.php" style="color:#000000; margin-right:10px;">ลงชื่อเข้าใช้</a></li>
-                                <li><a href="view/join.html" style="color:#000000; margin-right:10px;">สมัครสมาชิก</a></li>
-                                <li style="margin-right:10px;">
-                                    <a href="view/sitemap.html" style="color:#000;">แผนผังเว็บไซต์</a>
-                                </li>
-                                <li style="margin-right:10px;"><a href="view/contact.html" style="color:#000000;">ติดต่อเรา</a></li>
-                                <li>
-                                    <script>
-                                    function version(v){
-                                        if(v == "KO"){
-                                            location.replace("http://cubebio.co.kr/");
-                                        }else if(v == "CH"){
-                                            location.replace("http://ch.cubebio.co.kr/");
-                                        }
-                                    }
-                                    </script>
-                                    <select style="margin-top:-5px;" onchange="version(this.value);">
-                                        <option>Language</option>
-                                        <option value="KO">Korean</option>
-                                        <option value="CH">China</option>
-                                    </select>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <!-- gnb menu -->
-                    <!-- bottom navbar -->
-                    <div class="header">
-                        <div style="clear:both;">
-                            <div class="logo">
-                                <div>
-                                    <a href="index.html"><img src="./assets/img/1486962982646624.png" alt="logo"></a>
-                                </div>
-                            </div>
-                            <div id="gnb_menu">
-                                <ul style="margin-top: -14px;">
-
-                                    <li class="gnb_top_menu" id="number2" style="padding: 52px 0px 27px; float: left; margin: -40px 0px; font-size: 16px; border-right: 1px solid rgb(225, 225, 225); font-family: nanumbarungothic; border-left: 1px solid rgb(225, 225, 225);">
-                                        <a href="view/greeting.html" target="_self" style="color: rgb(0, 0, 0);"> <b>เกี่ยวกับเรา</b></a>
-                                    </li>
-                                    <li class="gnb_top_menu" id="number3" style="padding: 52px 0px 27px; float: left; margin: -40px 0px; font-size: 16px; border-right: 1px solid rgb(225, 225, 225); font-family: nanumbarungothic;">
-                                        <a href="view/diagnosis-kit.html" target="_self" style="color: rgb(0, 0, 0);"> <b>แนะนำสินค้า</b></a>
-                                    </li>
-                                    <li class="gnb_top_menu" id="number4" style="padding: 52px 0px 27px; float: left; margin: -40px 0px; font-size: 16px; border-right: 1px solid rgb(225, 225, 225); font-family: nanumbarungothic;">
-                                        <a href="view/research.html" target="_self" style="color: rgb(0, 0, 0);"> <b>วิจัยและพัฒนา</b></a>
-                                    </li>
-                                    <li class="gnb_top_menu" id="number5" style="padding: 52px 0px 27px; float: left; margin: -40px 0px; font-size: 16px; border-right: 1px solid rgb(225, 225, 225); font-family: nanumbarungothic;">
-                                        <a href="view/news.html" target="_self" style="color: rgb(0, 0, 0);"> <b>ประชาสัมพันธ์</b></a>
-                                    </li>
-                                    <li class="gnb_top_menu" id="number6" style="padding: 52px 0px 27px; float: left; margin: -40px 0px; font-size: 16px; border-right: 1px solid rgb(225, 225, 225); font-family: nanumbarungothic;">
-                                        <a href="view/news.html" target="_self" style="color: rgb(0, 0, 0);"> <b>ข่าวสาร</b></a>
-                                    </li>
-                                    <li class="gnb_top_menu" id="number7" style="padding: 52px 0px 27px; float: left; margin: -40px 0px; font-size: 16px; border-right: 1px solid rgb(225, 225, 225); font-family: nanumbarungothic;">
-                                        <a href="view/qa.html" target="_self" style="color: rgb(0, 0, 0);"> <b>บริการลูกค้า</b></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                     </div>
-                    
-                    <!-- sub navbar -->
-                    <div id="gnb_sub_menu" class="gnb_ab" style="z-index:9999999999;padding-top:10px; display:none ">
-                       <div id="gnb_menu_sub" style="">
-                            <ul id="sub_menu_ul5">
-                                <li class="sub_menu_text_hover" style=""><a href="view/qa.html" target="_self">Q&amp;A</a></li>
-                                <li class="sub_menu_text_hover" style=""><a href="view/faq.html" target="_self">FAQ</a></li>
-                                <li class="sub_menu_text_hover" style=""><a href="view/contact.html" target="_self">ติดต่อเรา</a></li>
-                            </ul>
-                            <ul id="sub_menu_ul4">
-                                <li class="sub_menu_text_hover" style=""><a href="view/reqruit.html" target="_self">Recruit information</a></li>
-                            </ul>
-                            <ul id="sub_menu_ul3">
-                                <li class="sub_menu_text_hover" style=""><a href="view/news.html" target="_self">ข่าวสารจาก CUBEBIO</a></li>
-                                <li class="sub_menu_text_hover" style=""><a href="view/press.html" target="_self">ข่าวจากสื่อมวลชน</a></li>
-                                <li class="sub_menu_text_hover" style=""><a href="view/showroom.html" target="_self">โชว์รูม</a></li>
-                                <li class="sub_menu_text_hover" style=""><a href="view/division.html" target="_self">แนะนำสำนักงานสาขา</a></li>
-                            </ul>
-                            <ul id="sub_menu_ul2">
-                                <li class="sub_menu_text_hover" style=""><a href="view/research.html" target="_self">วิจัยและพัฒนา</a></li>
-                            </ul>
-                            <ul id="sub_menu_ul1">
-                                <li class="sub_menu_text_hover" style=""><a href="view/diagnosis-kit.html" target="_self">ชุดตรวจโรคมะเร็ง</a></li>
-                            </ul>
-                            <ul id="sub_menu_ul0">
-                                <li class="sub_menu_text_hover" style=""><a href="view/greeting.html" target="_self">ทักทาย</a></li>
-                                <li class="sub_menu_text_hover" style=""><a href="view/overview.html" target="_self">ภาพรวมและประวัติ</a></li>
-                                <li class="sub_menu_text_hover" style=""><a href="view/fields.html" target="_self">สาขาธุรกิจ</a></li>
-                                <li class="sub_menu_text_hover" style=""><a href="view/vision.html" target="_self">วิสัยทัศน์</a></li>
-                                <li class="sub_menu_text_hover" style=""><a href="view/center.html" target="_self">ศูนย์วิจัย</a></li>
-                                <li class="sub_menu_text_hover" style=""><a href="view/certificate.html" target="_self">ใบรับรองและสิทธิบัตร</a></li>
-                                <li class="sub_menu_text_hover" style=""><a href="view/map.html" target="_self">ที่ตั้งบริษัท</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                
+                <?php 
+                                
+                    if (!$_SESSION["USER_ID"]){ // check ว่าล๊อกอินหรือเปล่า เพื่อแสดง navbar
+                        require "view/header.php";
+                    } else {
+                        require "view/header_admin.php";
+                    }
+                ?>
 
 
-                <script>
-                    $(document).ready(function(){
-                        var agent = navigator.userAgent.toLowerCase();
-
-                        if( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
-                            $(".nav-dots").css("top","860px");
-                            $("blockquote").css("top","513px");
-                            $(".sl-slider h2").css("top","2px");
-                        }
-                    });
-                    jQuery(function(){
-                        jQuery('#camera_wrap_4').camera({
-                            height: 'auto',
-                            loader: 'bar',
-                            pagination: false,
-                            thumbnails: true,
-                            time: 2000,
-                            transPeriod: 1000,
-                            hover: false,
-                            opacityOnGrid: false,
-                            imagePath: 'images/'
-                        });
-                    });
-                </script>
+                
 
                 <div class="fluid_container">
 
@@ -856,18 +742,16 @@
 
                                         <div class="">
                                             <div class="main_icon">
-                                                <img src="./assets/img/20165294515_editor_image.png">
+                                                <img src="http://cubebio.asia/assets/img/20165294515_editor_image.png">
                                             </div>
                                             <div class="slide-down">
-                                                <p class="main_txt_tit" style="">about <span class="tc">cubebio</span></p>
+                                                <p class="main_txt_tit" style="">เกี่ยวกับ <span class="tc">cubebio</span></p>
                                             </div>
                                             <div class="slide-down">
                                                 <p class="main_txt" style="">
-                                                    Being cancer specilized company contributing to human health promotion through early diagnosis of cancer.
-                                                    <br>
-                                                    fully prepared to leap to the world first total solution provider related to cancer.
-                                                    <br>
-                                                    growing as research oriented bio company having competitive network and marketing ability by way of merging.
+                                                    เพื่อก้าวเป็นบริษัทที่ยกระดับคุณภาพชีวิตทางด้านสุขภาพของมนุษยชาติด้วยการช่วยให้สามารถตรวจพบเจอมะเร็งได้ตั้งแต่ระยะต้น<br>
+                                                    เรากำลังเตรียมตัวก้าวขึ้นสู่การเป็นศูนย์มะเร็ง TOTAL SOLUTION แห่งแรกของโลก  <br>
+                                                    ร่วมไปกับการเป็นบริษัทวิจัยทางด้านเทคโนโลยีชีวภาพที่พร้อมแข่งขันเพื่อก้าวขึ้นเป็นอันดับหนึ่งของตลาดโลก
                                                 </p>
                                             </div>
                                         </div>
@@ -878,7 +762,7 @@
                                 <div class="dragEleDiv" style="z-index: 999999;">
                                     <div class="makeContent1" style="z-index: 1;">
                                         <div style="width:100%;text-align:center;">
-                                            <img src="./assets/img/148696912052107.gif" style="" border="0">
+                                            <img src="http://cubebio.asia/assets/img/148696912052107.gif" style="" border="0">
                                         </div>
                                     </div>
                                 </div>
@@ -927,14 +811,14 @@
                                         
                                         <div id="cube">
                                             <div style="width:400px;">
-                                                <p class="text" style="padding:0;">เกี่ยวกับเรา</p>
-                                                <p class="text_s" style="padding:0;">Cubebio is aiming for the world first<br>total solution provider related to cancer.</p>
+                                                <p class="text" style="padding:0;">ทำความรู้จัก CUBEBIO</p>
+                                                <p class="text_s" style="padding:0;">เป้าหมายของ CUBEBIO คือ<br>การทำ Total Solution สำหรับโรคมะเร็งเป็นที่แรกของโลก</p>
                                             </div>
 
-                                            <a href="view/greeting.html">
+                                            <a href="http://cubebio.asia/view/greeting.php">
                                                 <div class="wrap-img">
                                                     <div class="btn">อ่านเพิ่มเติม</div>
-                                                    <img src="./assets/img/20165392316_editor_image.jpg">
+                                                    <img src="http://cubebio.asia/assets/img/20165392316_editor_image.jpg">
                                                 </div>
                                             </a>
                                         </div>
@@ -948,17 +832,15 @@
                                             <div style="width:400px;">
                                                 <p class="text" style="padding:0;">วิจัยและพัฒนา</p>
                                                 <p class="text_s" style="padding:0;">
-                                                    We introduce Cubebio R&amp;D Center, conducting
-                                                    <br>
-                                                    cancer-bio marker research and development,
-                                                    <br>
-                                                    development of cancer kit product, etc.
+                                                    แนะนำ CUBEBIO R&amp;D Center <br>
+                                                    ที่ซึ่งทำการวิจัยตัวชี้วัดทางชีวภาพของโรคมะเร็ง, <br>
+                                                    พัฒนาชุดตรวจโรคมะเร็ง เป็นต้น
                                                 </p>
                                             </div>
-                                            <a href="http://en.cubebio.co.kr/?code=47733">
+                                            <a href="http://cubebio.asia/view/research.php">
                                                 <div class="wrap-img">
                                                     <div class="btn">อ่านเพิ่มเติม</div>
-                                                    <img src="./assets/img/20165432017_editor_image.jpg">
+                                                    <img src="http://cubebio.asia/assets/img/20165432017_editor_image.jpg">
                                                 </div>
                                             </a>
                                         </div>
@@ -970,7 +852,7 @@
                                 <div class="dragEleDiv" style="z-index: 999999;">
                                     <div class="makeContent4" style="z-index: 1;"><!-- 현미경이미지 -->
                                         <div class="wrap-img">
-                                           <img src="./assets/img/20165192217_editor_image.jpg">
+                                           <img src="http://cubebio.asia/assets/img/20165192217_editor_image.jpg">
                                         </div>
                                     </div>
                                 </div>
@@ -981,7 +863,7 @@
                                         <div style="padding:25px 0;">
                                             <p style="text-align:left;">
                                                 <a href="http://en.cubebio.co.kr/index.php?device=pc">
-                                                    <img src="./assets/img/20172323213_editor_image.png">
+                                                    <img src="http://cubebio.asia/assets/img/20172323213_editor_image.png">
                                                 </a>
                                             </p>
                                             <p style="font-family:NanumBarunGothic; font-size:13px; color:#a8a8a8; line-height:21px; padding-top:15px; text-align:left;">
@@ -1004,12 +886,14 @@
                                     <div class="makeContent6" style="z-index: 1;"><!-- 쇼룸 -->
                                         <div id="show">
                                             <p class="text" style="padding:0;">โชว์รูม</p>
-                                            <p class="text_s" style="padding:0;">Have a look at innovative and unique products produced<br>through R&amp;D which are available in Cubebio only.
+                                            <p class="text_s" style="padding:0;">เชิญพบกับผลิตภัณฑ์นวัตกรรมใหม่ที่เป็นเอกลักษณ์ <br>
+                                                จากการวิจัย, พัฒนาและผลิตโดยวิธีเฉพาะ<br>
+                                                ของ CUBEBIO เท่านั้น
                                             </p>
-                                            <a href="http://en.cubebio.co.kr/?code=47731">
+                                            <a href="http://cubebio.asia/view/showroom.php">
                                                 <div class="wrap-img">
                                                     <div class="btn">อ่านเพิ่มเติม</div>
-                                                    <img src="./assets/img/20165472317_editor_image.jpg">
+                                                    <img src="http://cubebio.asia/assets/img/20165472317_editor_image.jpg">
                                                 </div>
                                             </a>
                                         </div>
@@ -1020,7 +904,7 @@
                                 <div class="dragEleDiv" style="z-index: 999999;">
                                     <div class="makeContent8" style="z-index: 1;">
                                         <div style="width:100%;text-align:center;">
-                                            <img src="./assets/img/1486971027263645.png" style="" border="0">
+                                            <img src="http://cubebio.asia/assets/img/1486971027263645.png" style="" border="0">
                                         </div>
                                     </div>
                                 </div>
@@ -1029,7 +913,7 @@
                                 <div class="dragEleDiv" style="z-index: 999999;">
                                     <div class="makeContent8" style="z-index: 1;">
                                         <div style="width:100%;text-align:center;">
-                                            <img src="./assets/img/1487031571763868.png" style="" border="0">
+                                            <img src="http://cubebio.asia/assets/img/1487031571763868.png" style="" border="0">
                                         </div>
                                     </div>
                                 </div>
@@ -1095,25 +979,25 @@
                                             <p class="footer_s_t">เกี่ยวกับเรา</p>
                                             <ul style="width:130px; list-style:none;">
                                                 <li class="sitemap_txt">
-                                                    <a href="view/greeting.html">ทักทาย</a>
+                                                    <a href="http://cubebio.asia/view/greeting.html">ทักทาย</a>
                                                 </li>
                                                 <li class="sitemap_txt">
-                                                    <a href="view/overview.html">ภาพรวมและประวัติ</a>
+                                                    <a href="http://cubebio.asia/view/overview.html">ภาพรวมและประวัติ</a>
                                                 </li>
                                                 <li class="sitemap_txt">
-                                                    <a href="view/fields.html">สาขาธุรกิจ</a>
+                                                    <a href="http://cubebio.asia/view/fields.html">สาขาธุรกิจ</a>
                                                 </li>
                                                 <li class="sitemap_txt">
-                                                    <a href="view/vision.html">วิสัยทัศน์</a>
+                                                    <a href="http://cubebio.asia/view/vision.html">วิสัยทัศน์</a>
                                                 </li>
                                                 <li class="sitemap_txt">
-                                                    <a href="view/center.html">แนะนำศูนย์วิจัย</a>
+                                                    <a href="http://cubebio.asia/view/center.html">แนะนำศูนย์วิจัย</a>
                                                 </li>
                                                 <li class="sitemap_txt">
-                                                    <a href="view/certificate.html">ใบรับรองและสิทธิบัตร</a>
+                                                    <a href="http://cubebio.asia/view/certificate.html">ใบรับรองและสิทธิบัตร</a>
                                                 </li>
                                                 <li class="sitemap_txt">
-                                                    <a href="view/map.html">ที่ตั้งบริษัท</a>
+                                                    <a href="http://cubebio.asia/view/map.html">ที่ตั้งบริษัท</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -1121,14 +1005,14 @@
                                             <p class="footer_s_t">แนะนำสินค้า</p>
                                             <ul style="width:130px; list-style:none;">
                                                 <li class="sitemap_txt">
-                                                    <a href="view/diagnosis-kit.html">ชุดตรวจโรคมะเร็ง</a>
+                                                    <a href="http://cubebio.asia/view/diagnosis-kit.html">ชุดตรวจโรคมะเร็ง</a>
                                                 </li>
                                             </ul>
                                             
                                             <p class="footer_s_t" style="padding-top:125px; line-height:20px;">วิจัยและพัฒนา</p>
                                             <ul style="width:130px; list-style:none;">
                                                 <li class="sitemap_txt">
-                                                    <a href="view/research.html" style="line-height:18px; float:left; margin-top:10px;">วิจัยและพัฒนา</a>
+                                                    <a href="http://cubebio.asia/view/research.html" style="line-height:18px; float:left; margin-top:10px;">วิจัยและพัฒนา</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -1140,13 +1024,13 @@
                                                     <a href="http://en.cubebio.co.kr/bbs/board.php?bo_table=b_cubebio_en">ข่าวสารจาก CUBEBIO</a>
                                                 </li>
                                                 <li class="sitemap_txt">
-                                                    <a href="view/press.html">ข่าวจากสื่อมวลชน</a>
+                                                    <a href="http://cubebio.asia/view/press.html">ข่าวจากสื่อมวลชน</a>
                                                 </li>
                                                 <li class="sitemap_txt">
-                                                    <a href="view/showroom.html">โชว์รูม</a>
+                                                    <a href="http://cubebio.asia/view/showroom.html">โชว์รูม</a>
                                                 </li>
                                                 <li class="sitemap_txt">
-                                                    <a href="view/division.html">สำนักงานภาคธุรกิจ</a>
+                                                    <a href="http://cubebio.asia/view/division.html">สำนักงานภาคธุรกิจ</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -1155,7 +1039,7 @@
                                             <p class="footer_s_t">ข่าวสาร</p>
                                             <ul style="width:80px; list-style:none;">
                                                 <li class="sitemap_txt">
-                                                    <a href="view/reqruit.html">รับสมัครงาน</a>
+                                                    <a href="http://cubebio.asia/view/reqruit.html">รับสมัครงาน</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -1164,13 +1048,13 @@
                                             <p class="footer_s_t">บริการลูกค้า</p>
                                             <ul style="list-style:none; width:130px;">
                                                 <li class="sitemap_txt_f">
-                                                    <a href="view/qa.html">Q&amp;A</a>
+                                                    <a href="http://cubebio.asia/view/qa.html">Q&amp;A</a>
                                                 </li>
                                                 <li class="sitemap_txt_f">
-                                                    <a href="view/faq.html">FAQ</a>
+                                                    <a href="http://cubebio.asia/view/faq.html">FAQ</a>
                                                 </li>
                                                 <li class="sitemap_txt_f">
-                                                    <a href="view/contact.html">ติดต่อเรา</a>
+                                                    <a href="http://cubebio.asia/view/contact.html">ติดต่อเรา</a>
                                                 </li>
                                             </ul>
                                         </div>
