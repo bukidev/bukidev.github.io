@@ -979,25 +979,25 @@
                                             <p class="footer_s_t">เกี่ยวกับเรา</p>
                                             <ul style="width:130px; list-style:none;">
                                                 <li class="sitemap_txt">
-                                                    <a href="http://cubebio.asia/view/greeting.html">ทักทาย</a>
+                                                    <a href="http://cubebio.asia/view/greeting.php">ทักทาย</a>
                                                 </li>
                                                 <li class="sitemap_txt">
-                                                    <a href="http://cubebio.asia/view/overview.html">ภาพรวมและประวัติ</a>
+                                                    <a href="http://cubebio.asia/view/overview.php">ภาพรวมและประวัติ</a>
                                                 </li>
                                                 <li class="sitemap_txt">
-                                                    <a href="http://cubebio.asia/view/fields.html">สาขาธุรกิจ</a>
+                                                    <a href="http://cubebio.asia/view/fields.php">สาขาธุรกิจ</a>
                                                 </li>
                                                 <li class="sitemap_txt">
-                                                    <a href="http://cubebio.asia/view/vision.html">วิสัยทัศน์</a>
+                                                    <a href="http://cubebio.asia/view/vision.php">วิสัยทัศน์</a>
                                                 </li>
                                                 <li class="sitemap_txt">
-                                                    <a href="http://cubebio.asia/view/center.html">แนะนำศูนย์วิจัย</a>
+                                                    <a href="http://cubebio.asia/view/center.php">แนะนำศูนย์วิจัย</a>
                                                 </li>
                                                 <li class="sitemap_txt">
-                                                    <a href="http://cubebio.asia/view/certificate.html">ใบรับรองและสิทธิบัตร</a>
+                                                    <a href="http://cubebio.asia/view/certificate.php">ใบรับรองและสิทธิบัตร</a>
                                                 </li>
                                                 <li class="sitemap_txt">
-                                                    <a href="http://cubebio.asia/view/map.html">ที่ตั้งบริษัท</a>
+                                                    <a href="http://cubebio.asia/view/map.php">ที่ตั้งบริษัท</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -1005,14 +1005,14 @@
                                             <p class="footer_s_t">แนะนำสินค้า</p>
                                             <ul style="width:130px; list-style:none;">
                                                 <li class="sitemap_txt">
-                                                    <a href="http://cubebio.asia/view/diagnosis-kit.html">ชุดตรวจโรคมะเร็ง</a>
+                                                    <a href="http://cubebio.asia/view/diagnosis-kit.php">ชุดตรวจโรคมะเร็ง</a>
                                                 </li>
                                             </ul>
                                             
                                             <p class="footer_s_t" style="padding-top:125px; line-height:20px;">วิจัยและพัฒนา</p>
                                             <ul style="width:130px; list-style:none;">
                                                 <li class="sitemap_txt">
-                                                    <a href="http://cubebio.asia/view/research.html" style="line-height:18px; float:left; margin-top:10px;">วิจัยและพัฒนา</a>
+                                                    <a href="http://cubebio.asia/view/research.php" style="line-height:18px; float:left; margin-top:10px;">วิจัยและพัฒนา</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -1021,16 +1021,16 @@
                                             <p class="footer_s_t">ประชาสัมพันธ์</p>
                                             <ul style="width:130px; list-style:none;">
                                                 <li class="sitemap_txt">
-                                                    <a href="http://en.cubebio.co.kr/bbs/board.php?bo_table=b_cubebio_en">ข่าวสารจาก CUBEBIO</a>
+                                                    <a href="http://cubebio.asia/view/news.php">ข่าวสารจาก CUBEBIO</a>
                                                 </li>
                                                 <li class="sitemap_txt">
-                                                    <a href="http://cubebio.asia/view/press.html">ข่าวจากสื่อมวลชน</a>
+                                                    <a href="http://cubebio.asia/view/press.php">ข่าวจากสื่อมวลชน</a>
                                                 </li>
                                                 <li class="sitemap_txt">
-                                                    <a href="http://cubebio.asia/view/showroom.html">โชว์รูม</a>
+                                                    <a href="http://cubebio.asia/view/showroom.php">โชว์รูม</a>
                                                 </li>
                                                 <li class="sitemap_txt">
-                                                    <a href="http://cubebio.asia/view/division.html">สำนักงานภาคธุรกิจ</a>
+                                                    <a href="http://cubebio.asia/view/division.php">สำนักงานภาคธุรกิจ</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -1039,7 +1039,7 @@
                                             <p class="footer_s_t">ข่าวสาร</p>
                                             <ul style="width:80px; list-style:none;">
                                                 <li class="sitemap_txt">
-                                                    <a href="http://cubebio.asia/view/reqruit.html">รับสมัครงาน</a>
+                                                    <a href="http://cubebio.asia/view/reqruit.php">รับสมัครงาน</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -1048,13 +1048,13 @@
                                             <p class="footer_s_t">บริการลูกค้า</p>
                                             <ul style="list-style:none; width:130px;">
                                                 <li class="sitemap_txt_f">
-                                                    <a href="http://cubebio.asia/view/qa.html">Q&amp;A</a>
+                                                    <a href="http://cubebio.asia/view/qa.php">Q&amp;A</a>
                                                 </li>
                                                 <li class="sitemap_txt_f">
-                                                    <a href="http://cubebio.asia/view/faq.html">FAQ</a>
+                                                    <a href="http://cubebio.asia/view/faq.php">FAQ</a>
                                                 </li>
                                                 <li class="sitemap_txt_f">
-                                                    <a href="http://cubebio.asia/view/contact.html">ติดต่อเรา</a>
+                                                    <a href="http://cubebio.asia/view/contact.php">ติดต่อเรา</a>
                                                 </li>
                                             </ul>
                                         </div>

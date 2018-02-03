@@ -51,7 +51,7 @@
                                         <a href="http://cubebio.asia/view/diagnosis-kit.php" target="_self" style="color: rgb(0, 0, 0);"> <b>แนะนำสินค้า</b></a>
                                     </li>
                                     <li class="gnb_top_menu" id="number4" style="padding: 52px 0px 27px; float: left; margin: -40px 0px; font-size: 16px; border-right: 1px solid rgb(225, 225, 225); font-family: nanumbarungothic;">
-                                        <a href="http://cubebio.asia/view/research.php" target="_self" style="color: rgb(0, 0, 0);"> <b>วิจัยและพัฒนา</b></a>
+                                        <a href="http://cubebio.asia/view/research.php" target="_self" style="color: rgb(0, 0, 0);"> <b>วิจัยและ<br>พัฒนา</b></a>
                                     </li>
                                     <li class="gnb_top_menu" id="number5" style="padding: 52px 0px 27px; float: left; margin: -40px 0px; font-size: 16px; border-right: 1px solid rgb(225, 225, 225); font-family: nanumbarungothic;">
                                         <a href="http://cubebio.asia/view/news.php" target="_self" style="color: rgb(0, 0, 0);"> <b>ประชาสัมพันธ์</b></a>
@@ -76,7 +76,7 @@
                                 <li class="sub_menu_text_hover" style=""><a href="http://cubebio.asia/view/contact.php" target="_self">ติดต่อเรา</a></li>
                             </ul>
                             <ul id="sub_menu_ul4">
-                                <li class="sub_menu_text_hover" style=""><a href="http://cubebio.asia/view/reqruit.php" target="_self">Recruit information</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="http://cubebio.asia/view/reqruit.php" target="_self">รับสมัครงาน</a></li>
                             </ul>
                             <ul id="sub_menu_ul3">
                                 <li class="sub_menu_text_hover" style=""><a href="http://cubebio.asia/view/news.php" target="_self">ข่าวสารจาก CUBEBIO</a></li>
