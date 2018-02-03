@@ -104,7 +104,7 @@
                                     });
                                 </script>
                                 <div class="mbskin">
-                                    <form name="register" id="register" autocomplete="off" action="../controller/register_1.php" method="POST">
+                                    <form name="register" id="register" autocomplete="off" action="../controller/register_1.php" method="POST"> <!--   -->
                                         
                                         <div id="frmRegister1">
                                             <section id="fregister_img">
@@ -470,9 +470,10 @@
                                                             </th>
                                                             <td>
                                                                 <span class="frm_info">สามารถใส่เป็นตัวอักษรภาษาอังกฤษ, ตัวเลขและ _ เท่านั้น กรุณาใส่อย่างน้อย 3 ตัวอักษร </span>
-                                                                <input type="text" name="user_id" value="" id="reg_mb_id" required="" class="frm_input minlength_3 required " maxlength="20" onchange="document.frm.id_overlap.value='N'">
+                                                                <input type="text" name="reg_mb_id" value="" id="reg_mb_id" required="" class="frm_input minlength_3 required " maxlength="20" onblur="check_availability()">
                                     &nbsp;&nbsp;
-                                                                <!--<input type="submit" value="Duplicate ID check" style="font-size: 14px; font-family:noto sans KR; width:140px; height:30px; border:0; background:#505050; color:#fff;" onclick="chk_overlap()">		<span id="msg_mb_id"></span>-->
+                                                                <!--<input id="userIdCheckBtn" type="button" value="ตรวจสอบ ID" style="font-size: 14px; font-family:noto sans KR; width:140px; height:30px; border:0; background:#505050; color:#fff;" onclick="">
+                                                                <span id="msg_mb_id"></span>-->
                                                                 
                                                                 <!--
                                                                 <script>
@@ -753,5 +754,6 @@
         </div>
         
         <script src="../assets/js/jquery-cookie.js"></script>
+        <script src="../assets/js/user_id_check.js"></script>
     </body>
 </html>

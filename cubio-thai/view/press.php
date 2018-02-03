@@ -86,7 +86,7 @@
                         <div class="right_content" style="">
                             <div class="nav">
                                 <p>	
-                                    <img src="../assets/img/greeting/icon_home.png"> หน้าหลัก &gt; ประชาสัมพันธ์ &gt; ข่าวสารจาก CUBEBIO		
+                                    <img src="../assets/img/greeting/icon_home.png"> หน้าหลัก &gt; ประชาสัมพันธ์ &gt; ข่าวจากสื่อมวลชน
                                 </p>
                             </div>
                             <div id="grid_area" style="">

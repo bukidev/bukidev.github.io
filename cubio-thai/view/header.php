@@ -57,7 +57,7 @@
                                         <a href="http://cubebio.asia/view/news.php" target="_self" style="color: rgb(0, 0, 0);"> <b>ประชาสัมพันธ์</b></a>
                                     </li>
                                     <li class="gnb_top_menu" id="number6" style="padding: 52px 0px 27px; float: left; margin: -40px 0px; font-size: 16px; border-right: 1px solid rgb(225, 225, 225); font-family: nanumbarungothic;">
-                                        <a href="http://cubebio.asia/view/news.php" target="_self" style="color: rgb(0, 0, 0);"> <b>ข่าวสาร</b></a>
+                                        <a href="http://cubebio.asia/view/reqruit.php" target="_self" style="color: rgb(0, 0, 0);"> <b>ข่าวสาร</b></a>
                                     </li>
                                     <li class="gnb_top_menu" id="number7" style="padding: 52px 0px 27px; float: left; margin: -40px 0px; font-size: 16px; border-right: 1px solid rgb(225, 225, 225); font-family: nanumbarungothic;">
                                         <a href="http://cubebio.asia/view/qa.php" target="_self" style="color: rgb(0, 0, 0);"> <b>บริการลูกค้า</b></a>
@@ -71,33 +71,33 @@
                     <div id="gnb_sub_menu" class="gnb_ab" style="z-index:9999999999;padding-top:10px; display:none ">
                        <div id="gnb_menu_sub" style="">
                             <ul id="sub_menu_ul5">
-                                <li class="sub_menu_text_hover" style=""><a href="view/qa.php" target="_self">Q&amp;A</a></li>
-                                <li class="sub_menu_text_hover" style=""><a href="view/faq.php" target="_self">FAQ</a></li>
-                                <li class="sub_menu_text_hover" style=""><a href="view/contact.php" target="_self">ติดต่อเรา</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="http://cubebio.asia/view/qa.php" target="_self">Q&amp;A</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="http://cubebio.asia/view/faq.php" target="_self">FAQ</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="http://cubebio.asia/view/contact.php" target="_self">ติดต่อเรา</a></li>
                             </ul>
                             <ul id="sub_menu_ul4">
-                                <li class="sub_menu_text_hover" style=""><a href="view/reqruit.php" target="_self">Recruit information</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="http://cubebio.asia/view/reqruit.php" target="_self">Recruit information</a></li>
                             </ul>
                             <ul id="sub_menu_ul3">
-                                <li class="sub_menu_text_hover" style=""><a href="view/news.php" target="_self">ข่าวสารจาก CUBEBIO</a></li>
-                                <li class="sub_menu_text_hover" style=""><a href="view/press.php" target="_self">ข่าวจากสื่อมวลชน</a></li>
-                                <li class="sub_menu_text_hover" style=""><a href="view/showroom.php" target="_self">โชว์รูม</a></li>
-                                <li class="sub_menu_text_hover" style=""><a href="view/division.php" target="_self">แนะนำสำนักงานสาขา</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="http://cubebio.asia/view/news.php" target="_self">ข่าวสารจาก CUBEBIO</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="http://cubebio.asia/view/press.php" target="_self">ข่าวจากสื่อมวลชน</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="http://cubebio.asia/view/showroom.php" target="_self">โชว์รูม</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="http://cubebio.asia/view/division.php" target="_self">แนะนำสำนักงานสาขา</a></li>
                             </ul>
                             <ul id="sub_menu_ul2">
-                                <li class="sub_menu_text_hover" style=""><a href="view/research.php" target="_self">วิจัยและพัฒนา</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="http://cubebio.asia/view/research.php" target="_self">วิจัยและพัฒนา</a></li>
                             </ul>
                             <ul id="sub_menu_ul1">
-                                <li class="sub_menu_text_hover" style=""><a href="view/diagnosis-kit.php" target="_self">ชุดตรวจโรคมะเร็ง</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="http://cubebio.asia/view/diagnosis-kit.php" target="_self">ชุดตรวจโรคมะเร็ง</a></li>
                             </ul>
                             <ul id="sub_menu_ul0">
-                                <li class="sub_menu_text_hover" style=""><a href="view/greeting.php" target="_self">ทักทาย</a></li>
-                                <li class="sub_menu_text_hover" style=""><a href="view/overview.php" target="_self">ภาพรวมและประวัติ</a></li>
-                                <li class="sub_menu_text_hover" style=""><a href="view/fields.php" target="_self">สาขาธุรกิจ</a></li>
-                                <li class="sub_menu_text_hover" style=""><a href="view/vision.php" target="_self">วิสัยทัศน์</a></li>
-                                <li class="sub_menu_text_hover" style=""><a href="view/center.php" target="_self">ศูนย์วิจัย</a></li>
-                                <li class="sub_menu_text_hover" style=""><a href="view/certificate.php" target="_self">ใบรับรองและสิทธิบัตร</a></li>
-                                <li class="sub_menu_text_hover" style=""><a href="view/map.php" target="_self">ที่ตั้งบริษัท</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="http://cubebio.asia/view/greeting.php" target="_self">ทักทาย</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="http://cubebio.asia/view/overview.php" target="_self">ภาพรวมและประวัติ</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="http://cubebio.asia/view/fields.php" target="_self">สาขาธุรกิจ</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="http://cubebio.asia/view/vision.php" target="_self">วิสัยทัศน์</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="http://cubebio.asia/view/center.php" target="_self">ศูนย์วิจัย</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="http://cubebio.asia/view/certificate.php" target="_self">ใบรับรองและสิทธิบัตร</a></li>
+                                <li class="sub_menu_text_hover" style=""><a href="http://cubebio.asia/view/map.php" target="_self">ที่ตั้งบริษัท</a></li>
                             </ul>
                         </div>
                     </div>

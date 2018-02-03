@@ -12,9 +12,9 @@
         <link rel="stylesheet" href="../assets/css/layout.css">
         <link rel="stylesheet" href="../assets/css/jquery-ui.css"> 
         <link rel="stylesheet" href="../assets/css/gnb.css"> 
-        <link rel="stylesheet" href="../assets/css/img.css">
+        <link rel="stylesheet" href="../assets/css/img.css"> 
+        <!--<link rel="stylesheet" href="../assets/css/content-ir-quest.css"> -->
         <link rel="stylesheet" href="../assets/css/default_e_2.css"> 
-        <link rel="stylesheet" href="../assets/css/content-qa.css"> 
         <link rel="stylesheet" href="../assets/css/news-style.css"> 
     
         <script type="text/javascript" src="../assets/js/jquery-1.8.3.min.js"></script>
@@ -68,7 +68,7 @@
                     <div class="banner">
                         <ul class="banner_img">
                             <li>
-                                <img src="http://cdn.acus.kr/cubebio_en/menu/1487143358962024.jpg" alt="배너이미지" class="banner01">
+                                <img src="../assets/img/news/1486974086310111.jpg" alt="배너이미지" class="banner01">
                             </li>
                         </ul>
                     </div>
@@ -78,61 +78,97 @@
                     <div class="content">
                         
                         <!-- /////////////////////////////  left menu /////////////////////////////////-->
-                        <?php require "sidebar_06.php" ?>
+                        <?php require "sidebar_04.php" ?>
                         
                         
                         
 						<!-- /////////////////////////////  left menu top /////////////////////////////////-->
-                        <div class="right_content" style="">
+                        <div class="right_content" style="">	
+
                             <div class="nav">
-                                <p>
-                                    <img src="http://en.cubebio.co.kr/acus/layout/typeE/images/icon_home.png"> หน้าหลัก &gt; ข่าวสาร &gt; รับสมัครงาน
+                                <p>	
+                                <img src="http://en.cubebio.co.kr/acus/layout/typeE/images/icon_home.png"> หน้าหลัก &gt; ประชาสัมพันธ์ &gt; โชว์รูม				
                                 </p>
-                        </div>
+                            </div>
+                            <div id="grid_area" style=" ">
+                                <style>
+.title_div {margin:69px 0 0 40px;}
+.title_div .tit{
+	font-family: NanumBarunGothic;
+	font-size: 23px;
+	/*text-transform: uppercase;*/
+	color: #000;
+	font-weight:400;
+	margin:0;
+	text-align:left;
+}
+.title_div .tit_s{
+	font-family: Arial;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #cecece;
+	margin-left:10px;
+}
+.tab_dvi{ height: 40px; width:895px; margin:30px auto 0;}
+.tab_dvi ul{ position:absolute;}
+.tab_dvi ul li{  width: 297px; line-height: 40px; text-align: center; background: #f6f6f6; border:1px solid #e1e1e1; font-size:18px; font-family:nanumbarungothic;}
+.tab_dvi a{color: #9d979f ;display:block;}
+.on_h a{background:#5674ba;color:white;}
 
-                        <div id="grid_area" style="">
-                            <div id="con">
-
-                                <p class="tit">Q&amp;A</p>
-
-                                <div class="h1">
-                                    <p>
-                                        Q&amp;A เป็นพื้นที่สำหรับถามตอบเรื่องเกี่ยวกับสินค้าและการพัฒนา<br>
-                                        สินค้าหากเป็นคำถามเกี่ยวกับ IR หรือการลงทุน<br>
-                                        กรุณาถามในช่องทางเฉพาะที่มีให้</p>
-                                        คำถามที่ไม่เกี่ยวข้องกับสินค้าและการพัฒนาสินค้าอาจถูกลบออกได้<br>
-                                        เราเปิดรับคำถามเกี่ยวกับการพัฒนาสินค้าในด้านต่างๆ เพื่อพัฒนา CUBEBIO ให้ดีขึ้น<br>
-                                        ขอให้ท่านเปิดใจให้กว้างและร่วมส่งคำถามกันเข้ามามากๆ
+/*.canvas_grid{ margin-top: -60px; border-top: 2px solid  #06377a; padding-top:50px;}*/
+</style>
+                                <div class="title_div">
+                                    <p class="tit">โชว์รูม</p>
                                 </div>
-
-                                <div class="con_box">
+                                <div class="tab_dvi">
                                     <ul>
-                                        <li>
-                                            <a onclick="javascript:alert('คุณไม่มีสิทธิ์เขียน');"> <!-- href="http://cubebio.asia/view/qa_write.php" -->
-                                                <img src="http://admin.acus.kr/secure_zone/upFile/cubebio_en/editor/2017233615_editor_image.jpg" alt="글쓰기">
-                                            </a>
+                                        <li style="border-left:none;border-right:none;">
+                                            <a href="http://cubebio.asia/view/showroom.php">IR Room</a>
                                         </li>
-                                        <li style="margin-left:135px;">
-                                            <a href="http://cubebio.asia/view/ir_quest.php">
-                                                <img src="http://admin.acus.kr/secure_zone/upFile/cubebio_en/editor/2017243615_editor_image.jpg" alt="IR문의">
-                                            </a>
+                                        <li style="border-left:none;border-right:none;">
+                                            <a href="http://cubebio.asia/view/ir_quest.php">สอบถามเกี่ยวกับ IR</a>
                                         </li>
-                                        <li style="margin-left:270px;">
-                                            <a href="http://cubebio.asia/view/reqruit.php">
-                                                <img src="http://admin.acus.kr/secure_zone/upFile/cubebio_en/editor/2017253615_editor_image.jpg" alt="채용">
-                                            </a>
-                                        </li>
+                                        <li class="oh_h"><a href="http://cubebio.asia/view/picture_data.php">ข้อมูลภาพ</a></li>
                                     </ul>
                                 </div>
+                                
+                                <div>
+	<style>
+		/* 영상자료 */
+		#con2{
+		padding:60px 40px 20px 40px; width:890px; float:left;
+		}
 
-
-                        </div>
-                            <style>
-                                #bo_list {color:;}
-                                #bo_list .colH{color:;}
-                            </style>
-                            
-                            <div id="bo_list" style="width:100%; ">
+		#con2 .tit{
+			font-family: NanumBarunGothic;
+			font-size: 23px;
+			/*text-transform: uppercase;*/
+			color: #000;
+			font-weight:400;
+			margin:0;
+			text-align:left;
+		}
+		#con2 .tit_s{
+			font-family: Arial;
+			font-size: 12px;
+			text-transform: uppercase;
+			color: #cecece;
+			margin-left:10px;
+		}
+		/* 영상자료// */
+	</style>
+	<div id="con2">
+		<p class="tit">Picture Data</p>
+		<!--
+		<div class="con_box">
+			
+		</div>-->
+	</div>
+    <style>
+    #bo_list {color:;}
+    #bo_list .colH{color:;}
+    </style>       
+    <div id="bo_list" style="width:100%; ">
     
 
     <!-- 게시판 카테고리 시작 { -->
@@ -147,7 +183,7 @@
 		<fieldset id="bo_sch">
 			<legend>게시물 검색</legend>
 			<form name="fsearch" method="get">
-			<input type="hidden" name="bo_table" value="b_cubebio_en_4">
+			<input type="hidden" name="bo_table" value="b_cubebio_en_7">
 			<input type="hidden" name="sca" value="">
 			<input type="hidden" name="sop" value="and">
 			<label for="sfl" class="sound_only">검색대상</label>
@@ -172,7 +208,7 @@
     <!-- } 게시판 페이지 정보 및 버튼 끝 -->
 
     <form name="fboardlist" id="fboardlist" action="./board_list_update.php" onsubmit="return fboardlist_submit(this);" method="post">
-    <input type="hidden" name="bo_table" value="b_cubebio_en_4">
+    <input type="hidden" name="bo_table" value="b_cubebio_en_7">
     <input type="hidden" name="sfl" value="">
     <input type="hidden" name="stx" value="">
     <input type="hidden" name="spt" value="">
@@ -182,14 +218,14 @@
 
     <div class="tbl_head01 tbl_wrap" style="background-color:;">
         <table style="border-top:2px solid ;"><!-- 테이블 선 색상 -->
-			<caption>board4 List</caption>
+			<caption>board7 List</caption>
 			<thead style="background:;"> <!-- 테이블 헤더 배경 색상 -->
 				<tr>
 				   										<th scope="col">Number</th>
 					<th scope="col" style="">Title</th>
 										<th scope="col">Writer</th>
-					<th scope="col"><a href="/bbs/board.php?bo_table=b_cubebio_en_4&amp;sop=and&amp;sst=wr_datetime&amp;sod=desc&amp;sfl=&amp;stx=&amp;page=1">Date</a></th>
-															<th scope="col"><a href="/bbs/board.php?bo_table=b_cubebio_en_4&amp;sop=and&amp;sst=wr_hit&amp;sod=desc&amp;sfl=&amp;stx=&amp;page=1">Hit</a></th>
+					<th scope="col"><a href="/bbs/board.php?bo_table=b_cubebio_en_7&amp;sop=and&amp;sst=wr_datetime&amp;sod=desc&amp;sfl=&amp;stx=&amp;page=1">Date</a></th>
+															<th scope="col"><a href="/bbs/board.php?bo_table=b_cubebio_en_7&amp;sop=and&amp;sst=wr_hit&amp;sod=desc&amp;sfl=&amp;stx=&amp;page=1">Hit</a></th>
 																								</tr>
 			</thead>
 			<tbody>
@@ -201,6 +237,7 @@
 	<div class="paging01">
 
 		</div>
+</div>
 </div>
                             </div>
                         </div>

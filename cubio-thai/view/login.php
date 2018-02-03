@@ -733,7 +733,7 @@ $(document).ready(function(){
                                     </form>
                                 </div>
                                 <div class="login_frm2">
-                                    <div style="float:left;">
+                                    <!--<div style="float:left;">
                                         <p style="margin-right:20px;">
                                             <span>ลืม ID และ รหัสผ่าน</span>
                                         </p>
@@ -747,7 +747,7 @@ $(document).ready(function(){
                                                 <button style="font-size: 13px; color: #404040; border:1px solid #e0e0e0; width:100px; line-height:30px; background:#fff; font-family:noto sans CJK KR;">ค้นหารหัสผ่าน</button>
                                             </a>
                                         </p>
-                                    </div>
+                                    </div>-->
                                     <div style="float:right;">
                                         <p>
                                             <span style="margin-right:20px;">ท่านยังไม่ได้เป็นสมาชิกไช่หรือไม่?</span>

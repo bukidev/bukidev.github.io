@@ -70,24 +70,7 @@
                     <div class="content">
                         
                         <!-- /////////////////////////////  left menu /////////////////////////////////-->
-                        <div id="leftBox" style="background-color:;min-height:500px;">
-                            <h1 style="text-align:left; font-size: 36px;color: #5674b9;">บริการลูกค้า
-                            </h1>
-                            
-                            <ul class="sidemenu">
-                                <li id="leftLi">
-                                    <a href="qa.html"><h3>Q&amp;A</h3></a>
-                                </li>
-                                <li id="leftLi">
-                                    <a href="faq.html"><h3>FAQ</h3></a>
-                                </li>
-                                <li id="leftLi">
-                                    <a href="contact.html"><h3>ติดต่อเรา</h3></a>
-                                </li>
-                            </ul>
-                            <div style="clear:both; margin-top:70px;"></div>
-                            <p></p>
-                        </div>
+                        <?php require "sidebar_06.php" ?>
                         
                         
                         
