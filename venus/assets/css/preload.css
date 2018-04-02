@@ -1,4 +1,4 @@
-/*preload*/
+/*-- preload --*/
 .preload-bg { background-image: url(../img/preload-logo.png);background-position: center center;background-repeat: no-repeat; }
 .preload-overlay { position: fixed;height: 100%;width: 0;top: 0;background-color: #fff;transition: all .75s;z-index: 99; }
 .preload-overlay.left { left: 0; }
