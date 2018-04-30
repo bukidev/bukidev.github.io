@@ -6,10 +6,12 @@
         transition: all ease-out .3s;
         position: fixed;
         z-index: 999999;
+        display: none;
     }
         
     .left-overlay.show {
         width: 100%;
+        display: block;
     }
 }
 
@@ -21,6 +23,7 @@
         transition: all ease-out .3s;
         position: fixed;
         z-index: 999999;
+        display: block;
     }
         
     .left-overlay.show {
