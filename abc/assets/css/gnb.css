@@ -1,0 +1,35 @@
+@media(min-width: 1px) {
+    .left-overlay {
+        width: 0%;
+        height: 100%;
+        background-color: white;
+        transition: all ease-out .3s;
+        position: fixed;
+        z-index: 999999;
+    }
+        
+    .left-overlay.show {
+        width: 100%;
+    }
+}
+
+@media(min-width: 1024px) {
+    .left-overlay {
+        width: auto;
+        height: 100%;
+        background-color: white;
+        transition: all ease-out .3s;
+        position: fixed;
+        z-index: 999999;
+    }
+        
+    .left-overlay.show {
+        width: 100%;
+    }
+}
+
+
+.bg-blackpurple {
+    background: rgb(6,0,64);
+    background: linear-gradient(0deg, rgba(6,0,64,1) 0%, rgba(39,0,60,1) 100%);
+}
