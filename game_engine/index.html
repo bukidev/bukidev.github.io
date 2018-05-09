@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/left-bar.css">
+    <link rel="stylesheet" href="assets/css/middle-bar.css">
+
+    <title>Game-Engine</title>
+      <style>
+          * {font-size: 12px !important;}
+      </style>
+  </head>
+  <body>
+      
+      <div class="container-fluid">
+        <div class="row">
+            <div id="leftBarApp" class="left-bar-wrap w-20 bg-dark pl-0 pr-0 pt-0 pd-0 position-fixed">
+                <form class="">
+                    <div class="form-content text-white">
+                        <div class="form-group row pl-2 pr-2 pt-2 pd-2" v-for="item in items">
+                            <label class="col-form-label col-4" v-bind:title="item.description">{{ item.text }}</label>
+                            <div class="col-8">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <hr>
+            </div>  
+            <div class="w-60 bg-dark h-100"></div>  
+            <div class="w-20 bg-dark h-100"></div>  
+        </div>
+      </div>
+    
+      <!--<div class="left-bar-wrap bg-dark position-fixed"></div>
+      <div class="middle-bar-wrap position-fixed bg-dark">
+        <div class="top-bar-wrap">
+            <button class="btn btn-sm btn-outline-dark">Save</button>
+            <button class="btn btn-sm btn-outline-dark">Play</button>
+          </div>  
+        <div id="canvas"></div>
+      </div>
+      <div class="right-bar-wrap bg-dark position-fixed"></div>
+      -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      
+      <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="assets/js/leftbarapp.js"></script>  
+  </body>
+</html>
