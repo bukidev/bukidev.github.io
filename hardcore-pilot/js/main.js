@@ -1,4 +1,4 @@
-var game = new Phaser.Game(config.width, config.height, config.render, config.id, config.system);
+var game = new Phaser.Game(config.screenWidth, config.screenHeight, config.render, config.id, {preload: preload, create: create, update: update});
 
 game.state.add('boot', state1);
 game.state.add('intro', state2);
