@@ -1,7 +1,6 @@
 var config = {
-    width: 1920,
-    height: 1080,
-    render: Phaser.AUTO,
-    id: 'game',
+    screenWidth: 1920,
+    screenHeight: 1080,
+    renderSystem: Phaser.AUTO,
     scale: Phaser.SHOW_ALL
 };
