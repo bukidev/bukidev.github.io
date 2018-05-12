@@ -1,6 +1,5 @@
 var config = {
-    screenWidth: 1920,
-    screenHeight: 1080,
-    renderSystem: Phaser.AUTO,
-    scale: Phaser.SHOW_ALL
+    screenWidth: window.innerWidth/*1280*/,
+    screenHeight: window.innerHeight/*720*/,
+    renderSystem: Phaser.AUTO
 };

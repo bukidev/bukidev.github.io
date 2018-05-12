@@ -12,10 +12,11 @@ var state6 = {
         
         cursors = game.input.keyboard.createCursorKeys();
         fireButton = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+        
     },
     
     update: function() {
-        if (cursors.left.isDown)
+        /*if (cursors.left.isDown)
         {
             player.body.velocity.x -= 8;
         }
@@ -31,7 +32,7 @@ var state6 = {
         else if (cursors.down.isDown)
         {
             player.y += 8;
-        }
+        }*/
 
         /*if (fireButton.isDown)
         {
