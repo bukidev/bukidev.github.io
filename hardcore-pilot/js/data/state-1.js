@@ -10,10 +10,10 @@ var state1 = {
         //game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
 
         // Keep original size
-        // game.scale.fullScreenScaleMode = Phaser.ScaleManager.NO_SCALE;
+         game.scale.fullScreenScaleMode = Phaser.ScaleManager.NO_SCALE;
 
         // Maintain aspect ratio
-        game.scale.fullScreenScaleMode = Phaser.ScaleManager.SHOW_ALL;
+        //game.scale.fullScreenScaleMode = Phaser.ScaleManager.SHOW_ALL;
         
         
         game.state.start('intro');
