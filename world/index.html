@@ -39,26 +39,16 @@
                 // create a basic BJS Scene object
                 var scene = new BABYLON.Scene(engine);
 
-                
-
                 // create a FreeCamera, and set its position to (x:0, y:5, z:-10)
-                var camera = new BABYLON.WebVRFreeCamera('camera1', new BABYLON.Vector3(0, 5,-10), scene);
+                var camera = new BABYLON.Camera('camera1', new BABYLON.Vector3.Zero(), scene);
+
                 
-                var vrHelper = scene.createDefaultVRExperience();
-
-                // target the camera to scene origin
-                camera.setTarget(BABYLON.Vector3.Zero());
-
-                scene.onPointerDown = function () {
-                        scene.onPointerDown = undefined
-                        camera.attachControl(canvas, true);
-                };
 
                 // create a basic light, aiming 0,1,0 - meaning, to the sky
                 //var light = new BABYLON.HemisphericLight('light1', new BABYLON.Vector3(0,1,0), scene);
                 
                 
-                var skybox = BABYLON.MeshBuilder.CreateBox("skyBox", {size:50.0}, scene);
+                var skybox = BABYLON.MeshBuilder.CreateBox("skyBox", {size:1000.0}, scene);
                 var skyboxMaterial = new BABYLON.StandardMaterial("skyBox", scene);
                 skyboxMaterial.backFaceCulling = false;
                 skyboxMaterial.reflectionTexture = new BABYLON.CubeTexture("skybox/skybox", scene);
@@ -68,6 +58,21 @@
                 skybox.material = skyboxMaterial;
                 
                 skybox.infiniteDistance = true;
+                
+               BABYLON.SceneLoader.Append('map/', 'untitled.babylon', scene, function() {
+                   
+                   
+
+                    var vrHelper = scene.createDefaultVRExperience();
+                    // target the camera to scene origin
+                    //camera.setTarget(BABYLON.Vector3.Zero());
+
+                    scene.onPointerDown = function () {
+                            scene.onPointerDown = undefined
+                            camera.attachControl(canvas, true);
+                    };
+                   
+               });
 
                 // return the created scene
                 return scene;
