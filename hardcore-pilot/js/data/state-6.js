@@ -16,22 +16,26 @@ var state6 = {
     },
     
     update: function() {
+        
+        player.x = game.input.mousePointer.x;
+        player.y = game.input.mousePointer.y;
+        
         /*if (cursors.left.isDown)
         {
-            player.body.velocity.x -= 8;
+            player.x -= player.speed;
         }
         else if (cursors.right.isDown)
         {
-            player.velocity.x += 8;
+            player.x += player.speed;
         }
 
         if (cursors.up.isDown)
         {
-            player.y -= 8;
+            player.y -= player.speed;
         }
         else if (cursors.down.isDown)
         {
-            player.y += 8;
+            player.y += player.speed;
         }*/
 
         /*if (fireButton.isDown)

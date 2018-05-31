@@ -1,5 +1,5 @@
 var config = {
-    screenWidth: window.innerWidth/*1280*/,
-    screenHeight: window.innerHeight/*720*/,
+    screenWidth: 1200,
+    screenHeight: 700,
     renderSystem: Phaser.AUTO
 };

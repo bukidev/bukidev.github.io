@@ -1,3 +1,3 @@
 var player = {
-    control: 
+    speed: .01 
 };
