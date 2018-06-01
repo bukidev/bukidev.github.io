@@ -1,124 +1,31 @@
-@media(min-width: 1px) {
-    .left-overlay {
-        width: 0%;
-        height: 100%;
-        background-color: white;
-        transition: all ease-out .3s;
-        position: fixed;
-        z-index: 999999;
-        display: none;
-    }
-        
-    .left-overlay.show {
-        width: 100%;
-        display: block;
-    }
+@media (min-width: 1px) {
     
-    .menu-nav {
-        width: 50%;
-        display: inline;
-        float: left;
-        border-left: #fff;
-    }
-    
-    .menu-nav>a {
-        display: block;
-        width: 100%;
-        text-align: center;
-        padding: 20px 15px;
-        border: .25px solid #fff;
-        border-radius: 0;
-    }
-    
-    .menu-brand {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-    
-    .menu-social>a {
-        display: block;
+    .gnb {
         background: #fff;
-        border-radius: 0;
-    }
-    
-    .sub-menu {
-        display: none;
-        background: #fff;
-        width: 100%;
-        height: auto;
-        padding: 20px 15px;
-    }
-    
-    .sub-menu.show {
-        display: block;
-    }
-}
-
-@media(min-width: 1024px) {
-    .left-overlay {
-        width: 200px;
-        height: 100%;
-        background-color: white;
-        transition: all ease-out .3s;
         position: fixed;
-        z-index: 999999;
-        display: block;
+        width: 0;
+        height: 100%;
+        transition: all .5s;
+        z-index: 2;
+    }
+    
+    .gnb.show {
+        width: 100%;
         
     }
-        
-    .left-overlay.show {
-        width: 100%;
+    
+    
+}
+
+@media (min-width: 1500px) {
+    
+    .gnb {
+        background: #000;
+        position: fixed;
+        width: 180px;
+        height: 100%;
+        transition: all .5s;
+        z-index: 2;
     }
     
-    .menu-nav {
-        width: 100%;
-        display: block;
-        float: left;
-        border-left: #fff;
-    }
-    
-    .menu-nav>a {
-        display: block;
-        width: 100%;
-        text-align: center;
-        border: 0;
-        padding: 10px 15px;
-    }
-    
-}
-
-
-.bg-blackpurple {
-    background: rgb(6,0,64);
-    background: linear-gradient(0deg, rgba(6,0,64,1) 0%, rgba(39,0,60,1) 100%);
-}
-
-.left-overlay>div.active, .left-overlay>div.active:hover {
-    background: rgba(193,127,255,1);
-    background: -moz-linear-gradient(-45deg, rgba(193,127,255,1) 0%, rgba(152,255,252,1) 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(193,127,255,1)), color-stop(100%, rgba(152,255,252,1)));
-    background: -webkit-linear-gradient(-45deg, rgba(193,127,255,1) 0%, rgba(152,255,252,1) 100%);
-    background: -o-linear-gradient(-45deg, rgba(193,127,255,1) 0%, rgba(152,255,252,1) 100%);
-    background: -ms-linear-gradient(-45deg, rgba(193,127,255,1) 0%, rgba(152,255,252,1) 100%);
-    background: linear-gradient(135deg, rgba(193,127,255,1) 0%, rgba(152,255,252,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c17fff', endColorstr='#98fffc', GradientType=1 );
-    
-}
-.active>a {
-    color: #fff;
-}
-
-.left-overlay>div>a {
-    color: #fff;
-    text-align: left;
-}
-
-.left-overlay>div:hover {
-    background: #fff;
-    text-align: left;
-    color: #000;
-}
-.left-overlay>div:hover a {
-    color: #000;
 }

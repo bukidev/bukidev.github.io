@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/splash.css">
+    <link rel="stylesheet" href="assets/css/head-img.css">
 
     <title>Hello, world!</title>
 
@@ -136,7 +137,7 @@
                 <div class="col-12 pl-0 pr-0">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb bg-white mb-0 shadow-sm rounded-0">
-                            <li class="breadcrumb-item"><a href="#">หน้าแรก</a></li>
+                            <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home"></i></a></li>
                             <li class="breadcrumb-item"><a href="#">สมาชิก</a></li>
                             <li class="breadcrumb-item active" aria-current="page">สมัคสมาชิก</li>
                         </ol>
@@ -164,7 +165,7 @@
                     <div class="modal-header" style="padding-top: 0;padding-bottom: 5px;">
                         <h4 class="modal-title"><strong>นโยบายความเป็นส่วนตัวและคุกกี้</strong></h4>
                     </div>
-                    <div class="modal-body" style="overflow-y: scroll;height:650px">
+                    <div class="modal-body" style="overflow-y: scroll;height:450px">
                         <p>เว็บไซต์นี้ เป็นของและดำเนินการโดย บริษัท Asia Beauty Consulting Co., Ltd. นโยบาย พร้อมกับ ข้อตกลงและเงื่อนไข ได้อธิบายวิธีการที่เทสโก้อาจใช้ข้อมูลเกี่ยวกับท่านที่เราเก็บรวบรวม รวมทั้งสิทธิของท่านในข้อมูลส่วนตัวของท่านที่เราเก็บไว้ ในการเข้าเว็บไซต์ซึ่งท่านจะต้องยืนยันว่าเข้าใจและตกลงตามนั้น โปรดอ่านนโยบาย ข้อตกลงและเงื่อนไขอย่างละเอียด</p>
 
                                                     <h5><strong>ข้อมูลของท่านที่เราบันทึกไว้</strong></h5>
@@ -247,8 +248,8 @@
                                                     <p><strong>เราขอสงวนสิทธิ์ในการเปลี่ยนนโยบายเมื่อใดก็ได้</strong></p>
 
                                                 </div>
-                    <div class="checkbox">
-                        <input type="checkbox" value=""> ฉันยอมรับเงื่อนไขและนโยบายความเป็นส่วนตัว
+                    <div class="form-checkbox mt-5">
+                        <input class="form-checkbox-input" type="checkbox" value=""> ฉันยอมรับเงื่อนไขและนโยบายความเป็นส่วนตัว
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 pt-5">
@@ -266,7 +267,16 @@
                             <input class="form-control" type="text" placeholder="นามสกุล...">
                         </div>
                         <div class="form-group">
-                            <div class="col-4 pl-0 pr-0">
+                            <input class="form-control" type="number" placeholder="เบอร์โทรศัพท์">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control">
+                                <option value="male">เพศชาย</option>
+                                <option value="female">เพศหญิง</option>
+                            </select>
+                        </div>
+                        <div class="form-group pb-2">
+                            <div class="pl-0 pr-2" style="width: 20%; float: left;">
                                 <select class="form-control">
                                     <option value="0">วันเกิด</option><!-- user can not select this choice -->
                                     <option value="1">1</option>
@@ -302,7 +312,7 @@
                                     <option value="31">31</option>
                                 </select>
                             </div>
-                            <div class="col-5 pl-0 pr-0">
+                            <div class="pl-1 pr-1" style="width: 50%; float: left;">
                                 <select class="form-control">
                                     <option value="0">เดือนเกิด</option><!-- user can not select this choice -->
                                     <option value="1">มกราคม</option>
@@ -319,7 +329,7 @@
                                     <option value="12">ธันวาคม</option>
                                 </select>
                             </div>
-                            <div class="col-3 pl-0 pr-0">
+                            <div class="pl-2 pr-0" style="width: 30%; float: left;">
                                 <select class="form-control">
                                     <option value="0">ปีเกิด</option><!-- user can not select this choice -->
                                     <option value="2017">2017</option>
@@ -439,15 +449,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <input class="form-control" type="number" placeholder="เบอร์โทรศัพท์">
-                        </div>
-                        <div class="form-group">
-                            <select class="form-control">
-                                <option value="male">เพศชาย</option>
-                                <option value="female">เพศหญิง</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
+                            
                             <label><strong>ศัลยกรรมที่สนใจ &#40;เลือกได้มากกว่า 1 ข้อ&#41; : </strong></label>
                             
                             <div class="form-check form-check-inline">
@@ -493,7 +495,7 @@
                     </form>
                 </div>    
                 <div class="col-12 pt-5 text-center">
-                    <p>ยังไม่ได้เป็นสมาชิก? <a href="#">สมัครสมาชิก</a> | <a href="#">ลืมรหัสผ่าน</a></p>
+                    <p>เป็นสมาชิก? <a href="#">ลงชื่อเข้าใช้งาน</a> | <a href="#">ลืมรหัสผ่าน</a></p>
                 </div>
             </div>
         </div>
