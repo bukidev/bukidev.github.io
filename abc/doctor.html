@@ -136,16 +136,19 @@
         <div class="pt-0 pb-5">
             
             <div class="col-12 pl-0 pr-0">
+                <h2 class="float-right mr-3" id="closeModal" v-on:click="closeModal">&times;</h2>
                 <img v-bind:src="modal.fullImgPath" class="img-fluid">
             </div>
             
             <div id="doctorDesc" class="col-12 pt-2">
-                <div v-on:click="showDesc()" class="text-center" style="margin-top: -50px; margin-bottom: 20px;">
+                <div class="text-center" style="margin-top: -50px; margin-bottom: 20px;">
                     <i class="fas fa-angle-up fa-3x"></i>
                 </div>
                 
-                <h5 class="text-secondary">{{modal.dPosition}}</h5>
-                <h1 class="text-dark">{{modal.dName}}</h1>
+                <h5 class="text-secondary">ศัลยแพทย์</h5>
+                <h1 class="text-dark">{{ modal.dName }}</h1>
+                <hr>
+                <h5 class="text-secondary">{{ modal.dPosition }}</h5>
 
 
                 <p v-for="list in modal.lists">{{ list }}</p>
@@ -158,7 +161,7 @@
         <div class="pt-5 pb-5">
             <h5 class="text-center text-secondary">Asia Beauty Center</h5>
             <h1 class="text-center text-dark">แนะนำทีมศัลยแพทย์</h1>
-            <p class="text-center text-secondary">ด้วยทักษะที่หาตัวจับยาก<BR>ให้เรานำเสนอประสบการณ์ของเรา</p>
+            <p class="text-center text-secondary">ด้วยทักษะที่หาตัวจับยาก<br>ให้เรานำเสนอประสบการณ์ของเรา</p>
         </div>
     </section>
     
@@ -184,8 +187,8 @@
                 <div v-for="item in items" class="col-12 col-sm-6 col-md-3 col-lg-4 pl-0 pr-0">
                     <a v-on:click="showModal(item.dID)">
                         <img v-bind:src="item.imgPath" class="img-fluid">
-                        <div class="bg-primary pt-3">
-                            <h4 class="text-center text-white"><strong>{{ item.dName }}</strong></h4>
+                        <div class="bg-primary pt-3 pb-2">
+                            <h4 class="text-center text-white"><strong>ศัลยแพทย์ {{ item.dName }}</strong></h4>
                             <h6 class="text-center text-white">{{ item.dPosition }}</h6>
                         </div>
                     </a>
@@ -194,36 +197,8 @@
         </div>
     </section>
     
-    <section>
     
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1>แผนที่</h1>
-                    <hr>
-                    <div id="map"></div>
-                    <script>
-                        function initMap() {
-                            var abc = {
-                                lat: 13.736591,
-                                lng: 100.588260
-                            };
-                            var map = new google.maps.Map(document.getElementById('map'), {
-                                zoom: 19,
-                                center: abc
-                            });
-                            var marker = new google.maps.Marker({
-                                position: abc,
-                                map: map
-                            });
-                        }
-                    </script>
-                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwhKiNFMoj52G8-gwffzCzCyKJpOOb9gE&callback=initMap"></script>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+    <!-- footer section -->
     <section class="mt-5">
         <div class="bg-white">
             <div class="container">
