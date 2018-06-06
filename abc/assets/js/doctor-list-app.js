@@ -14,7 +14,7 @@ var app = new Vue({
                 imgPath: 'assets/img/doctor/002.png',
                 dName: 'ลีซองจิน' ,
                 dPosition: 'แพทย์เฉพาะทางด้านศัลยกรรมตกแต่ง',
-                fullImgPath: 'assets/img/doctor/01-2.png'
+                fullImgPath: 'assets/img/doctor/002-2.png'
             },
             {
                 dID: 3,
