@@ -133,25 +133,24 @@
     <div id="doctorListApp">
         
     <div id="dModal" class="modal-overlay">
-        <div class="pt-0 pb-5">
-            
-            <div class="col-12 pl-0 pr-0">
-                <h2 class="float-right mr-3" id="closeModal" v-on:click="closeModal">&times;</h2>
-                <img v-bind:src="modal.fullImgPath" class="img-fluid">
-            </div>
-            
-            <div id="doctorDesc" class="col-12 pt-2">
-                <div class="text-center" style="margin-top: -50px; margin-bottom: 20px;">
-                    <i class="fas fa-angle-up fa-3x"></i>
+        <div class="container pt-0 pb-5">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-7 pl-0 pr-0">
+                    <h2 class="float-right mr-3" id="closeModal" v-on:click="closeModal">&times;</h2>
+                    <img v-bind:src="modal.fullImgPath" class="img-fluid">
                 </div>
-                
-                <h5 class="text-secondary">ศัลยแพทย์</h5>
-                <h1 class="text-dark">{{ modal.dName }}</h1>
-                <hr>
-                <h5 class="text-secondary">{{ modal.dPosition }}</h5>
 
+                <div id="doctorDesc" class="col-12 col-sm-12 col-md-12 col-lg-5 pt-2">
+                    <div class="text-center">
+                        <i class="fas fa-angle-up fa-3x"></i>
+                    </div>
+                    <h5 class="text-secondary">ศัลยแพทย์</h5>
+                    <h1 class="text-dark">{{ modal.dName }}</h1>
+                    <hr>
+                    <h5 class="text-secondary">{{ modal.dPosition }}</h5>
 
-                <p v-for="list in modal.lists">{{ list }}</p>
+                    <p v-for="list in modal.lists">{{ list }}</p>
+                </div>
             </div>
         </div>
     </div>
@@ -184,7 +183,7 @@
     <section>
         <div class="container bg-white">
             <div class="row">
-                <div v-for="item in items" class="col-12 col-sm-6 col-md-3 col-lg-4 pl-0 pr-0">
+                <div v-for="item in items" class="col-12 col-sm-6 col-md-3 col-lg-3 mt-3">
                     <a v-on:click="showModal(item.dID)">
                         <img v-bind:src="item.imgPath" class="img-fluid">
                         <div class="bg-primary pt-3 pb-2">
