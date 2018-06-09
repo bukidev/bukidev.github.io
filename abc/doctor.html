@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/splash.css">
     <link rel="stylesheet" href="assets/css/head-img.css">
     <link rel="stylesheet" href="assets/css/doctor.css">
+    <link rel="stylesheet" href="assets/css/bootadmin.min.css">
     
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
@@ -130,7 +131,66 @@
     
 </head>
 <body class="bg-light">
-    <div id="doctorListApp">
+    
+    <nav class="navbar navbar-expand navbar-dark bg-primary">
+        <a class="d-block d-sm-block d-md-block d-lg-none sidebar-toggle mr-auto" href="#">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a class="navbar-brand align-center" href="#">
+            <img src="assets/img/nav-logo-white-landscape-01.png" style="height: 30px; width: auto;">
+        </a>
+
+        <div class="navbar-collapse collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a href="tel:+6620021919" id="dd_phone" class="d-block d-sm-block d-md-block d-lg-none nav-link"><i class="fa fa-phone"></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" id="dd_user" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd_user">
+                        <a href="#" class="dropdown-item">Profile</a>
+                        <a href="#" class="dropdown-item">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="d-flex">
+        <div class="sidebar sidebar-dark bg-dark">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#sm_expand_1" data-toggle="collapse">
+                        <i class="fa fa-fw fa-link"></i> ศัลยกรรมหน้าอก
+                    </a>
+                    <ul id="sm_expand_1" class="list-unstyled collapse">
+                        <li><a href="#">Perfectionist of BREAST SURGERY</a></li>
+                        <li><a href="#">แก้หน้าอกด้วย  Motiva</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#sm_expand_2" data-toggle="collapse">
+                        <i class="fa fa-fw fa-link"></i> การดูแลหลังศัลยกรรม
+                    </a>
+                    <ul id="sm_expand_2" class="list-unstyled collapse">
+                        <li><a href="#">หน้าอก</a></li>
+                        <li><a href="#">สะโพก</a></li>
+                        <li><a href="#">ดูดไขมันและปรับรูปร่าง</a></li>
+                        <li><a href="#">จุดซ่อนเร้น</a></li>
+                        <li><a href="#">ใบหน้า</a></li>
+                        <li><a href="#">ผิวพรรณ</a></li>
+                        <li><a href="#">สร้างเต้านมใหม่</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-fw fa-link"></i> Menu Item</a></li>
+                <li><a href="#"><i class="fa fa-fw fa-link"></i> Menu Item</a></li>
+                <li><a href="#"><i class="fa fa-fw fa-link"></i> Menu Item</a></li>
+            </ul>
+        </div>
+    
+    
+    <div id="doctorListApp" class="content">
         
     <div id="dModal" class="modal-overlay">
         <div class="container pt-0 pb-5">
@@ -178,12 +238,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>  
     
     <section>
         <div class="container bg-white">
             <div class="row">
-                <div v-for="item in items" class="col-12 col-sm-6 col-md-3 col-lg-3 mt-3">
+                <div v-for="item in items" class="col-12 col-sm-6 col-md-4 col-lg-4 mt-3">
                     <a v-on:click="showModal(item.dID)">
                         <img v-bind:src="item.imgPath" class="img-fluid">
                         <div class="bg-primary pt-3 pb-2">
@@ -263,6 +323,8 @@
     </section>
         
     </div>
+        
+        </div>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -270,6 +332,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <script src="assets/js/jquery.waypoint.js"></script>
+    <script src="assets/js/bootadmin.min.js"></script>
     <script src="assets/js/doctor-list-app.js"></script>
     <script>
         var $sect1 = $('#sect1');

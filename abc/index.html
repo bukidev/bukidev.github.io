@@ -8,9 +8,15 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/gnb.css">
     <script src="https://use.fontawesome.com/7b7699443a.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/splash.css">
+    <link rel="stylesheet" href="assets/css/head-img.css">
     <link rel="stylesheet" href="assets/css/hover-min.css">
+    
+    <link rel="stylesheet" href="assets/css/bootadmin.min.css">
 
     <title>Hello, world!</title>
 
@@ -86,11 +92,6 @@
             margin-right: auto;
         }
         
-        .navbar {
-            background: transparent !important;
-            border-color: transparent !important;
-        }
-        
         .nav-color {
             background: #343a40 !important;
         }
@@ -121,23 +122,77 @@
 </head>
 
 <body class="bg-grey">
+    
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a class="d-block d-sm-block d-md-block d-lg-none sidebar-toggle mr-auto" href="#">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a class="navbar-brand align-center" href="#">
+            <img src="assets/img/nav-logo-white-landscape-01.png" style="height: 30px; width: auto;">
+        </a>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#leftMenu" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="mr-auto ml-auto">
-            <img src="assets/img/nav-logo-white.png">
-        </a>
-        <a href="Tel:020021919">
-            <button class="btn btn-circle btn-outline-light">
-                <i class="fa fa-phone fa-2x"></i>
-            </button>
-        </a>
+        <div class="navbar-collapse collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="tel:+6620021919" id="dd_phone" class="d-block d-sm-block d-md-block d-lg-none nav-link">
+                        <i class="fa fa-phone text-light"></i>
+                    </a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="login.html" title="ลงชื่อเข้าใช้งาน">
+                        <i class="fa fa-lock d-block d-sm-block d-md-block d-lg-none text-light"></i>
+                        <span class="d-none d-sm-none d-md-none d-lg-block">ลงชื่อเข้าใช้งาน</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html" title="สมัครสมาชิก">
+                        <i class="fa fa-user-plus d-block d-sm-block d-md-block d-lg-none text-light"></i>
+                        <span class="d-none d-sm-none d-md-none d-lg-block">สมัครสมาชิก</span>
+                    </a>
+                </li>
+                <!--<li class="nav-item dropdown"> <!-- show when user alr logged in
+                    <a href="#" id="dd_user" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd_user">
+                        <a href="#" class="dropdown-item">Profile</a>
+                        <a href="#" class="dropdown-item">Logout</a>
+                    </div>
+                </li>-->
+            </ul>
+        </div>
     </nav>
 
-    <div id="leftMenu" class="left-overlay">
-    </div>
+    <div class="d-flex">
+        <div class="sidebar sidebar-dark bg-dark">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#sm_expand_1" data-toggle="collapse">
+                        <i class="fa fa-fw fa-link"></i> ศัลยกรรมหน้าอก
+                    </a>
+                    <ul id="sm_expand_1" class="list-unstyled collapse">
+                        <li><a href="#">Perfectionist of BREAST SURGERY</a></li>
+                        <li><a href="#">แก้หน้าอกด้วย  Motiva</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#sm_expand_2" data-toggle="collapse">
+                        <i class="fa fa-fw fa-link"></i> การดูแลหลังศัลยกรรม
+                    </a>
+                    <ul id="sm_expand_2" class="list-unstyled collapse">
+                        <li><a href="#">หน้าอก</a></li>
+                        <li><a href="#">สะโพก</a></li>
+                        <li><a href="#">ดูดไขมันและปรับรูปร่าง</a></li>
+                        <li><a href="#">จุดซ่อนเร้น</a></li>
+                        <li><a href="#">ใบหน้า</a></li>
+                        <li><a href="#">ผิวพรรณ</a></li>
+                        <li><a href="#">สร้างเต้านมใหม่</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-fw fa-link"></i> Menu Item</a></li>
+                <li><a href="#"><i class="fa fa-fw fa-link"></i> Menu Item</a></li>
+                <li><a href="#"><i class="fa fa-fw fa-link"></i> Menu Item</a></li>
+            </ul>
+        </div>
 
     <!-- slide -->
     <div id="sect1">
@@ -239,42 +294,72 @@
             </div>
         </div>
     </section>
+    </div>
+    </div>
     
-    <section class="bg-dark footer">
-        <div class="col-12">
-            <div class="row">
-                <div id="map"></div>
-                <script>
-                            function initMap() {
-                                var uluru = {
-                                    lat: 13.736591,
-                                    lng: 100.588260
-                                };
-                                var map = new google.maps.Map(document.getElementById('map'), {
-                                    zoom: 19,
-                                    center: uluru
-                                });
-                                var marker = new google.maps.Marker({
-                                    position: uluru,
-                                    map: map
-                                });
-                            }
-                        </script>
-                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwhKiNFMoj52G8-gwffzCzCyKJpOOb9gE&callback=initMap"></script>
+    <!-- footer section -->
+    <section class="mt-5">
+        <div class="bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-4 border-right border-left">
+                                <a href="https://www.facebook.com/AsiaBeautyCenterthai/" class="btn btn-block" target="_blank">
+                                    <i class="fab fa-facebook fa-2x text-secondary"></i>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://www.youtube.com/channel/UCCGLjOLklw1oVGYOg3ENUQA" class="btn btn-block" target="_blank">
+                                    <i class="fab fa-youtube fa-2x text-secondary"></i>
+                                </a>
+                            </div>
+                            <div class="col-4 border-left border-right" target="_blank">
+                                <a href="https://line.me/R/ti/p/%40abcthailand" class="btn btn-block">
+                                    <i class="fab fa-line fa-2x text-secondary"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="col-12 bg-purple" style="height: 400px;"></div>
-
-        <div class="col-12 mt-5">
-            <a class="text-center" href="#">
-                <img src="assets/img/nav-logo-white.png" class="img-fluid">
-            </a>
-            <p class="text-white">
-                kaldsfj;klsadjf;lksajdf;lkjsadfkljsadklfj;sk adljf;ksadjf;jsdaf;kjsadfkjklsdajf
-            </p>
+        <div class="bg-dark pt-4 pb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-lg-12">
+                        <img class="d-block mr-auto ml-auto" src="assets/img/nav-logo-white.png">
+                        <br>
+                    </div>
+                    <div class="col-12 col-sm-12 col-lg-12">
+                        <p class="text-center text-white" style="font-size: .8rem;">385 ซอยสุขุมวิท 63 แขวงคลองตันเหนือ เขตวัฒนา กรุงเทพมหานคร 10110 <br> Tel. (+66) 2 002 1919 | thelineclinicth@gmail.com</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12" style="font-size: .6rem;">
+                        <hr>
+                        <div class="row">
+                            <div class="col-4 text-center">
+                                <a href="#" class="text-secondary">คำชี้แจงสิทธิส่วนบุคคล</a>
+                            </div>
+                            <div class="col-4 text-center">
+                                <a href="#" class="text-secondary">ข้อกำหนดการใช้งาน</a>
+                            </div>
+                            <div class="col-4 text-center">
+                                <a href="#" class="text-secondary">แผนผังเว็บไซต์</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
+        <div class="w-100 bg-dark pt-3 pb-2">
+            <div class="col-12">
+                <p class="text-white text-center" style="font-size: 0.8rem;">
+                    &copy;2018. ASIABEAUTY-CENTER.COM ALL RIGHT RESERVED.
+                </p>
+            </div>
+        </div>
     </section>
 
     <!-- Optional JavaScript -->
@@ -282,6 +367,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="assets/js/bootadmin.min.js"></script>
     <script src="assets/js/jquery.waypoint.js"></script>
     <script>
         var $sect1 = $('#sect1');
@@ -299,17 +385,38 @@
         });
     </script>
 
-    <script>
+    <!--<script>
         $('.NavBtn').click(function() {
             $(this).data("target").addClass("show");
         });
+        
+        $('#closeNav').click(function() {
+            $('#leftMenu').removeClass('show');
+        });
     </script>
-
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    
     <script>
-        var scene = document.getElementById('scene');
-        var parallaxInstance = new Parallax(scene);
+        $('.menu-nav>.menu-item').click(function() {
+            $(this).data("target").addClass("show");
+        });
     </script>-->
+    
+    <script>
+        $(function() {
+            
+            $('#openAsideM').click(function() {
+                $('.gnb').addClass('show');
+            });
+            
+        });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        
+        var sceneM = document.getElementById('parallaxM');
+        var parallaxInstanceM = new Parallax(sceneM);
+    </script>
 </body>
 
 </html>
