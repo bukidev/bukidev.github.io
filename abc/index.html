@@ -678,10 +678,12 @@
 
                 //events
                 onLeave: function(index, nextIndex, direction){},
-                afterLoad: function(anchorLink, index){},
-                afterRender: function(){
+                afterLoad: function(anchorLink, index){
                     $('#video')[0].play();
-                }
+                },
+                afterRender: function(){
+                    //$('#video')[0].play();
+                },
                 afterResize: function(){},
                 afterResponsive: function(isResponsive){},
                 afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
