@@ -38,7 +38,7 @@
 .bg-before-after {
     background-image: url(../img/home/bg-befor-after.jpg);
     background-size: cover;
-    background-position: left top;
+    background-position: right top;
     background-repeat: no-repeat;
     /*filter: brightness(1.1);
     -moz-filter: brightness(1.1);
