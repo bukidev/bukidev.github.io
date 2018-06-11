@@ -126,54 +126,74 @@
             border: 0;
             border-radius: 0;
         }
+        
+        @media (min-width: 992px) {
+            .modal-lg {
+                max-width: 1000px;
+            }
+        }
     </style>
     
     
 </head>
 <body class="bg-light">
     
-    <nav class="navbar navbar-expand navbar-dark bg-primary">
-        <a class="d-block d-sm-block d-md-block d-lg-none sidebar-toggle mr-auto" href="#">
-            <i class="fa fa-bars"></i>
-        </a>
-        <a class="navbar-brand align-center" href="#">
-            <img src="assets/img/nav-logo-white-landscape-01.png" style="height: 30px; width: auto;">
-        </a>
-
-        <div class="navbar-collapse collapse">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a href="tel:+6620021919" id="dd_phone" class="d-block d-sm-block d-md-block d-lg-none nav-link"><i class="fa fa-phone"></i></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="#" id="dd_user" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd_user">
-                        <a href="#" class="dropdown-item">Profile</a>
-                        <a href="#" class="dropdown-item">Logout</a>
-                    </div>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand navbar-dark bg-dark d-block d-sm-block d-md-block d-lg-none">
+        <div class="row">
+            <div class="col-2 pt-3">
+                <a class="sidebar-toggle" href="#">
+                    <i class="fa fa-bars fa-2x"></i>
+                </a>
+            </div>
+            <div class="col-8 text-center">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/nav-logo-white-landscape-01.png" style="height: 45px; width: auto;">
+                </a>
+            </div>
+            <div class="col-2 pt-3">
+                <a href="tel:+6620021919" id="dd_phone" class="">
+                    <i class="fa fa-phone text-light fa-2x"></i>
+                </a>
+            </div>
         </div>
     </nav>
 
     <div class="d-flex">
-        <div class="sidebar sidebar-dark bg-dark">
+        <div class="sidebar sidebar-dark bg-white border-right">
             <ul class="list-unstyled">
+                <li class="text-center d-none d-sm-none d-md-block d-lg-block">
+                    <a href="index.html">
+                        <img class="img-fluid mt-5" src="assets/img/nav-logo-black.png">
+                    </a>
+                    <i class="fa fa-minus text-primary"></i>
+                </li>
                 <li>
                     <a href="#sm_expand_1" data-toggle="collapse">
-                        <i class="fa fa-fw fa-link"></i> ศัลยกรรมหน้าอก
+                        แนะนำ
                     </a>
                     <ul id="sm_expand_1" class="list-unstyled collapse">
+                        <li><a href="#">แนะนำ ABC</a></li>
+                        <li><a href="doctor.html">แนะนำศัลยแพทย์</a></li>
+                        <li><a href="#">แนะนำอุปกรณ์ทางการแพทย์</a></li>
+                        <li><a href="#">Take a tour</a></li>
+                        <li><a href="map.html">แผนที่และเวลาทำการ</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#sm_expand_2" data-toggle="collapse">
+                        ศัลยกรรมหน้าอก
+                    </a>
+                    <ul id="sm_expand_2" class="list-unstyled collapse">
                         <li><a href="#">Perfectionist of BREAST SURGERY</a></li>
                         <li><a href="#">แก้หน้าอกด้วย  Motiva</a></li>
                     </ul>
                 </li>
                 
                 <li>
-                    <a href="#sm_expand_2" data-toggle="collapse">
-                        <i class="fa fa-fw fa-link"></i> การดูแลหลังศัลยกรรม
+                    <a href="#sm_expand_3" data-toggle="collapse">
+                        การดูแลหลังศัลยกรรม
                     </a>
-                    <ul id="sm_expand_2" class="list-unstyled collapse">
+                    <ul id="sm_expand_3" class="list-unstyled collapse">
                         <li><a href="#">หน้าอก</a></li>
                         <li><a href="#">สะโพก</a></li>
                         <li><a href="#">ดูดไขมันและปรับรูปร่าง</a></li>
@@ -183,43 +203,53 @@
                         <li><a href="#">สร้างเต้านมใหม่</a></li>
                     </ul>
                 </li>
-                <li><a href="#"><i class="fa fa-fw fa-link"></i> Menu Item</a></li>
-                <li><a href="#"><i class="fa fa-fw fa-link"></i> Menu Item</a></li>
-                <li><a href="#"><i class="fa fa-fw fa-link"></i> Menu Item</a></li>
+                <li><a href="#">Menu Item</a></li>
+                <li><a href="#">Menu Item</a></li>
+                <li><a href="#">Menu Item</a></li>
             </ul>
         </div>
     
     
     <div id="doctorListApp" class="content">
         
-    <div id="dModal" class="modal-overlay">
-        <div class="container pt-0 pb-5">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-7 pl-0 pr-0">
-                    <h2 class="float-right mr-3" id="closeModal" v-on:click="closeModal">&times;</h2>
-                    <img v-bind:src="modal.fullImgPath" class="img-fluid">
-                </div>
-
-                <div id="doctorDesc" class="col-12 col-sm-12 col-md-12 col-lg-5 pt-2">
-                    <div class="text-center">
-                        <i class="fas fa-angle-up fa-3x"></i>
+    <div class="modal fade bd-example-modal-lg" id="doctorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content rounded-0">
+                <div class="modal-header rounded-0">
+                    <div class="modal-title" id="exampleModalLabel">
+                        
                     </div>
-                    <h5 class="text-secondary">ศัลยแพทย์</h5>
-                    <h1 class="text-dark">{{ modal.dName }}</h1>
-                    <hr>
-                    <h5 class="text-secondary">{{ modal.dPosition }}</h5>
-
-                    <p v-for="list in modal.lists">{{ list }}</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-5 pl-0 pr-0">
+                                <img v-bind:src="modal.fullImgPath" class="img-fluid">
+                            </div>
+                            
+                            <div id="doctorDesc" class="col-12 col-sm-12 col-md-12 col-lg-7 pt-2">
+                                <h5 class="text-secondary mb-0">ศัลยแพทย์</h5>
+                                <h1 class="text-dark">{{ modal.dName }}</h1>
+                                <h5 class="text-secondary">{{ modal.dPosition }}</h5>
+                                <hr>
+                                <p v-for="list in modal.lists">{{ list }}</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     
     <!-- header img section -->
-    <section class="bg-doctor shadow-sm">
+    <section class="bg-doctor shadow-sm text-center">
         <div class="pt-5 pb-5">
             <h5 class="text-center text-secondary">Asia Beauty Center</h5>
             <h1 class="text-center text-dark">แนะนำทีมศัลยแพทย์</h1>
+            <i class="fa fa-minus text-primary"></i>
             <p class="text-center text-secondary">ด้วยทักษะที่หาตัวจับยาก<br>ให้เรานำเสนอประสบการณ์ของเรา</p>
         </div>
     </section>
@@ -244,11 +274,11 @@
         <div class="container bg-white">
             <div class="row">
                 <div v-for="item in items" class="col-12 col-sm-6 col-md-4 col-lg-4 mt-3">
-                    <a v-on:click="showModal(item.dID)">
+                    <a v-on:click="showModal(item.dID)" data-toggle="modal" data-target="#doctorModal">
                         <img v-bind:src="item.imgPath" class="img-fluid">
                         <div class="bg-primary pt-3 pb-2">
                             <h4 class="text-center text-white"><strong>ศัลยแพทย์ {{ item.dName }}</strong></h4>
-                            <h6 class="text-center text-white">{{ item.dPosition }}</h6>
+                            <p class="text-center text-white">{{ item.dPosition }}</p>
                         </div>
                     </a>
                 </div>

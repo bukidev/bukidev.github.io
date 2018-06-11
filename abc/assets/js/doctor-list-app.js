@@ -110,8 +110,8 @@ var app = new Vue({
                     
                     var info = this.items[i];
                     
-                    var newModal = document.getElementById('dModal');
-                    newModal.setAttribute("class", "modal-overlay show");
+                    /*var newModal = document.getElementById('dModal');
+                    newModal.setAttribute("class", "modal-overlay show");*/
                     
                     var mData = this.modal;
                     
@@ -122,11 +122,11 @@ var app = new Vue({
                     
                 }
             }
-        },
+        }
         
-        closeModal: function() {
+        /*closeModal: function() {
             var newModal = document.getElementById('dModal');
             newModal.setAttribute("class", "modal-overlay");
-        }
+        }*/
     }
 });
