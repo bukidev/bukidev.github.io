@@ -68,7 +68,7 @@
         
         #map {
             width: 100%;
-            height: 600px;
+            height: 639px;
         }
         
         .map-label {
@@ -345,7 +345,7 @@
                     
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-7 offset-md-5 col-lg-6 offset-lg-6 col-xl-65 offset-xl-6">
-                            <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+                            <div id="carouselIndicators" class="carousel slide carousel-fade" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active text-center">
                                         <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkunfiat%2Fposts%2F10211258450399316%3A0&width=600" width="600" height="450" style="width: 100%; border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
@@ -401,14 +401,37 @@
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-6 text-center">
-                            <div class="col-12">
-                                <img src="assets/img/bnf/img.jpg" width="1503" height="800" class="reel img-fluid" data-images="assets/img/bnf/img-##.jpg" data-frames="5">
+                            
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show" id="pills-left" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <img src="assets/img/bnf/img-01.jpg" class="w-100">
+                                </div>
+                                <div class="tab-pane fade show" id="pills-left45" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <img src="assets/img/bnf/img-02.jpg" class="w-100">
+                                </div>
+                                <div class="tab-pane fade show active" id="pills-front" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <img src="assets/img/bnf/img-03.jpg" class="w-100">
+                                </div>
+                                <div class="tab-pane fade show" id="pills-right45" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <img src="assets/img/bnf/img-05.jpg" class="w-100">
+                                </div>
+                                <div class="tab-pane fade show" id="pills-right" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <img src="assets/img/bnf/img-04.jpg" class="w-100">
+                                </div>
+                            </div>
+                            
+                            <div class="btn-group btn-group-sm nav nav-pills float-right" role="group">
+                                <a class="btn btn-primary w-20" id="pills-home-tab" data-toggle="pill" href="#pills-left" role="tab" aria-controls="pills-home" aria-selected="true">ซ้าย</a>
+                                <a class="btn btn-primary w-20" id="pills-profile-tab" data-toggle="pill" href="#pills-left45" role="tab" aria-controls="pills-profile" aria-selected="false">45องศา</a>
+                                <a class="btn btn-primary active w-20" id="pills-contact-tab" data-toggle="pill" href="#pills-front" role="tab" aria-controls="pills-contact" aria-selected="false">หน้าตรง</a>
+                                <a class="btn btn-primary w-20" id="pills-profile-tab" data-toggle="pill" href="#pills-right45" role="tab" aria-controls="pills-profile" aria-selected="false">45องศา</a>
+                                <a class="btn btn-primary w-20" id="pills-contact-tab" data-toggle="pill" href="#pills-right" role="tab" aria-controls="pills-contact" aria-selected="false">ขวา</a>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-6 text-center pt-5">
-                            <a href="#" class="btn btn-outline-primary btn-lg">ดูเพิ่มเติม</a>
+                            <a href="#" class="btn btn-primary btn-lg rounded-0">ดูเพิ่มเติม</a>
                         </div>
                     </div>
                 </div>    
@@ -417,7 +440,7 @@
             <section id="sect2" class="pd-5 section fp-auto-height">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-sm-8 pl-0 pr-0">
+                        <div class="col-12 col-md-12 col-xl-8 pl-0 pr-0">
                             <div id="map"></div>
                             <script>
                                 function initMap() {
@@ -517,34 +540,34 @@
 </script>
                             <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwhKiNFMoj52G8-gwffzCzCyKJpOOb9gE&callback=initMap"></script>
                         </div>
-                        <div class="col-12 col-sm-4 bg-white text-center pl-0 pr-0">
-                            <div class="col-12 border-bottom pt-3 pb-3 align-center">
+                        <div class="col-12 col-md-12 col-xl-4 bg-white text-center pl-0 pr-0">
+                            <div class="col-12 border-bottom pt-5 pb-5 align-center">
                                 <h1 class="text-center">ที่อยู่</h1>
                                 <i class="fas fa-minus text-primary"></i>
 
-                                <p><i class="fas fa-map-marker-alt text-secondary fa-2x"></i> 385 ซอยสุขุมวิท 63 แขวงคลองตันเหนือ เขตวัฒนา กรุงเทพมหานคร 10510</p>
+                                <p class="text-center"><i class="fas fa-map-marker-alt text-secondary"></i> 385 ซอยสุขุมวิท 63 แขวงคลองตันเหนือ เขตวัฒนา กรุงเทพมหานคร 10510</p>
                             </div>
                             
-                            <div class="col-12 pt-3 pb-3 align-center">
+                            <div class="col-12 pt-5 pb-5 align-center">
                                 <h1 class="text-ceter">วันและเวลาทำการ</h1>
                                 <i class="fas fa-minus text-primary text-center"></i>
 
-                                <p class="text-left"><i class="fas fa-calendar-alt fa-2x text-secondary"></i> จันทร์ - ศุกร์</p>
-                                <p class="text-left"><i class="far fa-clock text-secondary fa-2x"></i> จันทร์ - ศุกร์ 10.00 - 19.00</p>
+                                <p class="text-center"><i class="fas fa-calendar-alt text-secondary"></i> จันทร์ - ศุกร์ เวลา 10.00 - 19.00</p>
                             </div>
 
-                            <div class="col-12 border-top pt-3 pb-3 align-center">
+                            <div class="col-12 border-top pt-5 pb-5 align-center">
                                 <h1 class="text-center">ติดต่อ</h1>
                                 <i class="fas fa-minus text-primary"></i>
                                 <div class="row">
-                                    <div class="col-8">
-                                        <h6 class="text-left"><i class="fas fa-phone-volume"></i> <a href="tel:+6620021919">02-002-1919</a></h6>
-
-                                        <h6 class="text-left"><i class="fab fa-line"></i> <a href="https://line.me/R/ti/p/%40abcthailand" target="_blank">@abcthailand</a></h6>
-                                        <h6 class="text-left"><i class="far fa-envelope"></i> <a href="mailto:abcthailandgroup@gmail.com">abcthailandgroup@gmail.com</a></h6>
+                                    <div class="col-12">
+                                        <p class="text-center"><i class="fas fa-phone-volume"></i> <a href="tel:+6620021919">02-002-1919</a></p>
                                     </div>
-                                    <div class="col-4">
-                                        <img class="w-100" src="assets/img/map/lineatqr.jpg">
+                                    <div class="col-12">
+
+                                        <p class="text-center"><i class="fab fa-line"></i> <a href="https://line.me/R/ti/p/%40abcthailand" target="_blank">@abcthailand</a></p>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-center"><i class="far fa-envelope"></i> <a href="mailto:abcthailandgroup@gmail.com">abcthailandgroup@gmail.com</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -588,7 +611,7 @@
                                 <br>
                             </div>
                             <div class="col-12 col-sm-12 col-lg-12">
-                                <p class="text-center text-white" style="font-size: .8rem;">385 ซอยสุขุมวิท 63 แขวงคลองตันเหนือ เขตวัฒนา กรุงเทพมหานคร 10110 <br> Tel. (+66) 2 002 1919 | thelineclinicth@gmail.com</p>
+                                <p class="text-center text-white" style="font-size: .8rem;">385 ซอยสุขุมวิท 63 แขวงคลองตันเหนือ เขตวัฒนา กรุงเทพมหานคร 10110 <br> Tel. (+66) 2 002 1919 | abcthailandgroup@gmail.com</p>
                             </div>
                         </div>
                         <div class="row">
