@@ -1,4 +1,71 @@
-.bg-map {
+@media(min-width: 1px) {
+    .bg-map {
+    background-image: url();
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.bg-doctor {
+    background-image: url(../img/doctor/header_img.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    filter: brightness(1.1);
+    -moz-filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+.bg-login {
+    background-image: url(../img/login/bg-login.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    filter: brightness(1.1);
+    -moz-filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+.bg-forgotpassword {
+    background-image: url(../img/doctor/header_img.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    filter: brightness(1.1);
+    -moz-filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+.bg-testimonial {
+    background-image: url();
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: #f9cac3;
+    /*filter: brightness(1.1);
+    -moz-filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);*/
+}
+
+.bg-before-after {
+    background-image: url(../img/home/bg-befor-after.jpg);
+    background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;
+    /*filter: brightness(1.1);
+    -moz-filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);*/
+}
+}
+
+
+
+
+
+
+
+@media(min-width:1024px) {
+    .bg-map {
     background-image: url();
     background-size: cover;
     background-position: center center;
@@ -54,4 +121,9 @@
     -moz-filter: brightness(1.1);
     -webkit-filter: brightness(1.1);*/
 }
+}
+
+
+
+
 
