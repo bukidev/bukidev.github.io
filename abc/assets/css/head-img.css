@@ -35,6 +35,16 @@
     -webkit-filter: brightness(1.1);
 }
 
+.bg-testimonial {
+    background-image: url(../img/home/bg-testimonial.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    /*filter: brightness(1.1);
+    -moz-filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);*/
+}
+
 .bg-before-after {
     background-image: url(../img/home/bg-befor-after.jpg);
     background-size: cover;
