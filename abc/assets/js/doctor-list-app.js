@@ -4,38 +4,38 @@ var app = new Vue({
         items: [
             {
                 dID: 1,
-                imgPath: 'assets/img/doctor/001.png',
+                imgPath: '/assets/img/doctor/001.png',
                 dName: 'มนฤดี' ,
                 dPosition: 'แพทย์เฉพาะทางด้านศัลยกรรมตกแต่ง',
-                fullImgPath: 'assets/img/doctor/001-02.png'
+                fullImgPath: '/assets/img/doctor/001-02.png'
             },
             {
                 dID: 2,
-                imgPath: 'assets/img/doctor/002.png',
+                imgPath: '/assets/img/doctor/002.png',
                 dName: 'ลีซองจิน' ,
                 dPosition: 'แพทย์เฉพาะทางด้านศัลยกรรมตกแต่ง',
-                fullImgPath: 'assets/img/doctor/002-2.png'
+                fullImgPath: '/assets/img/doctor/002-2.png'
             },
             {
                 dID: 3,
-                imgPath: 'assets/img/doctor/01.png',
+                imgPath: '/assets/img/doctor/01.png',
                 dName: 'มินคยองวอน' ,
                 dPosition: 'แพทย์เฉพาะทางด้านศัลยกรรมตกแต่ง',
-                fullImgPath: 'assets/img/doctor/01-2.png'
+                fullImgPath: '/assets/img/doctor/01-2.png'
             },
             {
                 dID: 4,
-                imgPath: 'assets/img/doctor/02.png',
+                imgPath: '/assets/img/doctor/02.png',
                 dName: 'ปาร์คซองซู' ,
                 dPosition: 'แพทย์เฉพาะทางด้านศัลยกรรมตกแต่ง',
-                fullImgPath: 'assets/img/doctor/02-2.png'
+                fullImgPath: '/assets/img/doctor/02-2.png'
             },
             {
                 dID: 5,
-                imgPath: 'assets/img/doctor/03.png',
+                imgPath: '/assets/img/doctor/03.png',
                 dName: 'คังมินกู' ,
                 dPosition: 'แพทย์เฉพาะทางด้านศัลยกรรมตกแต่ง',
-                fullImgPath: 'assets/img/doctor/03-2.png',
+                fullImgPath: '/assets/img/doctor/03-2.png',
                 lists: [
                     'จบการศึกษา สาขาศัลยกรรมตกแต่ง จาก Asan Medical Center',
                     'เคยดำรงตำแหน่งอาจารย์ผู้สอน สาขาศัลยกรรมตกแต่ง มหาวิทยาลัยแห่งชาติโซล',
@@ -50,10 +50,10 @@ var app = new Vue({
             },
             {
                 dID: 6,
-                imgPath: 'assets/img/doctor/04.png',
+                imgPath: '/assets/img/doctor/04.png',
                 dName: 'ลีจุนอุค' ,
                 dPosition: 'แพทย์เฉพาะทางด้านศัลยกรรมตกแต่ง',
-                fullImgPath: 'assets/img/doctor/04-2.png',
+                fullImgPath: '/assets/img/doctor/04-2.png',
                 lists: [
                     'จบการศึกษาคณะแพทย์ศาสตร์ มหาวิทยาลัย Sung Kyun Kwan',
                     'แพทย์ผู้สอน โรงพยาบาล Samsung',
@@ -69,10 +69,10 @@ var app = new Vue({
             },
             {
                 dID: 7,
-                imgPath: 'assets/img/doctor/05.png',
+                imgPath: '/assets/img/doctor/05.png',
                 dName: 'คิมยองอึน' ,
                 dPosition: 'แพทย์เฉพาะทางด้านศัลยกรรมตกแต่ง',
-                fullImgPath: 'assets/img/doctor/05-2.png',
+                fullImgPath: '/assets/img/doctor/05-2.png',
                 lists: [
                     'สมาชิกสามัญ สมาคมศัลยแพทย์ตกแต่งแห่งประเทศเกาหลีใต้',
                     'สมาชิกสามัญ สมาคมศัลยแพทย์ตกแต่งเสริมสวยแห่งประเทศเกาหลีใต้',
@@ -87,7 +87,7 @@ var app = new Vue({
             },
             {
                 dID: 8,
-                imgPath: 'assets/img/doctor/06.png',
+                imgPath: '/assets/img/doctor/06.png',
                 dName: '.............' ,
                 dPosition: 'แพทย์เฉพาะทางด้านศัลยกรรมตกแต่ง',
                 fullImgPath: '#'

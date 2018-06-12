@@ -64,7 +64,7 @@
 
 
 
-@media(min-width:1024px) {
+@media(min-width:768px) {
     .bg-map {
     background-image: url();
     background-size: cover;
@@ -103,7 +103,7 @@
 }
 
 .bg-testimonial {
-    background-image: url(../img/home/bg-testimonial.jpg);
+    background-image: url(../img/home/bg-testimonial-768.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
