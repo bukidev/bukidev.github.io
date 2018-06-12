@@ -130,6 +130,7 @@
 
 <body class="bg-grey">
     
+    <!-- start mobile nav -->
     <nav class="navbar navbar-expand navbar-dark bg-dark d-block d-sm-block d-md-block d-lg-none">
         <div class="row">
             <div class="col-2 pt-3">
@@ -149,8 +150,11 @@
             </div>
         </div>
     </nav>
-
+    <!-- end mobile nav -->
+    
     <div class="d-flex">
+        
+        <!-- start pc nav -->
         <div class="sidebar sidebar-dark bg-white border-right">
             <ul class="list-unstyled">
                 <li class="text-center d-none d-sm-none d-md-block d-lg-block">
@@ -160,21 +164,17 @@
                     <i class="fa fa-minus text-primary"></i>
                 </li>
                 <li>
-                    <a href="#sm_expand_1" data-toggle="collapse">
-                        แนะนำ
-                    </a>
+                    <a href="#sm_expand_1" data-toggle="collapse">แนะนำ</a>
                     <ul id="sm_expand_1" class="list-unstyled collapse">
-                        <li><a href="#">แนะนำ ABC</a></li>
-                        <li><a href="doctor.html">แนะนำศัลยแพทย์</a></li>
-                        <li><a href="#">แนะนำอุปกรณ์ทางการแพทย์</a></li>
-                        <li><a href="#">Take a tour</a></li>
-                        <li><a href="map.html">แผนที่และเวลาทำการ</a></li>
+                        <li><a href="intro/intro.html">แนะนำ ABC</a></li>
+                        <li><a href="intro/doctor.html">แนะนำศัลยแพทย์</a></li>
+                        <li><a href="intro/medicalkit.html">แนะนำอุปกรณ์ทางการแพทย์</a></li>
+                        <li><a href="intro/takeatour.html">Take a tour</a></li>
+                        <li><a href="intro/map.html">แผนที่และเวลาทำการ</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#sm_expand_2" data-toggle="collapse">
-                        ศัลยกรรมหน้าอก
-                    </a>
+                    <a href="#sm_expand_2" data-toggle="collapse">ศัลยกรรมหน้าอก</a>
                     <ul id="sm_expand_2" class="list-unstyled collapse">
                         <li><a href="#">Perfectionist of BREAST SURGERY</a></li>
                         <li><a href="#">แก้หน้าอกด้วย  Motiva</a></li>
@@ -200,364 +200,370 @@
                 <li><a href="#">Menu Item</a></li>
             </ul>
         </div>
+        <!-- end pc nav -->
         
-    <div id="fullpage" class="content">
+        <!-- start content -->
+        <div id="fullpage" class="content">
 
-    <!-- slide -->
-    <div id="sect1" class="section fp-auto-height">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <div class="d-none">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                </ol>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="img-fluid" src="assets/img/home/slide-1.png">
-                    <div class="carousel-caption d-block d-md-none slide-caption text-white">
-                        <h4>Heading</h4>
-                        <p>description...</p>
+            <!-- start main slide -->
+            <div id="sect1" class="section fp-auto-height">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div class="d-none">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        </ol>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-none d-lg-block img-fluid" src="assets/img/home/slide-2-pc.jpg">
-                    <img class="d-block d-lg-none img-fluid" src="assets/img/home/slide-2.png">
-                    <div class="carousel-caption d-block d-md-none slide-caption text-white">
-                        <h4>Heading</h4>
-                        <p>description...</p>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="img-fluid" src="assets/img/home/slide-1.png">
+                            <div class="carousel-caption d-block d-md-none slide-caption text-white">
+                                <h4>Heading</h4>
+                                <p>description...</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-none d-lg-block img-fluid" src="assets/img/home/slide-2-pc.jpg">
+                            <img class="d-block d-lg-none img-fluid" src="assets/img/home/slide-2.png">
+                            <div class="carousel-caption d-block d-md-none slide-caption text-white">
+                                <h4>Heading</h4>
+                                <p>description...</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-none d-lg-block img-fluid" src="assets/img/home/slide-3-pc.jpg">
+                            <img class="d-block d-lg-none img-fluid" src="assets/img/home/slide-3.png">
+                            <div class="carousel-caption d-block d-md-none slide-caption text-white">
+                                <h4>Heading</h4>
+                                <p>description...</p>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-none d-lg-block img-fluid" src="assets/img/home/slide-3-pc.jpg">
-                    <img class="d-block d-lg-none img-fluid" src="assets/img/home/slide-3.png">
-                    <div class="carousel-caption d-block d-md-none slide-caption text-white">
-                        <h4>Heading</h4>
-                        <p>description...</p>
-                    </div>
-                </div>
-                
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-    </div>
-    </div>
-        
-    <section class="bg-white pl-0 pr-0 pt-5 pb-5 section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h1 class="text-center text-dark mt-3">Real Selfie</h1>
-                    <i class="fa fa-minus text-primary mb-5"></i>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
-            <div class="row no-gutters mb-5">
-                    <div class="col-4 col-sm-2 overflow-hidden">
-                        <a href="#" class="">
-                            <img class="img-fluid hvr-grow" src="assets/img/selfie/1.jpg">
-                        </a>
+            <!-- end main slide -->
+            
+            <section class="bg-white pl-0 pr-0 pt-5 pb-5 section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h1 class="text-center text-dark mt-3">Real Selfie</h1>
+                            <i class="fa fa-minus text-primary mb-5"></i>
+                        </div>
                     </div>
-                    <div class="col-4 col-sm-2 overflow-hidden">
-                        <a href="#">
-                            <img class="img-fluid hvr-grow" src="assets/img/selfie/2.jpg">
-                        </a>
+                    <div class="row no-gutters mb-5">
+                        <div class="col-4 col-sm-2 overflow-hidden">
+                            <a href="#" class="">
+                                <img class="img-fluid hvr-grow" src="assets/img/selfie/1.jpg">
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-2 overflow-hidden">
+                            <a href="#">
+                                <img class="img-fluid hvr-grow" src="assets/img/selfie/2.jpg">
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-2 overflow-hidden">
+                            <a href="#">
+                                <img class="img-fluid hvr-grow" src="assets/img/selfie/3.jpg">
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-2 overflow-hidden">
+                            <a href="#">
+                                <img class="img-fluid hvr-grow" src="assets/img/selfie/4.jpg">
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-2 overflow-hidden">
+                            <a href="#">
+                                <img class="img-fluid hvr-grow" src="assets/img/selfie/5.jpg">
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-2 overflow-hidden">
+                            <a href="#">
+                                <img class="img-fluid hvr-grow" src="assets/img/selfie/6.jpg">
+                            </a>
+                        </div>
+
+                        <div class="col-4 col-sm-2 overflow-hidden">
+                            <a href="#" class="">
+                                <img class="img-fluid hvr-grow" src="assets/img/selfie/7.jpg">
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-2 overflow-hidden">
+                            <a href="#">
+                                <img class="img-fluid hvr-grow" src="assets/img/selfie/8.jpg">
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-2 overflow-hidden">
+                            <a href="#">
+                                <img class="img-fluid hvr-grow" src="assets/img/selfie/9.jpg">
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-2 overflow-hidden">
+                            <a href="#">
+                                <img class="img-fluid hvr-grow" src="assets/img/selfie/10.jpg">
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-2 overflow-hidden">
+                            <a href="#">
+                                <img class="img-fluid hvr-grow" src="assets/img/selfie/11.jpg">
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-2 overflow-hidden">
+                            <a href="#">
+                                <img class="img-fluid hvr-grow" src="assets/img/selfie/12.jpg">
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-4 col-sm-2 overflow-hidden">
-                        <a href="#">
-                            <img class="img-fluid hvr-grow" src="assets/img/selfie/3.jpg">
-                        </a>
-                    </div>
-                    <div class="col-4 col-sm-2 overflow-hidden">
-                        <a href="#">
-                            <img class="img-fluid hvr-grow" src="assets/img/selfie/4.jpg">
-                        </a>
-                    </div>
-                    <div class="col-4 col-sm-2 overflow-hidden">
-                        <a href="#">
-                            <img class="img-fluid hvr-grow" src="assets/img/selfie/5.jpg">
-                        </a>
-                    </div>
-                    <div class="col-4 col-sm-2 overflow-hidden">
-                        <a href="#">
-                            <img class="img-fluid hvr-grow" src="assets/img/selfie/6.jpg">
-                        </a>
-                    </div>
-                    
-                    <div class="col-4 col-sm-2 overflow-hidden">
-                        <a href="#" class="">
-                            <img class="img-fluid hvr-grow" src="assets/img/selfie/7.jpg">
-                        </a>
-                    </div>
-                    <div class="col-4 col-sm-2 overflow-hidden">
-                        <a href="#">
-                            <img class="img-fluid hvr-grow" src="assets/img/selfie/8.jpg">
-                        </a>
-                    </div>
-                    <div class="col-4 col-sm-2 overflow-hidden">
-                        <a href="#">
-                            <img class="img-fluid hvr-grow" src="assets/img/selfie/9.jpg">
-                        </a>
-                    </div>
-                    <div class="col-4 col-sm-2 overflow-hidden">
-                        <a href="#">
-                            <img class="img-fluid hvr-grow" src="assets/img/selfie/10.jpg">
-                        </a>
-                    </div>
-                    <div class="col-4 col-sm-2 overflow-hidden">
-                        <a href="#">
-                            <img class="img-fluid hvr-grow" src="assets/img/selfie/11.jpg">
-                        </a>
-                    </div>
-                    <div class="col-4 col-sm-2 overflow-hidden">
-                        <a href="#">
-                            <img class="img-fluid hvr-grow" src="assets/img/selfie/12.jpg">
-                        </a>
-                    </div>
-            </div>
-                
-            <div class="row no-gutters mb-5">
-                <div class="col-8 offset-2 col-sm-4 offset-sm-4">
-                    <a class="btn btn-outline-primary rounded-0 btn-lg btn-block" href="selfie.html">ดูเพิ่มเติม</a>
-                </div>
-            </div>
-        </div>
-    </section>
-        
-    <section class="section bg-before-after fp-height-auto-responsive">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-lg-6 text-center">
-                    <h1 class="text-center text-dark mt-3">Before &amp; After</h1>
-                    <i class="fa fa-minus text-primary mb-5"></i>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-lg-6 text-center">
-                    <div class="col-12">
-                        <img src="assets/img/home/bf-01.jpg" class="img-fluid">
+
+                    <div class="row no-gutters mb-5">
+                        <div class="col-8 offset-2 col-sm-4 offset-sm-4">
+                            <a class="btn btn-outline-primary rounded-0 btn-lg btn-block" href="selfie.html">ดูเพิ่มเติม</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-lg-6 text-center pt-5">
-                    <a href="#" class="btn btn-outline-primary btn-lg">ดูเพิ่มเติม</a>
+            </section>
+
+            <section class="section bg-before-after fp-height-auto-responsive">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 text-center">
+                            <h1 class="text-center text-dark mt-3">Before &amp; After</h1>
+                            <i class="fa fa-minus text-primary mb-5"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6 text-center">
+                            <div class="col-12">
+                                <img src="assets/img/home/bf-01.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6 text-center pt-5">
+                            <a href="#" class="btn btn-outline-primary btn-lg">ดูเพิ่มเติม</a>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+
+            <section id="sect2" class="pd-5 section fp-auto-height">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-sm-8 pl-0 pr-0">
+                            <div id="map"></div>
+                            <script>
+                                function initMap() {
+                                    var abc = {
+                                        lat: 13.736516,
+                                        lng: 100.588295
+                                    };
+                                    var map = new google.maps.Map(document.getElementById('map'), {
+                                        zoom: 19,
+                                        center: abc,
+                                        styles: [
+                                            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+                                            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+                                            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+                                            {
+                                              featureType: 'administrative.locality',
+                                              elementType: 'labels.text.fill',
+                                              stylers: [{color: '#d59563'}]
+                                            },
+                                            {
+                                              featureType: 'poi',
+                                              elementType: 'labels.text.fill',
+                                              stylers: [{color: '#d59563'}]
+                                            },
+                                            {
+                                              featureType: 'poi.park',
+                                              elementType: 'geometry',
+                                              stylers: [{color: '#263c3f'}]
+                                            },
+                                            {
+                                              featureType: 'poi.park',
+                                              elementType: 'labels.text.fill',
+                                              stylers: [{color: '#6b9a76'}]
+                                            },
+                                            {
+                                              featureType: 'road',
+                                              elementType: 'geometry',
+                                              stylers: [{color: '#38414e'}]
+                                            },
+                                            {
+                                              featureType: 'road',
+                                              elementType: 'geometry.stroke',
+                                              stylers: [{color: '#212a37'}]
+                                            },
+                                            {
+                                              featureType: 'road',
+                                              elementType: 'labels.text.fill',
+                                              stylers: [{color: '#9ca5b3'}]
+                                            },
+                                            {
+                                              featureType: 'road.highway',
+                                              elementType: 'geometry',
+                                              stylers: [{color: '#746855'}]
+                                            },
+                                            {
+                                              featureType: 'road.highway',
+                                              elementType: 'geometry.stroke',
+                                              stylers: [{color: '#1f2835'}]
+                                            },
+                                            {
+                                              featureType: 'road.highway',
+                                              elementType: 'labels.text.fill',
+                                              stylers: [{color: '#f3d19c'}]
+                                            },
+                                            {
+                                              featureType: 'transit',
+                                              elementType: 'geometry',
+                                              stylers: [{color: '#2f3948'}]
+                                            },
+                                            {
+                                              featureType: 'transit.station',
+                                              elementType: 'labels.text.fill',
+                                              stylers: [{color: '#d59563'}]
+                                            },
+                                            {
+                                              featureType: 'water',
+                                              elementType: 'geometry',
+                                              stylers: [{color: '#17263c'}]
+                                            },
+                                            {
+                                              featureType: 'water',
+                                              elementType: 'labels.text.fill',
+                                              stylers: [{color: '#515c6d'}]
+                                            },
+                                            {
+                                              featureType: 'water',
+                                              elementType: 'labels.text.stroke',
+                                              stylers: [{color: '#17263c'}]
+                                            }
+                                        ]
+                                    });
+                                    var marker = new google.maps.Marker({
+                                        position: abc,
+                                        map: map
+                                    });
+                                }
+                            </script>
+                            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwhKiNFMoj52G8-gwffzCzCyKJpOOb9gE&callback=initMap"></script>
+                        </div>
+                        <div class="col-12 col-sm-4 pt-5 pb-5 pl-0 pr-0 bg-white text-center">
+                            <h1 class="text-center">ติดต่อสอบถาม</h1>
+                            <i class="fas fa-minus text-primary"></i>
+
+                            <p>385 ซอยสุขุมวิท 63 แขวงคลองตันเหนือ เขตวัฒนา กรุงเทพมหานคร 10510</p>
+
+                            <hr class="mt-5 mb-5">
+
+                            <h1 class="text-center">วันและเวลาทำการ</h1>
+                            <i class="fas fa-minus text-primary"></i>
+
+                            <p>จันทร์ - ศุกร์ เวลา 10.00 - 19.00</p>
+
+                            <hr class="mt-5 mb-5">
+
+                            <h1 class="text-center">วันและเวลาทำการ</h1>
+                            <i class="fas fa-minus text-primary"></i>
+
+                            <p>จันทร์ - ศุกร์ เวลา 10.00 - 19.00</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>    
-    </section>
-        
-    <section id="sect2" class="pd-5 section fp-auto-height">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-sm-8 pl-0 pr-0">
-                    <div id="map"></div>
-                    <script>
-                        function initMap() {
-                            var abc = {
-                                lat: 13.736516,
-                                lng: 100.588295
-                            };
-                            var map = new google.maps.Map(document.getElementById('map'), {
-                                zoom: 19,
-                                center: abc,
-                                styles: [
-                                    {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
-                                    {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
-                                    {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
-                                    {
-                                      featureType: 'administrative.locality',
-                                      elementType: 'labels.text.fill',
-                                      stylers: [{color: '#d59563'}]
-                                    },
-                                    {
-                                      featureType: 'poi',
-                                      elementType: 'labels.text.fill',
-                                      stylers: [{color: '#d59563'}]
-                                    },
-                                    {
-                                      featureType: 'poi.park',
-                                      elementType: 'geometry',
-                                      stylers: [{color: '#263c3f'}]
-                                    },
-                                    {
-                                      featureType: 'poi.park',
-                                      elementType: 'labels.text.fill',
-                                      stylers: [{color: '#6b9a76'}]
-                                    },
-                                    {
-                                      featureType: 'road',
-                                      elementType: 'geometry',
-                                      stylers: [{color: '#38414e'}]
-                                    },
-                                    {
-                                      featureType: 'road',
-                                      elementType: 'geometry.stroke',
-                                      stylers: [{color: '#212a37'}]
-                                    },
-                                    {
-                                      featureType: 'road',
-                                      elementType: 'labels.text.fill',
-                                      stylers: [{color: '#9ca5b3'}]
-                                    },
-                                    {
-                                      featureType: 'road.highway',
-                                      elementType: 'geometry',
-                                      stylers: [{color: '#746855'}]
-                                    },
-                                    {
-                                      featureType: 'road.highway',
-                                      elementType: 'geometry.stroke',
-                                      stylers: [{color: '#1f2835'}]
-                                    },
-                                    {
-                                      featureType: 'road.highway',
-                                      elementType: 'labels.text.fill',
-                                      stylers: [{color: '#f3d19c'}]
-                                    },
-                                    {
-                                      featureType: 'transit',
-                                      elementType: 'geometry',
-                                      stylers: [{color: '#2f3948'}]
-                                    },
-                                    {
-                                      featureType: 'transit.station',
-                                      elementType: 'labels.text.fill',
-                                      stylers: [{color: '#d59563'}]
-                                    },
-                                    {
-                                      featureType: 'water',
-                                      elementType: 'geometry',
-                                      stylers: [{color: '#17263c'}]
-                                    },
-                                    {
-                                      featureType: 'water',
-                                      elementType: 'labels.text.fill',
-                                      stylers: [{color: '#515c6d'}]
-                                    },
-                                    {
-                                      featureType: 'water',
-                                      elementType: 'labels.text.stroke',
-                                      stylers: [{color: '#17263c'}]
-                                    }
-                                ]
-                            });
-                            var marker = new google.maps.Marker({
-                                position: abc,
-                                map: map
-                            });
-                        }
-                    </script>
-                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwhKiNFMoj52G8-gwffzCzCyKJpOOb9gE&callback=initMap"></script>
-                </div>
-                <div class="col-12 col-sm-4 pt-5 pb-5 pl-0 pr-0 bg-white text-center">
-                    <h1 class="text-center">ติดต่อสอบถาม</h1>
-                    <i class="fas fa-minus text-primary"></i>
-                    
-                    <p>385 ซอยสุขุมวิท 63 แขวงคลองตันเหนือ เขตวัฒนา กรุงเทพมหานคร 10510</p>
-                    
-                    <hr class="mt-5 mb-5">
-                    
-                    <h1 class="text-center">วันและเวลาทำการ</h1>
-                    <i class="fas fa-minus text-primary"></i>
-                    
-                    <p>จันทร์ - ศุกร์ เวลา 10.00 - 19.00</p>
-                    
-                    <hr class="mt-5 mb-5">
-                    
-                    <h1 class="text-center">วันและเวลาทำการ</h1>
-                    <i class="fas fa-minus text-primary"></i>
-                    
-                    <p>จันทร์ - ศุกร์ เวลา 10.00 - 19.00</p>
-                </div>
-            </div>
-        </div>
-    </section>
-        
-    <section class="section bg-white fp-auto-height">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <video id="video" width="1280" autoplay muted loop>
-                        <source src="assets/video/behindthescene.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-        </div>    
-    </section>
-    
-    <!-- footer section -->
-    <section class="section fp-auto-height border-top">
-        <div class="bg-white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
+            </section>
+
+            <section class="section bg-white fp-auto-height">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <video id="video" width="1280" autoplay muted loop>
+                                <source src="assets/video/behindthescene.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+
+            <!-- start footer section -->
+            <section class="section fp-auto-height border-top">
+                <div class="bg-white">
+                    <div class="container">
                         <div class="row">
-                            <div class="col-4 border-right border-left">
-                                <a href="https://www.facebook.com/AsiaBeautyCenterthai/" class="btn btn-block" target="_blank">
-                                    <i class="fab fa-facebook fa-2x text-secondary"></i>
-                                </a>
-                            </div>
-                            <div class="col-4">
-                                <a href="https://www.youtube.com/channel/UCCGLjOLklw1oVGYOg3ENUQA" class="btn btn-block" target="_blank">
-                                    <i class="fab fa-youtube fa-2x text-secondary"></i>
-                                </a>
-                            </div>
-                            <div class="col-4 border-left border-right" target="_blank">
-                                <a href="https://line.me/R/ti/p/%40abcthailand" class="btn btn-block">
-                                    <i class="fab fa-line fa-2x text-secondary"></i>
-                                </a>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-4 border-right border-left">
+                                        <a href="https://www.facebook.com/AsiaBeautyCenterthai/" class="btn btn-block" target="_blank">
+                                            <i class="fab fa-facebook fa-2x text-secondary"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="https://www.youtube.com/channel/UCCGLjOLklw1oVGYOg3ENUQA" class="btn btn-block" target="_blank">
+                                            <i class="fab fa-youtube fa-2x text-secondary"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 border-left border-right" target="_blank">
+                                        <a href="https://line.me/R/ti/p/%40abcthailand" class="btn btn-block">
+                                            <i class="fab fa-line fa-2x text-secondary"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="bg-dark pt-4 pb-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-lg-12">
-                        <img class="d-block mr-auto ml-auto" src="assets/img/nav-logo-white.png">
-                        <br>
-                    </div>
-                    <div class="col-12 col-sm-12 col-lg-12">
-                        <p class="text-center text-white" style="font-size: .8rem;">385 ซอยสุขุมวิท 63 แขวงคลองตันเหนือ เขตวัฒนา กรุงเทพมหานคร 10110 <br> Tel. (+66) 2 002 1919 | thelineclinicth@gmail.com</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12" style="font-size: .6rem;">
-                        <hr>
+                <div class="bg-dark pt-4 pb-4">
+                    <div class="container">
                         <div class="row">
-                            <div class="col-4 text-center">
-                                <a href="#" class="text-secondary">คำชี้แจงสิทธิส่วนบุคคล</a>
+                            <div class="col-12 col-sm-12 col-lg-12">
+                                <img class="d-block mr-auto ml-auto" src="assets/img/nav-logo-white.png">
+                                <br>
                             </div>
-                            <div class="col-4 text-center">
-                                <a href="#" class="text-secondary">ข้อกำหนดการใช้งาน</a>
+                            <div class="col-12 col-sm-12 col-lg-12">
+                                <p class="text-center text-white" style="font-size: .8rem;">385 ซอยสุขุมวิท 63 แขวงคลองตันเหนือ เขตวัฒนา กรุงเทพมหานคร 10110 <br> Tel. (+66) 2 002 1919 | thelineclinicth@gmail.com</p>
                             </div>
-                            <div class="col-4 text-center">
-                                <a href="#" class="text-secondary">แผนผังเว็บไซต์</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-12" style="font-size: .6rem;">
+                                <hr>
+                                <div class="row">
+                                    <div class="col-4 text-center">
+                                        <a href="#" class="text-secondary">คำชี้แจงสิทธิส่วนบุคคล</a>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <a href="#" class="text-secondary">ข้อกำหนดการใช้งาน</a>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <a href="#" class="text-secondary">แผนผังเว็บไซต์</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="w-100 bg-dark pt-3 pb-2">
+                    <div class="col-12">
+                        <p class="text-white text-center" style="font-size: 0.8rem;">
+                            &copy;2018. ASIABEAUTY-CENTER.COM ALL RIGHT RESERVED.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- end footer section -->
+            
         </div>
-        <div class="w-100 bg-dark pt-3 pb-2">
-            <div class="col-12">
-                <p class="text-white text-center" style="font-size: 0.8rem;">
-                    &copy;2018. ASIABEAUTY-CENTER.COM ALL RIGHT RESERVED.
-                </p>
-            </div>
-        </div>
-    </section>
+        <!-- end content -->
         
-        </div>
-        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -569,47 +575,7 @@
     <script src="assets/js/fullpage.extension.min.js"></script>
     <script src="assets/js/scrolloverflow.min.js"></script>
     <script src="assets/js/jquery.waypoint.js"></script>
-    <script>
-        var $sect1 = $('#sect1');
-        var $sect2 = $('#sect2');
-        var $navbar = $('.navbar');
-
-        $sect2.waypoint(function(direction) {
-            if (direction == 'down') {
-                $navbar.addClass('nav-color');
-            } else {
-                $navbar.removeClass('nav-color');
-            }
-        }, {
-            offset: '50%'
-        });
-    </script>
-
-    <!--<script>
-        $('.NavBtn').click(function() {
-            $(this).data("target").addClass("show");
-        });
-        
-        $('#closeNav').click(function() {
-            $('#leftMenu').removeClass('show');
-        });
-    </script>
     
-    <script>
-        $('.menu-nav>.menu-item').click(function() {
-            $(this).data("target").addClass("show");
-        });
-    </script>-->
-    
-    <script>
-        $(function() {
-            
-            $('#openAsideM').click(function() {
-                $('.gnb').addClass('show');
-            });
-            
-        });
-    </script>
     <script>
         $(document).ready(function() {
             $('#fullpage').fullpage({
