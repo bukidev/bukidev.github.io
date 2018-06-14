@@ -7,7 +7,7 @@
     }
 
     .bg-doctor {
-        background-image: url(../assets/img/doctor/header_img.jpg);
+        background-image: url(../img/doctor/header_img.jpg);
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
@@ -17,7 +17,7 @@
         }
 
     .bg-login {
-        background-image: url(../assets/img/login/bg-login.jpg);
+        background-image: url(../img/login/bg-login.jpg);
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
@@ -27,7 +27,7 @@
     }
 
     .bg-forgotpassword {
-        background-image: url(../assets/img/doctor/header_img.jpg);
+        background-image: url(../img/doctor/header_img.jpg);
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
@@ -48,7 +48,7 @@
     }
 
     .bg-before-after {
-        background-image: url(/assets/img/home/bg-befor-after.jpg);
+        background-image: url(../img/home/bg-befor-after.jpg);
         background-size: cover;
         background-position: right top;
         background-repeat: no-repeat;
@@ -75,7 +75,7 @@
     }
 
     .bg-doctor {
-        background-image: url(../assets/img/doctor/header_img.jpg);
+        background-image: url(../img/doctor/header_img.jpg);
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
@@ -85,7 +85,7 @@
     }
 
     .bg-login {
-        background-image: url(../assets/img/login/bg-login.jpg);
+        background-image: url(../img/login/bg-login.jpg);
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
@@ -95,7 +95,7 @@
     }
 
     .bg-forgotpassword {
-        background-image: url(../assets/img/doctor/header_img.jpg);
+        background-image: url(../img/doctor/header_img.jpg);
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
@@ -105,7 +105,7 @@
     }
 
     .bg-testimonial {
-        background-image: url(/assets/img/home/bg-testimonial-768.jpg);
+        background-image: url(../img/home/bg-testimonial-768.jpg);
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
@@ -115,7 +115,7 @@
     }
 
     .bg-before-after {
-        background-image: url(/assets/img/home/bg-befor-after.jpg);
+        background-image: url(../img/home/bg-befor-after.jpg);
         background-size: cover;
         background-position: right top;
         background-repeat: no-repeat;
@@ -189,7 +189,7 @@
     }
 
     .bg-doctor {
-        background-image: url(../assets/img/doctor/header_img.jpg);
+        background-image: url(../img/doctor/header_img.jpg);
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
@@ -199,7 +199,7 @@
     }
 
     .bg-login {
-        background-image: url(../assets/img/login/bg-login.jpg);
+        background-image: url(../img/login/bg-login.jpg);
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
@@ -209,7 +209,7 @@
     }
 
     .bg-forgotpassword {
-        background-image: url(../assets/img/doctor/header_img.jpg);
+        background-image: url(../img/doctor/header_img.jpg);
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
@@ -219,7 +219,7 @@
     }
 
     .bg-testimonial {
-        background-image: url(/assets/img/home/bg-testimonial.jpg);
+        background-image: url(../img/home/bg-testimonial.jpg);
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
@@ -229,7 +229,7 @@
     }
 
     .bg-before-after {
-        background-image: url(/assets/img/home/bg-befor-after.jpg);
+        background-image: url(../img/home/bg-befor-after.jpg);
         background-size: cover;
         background-position: right top;
         background-repeat: no-repeat;
