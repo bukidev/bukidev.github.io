@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/assets/css/head-img.css">
     <link rel="stylesheet" href="/assets/css/doctor.css">
     <link rel="stylesheet" href="/assets/css/bootadmin.min.css">
+    <link rel="stylesheet" href="/assets/css/fullpage.min.css">
     
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
@@ -159,7 +160,7 @@
     </nav>
 
     <div class="d-flex">
-        <div class="sidebar sidebar-dark bg-white border-right">
+    <div class="sidebar sidebar-dark bg-white border-right">
             <ul class="list-unstyled">
                 <li class="text-center d-none d-sm-none d-md-block d-lg-block">
                     <a href="/index.html">
@@ -210,54 +211,21 @@
         </div>
     
     
-    <div id="doctorListApp" class="content">
-        
-    <div class="modal fade bd-example-modal-lg" id="doctorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content rounded-0">
-                <div class="modal-header rounded-0">
-                    <div class="modal-title" id="exampleModalLabel">
-                        
-                    </div>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-5 pl-0 pr-0">
-                                <img v-bind:src="modal.fullImgPath" class="img-fluid">
-                            </div>
-                            
-                            <div id="doctorDesc" class="col-12 col-sm-12 col-md-12 col-lg-7 pt-2">
-                                <h5 class="text-secondary mb-0">ศัลยแพทย์</h5>
-                                <h1 class="text-dark">{{ modal.dName }}</h1>
-                                <h5 class="text-secondary">{{ modal.dPosition }}</h5>
-                                <hr>
-                                <p v-for="list in modal.lists">{{ list }}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="fullpage" class="content">
     
     <!-- header img section -->
-    <section class="bg-doctor shadow-sm text-center">
-        <div class="pt-5 pb-5">
-            <h5 class="text-center text-secondary">Asia Beauty Center</h5>
-            <h1 class="text-center text-dark">แนะนำทีมศัลยแพทย์</h1>
-            <i class="fa fa-minus text-primary"></i>
-            <p class="text-center text-secondary">ด้วยทักษะที่หาตัวจับยาก<br>ให้เรานำเสนอประสบการณ์ของเรา</p>
-        </div>
-    </section>
-    
-    <section class="">
-        <div class="container">
+    <section class="bg-white shadow-sm text-center section fp-auto-height">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-12 pl-0 pr-0">
+                <div class="border-bottom col-12 pt-5 pb-5">
+                    <h5 class="text-center text-secondary">Asia Beauty Center</h5>
+                    <h1 class="text-center text-dark">แนะนำทีมศัลยแพทย์</h1>
+                    <i class="fa fa-minus text-primary"></i>
+                    <p class="text-center text-secondary">ด้วยทักษะที่หาตัวจับยาก<br>ให้เรานำเสนอประสบการณ์ของเรา</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 pl-0 pr-0 border-bottom">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb bg-white mb-0 shadow-sm rounded-0">
                             <li class="breadcrumb-item"><a href="#">หน้าแรก</a></li>
@@ -268,27 +236,262 @@
                 </div>
             </div>
         </div>
-    </section>  
+    </section>
     
-    <section>
-        <div class="container bg-white">
+    <section class="section bg-doctor01">
+        <div class="container-fluid">
             <div class="row">
-                <div v-for="item in items" class="col-12 col-sm-6 col-md-4 col-lg-4 mt-3">
-                    <a v-on:click="showModal(item.dID)" data-toggle="modal" data-target="#doctorModal">
-                        <img v-bind:src="item.imgPath" class="img-fluid">
-                        <div class="bg-primary pt-3 pb-2">
-                            <h4 class="text-center text-white"><strong>ศัลยแพทย์ {{ item.dName }}</strong></h4>
-                            <p class="text-center text-white">{{ item.dPosition }}</p>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 offset-xl-7">
+                    <div class="card mt-5">
+                        <div class="card-body">
+                            <h1 class="card-title">ศัลยแพทย์ <strong>พาร์คซองซู</strong></h1>
+                            <h5 class="card-subtitle mb-2 text-muted">แพทย์เฉพาะทางด้านศัลยกรรมตกแต่ง</h5>
+                            <i class="fa fa-minus text-primary mb-5"></i>
+                            
+                            <p class="card-text">จบการศึกษา สาขาศัลยกรรมตกแต่ง จาก Asan Medical Center</p>
+                            <p class="card-text">เคยดำรงตำแหน่งอาจารย์ผู้สอน สาขาศัลยกรรมตกแต่ง มหาวิทยาลัยแห่งชาติโซล</p>
+                            <p class="card-text">เคยดำรงตำแหน่งผู้ช่วยศาสตราจารย์ ประจำโรงพยาบาล Kangbuk Samsung Hospital</p>
+
+                            <p class="card-text">สมาชิกสามัญ สมาคมศัลยแพทย์ตกแต่งแห่งประเทศเกาหลีใต้</p>
+                            <p class="card-text">สมาชิกสามัญ สมาคมศัลยแพทย์ตกแต่งเสริมสวยแห่งประเทศเกาหลีใต้</p>
+                            <p class="card-text">International Member สมาคมศัลยแพทย์ ประเทศอเมริกา</p>
+                            <p class="card-text">สมาชิกสามััญ สมาคมศัลยแพทย์ตกแต่งเสริมสวยนานาชาติ (ISAPS)</p>
+                            <p class="card-text">สมาชิก ศูนย์วิจัยทรวงอก สมาคมศัลยแพทย์ตกแต่ง</p>
+                            <!--<a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>-->
                         </div>
-                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section class="section bg-doctor02">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 offset-xl-7">
+                    <div class="card mt-5">
+                        <div class="card-body">
+                            <h1 class="card-title">ศัลยแพทย์ <strong>พาร์คซองซู</strong></h1>
+                            <h5 class="card-subtitle mb-2 text-muted">แพทย์เฉพาะทางด้านศัลยกรรมตกแต่ง</h5>
+                            <i class="fa fa-minus text-primary mb-5"></i>
+                            
+                            <p class="card-text">จบการศึกษา สาขาศัลยกรรมตกแต่ง จาก Asan Medical Center</p>
+                            <p class="card-text">เคยดำรงตำแหน่งอาจารย์ผู้สอน สาขาศัลยกรรมตกแต่ง มหาวิทยาลัยแห่งชาติโซล</p>
+                            <p class="card-text">เคยดำรงตำแหน่งผู้ช่วยศาสตราจารย์ ประจำโรงพยาบาล Kangbuk Samsung Hospital</p>
+
+                            <p class="card-text">สมาชิกสามัญ สมาคมศัลยแพทย์ตกแต่งแห่งประเทศเกาหลีใต้</p>
+                            <p class="card-text">สมาชิกสามัญ สมาคมศัลยแพทย์ตกแต่งเสริมสวยแห่งประเทศเกาหลีใต้</p>
+                            <p class="card-text">International Member สมาคมศัลยแพทย์ ประเทศอเมริกา</p>
+                            <p class="card-text">สมาชิกสามััญ สมาคมศัลยแพทย์ตกแต่งเสริมสวยนานาชาติ (ISAPS)</p>
+                            <p class="card-text">สมาชิก ศูนย์วิจัยทรวงอก สมาคมศัลยแพทย์ตกแต่ง</p>
+                            <!--<a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section class="section bg-doctor03">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 offset-xl-7">
+                    <div class="card mt-5">
+                        <div class="card-body">
+                            <h1 class="card-title">ศัลยแพทย์ <strong>พาร์คซองซู</strong></h1>
+                            <h5 class="card-subtitle mb-2 text-muted">แพทย์เฉพาะทางด้านศัลยกรรมตกแต่ง</h5>
+                            <i class="fa fa-minus text-primary mb-5"></i>
+                            
+                            <p class="card-text">จบการศึกษา สาขาศัลยกรรมตกแต่ง จาก Asan Medical Center</p>
+                            <p class="card-text">เคยดำรงตำแหน่งอาจารย์ผู้สอน สาขาศัลยกรรมตกแต่ง มหาวิทยาลัยแห่งชาติโซล</p>
+                            <p class="card-text">เคยดำรงตำแหน่งผู้ช่วยศาสตราจารย์ ประจำโรงพยาบาล Kangbuk Samsung Hospital</p>
+
+                            <p class="card-text">สมาชิกสามัญ สมาคมศัลยแพทย์ตกแต่งแห่งประเทศเกาหลีใต้</p>
+                            <p class="card-text">สมาชิกสามัญ สมาคมศัลยแพทย์ตกแต่งเสริมสวยแห่งประเทศเกาหลีใต้</p>
+                            <p class="card-text">International Member สมาคมศัลยแพทย์ ประเทศอเมริกา</p>
+                            <p class="card-text">สมาชิกสามััญ สมาคมศัลยแพทย์ตกแต่งเสริมสวยนานาชาติ (ISAPS)</p>
+                            <p class="card-text">สมาชิก ศูนย์วิจัยทรวงอก สมาคมศัลยแพทย์ตกแต่ง</p>
+                            <!--<a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section class="section bg-doctor04">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 offset-xl-7">
+                    <div class="card mt-5">
+                        <div class="card-body">
+                            <h1 class="card-title">ศัลยแพทย์ <strong>พาร์คซองซู</strong></h1>
+                            <h5 class="card-subtitle mb-2 text-muted">แพทย์เฉพาะทางด้านศัลยกรรมตกแต่ง</h5>
+                            <i class="fa fa-minus text-primary mb-5"></i>
+                            
+                            <p class="card-text">จบการศึกษา สาขาศัลยกรรมตกแต่ง จาก Asan Medical Center</p>
+                            <p class="card-text">เคยดำรงตำแหน่งอาจารย์ผู้สอน สาขาศัลยกรรมตกแต่ง มหาวิทยาลัยแห่งชาติโซล</p>
+                            <p class="card-text">เคยดำรงตำแหน่งผู้ช่วยศาสตราจารย์ ประจำโรงพยาบาล Kangbuk Samsung Hospital</p>
+
+                            <p class="card-text">สมาชิกสามัญ สมาคมศัลยแพทย์ตกแต่งแห่งประเทศเกาหลีใต้</p>
+                            <p class="card-text">สมาชิกสามัญ สมาคมศัลยแพทย์ตกแต่งเสริมสวยแห่งประเทศเกาหลีใต้</p>
+                            <p class="card-text">International Member สมาคมศัลยแพทย์ ประเทศอเมริกา</p>
+                            <p class="card-text">สมาชิกสามััญ สมาคมศัลยแพทย์ตกแต่งเสริมสวยนานาชาติ (ISAPS)</p>
+                            <p class="card-text">สมาชิก ศูนย์วิจัยทรวงอก สมาคมศัลยแพทย์ตกแต่ง</p>
+                            <!--<a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section class="section bg-doctor05">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 offset-xl-7">
+                    <div class="card mt-5">
+                        <div class="card-body">
+                            <h1 class="card-title">ศัลยแพทย์ <strong>คังมินกู</strong></h1>
+                            <h5 class="card-subtitle mb-2 text-muted">แพทย์เฉพาะทางด้านศัลยกรรมตกแต่ง</h5>
+                            <i class="fa fa-minus text-primary mb-5"></i>
+                            
+                            <p class="card-text">จบการศึกษา สาขาศัลยกรรมตกแต่ง จาก Asan Medical Center</p>
+                            <p class="card-text">เคยดำรงตำแหน่งอาจารย์ผู้สอน สาขาศัลยกรรมตกแต่ง มหาวิทยาลัยแห่งชาติโซล</p>
+                            <p class="card-text">เคยดำรงตำแหน่งผู้ช่วยศาสตราจารย์ ประจำโรงพยาบาล Kangbuk Samsung Hospital</p>
+
+                            <p class="card-text">สมาชิกสามัญ สมาคมศัลยแพทย์ตกแต่งแห่งประเทศเกาหลีใต้</p>
+                            <p class="card-text">สมาชิกสามัญ สมาคมศัลยแพทย์ตกแต่งเสริมสวยแห่งประเทศเกาหลีใต้</p>
+                            <p class="card-text">International Member สมาคมศัลยแพทย์ ประเทศอเมริกา</p>
+                            <p class="card-text">สมาชิกสามััญ สมาคมศัลยแพทย์ตกแต่งเสริมสวยนานาชาติ (ISAPS)</p>
+                            <p class="card-text">สมาชิก ศูนย์วิจัยทรวงอก สมาคมศัลยแพทย์ตกแต่ง</p>
+                            <!--<a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section class="section bg-doctor06">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 offset-xl-7">
+                    <div class="card mt-5">
+                        <div class="card-body">
+                            <h1 class="card-title">ศัลยแพทย์ <strong>ลีจุนอุค</strong></h1>
+                            <h5 class="card-subtitle mb-2 text-muted">แพทย์เฉพาะทางด้านศัลยกรรมตกแต่ง</h5>
+                            <i class="fa fa-minus text-primary mb-5"></i>
+                            
+                            <p class="card-text">จบการศึกษา สาขาศัลยกรรมตกแต่ง จาก Asan Medical Center</p>
+                            <p class="card-text">เคยดำรงตำแหน่งอาจารย์ผู้สอน สาขาศัลยกรรมตกแต่ง มหาวิทยาลัยแห่งชาติโซล</p>
+                            <p class="card-text">เคยดำรงตำแหน่งผู้ช่วยศาสตราจารย์ ประจำโรงพยาบาล Kangbuk Samsung Hospital</p>
+
+                            <p class="card-text">สมาชิกสามัญ สมาคมศัลยแพทย์ตกแต่งแห่งประเทศเกาหลีใต้</p>
+                            <p class="card-text">สมาชิกสามัญ สมาคมศัลยแพทย์ตกแต่งเสริมสวยแห่งประเทศเกาหลีใต้</p>
+                            <p class="card-text">International Member สมาคมศัลยแพทย์ ประเทศอเมริกา</p>
+                            <p class="card-text">สมาชิกสามััญ สมาคมศัลยแพทย์ตกแต่งเสริมสวยนานาชาติ (ISAPS)</p>
+                            <p class="card-text">สมาชิก ศูนย์วิจัยทรวงอก สมาคมศัลยแพทย์ตกแต่ง</p>
+                            <!--<a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>-->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     
+    <section class="section bg-doctor07">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 offset-xl-7">
+                    <div class="card mt-5">
+                        <div class="card-body">
+                            <h1 class="card-title">ศัลยแพทย์ <strong>ลีจุนอุค</strong></h1>
+                            <h5 class="card-subtitle mb-2 text-muted">แพทย์เฉพาะทางด้านศัลยกรรมตกแต่ง</h5>
+                            <i class="fa fa-minus text-primary mb-5"></i>
+                            
+                            <p class="card-text">จบการศึกษา สาขาศัลยกรรมตกแต่ง จาก Asan Medical Center</p>
+                            <p class="card-text">เคยดำรงตำแหน่งอาจารย์ผู้สอน สาขาศัลยกรรมตกแต่ง มหาวิทยาลัยแห่งชาติโซล</p>
+                            <p class="card-text">เคยดำรงตำแหน่งผู้ช่วยศาสตราจารย์ ประจำโรงพยาบาล Kangbuk Samsung Hospital</p>
+
+                            <p class="card-text">สมาชิกสามัญ สมาคมศัลยแพทย์ตกแต่งแห่งประเทศเกาหลีใต้</p>
+                            <p class="card-text">สมาชิกสามัญ สมาคมศัลยแพทย์ตกแต่งเสริมสวยแห่งประเทศเกาหลีใต้</p>
+                            <p class="card-text">International Member สมาคมศัลยแพทย์ ประเทศอเมริกา</p>
+                            <p class="card-text">สมาชิกสามััญ สมาคมศัลยแพทย์ตกแต่งเสริมสวยนานาชาติ (ISAPS)</p>
+                            <p class="card-text">สมาชิก ศูนย์วิจัยทรวงอก สมาคมศัลยแพทย์ตกแต่ง</p>
+                            <!--<a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
-    <!-- footer section -->
-    <section class="mt-5">
+    <section class="section bg-doctor08">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 offset-xl-7">
+                    <div class="card mt-5">
+                        <div class="card-body">
+                            <h1 class="card-title">ศัลยแพทย์ <strong>ลีจุนอุค</strong></h1>
+                            <h5 class="card-subtitle mb-2 text-muted">แพทย์เฉพาะทางด้านศัลยกรรมตกแต่ง</h5>
+                            <i class="fa fa-minus text-primary mb-5"></i>
+                            
+                            <p class="card-text">จบการศึกษา สาขาศัลยกรรมตกแต่ง จาก Asan Medical Center</p>
+                            <p class="card-text">เคยดำรงตำแหน่งอาจารย์ผู้สอน สาขาศัลยกรรมตกแต่ง มหาวิทยาลัยแห่งชาติโซล</p>
+                            <p class="card-text">เคยดำรงตำแหน่งผู้ช่วยศาสตราจารย์ ประจำโรงพยาบาล Kangbuk Samsung Hospital</p>
+
+                            <p class="card-text">สมาชิกสามัญ สมาคมศัลยแพทย์ตกแต่งแห่งประเทศเกาหลีใต้</p>
+                            <p class="card-text">สมาชิกสามัญ สมาคมศัลยแพทย์ตกแต่งเสริมสวยแห่งประเทศเกาหลีใต้</p>
+                            <p class="card-text">International Member สมาคมศัลยแพทย์ ประเทศอเมริกา</p>
+                            <p class="card-text">สมาชิกสามััญ สมาคมศัลยแพทย์ตกแต่งเสริมสวยนานาชาติ (ISAPS)</p>
+                            <p class="card-text">สมาชิก ศูนย์วิจัยทรวงอก สมาคมศัลยแพทย์ตกแต่ง</p>
+                            <!--<a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section class="section bg-doctor09">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 offset-xl-7">
+                    <div class="card mt-5">
+                        <div class="card-body">
+                            <h1 class="card-title">ศัลยแพทย์ <strong>ลีจุนอุค</strong></h1>
+                            <h5 class="card-subtitle mb-2 text-muted">แพทย์เฉพาะทางด้านศัลยกรรมตกแต่ง</h5>
+                            <i class="fa fa-minus text-primary mb-5"></i>
+                            
+                            <p class="card-text">จบการศึกษา สาขาศัลยกรรมตกแต่ง จาก Asan Medical Center</p>
+                            <p class="card-text">เคยดำรงตำแหน่งอาจารย์ผู้สอน สาขาศัลยกรรมตกแต่ง มหาวิทยาลัยแห่งชาติโซล</p>
+                            <p class="card-text">เคยดำรงตำแหน่งผู้ช่วยศาสตราจารย์ ประจำโรงพยาบาล Kangbuk Samsung Hospital</p>
+
+                            <p class="card-text">สมาชิกสามัญ สมาคมศัลยแพทย์ตกแต่งแห่งประเทศเกาหลีใต้</p>
+                            <p class="card-text">สมาชิกสามัญ สมาคมศัลยแพทย์ตกแต่งเสริมสวยแห่งประเทศเกาหลีใต้</p>
+                            <p class="card-text">International Member สมาคมศัลยแพทย์ ประเทศอเมริกา</p>
+                            <p class="card-text">สมาชิกสามััญ สมาคมศัลยแพทย์ตกแต่งเสริมสวยนานาชาติ (ISAPS)</p>
+                            <p class="card-text">สมาชิก ศูนย์วิจัยทรวงอก สมาคมศัลยแพทย์ตกแต่ง</p>
+                            <!--<a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- start footer section -->
+    <section class="section fp-auto-height border-top">
         <div class="bg-white">
             <div class="container">
                 <div class="row">
@@ -315,35 +518,36 @@
             </div>
         </div>
         <div class="bg-dark pt-4 pb-4">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-lg-12">
                         <img class="d-block mr-auto ml-auto" src="/assets/img/nav-logo-white.png">
                         <br>
                     </div>
                     <div class="col-12 col-sm-12 col-lg-12">
-                        <p class="text-center text-white" style="font-size: .8rem;">385 ซอยสุขุมวิท 63 แขวงคลองตันเหนือ เขตวัฒนา กรุงเทพมหานคร 10110 <br> Tel. (+66) 2 002 1919 | thelineclinicth@gmail.com</p>
+                        <p class="text-center text-white">385 ซอยสุขุมวิท 63 แขวงคลองตันเหนือ เขตวัฒนา กรุงเทพมหานคร 10110 <br> Tel. (+66) 2 002 1919 | abcthailandgroup@gmail.com</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12" style="font-size: .6rem;">
-                        <hr>
-                        <div class="row">
-                            <div class="col-4 text-center">
-                                <a href="#" class="text-secondary">คำชี้แจงสิทธิส่วนบุคคล</a>
+                        <!--<div class="row">
+                            <div class="col-12" style="font-size: .6rem;">
+                                <hr>
+                                <div class="row">
+                                    <div class="col-4 text-center">
+                                        <a href="#" class="text-secondary">คำชี้แจงสิทธิส่วนบุคคล</a>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <a href="#" class="text-secondary">ข้อกำหนดการใช้งาน</a>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <a href="#" class="text-secondary">แผนผังเว็บไซต์</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-4 text-center">
-                                <a href="#" class="text-secondary">ข้อกำหนดการใช้งาน</a>
-                            </div>
-                            <div class="col-4 text-center">
-                                <a href="#" class="text-secondary">แผนผังเว็บไซต์</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        </div>-->
             </div>
         </div>
-        <div class="w-100 bg-black pt-3 pb-2">
+        <div class="w-100 bg-dark pt-3 pb-2">
+            <hr>
             <div class="col-12">
                 <p class="text-white text-center" style="font-size: 0.8rem;">
                     &copy;2018. ASIABEAUTY-CENTER.COM ALL RIGHT RESERVED.
@@ -351,10 +555,11 @@
             </div>
         </div>
     </section>
+    <!-- end footer section -->
         
     </div>
         
-        </div>
+    </div>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -363,20 +568,86 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <script src="/assets/js/jquery.waypoint.js"></script>
     <script src="/assets/js/bootadmin.min.js"></script>
-    <script src="/assets/js/doctor-list-app.js"></script>
+    <script src="/assets/js/fullpage.min.js"></script>
+    <script src="/assets/js/fullpage.extension.min.js"></script>
+    <script src="/assets/js/scrolloverflow.min.js"></script>
+    <script src="/assets/js/jquery.waypoint.js"></script>
+    
     <script>
-        var $sect1 = $('#sect1');
-        var $sect2 = $('#sect2');
-        var $navbar = $('.navbar');
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                //Navigation
+                menu: '#menu',
+                lockAnchors: false,
+                anchors:['firstPage', 'secondPage'],
+                navigation: false,
+                navigationPosition: 'right',
+                navigationTooltips: ['firstSlide', 'secondSlide'],
+                showActiveTooltip: false,
+                slidesNavigation: false,
+                slidesNavPosition: 'bottom',
 
-        $sect2.waypoint(function(direction) {
-            if (direction == 'down') {
-                $navbar.addClass('nav-color');
-            } else {
-                $navbar.removeClass('nav-color');
-            }
-        }, {
-            offset: '50%'
+                //Scrolling
+                css3: true,
+                scrollingSpeed: 700,
+                autoScrolling: true,
+                fitToSection: true,
+                fitToSectionDelay: 1000,
+                scrollBar: false,
+                easing: 'easeInOutCubic',
+                easingcss3: 'ease',
+                loopBottom: false,
+                loopTop: false,
+                loopHorizontal: true,
+                continuousVertical: false,
+                continuousHorizontal: false,
+                scrollHorizontally: false,
+                interlockedSlides: false,
+                dragAndMove: true,
+                offsetSections: false,
+                resetSliders: false,
+                fadingEffect: false,
+                normalScrollElements: '#element1, .element2',
+                scrollOverflow: false,
+                scrollOverflowReset: false,
+                scrollOverflowOptions: null,
+                touchSensitivity: 15,
+                normalScrollElementTouchThreshold: 5,
+                bigSectionsDestination: null,
+
+                //Accessibility
+                keyboardScrolling: true,
+                animateAnchor: true,
+                recordHistory: true,
+
+                //Design
+                controlArrows: true,
+                verticalCentered: true,
+                sectionsColor : ['#ccc', '#fff'],
+                paddingTop: '0',
+                paddingBottom: '0',
+                fixedElements: '#header, .footer',
+                responsiveWidth: 1100,
+                responsiveHeight: 0,
+                responsiveSlides: false,
+                parallax: false,
+                parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+                //Custom selectors
+                sectionSelector: '.section',
+                slideSelector: '.slide',
+
+                lazyLoading: true,
+
+                //events
+                onLeave: function(index, nextIndex, direction){},
+                afterLoad: function(anchorLink, index){},
+                afterRender: function(){},
+                afterResize: function(){},
+                afterResponsive: function(isResponsive){},
+                afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+                onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){},
+	       });
         });
     </script>
 </body>
