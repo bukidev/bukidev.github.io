@@ -125,7 +125,7 @@
     }
     
     .bg-doctor01 {
-        background-image: url(/assets/img/doctor/bg-01-pc.jpg);
+        background-image: url(../img/doctor/bg-01-pc.jpg);
         background-size: cover;
         background-position: left top;
         background-repeat: no-repeat;
@@ -137,43 +137,43 @@
         background-repeat: no-repeat;
     }
     .bg-doctor03 {
-        background-image: url(/assets/img/doctor/bg-03-pc.jpg);
+        background-image: url(../img/doctor/bg-03-pc.jpg);
         background-size: cover;
         background-position: left top;
         background-repeat: no-repeat;
     }
     .bg-doctor04 {
-        background-image: url(/assets/img/doctor/bg-04-pc.jpg);
+        background-image: url(../img/doctor/bg-04-pc.jpg);
         background-size: cover;
         background-position: left top;
         background-repeat: no-repeat;
     }
     .bg-doctor05 {
-        background-image: url(/assets/img/doctor/bg-05-pc.jpg);
+        background-image: url(../img/doctor/bg-05-pc.jpg);
         background-size: cover;
         background-position: left top;
         background-repeat: no-repeat;
     }
     .bg-doctor06 {
-        background-image: url(/assets/img/doctor/bg-06-pc.jpg);
+        background-image: url(../img/doctor/bg-06-pc.jpg);
         background-size: cover;
         background-position: left top;
         background-repeat: no-repeat;
     }
     .bg-doctor07 {
-        background-image: url(/assets/img/doctor/bg-07-pc.jpg);
+        background-image: url(../img/doctor/bg-07-pc.jpg);
         background-size: cover;
         background-position: left top;
         background-repeat: no-repeat;
     }
     .bg-doctor08 {
-        background-image: url(/assets/img/doctor/bg-08-pc.jpg);
+        background-image: url(../img/doctor/bg-08-pc.jpg);
         background-size: cover;
         background-position: left top;
         background-repeat: no-repeat;
     }
     .bg-doctor09 {
-        background-image: url(/assets/img/doctor/bg-09-pc.jpg);
+        background-image: url(../img/doctor/bg-09-pc.jpg);
         background-size: cover;
         background-position: left top;
         background-repeat: no-repeat;
