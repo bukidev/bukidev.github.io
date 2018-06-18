@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/gnb.css">
+    <script src="https://use.fontawesome.com/7b7699443a.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/splash.css">
+    <link rel="stylesheet" href="../assets/css/head-img.css">
+    <link rel="stylesheet" href="../assets/css/doctor.css">
+    <link rel="stylesheet" href="../assets/css/bootadmin.min.css">
+    <link rel="stylesheet" href="../assets/css/fullpage.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <title>ABC - Asia Beauty Center</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Kanit');
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Kanit', sans-serif;
+        }
+        
+        .slide-caption {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            background: rgba(52, 58, 64,.5);
+            color: dimgrey;
+        }
+        
+        .carousel-indicators>li {
+            background-color: lightsteelblue;
+        }
+        
+        .carousel-indicators>li.active {
+            background-color: blueviolet;
+        }
+        
+        .bg-purple {
+            background: rgba(193,127,255,1);
+            background: -moz-linear-gradient(-45deg, rgba(193,127,255,1) 0%, rgba(152,255,252,1) 100%);
+            background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(193,127,255,1)), color-stop(100%, rgba(152,255,252,1)));
+            background: -webkit-linear-gradient(-45deg, rgba(193,127,255,1) 0%, rgba(152,255,252,1) 100%);
+            background: -o-linear-gradient(-45deg, rgba(193,127,255,1) 0%, rgba(152,255,252,1) 100%);
+            background: -ms-linear-gradient(-45deg, rgba(193,127,255,1) 0%, rgba(152,255,252,1) 100%);
+            background: linear-gradient(135deg, rgba(193,127,255,1) 0%, rgba(152,255,252,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c17fff', endColorstr='#98fffc', GradientType=1 );
+        }
+        
+        #map {
+            width: 100%;
+            height: 400px;
+            background-color: dimgrey;
+        }
+        
+        
+        
+        .bg-gradient-1 {
+            background: rgb(238, 174, 202);
+            background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+        }
+        
+        .underline-icon {
+            height: 5px;
+            width: 10%;
+            margin-bottom: 30px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /*.navbar {
+            background: transparent !important;
+            border-color: transparent !important;
+        }*/
+        
+        .nav-color {
+            background: #343a40 !important;
+        }
+        
+        .navbar-toggler {
+            padding: .25rem .25rem !important;
+        }
+        
+        .text-shadow {
+            text-shadow: 2px 2px #ff0000;
+        }
+        
+        .bg-grey {background: #edebef;}
+        
+        .btn-circle { border-radius: 50% !important; width: 50px !important; height: 50px !important; border: 0px; }
+        
+        .blur {
+            filter: blur(6px);
+            -webkit-filter: blur(6px);
+            -moz-filter: blur(6px);
+            -o-filter: blur(6px);
+        }
+        .mt-66 {
+            margin-top: 66px;
+        }
+        
+        .bg-login {
+            background: rgb(6,0,64);
+            background: linear-gradient(0deg, rgba(150,205,253,1) 0%, rgba(249,205,236,1) 100%);
+        }
+        
+        .bg-black {
+            background: #000;
+        }
+        
+        .dropdown-menu {
+            border: 0;
+            border-radius: 0;
+        }
+        
+        @media (min-width: 992px) {
+            .modal-lg {
+                max-width: 1000px;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body class="bg-light">
+    
+    <div class="transition-overlay"></div>
+    
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h3 class="modal-title" id="exampleModalLabel"><strong> ข้อควรปฏิบัติ </strong></h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body pl-0 pr-0 pt-0 pb-0">
+                  <div id="breast">
+                      <ul class="list-unstyled">
+                        <li><a href="breast/breast-1.html" class="btn btn-secondary btn-lg text-center img-resp detail-list rounded-0"> หลังเสริมหน้าอกด้วยไขมันตนเอง </a>
+                        <li><a href="breast/breast-2.html" class="btn btn-secondary btn-lg text-center img-resp detail-list rounded-0"> หลังเสริมหน้าอก </a></li>
+                        <li><a href="breast/breast-3.html" class="btn btn-secondary btn-lg text-center img-resp detail-list rounded-0"> หลังตัดเต้านมส่วนเกิน </a></li>
+                        <li><a href="breast/breast-4.html" class="btn btn-secondary btn-lg text-center img-resp detail-list rounded-0"> หลังศัลยกรรมตกแต่งหัวนม </a></li>
+                        <li><a href="breast/breast-5.html" class="btn btn-secondary btn-lg text-center img-resp detail-list rounded-0"> หลังยกกระชับหน้าอก </a></li>
+                        <li><a href="breast/breast-6.html" class="btn btn-secondary btn-lg text-center img-resp detail-list rounded-0"> หลังลดขนาดหน้าอก </a></li>
+                      </ul>
+                  </div>
+                  <div id="hip">
+                      <ul class="list-unstyled">
+                          <li>
+                              <a href="hip/hip-1.html" class="btn btn-secondary btn-lg text-center img-resp detail-list rounded-0"> หลังยกกระชับสะโพกด้วยการร้อยไหม </a>
+                          </li>
+                          <li>
+                              <a href="hip/hip-2.html" class="btn btn-secondary btn-lg text-center img-resp detail-list rounded-0"> หลังเสริมสะโพกด้วยไขมันตัวเอง </a>
+                          </li>
+                          <li>
+                              <a href="hip/hip-3.html" class="btn btn-secondary btn-lg text-center img-resp detail-list rounded-0"> หลังเสริมและยกกระชับสะโพก </a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div id="lipo">
+                      <ul class="list-unstyled">
+                          <li>
+                              <a href="lipo/lipo-1.html" class="btn btn-secondary btn-lg text-center img-resp detail-list rounded-0"> หลังศัลยกรรมตัดแต่งหน้าท้อง </a>
+                          </li>
+                          <li>
+                              <a href="lipo/lipo-2.html" class="btn btn-secondary btn-lg text-center img-resp detail-list rounded-0"> หลังดูดไขมัน </a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div id="female">
+                      <ul class="list-unstyled">
+                          <li>
+                              <a href="female/female-1.html" class="btn btn-purple text-center img-resp detail-list"> หลังศัลยกรรมตกแต่งอวัยวะเพศหญิง </a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div id="face">
+                      <ul class="list-unstyled">
+                          <li>
+                              <a href="face/face-1.html" class="btn btn-purple text-center img-resp detail-list"> หลังเสริมร่องแก้ม </a>
+                          </li>
+                          <li>
+                              <a href="face/face-2.html" class="btn btn-purple text-center img-resp detail-list"> หลังเสริมร่องแก้ม/เสริมคางด้วยซิลิโคน </a>
+                          </li>
+                          <li>
+                              <a href="face/face-3.html" class="btn btn-purple text-center img-resp detail-list"> หลังศัลยกรรมตา </a>
+                          </li>
+                          <li>
+                              <a href="face/face-4.html" class="btn btn-purple text-center img-resp detail-list"> หลังทำลักยิ้ม </a>
+                          </li>
+                          <li>
+                              <a href="face/face-5.html" class="btn btn-purple text-center img-resp detail-list"> หลังศัลยกรรมยกหน้าผาก </a>
+                          </li>
+                          <li>
+                              <a href="face/face-6.html" class="btn btn-purple text-center img-resp detail-list"> หลังฉีดไขมันปรับรูปหน้า </a>
+                          </li>
+                          <li>
+                              <a href="face/face-7.html" class="btn btn-purple text-center img-resp detail-list"> หลังศัลยกรรมจมูก </a>
+                          </li>
+                          <li>
+                              <a href="face/face-8.html" class="btn btn-purple text-center img-resp detail-list"> หลังศัลยกรรมยกกระชับใบหน้า </a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div id="skin">
+                      <ul class="list-unstyled">
+                          <li>
+                              <a href="skin/skin-1.html" class="btn btn-purple text-center img-resp detail-list"> หลังทำ Laser </a>
+                          </li>
+                          <li>
+                              <a href="skin/skin-2.html" class="btn btn-purple text-center img-resp detail-list"> หลังฉีดโบท็อกซ์ </a>
+                          </li>
+                          <li>
+                              <a href="skin/skin-3.html" class="btn btn-purple text-center img-resp detail-list"> หลังฉีดลิฟติ้งโบท็อกซ์ </a>
+                          </li>
+                          <li>
+                              <a href="skin/skin-4.html" class="btn btn-purple text-center img-resp detail-list"> หลังร้อยไหม </a>
+                          </li>
+                          <li>
+                              <a href="skin/skin-5.html" class="btn btn-purple text-center img-resp detail-list"> หลังทำ ACCULIFT </a>
+                          </li>
+                          <li>
+                              <a href="skin/skin-6.html" class="btn btn-purple text-center img-resp detail-list"> หลังฉีดสเต็มเซลลฺ์ </a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div id="newBreast">
+                      <ul class="list-unstyled">
+                          <li>
+                              <a href="newBreast/newBreast-1.html" class="btn btn-purple text-center img-resp detail-list"> หลังเจาะชิ้นเนื้อด้วยเครื่อง Mammotome </a>
+                          </li>
+                          <li>
+                              <a href="newBreast/newBreast-2.html" class="btn btn-purple text-center img-resp detail-list"> หลังสักหัวนม-ปานนม </a>
+                          </li>
+                          <li>
+                              <a href="newBreast/newBreast-3.html" class="btn btn-purple text-center img-resp detail-list"> หลังสร้างหัวนม-ปานนมใหม่ </a>
+                          </li>
+                          <li>
+                              <a href="newBreast/newBreast-4.html" class="btn btn-purple text-center img-resp detail-list"> หลังสร้างเต้านมใหม่ด้วยวิธีปลูกถ่ายผิวหนัง (Dermatome) </a>
+                          </li>
+                          <li>
+                              <a href="newBreast/newBreast-5.html" class="btn btn-purple text-center img-resp detail-list"> หลังเสริมด้วยซิลิโคนหลังขยายเต้านม </a>
+                          </li>
+                          <li>
+                              <a href="newBreast/newBreast-6.html" class="btn btn-purple text-center img-resp detail-list"> หลังศัลยกรรมเต้านมด้วยกล้ามเนื้อลำตัว </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    <nav class="navbar navbar-expand navbar-dark bg-dark d-block d-sm-block d-md-block d-lg-block d-xl-none">
+        <div class="row">
+            <div class="col-2 pt-3">
+                <a class="sidebar-toggle" href="#">
+                    <i class="fa fa-bars fa-2x text-light"></i>
+                </a>
+            </div>
+            <div class="col-8 text-center">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/img/nav-logo-white-landscape-01.png" style="height: 45px; width: auto;">
+                </a>
+            </div>
+            <div class="col-2 pt-3 text-right">
+                <a href="tel:+6620021919" id="dd_phone" class="">
+                    <i class="fa fa-phone text-light fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex">
+    <div class="sidebar sidebar-dark bg-white border-right">
+            <ul class="list-unstyled">
+                <li class="text-center d-none d-sm-none d-md-block d-lg-block">
+                    <a href="/index.html">
+                        <img class="img-fluid mt-5" src="../assets/img/nav-logo-black.png">
+                    </a>
+                    <i class="fa fa-minus text-primary"></i>
+                </li>
+                <li>
+                    <a href="#sm_expand_1" data-toggle="collapse">
+                        แนะนำ
+                    </a>
+                    <ul id="sm_expand_1" class="list-unstyled collapse">
+                        <li><a href="#">แนะนำ ABC</a></li>
+                        <li><a href="doctor.html">แนะนำศัลยแพทย์</a></li>
+                        <li><a href="#">แนะนำอุปกรณ์ทางการแพทย์</a></li>
+                        <li><a href="#">Take a tour</a></li>
+                        <li><a href="map.html">แผนที่และเวลาทำการ</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#sm_expand_2" data-toggle="collapse">
+                        ศัลยกรรมหน้าอก
+                    </a>
+                    <ul id="sm_expand_2" class="list-unstyled collapse">
+                        <li><a href="#">Perfectionist of BREAST SURGERY</a></li>
+                        <li><a href="#">แก้หน้าอกด้วย  Motiva</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="../precautions/index.html">
+                        การดูแลหลังศัลยกรรม
+                    </a>
+            </ul>
+        </div>
+    
+    
+    <div id="fullpage" class="content">
+        
+        <!-- header img section -->
+    <section class="bg-white shadow-sm text-center section fp-auto-height">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="border-bottom col-12 pt-5 pb-5">
+                    <h5 class="text-center text-secondary">Asia Beauty Center</h5>
+                    <h1 class="text-center text-dark">การดูแลตัวเองหลังศัลยกรรม</h1>
+                    <i class="fa fa-minus text-primary"></i>
+                    <p class="text-center text-secondary"><br></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 pl-0 pr-0 border-bottom">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb bg-white mb-0 shadow-sm rounded-0">
+                            <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="#">แนะนำ</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">ข้อควรปฏิบัติหลังศัลยกรรม</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+        <section id="section2" class="pt-5 pb-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6 col-md-4 col-lg-3 menu pl-0 pr-0">
+                        <a href="#" data-toggle="modal" data-target="#myModal" data-detail="#breast">
+                            <img src="assets/img/menu_1.jpg" class="w-100">
+                            <div class="img-resp menu-text">
+                                <h3 class="text-center"><strong>เสริมหน้าอก</strong></h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 menu pl-0 pr-0">
+                        <a href="#" data-toggle="modal" data-target="#myModal" data-detail="#hip">
+                            <img src="assets/img/menu_2.jpg" class="w-100">
+                            <div class="img-resp menu-text">
+                                <h3 class="text-center"><strong>เสริมสะโพก</strong></h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 menu pl-0 pr-0">
+                        <a href="#" data-toggle="modal" data-target="#myModal" data-detail="#lipo">
+                            <img src="assets/img/menu_3.jpg" class="w-100">
+                            <div class="img-resp menu-text">
+                                <h3 class="text-center"><strong>ดูดไขมัน &amp; ปรับรูปร่าง</strong></h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 menu pl-0 pr-0">
+                        <a href="#" data-toggle="modal" data-target="#myModal" data-detail="#female">
+                            <img src="assets/img/menu_4.jpg" class="w-100">
+                            <div class="img-resp menu-text">
+                                <h3 class="text-center"><strong>จุดซ่อนเร้น</strong></h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 menu pl-0 pr-0">
+                        <a href="#" data-toggle="modal" data-target="#myModal" data-detail="#face">
+                            <img src="assets/img/menu_5.jpg" class="w-100">
+                            <div class="img-resp menu-text">
+                                <h3 class="text-center"><strong>ศัลยกรรมใบหน้า</strong></h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 menu pl-0 pr-0">
+                        <a href="#" data-toggle="modal" data-target="#myModal" data-detail="#skin">
+                            <img src="assets/img/menu_6.jpg" class="w-100">
+                            <div class="img-resp menu-text">
+                                <h3 class="text-center"><strong>ใบหน้า &amp; ผิวพรรณ</strong></h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 menu pl-0 pr-0">
+                        <a href="#" data-toggle="modal" data-target="#myModal" data-detail="#newBreast">
+                            <img src="assets/img/menu_7.jpg" class="w-100">
+                            <div class="img-resp menu-text">
+                                <h3 class="text-center"><strong>สร้างเต้านมใหม่</strong></h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- start footer section -->
+    <section class="section fp-auto-height border-top">
+        <div class="bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-4 border-right border-left">
+                                <a href="https://www.facebook.com/AsiaBeautyCenterthai/" class="btn btn-block" target="_blank">
+                                    <i class="fab fa-facebook fa-2x text-secondary"></i>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://www.youtube.com/channel/UCCGLjOLklw1oVGYOg3ENUQA" class="btn btn-block" target="_blank">
+                                    <i class="fab fa-youtube fa-2x text-secondary"></i>
+                                </a>
+                            </div>
+                            <div class="col-4 border-left border-right" target="_blank">
+                                <a href="https://line.me/R/ti/p/%40abcthailand" class="btn btn-block">
+                                    <i class="fab fa-line fa-2x text-secondary"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark pt-4 pb-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-lg-12">
+                        <img class="d-block mr-auto ml-auto" src="../../assets/img/nav-logo-white.png">
+                        <br>
+                    </div>
+                    <div class="col-12 col-sm-12 col-lg-12">
+                        <p class="text-center text-white">385 ซอยสุขุมวิท 63 แขวงคลองตันเหนือ เขตวัฒนา กรุงเทพมหานคร 10110 <br> Tel. (+66) 2 002 1919 | abcthailandgroup@gmail.com</p>
+                    </div>
+                </div>
+                        <!--<div class="row">
+                            <div class="col-12" style="font-size: .6rem;">
+                                <hr>
+                                <div class="row">
+                                    <div class="col-4 text-center">
+                                        <a href="#" class="text-secondary">คำชี้แจงสิทธิส่วนบุคคล</a>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <a href="#" class="text-secondary">ข้อกำหนดการใช้งาน</a>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <a href="#" class="text-secondary">แผนผังเว็บไซต์</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+            </div>
+        </div>
+        <div class="w-100 bg-dark pt-3 pb-2">
+            <hr>
+            <div class="col-12">
+                <p class="text-white text-center" style="font-size: 0.8rem;">
+                    &copy;2018. ASIABEAUTY-CENTER.COM ALL RIGHT RESERVED.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- end footer section -->
+        </div>
+    </div>
+        
+        <!--<script src="assets/js/jquery-3.2.1.slim.min.js"></script>-->
+        <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/smooth-scroll.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
