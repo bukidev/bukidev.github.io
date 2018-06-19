@@ -296,6 +296,14 @@
         background-position: left top;
         background-repeat: no-repeat;
     }
+    
+    
+    .bg-pre01 {
+        background-image: url(../img/precaution/bg-01.jpg);
+        background-size: cover;
+        background-position: left top;
+        background-repeat: no-repeat;
+    }
 }
 
 
