@@ -109,6 +109,14 @@
     }
     
     
+    .nose-01-01{
+        background-image: url(../img/nose/cont-01/01.jpg);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+    
+    
 }
 
 
