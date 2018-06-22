@@ -178,6 +178,13 @@
         background-repeat: no-repeat;
     }
     
+    .nose-01-01{
+        background-image: url(../img/nose/cont-01/01.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
     
 }
 
