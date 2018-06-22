@@ -72,37 +72,37 @@
     
     /*for breast content 01*/
     .breast-01-01{
-        background-image: url(../img/breast/cont-01/01.jpg);
+        background-image: url(../img/breast/cont-01/05-m.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
     }
     .breast-01-02{
-        background-image: url(../img/breast/cont-01/02.jpg);
+        background-image: url(../img/breast/cont-01/02-m.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
     }
     .breast-01-03{
-        background-image: url(../img/breast/cont-01/03.jpg);
+        background-image: url(../img/breast/cont-01/03-m.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
     }
     .breast-01-04{
-        background-image: url(../img/breast/cont-01/04.jpg);
+        background-image: url(../img/breast/cont-01/04-m.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
     }
     .breast-01-05{
-        background-image: url(../img/breast/cont-01/05.jpg);
+        background-image: url(../img/breast/cont-01/05-m.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
     }
     .breast-01-06{
-        background-image: url(../img/breast/cont-01/06.jpg);
+        background-image: url(../img/breast/cont-01/06-m.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -171,7 +171,12 @@
         -webkit-filter: brightness(1.1);*/
     }
     
-    
+    .breast-01-01{
+        background-image: url(../img/breast/cont-01/01.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
     
     
 }
@@ -302,6 +307,45 @@
         background-position: left top;
         background-repeat: no-repeat;
     }
+    
+    /*for breast content 01*/
+    .breast-01-01{
+        background-image: url(../img/breast/cont-01/01.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .breast-01-02{
+        background-image: url(../img/breast/cont-01/02.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .breast-01-03{
+        background-image: url(../img/breast/cont-01/03.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .breast-01-04{
+        background-image: url(../img/breast/cont-01/04.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .breast-01-05{
+        background-image: url(../img/breast/cont-01/05.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .breast-01-06{
+        background-image: url(../img/breast/cont-01/06.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
     
     
 }
