@@ -70,6 +70,44 @@
         -webkit-filter: brightness(1.1);*/
     }
     
+    /*for breast content 01*/
+    .breast-01-01{
+        background-image: url(../img/breast/cont-01/01.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .breast-01-02{
+        background-image: url(../img/breast/cont-01/02.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .breast-01-03{
+        background-image: url(../img/breast/cont-01/03.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .breast-01-04{
+        background-image: url(../img/breast/cont-01/04.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .breast-01-05{
+        background-image: url(../img/breast/cont-01/05.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .breast-01-06{
+        background-image: url(../img/breast/cont-01/06.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
     
 }
 
@@ -265,31 +303,7 @@
         background-repeat: no-repeat;
     }
     
-    /*for breast content 01*/
     
-    .breast-01-01, .breast-01-02, .breast-01-03, .breast-01-04, .breast-01-05, .breast-01-06, {
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat;
-    }
-    .breast-01-01{
-        background-image: url(../img/breast/cont-01/01.jpg);
-    }
-    .breast-01-02{
-        background-image: url(../img/breast/cont-01/02.jpg);
-    }
-    .breast-01-03{
-        background-image: url(../img/breast/cont-01/03.jpg);
-    }
-    .breast-01-04{
-        background-image: url(../img/breast/cont-01/04.jpg);
-    }
-    .breast-01-05{
-        background-image: url(../img/breast/cont-01/05.jpg);
-    }
-    .breast-01-06{
-        background-image: url(../img/breast/cont-01/06.jpg);
-    }
 }
 
 
