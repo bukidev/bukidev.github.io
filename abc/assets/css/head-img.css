@@ -117,6 +117,10 @@
     }
     
     
+    
+    
+    
+    
 }
 
 
@@ -361,7 +365,12 @@
         background-repeat: no-repeat;
     }
     
-    
+    .bg-section {
+        background-image: url(../img/nose/cont-01/section-bg.jpg);
+        background-size: auto;
+        background-position: left bottom;
+        background-repeat: no-repeat;
+    }
     
 }
 
