@@ -115,8 +115,29 @@
         background-position: center top;
         background-repeat: no-repeat;
     }
+    .nose-02-01{
+        background-image: url(../img/nose/cont-02/01.jpg);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+    .nose-02-02{
+        background-image: url(../img/nose/cont-02/02.jpg);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
     
-    
+    .content-label {
+        background: rgba(198,184,254,1);
+        background: -moz-linear-gradient(top, rgba(198,184,254,1) 0%, rgba(254,179,183,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(198,184,254,1)), color-stop(100%, rgba(254,179,183,1)));
+        background: -webkit-linear-gradient(top, rgba(198,184,254,1) 0%, rgba(254,179,183,1) 100%);
+        background: -o-linear-gradient(top, rgba(198,184,254,1) 0%, rgba(254,179,183,1) 100%);
+        background: -ms-linear-gradient(top, rgba(198,184,254,1) 0%, rgba(254,179,183,1) 100%);
+        background: linear-gradient(to bottom, rgba(198,184,254,1) 0%, rgba(254,179,183,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6b8fe', endColorstr='#feb3b7', GradientType=0 );
+    }
     
     
 }
@@ -376,16 +397,7 @@
         background-repeat: no-repeat;
     }
     
-    .content-label {
-        background: rgba(198,184,254,1);
-        background: -moz-linear-gradient(top, rgba(198,184,254,1) 0%, rgba(254,179,183,1) 100%);
-        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(198,184,254,1)), color-stop(100%, rgba(254,179,183,1)));
-        background: -webkit-linear-gradient(top, rgba(198,184,254,1) 0%, rgba(254,179,183,1) 100%);
-        background: -o-linear-gradient(top, rgba(198,184,254,1) 0%, rgba(254,179,183,1) 100%);
-        background: -ms-linear-gradient(top, rgba(198,184,254,1) 0%, rgba(254,179,183,1) 100%);
-        background: linear-gradient(to bottom, rgba(198,184,254,1) 0%, rgba(254,179,183,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6b8fe', endColorstr='#feb3b7', GradientType=0 );
-    }
+    
 }
 
 
