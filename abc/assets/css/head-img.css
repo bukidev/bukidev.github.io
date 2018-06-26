@@ -127,6 +127,12 @@
         background-position: center top;
         background-repeat: no-repeat;
     }
+    .nose-04-01{
+        background-image: url(../img/nose/cont-04/01.jpg);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
     
     .content-label {
         background: rgba(198,184,254,1);
