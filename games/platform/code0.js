@@ -65,7 +65,7 @@ gdjs.Level01Code.condition0IsTrue_0 = {val:false};
 gdjs.Level01Code.condition1IsTrue_0 = {val:false};
 
 
-gdjs.Level01Code.eventsList0x6ebb60 = function(runtimeScene) {
+gdjs.Level01Code.eventsList0x6c5260 = function(runtimeScene) {
 
 {
 
@@ -105,8 +105,8 @@ gdjs.Level01Code.GDplayerObjects2.createFrom(runtimeScene.getObjects("player"));
 }
 
 
-}; //End of gdjs.Level01Code.eventsList0x6ebb60
-gdjs.Level01Code.eventsList0x6eb9d0 = function(runtimeScene) {
+}; //End of gdjs.Level01Code.eventsList0x6c5260
+gdjs.Level01Code.eventsList0x6c50d0 = function(runtimeScene) {
 
 {
 
@@ -125,7 +125,7 @@ for(var i = 0, k = 0, l = gdjs.Level01Code.GDplayerCollisObjects2.length;i<l;++i
 gdjs.Level01Code.GDplayerCollisObjects2.length = k;}if (gdjs.Level01Code.condition0IsTrue_0.val) {
 
 { //Subevents
-gdjs.Level01Code.eventsList0x6ebb60(runtimeScene);} //End of subevents
+gdjs.Level01Code.eventsList0x6c5260(runtimeScene);} //End of subevents
 }
 
 }
@@ -178,8 +178,8 @@ gdjs.Level01Code.GDplayerObjects1.createFrom(runtimeScene.getObjects("player"));
 }
 
 
-}; //End of gdjs.Level01Code.eventsList0x6eb9d0
-gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDplayerCollisObjects1Objects = Hashtable.newFrom({"playerCollis": gdjs.Level01Code.GDplayerCollisObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDstarObjects1Objects = Hashtable.newFrom({"star": gdjs.Level01Code.GDstarObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDplayerCollisObjects1Objects = Hashtable.newFrom({"playerCollis": gdjs.Level01Code.GDplayerCollisObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDholeCollisObjects1Objects = Hashtable.newFrom({"holeCollis": gdjs.Level01Code.GDholeCollisObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDleftButtonObjects2Objects = Hashtable.newFrom({"leftButton": gdjs.Level01Code.GDleftButtonObjects2});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDrightButtonObjects2Objects = Hashtable.newFrom({"rightButton": gdjs.Level01Code.GDrightButtonObjects2});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDjumpButtonObjects2Objects = Hashtable.newFrom({"jumpButton": gdjs.Level01Code.GDjumpButtonObjects2});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDupButtonObjects1Objects = Hashtable.newFrom({"upButton": gdjs.Level01Code.GDupButtonObjects1});gdjs.Level01Code.eventsList0x6ee4f0 = function(runtimeScene) {
+}; //End of gdjs.Level01Code.eventsList0x6c50d0
+gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDplayerCollisObjects1Objects = Hashtable.newFrom({"playerCollis": gdjs.Level01Code.GDplayerCollisObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDstarObjects1Objects = Hashtable.newFrom({"star": gdjs.Level01Code.GDstarObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDplayerCollisObjects1Objects = Hashtable.newFrom({"playerCollis": gdjs.Level01Code.GDplayerCollisObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDholeCollisObjects1Objects = Hashtable.newFrom({"holeCollis": gdjs.Level01Code.GDholeCollisObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDupButtonObjects1Objects = Hashtable.newFrom({"upButton": gdjs.Level01Code.GDupButtonObjects1});gdjs.Level01Code.eventsList0x6d4338 = function(runtimeScene) {
 
 {
 
@@ -189,7 +189,7 @@ gdjs.Level01Code.condition0IsTrue_0.val = false;
 {
 gdjs.Level01Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDupButtonObjects1Objects, runtimeScene, true, false);
 }if (gdjs.Level01Code.condition0IsTrue_0.val) {
-/* Reuse gdjs.Level01Code.GDplayerCollisObjects1 */
+gdjs.Level01Code.GDplayerCollisObjects1.createFrom(runtimeScene.getObjects("playerCollis"));
 {for(var i = 0, len = gdjs.Level01Code.GDplayerCollisObjects1.length ;i < len;++i) {
     gdjs.Level01Code.GDplayerCollisObjects1[i].getBehavior("PlatformerObject").simulateUpKey();
 }
@@ -198,96 +198,8 @@ gdjs.Level01Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdj
 }
 
 
-}; //End of gdjs.Level01Code.eventsList0x6ee4f0
-gdjs.Level01Code.eventsList0x6ed888 = function(runtimeScene) {
-
-{
-
-gdjs.Level01Code.GDleftButtonObjects2.createFrom(runtimeScene.getObjects("leftButton"));
-
-gdjs.Level01Code.condition0IsTrue_0.val = false;
-{
-gdjs.Level01Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDleftButtonObjects2Objects, runtimeScene, true, false);
-}if (gdjs.Level01Code.condition0IsTrue_0.val) {
-gdjs.Level01Code.GDplayerObjects2.createFrom(runtimeScene.getObjects("player"));
-gdjs.Level01Code.GDplayerCollisObjects2.createFrom(gdjs.Level01Code.GDplayerCollisObjects1);
-
-{for(var i = 0, len = gdjs.Level01Code.GDplayerCollisObjects2.length ;i < len;++i) {
-    gdjs.Level01Code.GDplayerCollisObjects2[i].getBehavior("PlatformerObject").simulateLeftKey();
-}
-}{for(var i = 0, len = gdjs.Level01Code.GDplayerObjects2.length ;i < len;++i) {
-    gdjs.Level01Code.GDplayerObjects2[i].flipX(true);
-}
-}{for(var i = 0, len = gdjs.Level01Code.GDplayerObjects2.length ;i < len;++i) {
-    gdjs.Level01Code.GDplayerObjects2[i].setAnimationName("run");
-}
-}}
-
-}
-
-
-{
-
-gdjs.Level01Code.GDrightButtonObjects2.createFrom(runtimeScene.getObjects("rightButton"));
-
-gdjs.Level01Code.condition0IsTrue_0.val = false;
-{
-gdjs.Level01Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDrightButtonObjects2Objects, runtimeScene, true, false);
-}if (gdjs.Level01Code.condition0IsTrue_0.val) {
-gdjs.Level01Code.GDplayerObjects2.createFrom(runtimeScene.getObjects("player"));
-gdjs.Level01Code.GDplayerCollisObjects2.createFrom(gdjs.Level01Code.GDplayerCollisObjects1);
-
-{for(var i = 0, len = gdjs.Level01Code.GDplayerCollisObjects2.length ;i < len;++i) {
-    gdjs.Level01Code.GDplayerCollisObjects2[i].getBehavior("PlatformerObject").simulateRightKey();
-}
-}{for(var i = 0, len = gdjs.Level01Code.GDplayerObjects2.length ;i < len;++i) {
-    gdjs.Level01Code.GDplayerObjects2[i].flipX(false);
-}
-}{for(var i = 0, len = gdjs.Level01Code.GDplayerObjects2.length ;i < len;++i) {
-    gdjs.Level01Code.GDplayerObjects2[i].setAnimationName("run");
-}
-}}
-
-}
-
-
-{
-
-gdjs.Level01Code.GDjumpButtonObjects2.createFrom(runtimeScene.getObjects("jumpButton"));
-
-gdjs.Level01Code.condition0IsTrue_0.val = false;
-{
-gdjs.Level01Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDjumpButtonObjects2Objects, runtimeScene, true, false);
-}if (gdjs.Level01Code.condition0IsTrue_0.val) {
-gdjs.Level01Code.GDplayerObjects2.createFrom(runtimeScene.getObjects("player"));
-gdjs.Level01Code.GDplayerCollisObjects2.createFrom(gdjs.Level01Code.GDplayerCollisObjects1);
-
-{for(var i = 0, len = gdjs.Level01Code.GDplayerCollisObjects2.length ;i < len;++i) {
-    gdjs.Level01Code.GDplayerCollisObjects2[i].getBehavior("PlatformerObject").simulateJumpKey();
-}
-}{for(var i = 0, len = gdjs.Level01Code.GDplayerObjects2.length ;i < len;++i) {
-    gdjs.Level01Code.GDplayerObjects2[i].setAnimationName("jump");
-}
-}}
-
-}
-
-
-{
-
-
-gdjs.Level01Code.condition0IsTrue_0.val = false;
-if (gdjs.Level01Code.condition0IsTrue_0.val) {
-
-{ //Subevents
-gdjs.Level01Code.eventsList0x6ee4f0(runtimeScene);} //End of subevents
-}
-
-}
-
-
-}; //End of gdjs.Level01Code.eventsList0x6ed888
-gdjs.Level01Code.eventsList0xb0b28 = function(runtimeScene) {
+}; //End of gdjs.Level01Code.eventsList0x6d4338
+gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDjumpButtonObjects1Objects = Hashtable.newFrom({"jumpButton": gdjs.Level01Code.GDjumpButtonObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDrightButtonObjects1Objects = Hashtable.newFrom({"rightButton": gdjs.Level01Code.GDrightButtonObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDleftButtonObjects1Objects = Hashtable.newFrom({"leftButton": gdjs.Level01Code.GDleftButtonObjects1});gdjs.Level01Code.eventsList0xb0b28 = function(runtimeScene) {
 
 {
 
@@ -408,7 +320,7 @@ for(var i = 0, k = 0, l = gdjs.Level01Code.GDplayerCollisObjects1.length;i<l;++i
 gdjs.Level01Code.GDplayerCollisObjects1.length = k;}if (gdjs.Level01Code.condition0IsTrue_0.val) {
 
 { //Subevents
-gdjs.Level01Code.eventsList0x6eb9d0(runtimeScene);} //End of subevents
+gdjs.Level01Code.eventsList0x6c50d0(runtimeScene);} //End of subevents
 }
 
 }
@@ -570,22 +482,82 @@ gdjs.Level01Code.condition0IsTrue_0.val = !(gdjs.evtTools.systemInfo.isMobile())
 
 {
 
-gdjs.Level01Code.GDplayerCollisObjects1.createFrom(runtimeScene.getObjects("playerCollis"));
+
+gdjs.Level01Code.condition0IsTrue_0.val = false;
+if (gdjs.Level01Code.condition0IsTrue_0.val) {
+
+{ //Subevents
+gdjs.Level01Code.eventsList0x6d4338(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.Level01Code.GDjumpButtonObjects1.createFrom(runtimeScene.getObjects("jumpButton"));
 
 gdjs.Level01Code.condition0IsTrue_0.val = false;
 {
-for(var i = 0, k = 0, l = gdjs.Level01Code.GDplayerCollisObjects1.length;i<l;++i) {
-    if ( gdjs.Level01Code.GDplayerCollisObjects1[i].getBehavior("PlatformerObject").isOnFloor() ) {
-        gdjs.Level01Code.condition0IsTrue_0.val = true;
-        gdjs.Level01Code.GDplayerCollisObjects1[k] = gdjs.Level01Code.GDplayerCollisObjects1[i];
-        ++k;
-    }
+gdjs.Level01Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDjumpButtonObjects1Objects, runtimeScene, true, false);
+}if (gdjs.Level01Code.condition0IsTrue_0.val) {
+gdjs.Level01Code.GDplayerObjects1.createFrom(runtimeScene.getObjects("player"));
+gdjs.Level01Code.GDplayerCollisObjects1.createFrom(runtimeScene.getObjects("playerCollis"));
+{for(var i = 0, len = gdjs.Level01Code.GDplayerCollisObjects1.length ;i < len;++i) {
+    gdjs.Level01Code.GDplayerCollisObjects1[i].getBehavior("PlatformerObject").simulateJumpKey();
 }
-gdjs.Level01Code.GDplayerCollisObjects1.length = k;}if (gdjs.Level01Code.condition0IsTrue_0.val) {
+}{for(var i = 0, len = gdjs.Level01Code.GDplayerObjects1.length ;i < len;++i) {
+    gdjs.Level01Code.GDplayerObjects1[i].setAnimationName("jump");
+}
+}}
 
-{ //Subevents
-gdjs.Level01Code.eventsList0x6ed888(runtimeScene);} //End of subevents
 }
+
+
+{
+
+gdjs.Level01Code.GDrightButtonObjects1.createFrom(runtimeScene.getObjects("rightButton"));
+
+gdjs.Level01Code.condition0IsTrue_0.val = false;
+{
+gdjs.Level01Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDrightButtonObjects1Objects, runtimeScene, true, false);
+}if (gdjs.Level01Code.condition0IsTrue_0.val) {
+gdjs.Level01Code.GDplayerObjects1.createFrom(runtimeScene.getObjects("player"));
+gdjs.Level01Code.GDplayerCollisObjects1.createFrom(runtimeScene.getObjects("playerCollis"));
+{for(var i = 0, len = gdjs.Level01Code.GDplayerCollisObjects1.length ;i < len;++i) {
+    gdjs.Level01Code.GDplayerCollisObjects1[i].getBehavior("PlatformerObject").simulateRightKey();
+}
+}{for(var i = 0, len = gdjs.Level01Code.GDplayerObjects1.length ;i < len;++i) {
+    gdjs.Level01Code.GDplayerObjects1[i].flipX(false);
+}
+}{for(var i = 0, len = gdjs.Level01Code.GDplayerObjects1.length ;i < len;++i) {
+    gdjs.Level01Code.GDplayerObjects1[i].setAnimationName("run");
+}
+}}
+
+}
+
+
+{
+
+gdjs.Level01Code.GDleftButtonObjects1.createFrom(runtimeScene.getObjects("leftButton"));
+
+gdjs.Level01Code.condition0IsTrue_0.val = false;
+{
+gdjs.Level01Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDleftButtonObjects1Objects, runtimeScene, true, false);
+}if (gdjs.Level01Code.condition0IsTrue_0.val) {
+gdjs.Level01Code.GDplayerObjects1.createFrom(runtimeScene.getObjects("player"));
+gdjs.Level01Code.GDplayerCollisObjects1.createFrom(runtimeScene.getObjects("playerCollis"));
+{for(var i = 0, len = gdjs.Level01Code.GDplayerCollisObjects1.length ;i < len;++i) {
+    gdjs.Level01Code.GDplayerCollisObjects1[i].getBehavior("PlatformerObject").simulateLeftKey();
+}
+}{for(var i = 0, len = gdjs.Level01Code.GDplayerObjects1.length ;i < len;++i) {
+    gdjs.Level01Code.GDplayerObjects1[i].flipX(true);
+}
+}{for(var i = 0, len = gdjs.Level01Code.GDplayerObjects1.length ;i < len;++i) {
+    gdjs.Level01Code.GDplayerObjects1[i].setAnimationName("run");
+}
+}}
 
 }
 
