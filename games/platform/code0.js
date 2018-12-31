@@ -1,10 +1,4 @@
 gdjs.SplashScreenCode = {};
-gdjs.SplashScreenCode.GDladderObjects1= [];
-gdjs.SplashScreenCode.GDladderObjects2= [];
-gdjs.SplashScreenCode.GDbg2Objects1= [];
-gdjs.SplashScreenCode.GDbg2Objects2= [];
-gdjs.SplashScreenCode.GDbg1Objects1= [];
-gdjs.SplashScreenCode.GDbg1Objects2= [];
 gdjs.SplashScreenCode.GDcompanyLogoObjects1= [];
 gdjs.SplashScreenCode.GDcompanyLogoObjects2= [];
 
@@ -24,7 +18,7 @@ gdjs.SplashScreenCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJ
 }if (gdjs.SplashScreenCode.condition0IsTrue_0.val) {
 gdjs.SplashScreenCode.GDcompanyLogoObjects1.createFrom(runtimeScene.getObjects("companyLogo"));
 {for(var i = 0, len = gdjs.SplashScreenCode.GDcompanyLogoObjects1.length ;i < len;++i) {
-    gdjs.SplashScreenCode.GDcompanyLogoObjects1[i].setPosition(gdjs.evtTools.window.getCanvasWidth(runtimeScene)/2 - 50,gdjs.evtTools.window.getCanvasHeight(runtimeScene)/2 - 50);
+    gdjs.SplashScreenCode.GDcompanyLogoObjects1[i].setPosition(gdjs.evtTools.window.getCanvasWidth(runtimeScene)/2 - (gdjs.SplashScreenCode.GDcompanyLogoObjects1[i].getWidth())/2,gdjs.evtTools.window.getCanvasHeight(runtimeScene)/2 - (gdjs.SplashScreenCode.GDcompanyLogoObjects1[i].getHeight())/2);
 }
 }{for(var i = 0, len = gdjs.SplashScreenCode.GDcompanyLogoObjects1.length ;i < len;++i) {
     gdjs.SplashScreenCode.GDcompanyLogoObjects1[i].setOpacity(0);
@@ -72,12 +66,6 @@ gdjs.SplashScreenCode.GDcompanyLogoObjects1.length = k;}if (gdjs.SplashScreenCod
 
 gdjs.SplashScreenCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
-gdjs.SplashScreenCode.GDladderObjects1.length = 0;
-gdjs.SplashScreenCode.GDladderObjects2.length = 0;
-gdjs.SplashScreenCode.GDbg2Objects1.length = 0;
-gdjs.SplashScreenCode.GDbg2Objects2.length = 0;
-gdjs.SplashScreenCode.GDbg1Objects1.length = 0;
-gdjs.SplashScreenCode.GDbg1Objects2.length = 0;
 gdjs.SplashScreenCode.GDcompanyLogoObjects1.length = 0;
 gdjs.SplashScreenCode.GDcompanyLogoObjects2.length = 0;
 
