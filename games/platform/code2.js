@@ -99,7 +99,7 @@ gdjs.Level01Code.condition2IsTrue_0 = {val:false};
 gdjs.Level01Code.condition3IsTrue_0 = {val:false};
 
 
-gdjs.Level01Code.eventsList0x6732e0 = function(runtimeScene) {
+gdjs.Level01Code.eventsList0x662118 = function(runtimeScene) {
 
 {
 
@@ -139,8 +139,8 @@ gdjs.Level01Code.GDplayerObjects2.createFrom(runtimeScene.getObjects("player"));
 }
 
 
-}; //End of gdjs.Level01Code.eventsList0x6732e0
-gdjs.Level01Code.eventsList0x673160 = function(runtimeScene) {
+}; //End of gdjs.Level01Code.eventsList0x662118
+gdjs.Level01Code.eventsList0x7fead0 = function(runtimeScene) {
 
 {
 
@@ -159,7 +159,7 @@ for(var i = 0, k = 0, l = gdjs.Level01Code.GDplayerCollisObjects2.length;i<l;++i
 gdjs.Level01Code.GDplayerCollisObjects2.length = k;}if (gdjs.Level01Code.condition0IsTrue_0.val) {
 
 { //Subevents
-gdjs.Level01Code.eventsList0x6732e0(runtimeScene);} //End of subevents
+gdjs.Level01Code.eventsList0x662118(runtimeScene);} //End of subevents
 }
 
 }
@@ -212,11 +212,11 @@ gdjs.Level01Code.GDplayerObjects1.createFrom(runtimeScene.getObjects("player"));
 }
 
 
-}; //End of gdjs.Level01Code.eventsList0x673160
-gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDplayerCollisObjects1Objects = Hashtable.newFrom({"playerCollis": gdjs.Level01Code.GDplayerCollisObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDstarObjects1Objects = Hashtable.newFrom({"star": gdjs.Level01Code.GDstarObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDplayerCollisObjects1Objects = Hashtable.newFrom({"playerCollis": gdjs.Level01Code.GDplayerCollisObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDholeCollisObjects1Objects = Hashtable.newFrom({"holeCollis": gdjs.Level01Code.GDholeCollisObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDgoLeftObjects1Objects = Hashtable.newFrom({"goLeft": gdjs.Level01Code.GDgoLeftObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDenemy1Objects1Objects = Hashtable.newFrom({"enemy1": gdjs.Level01Code.GDenemy1Objects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDgoRightObjects1Objects = Hashtable.newFrom({"goRight": gdjs.Level01Code.GDgoRightObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDenemy1Objects1Objects = Hashtable.newFrom({"enemy1": gdjs.Level01Code.GDenemy1Objects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDplayerCollisObjects1Objects = Hashtable.newFrom({"playerCollis": gdjs.Level01Code.GDplayerCollisObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDenemy1Objects1Objects = Hashtable.newFrom({"enemy1": gdjs.Level01Code.GDenemy1Objects1});gdjs.Level01Code.eventsList0x7ede80 = function(runtimeScene) {
+}; //End of gdjs.Level01Code.eventsList0x7fead0
+gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDplayerCollisObjects1Objects = Hashtable.newFrom({"playerCollis": gdjs.Level01Code.GDplayerCollisObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDstarObjects1Objects = Hashtable.newFrom({"star": gdjs.Level01Code.GDstarObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDplayerCollisObjects1Objects = Hashtable.newFrom({"playerCollis": gdjs.Level01Code.GDplayerCollisObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDholeCollisObjects1Objects = Hashtable.newFrom({"holeCollis": gdjs.Level01Code.GDholeCollisObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDgoLeftObjects1Objects = Hashtable.newFrom({"goLeft": gdjs.Level01Code.GDgoLeftObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDenemy1Objects1Objects = Hashtable.newFrom({"enemy1": gdjs.Level01Code.GDenemy1Objects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDgoRightObjects1Objects = Hashtable.newFrom({"goRight": gdjs.Level01Code.GDgoRightObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDenemy1Objects1Objects = Hashtable.newFrom({"enemy1": gdjs.Level01Code.GDenemy1Objects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDplayerCollisObjects1Objects = Hashtable.newFrom({"playerCollis": gdjs.Level01Code.GDplayerCollisObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDenemy1Objects1Objects = Hashtable.newFrom({"enemy1": gdjs.Level01Code.GDenemy1Objects1});gdjs.Level01Code.eventsList0x697178 = function(runtimeScene) {
 
-}; //End of gdjs.Level01Code.eventsList0x7ede80
-gdjs.Level01Code.eventsList0x675800 = function(runtimeScene) {
+}; //End of gdjs.Level01Code.eventsList0x697178
+gdjs.Level01Code.eventsList0x7f3668 = function(runtimeScene) {
 
 {
 
@@ -247,8 +247,8 @@ if (true) {
 }
 
 
-}; //End of gdjs.Level01Code.eventsList0x675800
-gdjs.Level01Code.eventsList0x675698 = function(runtimeScene) {
+}; //End of gdjs.Level01Code.eventsList0x7f3668
+gdjs.Level01Code.eventsList0x7f3500 = function(runtimeScene) {
 
 {
 
@@ -283,14 +283,14 @@ gdjs.Level01Code.GDplayerCollisObjects1.length = k;}if (gdjs.Level01Code.conditi
 }
 }
 { //Subevents
-gdjs.Level01Code.eventsList0x675800(runtimeScene);} //End of subevents
+gdjs.Level01Code.eventsList0x7f3668(runtimeScene);} //End of subevents
 }
 
 }
 
 
-}; //End of gdjs.Level01Code.eventsList0x675698
-gdjs.Level01Code.eventsList0x6762a8 = function(runtimeScene) {
+}; //End of gdjs.Level01Code.eventsList0x7f3500
+gdjs.Level01Code.eventsList0x7f3ff8 = function(runtimeScene) {
 
 {
 
@@ -315,7 +315,7 @@ gdjs.Level01Code.GDenemy1Objects1.length = k;}if (gdjs.Level01Code.condition0IsT
 }
 
 
-}; //End of gdjs.Level01Code.eventsList0x6762a8
+}; //End of gdjs.Level01Code.eventsList0x7f3ff8
 gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDjumpButtonObjects1Objects = Hashtable.newFrom({"jumpButton": gdjs.Level01Code.GDjumpButtonObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDrightButtonObjects1Objects = Hashtable.newFrom({"rightButton": gdjs.Level01Code.GDrightButtonObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDleftButtonObjects1Objects = Hashtable.newFrom({"leftButton": gdjs.Level01Code.GDleftButtonObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDupButtonObjects1Objects = Hashtable.newFrom({"upButton": gdjs.Level01Code.GDupButtonObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDgoUpObjects1Objects = Hashtable.newFrom({"goUp": gdjs.Level01Code.GDgoUpObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDthroughObjects1Objects = Hashtable.newFrom({"through": gdjs.Level01Code.GDthroughObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDgoDownObjects1Objects = Hashtable.newFrom({"goDown": gdjs.Level01Code.GDgoDownObjects1});gdjs.Level01Code.mapOfGDgdjs_46Level01Code_46GDthroughObjects1Objects = Hashtable.newFrom({"through": gdjs.Level01Code.GDthroughObjects1});gdjs.Level01Code.eventsList0xb0b28 = function(runtimeScene) {
 
 {
@@ -438,7 +438,7 @@ for(var i = 0, k = 0, l = gdjs.Level01Code.GDplayerCollisObjects1.length;i<l;++i
 gdjs.Level01Code.GDplayerCollisObjects1.length = k;}if (gdjs.Level01Code.condition0IsTrue_0.val) {
 
 { //Subevents
-gdjs.Level01Code.eventsList0x673160(runtimeScene);} //End of subevents
+gdjs.Level01Code.eventsList0x7fead0(runtimeScene);} //End of subevents
 }
 
 }
@@ -671,7 +671,7 @@ gdjs.Level01Code.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollision
 }if (gdjs.Level01Code.condition0IsTrue_0.val) {
 
 { //Subevents
-gdjs.Level01Code.eventsList0x675698(runtimeScene);} //End of subevents
+gdjs.Level01Code.eventsList0x7f3500(runtimeScene);} //End of subevents
 }
 
 }
@@ -749,7 +749,7 @@ if (gdjs.Level01Code.condition2IsTrue_0.val) {
 }
 }
 { //Subevents
-gdjs.Level01Code.eventsList0x6762a8(runtimeScene);} //End of subevents
+gdjs.Level01Code.eventsList0x7f3ff8(runtimeScene);} //End of subevents
 }
 
 }
