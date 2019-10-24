@@ -84,63 +84,48 @@ const characters = {
         //"Side": { // Side images identifiers to show on dialogs
              //"Smiling": "smiling.png"
         //}
-	}
+	},
+    
+    "robert": {
+        "Name": "โรเบิร์ต ฟีเธอร์",
+		"Color": "#5bcaff",
+        "Directory": "robert", // Optional*
+        "Images":{ // Images Identifier for the "Show" statement.
+            "badSurprise": "bad-surprise.png"//,
+            //"Mad": "hmph!.png",
+            //"Doubt": "uhh.png",
+            //"Disappointed":"ngggg....png",
+            //"Happy": "hehehehe.png"
+        }
+    },
+    "who": {
+        "Name": "????",
+        "Color": "#5bcaff"
+    }
 };
 
 
 let script = {
 	// The game starts here.
-	"Start": [
-		"notify Welcome",
-		{
-			"Input": {
-				"Text": "คุณชื่ออะไร",
-				"Validation": function (input) {
-					return input.trim().length > 0;
-				},
-				"Save": function (input) {
-					storage.player.Name = input;
-					return true;
-				},
-				"Warning": "You must enter a name!"
-			}
-		},
-        
-        "scene school_front",
-        "show h Normal center with fadeIn",
-		"h สวัสดี {{player.Name}} ยินดีต้อนรับสู่โรงเรียนจอมเวท!",
-
-		{
-			"Choice": {
-				"Dialog": "h Have you already read some documentation?",
-				"Yes": {
-					"Text": "Yes",
-					"Do": "jump Yes"
-				},
-				"No": {
-					"Text": "No",
-					"Do": "jump No"
-				}
-			}
-		}
-	],
-
-	"Yes": [
-
-		"h That's awesome!",
-		"h Then you are ready to go ahead and create an amazing Game!",
-		"h I can't wait to see what story you'll tell!",
-		"end"
-	],
-
-	"No": [
-
-		"h You can do it now.",
-
-		"display message Help",
-
-		"h Go ahead and create an amazing Game!",
-		"h I can't wait to see what story you'll tell!",
-		"end"
-	]
+    "Thai": {
+	   "Start": [
+		  "show robert badSurprise left with fadeInLeft",
+           "robert เอมีเลีย",
+           
+           "who ชายหนุ่มร้องอุทานขึ้นเสียงดังลั่น พลางหายใจอย่างหืดหอบ ก่อนจะหันมองดูรอบๆอย่างสงสัย",
+           "who ร่างกายที่ทรุดโทรมนี้เต็มไปด้วยผ้าพันแผล ผมเพ่าหยุ่งเหยิงไม่เป็นทรง ใบหน้าอิดโรยและสะบักสะบอม ในใจยังไม่หายตื่นตระหนกกับเรื่องราวในความฝัน",
+           "who เขาพยายามใช้แขนทั้งสองพยุงร่างที่บอบช้ำเพื่อลุกขึ้นจากเตียงพักฟื้นที่อดีตเคยสวยงามแต่บัดนี้กลับดูเก่าและทรุดโทรมเป็นอย่างมาก",
+           "clear",
+           "jump sceneOne"
+           ],
+        "sceneOne": [
+            "show h Normal right with fadeInRight",
+           "h อย่าพึ่งขยับตัวเลยท่าน โรเบิร์ต ฟีเธอร์",
+           ]
+	},
+    
+    "English": {
+        "Start": [
+		
+	]}
 };

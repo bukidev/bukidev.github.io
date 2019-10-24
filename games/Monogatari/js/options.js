@@ -39,7 +39,7 @@ let engine = {
 	"ParticlesHistory": [],
 
 	// Change to true for a MultiLanguage Game.
-	"MultiLanguage": false,
+	"MultiLanguage": true,
 
 	// Music for the Main Menu.
 	"MenuMusic": "",
@@ -82,7 +82,7 @@ let engine = {
 let settings = {
 
 	// Initial Language for Multilanguage Games or for the Default GUI Language.
-	"Language": "English",
+	"Language": "Thai",
 
 	// Initial Volumes from 0.0 to 1.
 	"Volume": {
