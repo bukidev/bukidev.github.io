@@ -32,6 +32,7 @@
 	<script src="libs\hshg.js"></script>
 	<script src="libs\rbush.js"></script>
 	<script src="inputmanager.js"></script>
+	<script src="jsonmanager.js"></script>
 	<script src="timemanager.js"></script>
 	<script src="runtimeobject.js"></script>
 	<script src="profiler.js"></script>
@@ -86,7 +87,6 @@
 
 </head>
 <body>
-    <div id="canvasArea"></div>
 
     
 	<script>
@@ -100,8 +100,7 @@
         var game = new gdjs.RuntimeGame(gdjs.projectData, {});
 
         //Create a renderer
-        var canvasArea = document.getElementById("canvasArea");
-        game.getRenderer().createStandardCanvas(canvasArea);
+        game.getRenderer().createStandardCanvas(document.body);
 
         //Bind keyboards/mouse/touch events
         game.getRenderer().bindStandardEvents(game.getInputManager(), window, document);

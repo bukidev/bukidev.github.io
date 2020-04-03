@@ -1,6 +1,13 @@
-
+/**
+ * The renderer for a gdjs.SpriteRuntimeObject using Pixi.js.
+ * @class SpriteRuntimeObjectPixiRenderer
+ * @memberof gdjs
+ * @param {gdjs.SpriteRuntimeObject} runtimeObject The object
+ * @param {gdjs.RuntimeScene} runtimeScene The scene
+ */
 gdjs.SpriteRuntimeObjectPixiRenderer = function(runtimeObject, runtimeScene)
 {
+    /** @type gdjs.SpriteRuntimeObject */
     this._object = runtimeObject;
     this._spriteDirty = true;
     this._textureDirty = true;
@@ -67,13 +74,13 @@ gdjs.SpriteRuntimeObjectPixiRenderer.prototype.update = function() {
 
 gdjs.SpriteRuntimeObjectPixiRenderer.prototype.updateX = function() {
     this._sprite.position.x = this._object.x + (this._object._animationFrame.center.x - this._object._animationFrame.origin.x)*Math.abs(this._object._scaleX);
-    if ( this._flippedX )
+    if ( this._object._flippedX )
         this._sprite.position.x += (this._sprite.texture.frame.width/2-this._object._animationFrame.center.x)*Math.abs(this._object._scaleX)*2;
 }
 
 gdjs.SpriteRuntimeObjectPixiRenderer.prototype.updateY = function() {
     this._sprite.position.y = this._object.y + (this._object._animationFrame.center.y - this._object._animationFrame.origin.y)*Math.abs(this._object._scaleY);
-    if ( this._flippedY )
+    if ( this._object._flippedY )
         this._sprite.position.y += (this._sprite.texture.frame.height/2-this._object._animationFrame.center.y)*Math.abs(this._object._scaleY)*2;
 }
 
@@ -99,6 +106,11 @@ gdjs.SpriteRuntimeObjectPixiRenderer.prototype.setColor = function(rgbColor) {
 
    this._sprite.tint = "0x" + gdjs.rgbToHex(parseInt(colors[0], 10), parseInt(colors[1], 10), parseInt(colors[2], 10));
 };
+
+gdjs.SpriteRuntimeObjectPixiRenderer.prototype.getColor = function() {
+    var rgb = PIXI.utils.hex2rgb(this._sprite.tint)
+    return Math.floor(rgb[0]*255) + ';' + Math.floor(rgb[1]*255) + ';' + Math.floor(rgb[2]*255);
+}
 
 gdjs.SpriteRuntimeObjectPixiRenderer.prototype.getWidth = function() {
     if ( this._spriteDirty ) this._updatePIXISprite();
