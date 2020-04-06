@@ -1,8 +1,0 @@
-/*preload*/
-.preload-bg { background-image: url(../img/preload-logo.png);background-position: center center;background-repeat: no-repeat; }
-.preload-overlay { position: fixed;background-color: #fff;transition: all .75s;z-index: 99; }
-.preload-overlay.left { left: 0; }
-.preload-overlay.right { right: 0; }
-.preload-overlay.top { top: 0;height: 0;width: 100%; }
-.preload-overlay.active {height: 100%; padding: 10px;padding-bottom: 0; overflow-y: hidden; }
-.animate-delay-1 { animation-delay: 2.3s; }
