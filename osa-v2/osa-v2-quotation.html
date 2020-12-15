@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ใบเสนอราคา</title>
+        <style>
+            /*///////////////////////! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css *//////////////////////////
+            /*html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible; color: gainsboro;}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}*/
+            /*///////////////////////////////# sourceMappingURL=normalize.min.css.map //////////////////////////*/
+            
+            
+            /*////////////////////////////// start paper.css ////////////////////////////////*/
+            @page { margin: 0 }
+            body { margin: 0 }
+            .sheet {
+              margin: 0;
+              overflow: hidden;
+              position: relative;
+              box-sizing: border-box;
+              page-break-after: always;
+              page-break-inside: avoid;
+            }
+
+            /** Paper sizes **/
+            .A3           .sheet { width: 297mm; height: 419mm; }
+            .A3.landscape .sheet { width: 420mm; height: 296mm; }
+            .A4           .sheet { width: 210mm; height: 296mm; }
+            .A4.landscape .sheet { width: 297mm; height: 209mm; }
+            .A5           .sheet { width: 148mm; height: 209mm; }
+            .A5.landscape .sheet { width: 210mm; height: 147mm; }
+
+            /** Padding area **/
+            .sheet.padding-10mm { padding: 10mm; }
+            .sheet.padding-15mm { padding: 15mm; }
+            .sheet.padding-20mm { padding: 20mm; }
+            .sheet.padding-25mm { padding: 25mm; }
+            .pl-20mm { padding-left: 20mm; }
+            .pr-20mm { padding-right: 20mm;  }
+
+            /** For screen preview **/
+            @media screen {
+              body { background: #e0e0e0; }
+              .sheet {
+                background: white;
+                box-shadow: 0 .5mm 2mm rgba(0,0,0,.3);
+                margin: 5mm;
+              }
+                div.page-header {
+                position: fixed;
+                top: 0;
+                display: none;
+              }
+                div.page-footer {
+                position: fixed;
+                bottom: 0;
+                display: none;
+              }
+                input[type='checkbox' i] { background-color: #fff;margin-right: 5px;background: white;border: 0px;color: white;}
+            }
+
+            /** Fix for Chrome issue #273306 **/
+            @media print {
+              .A3.landscape { width: 420mm; }
+              .A3, .A4.landscape { width: 297mm; }
+              .A4, .A5.landscape { width: 210mm; }
+              .A5 { width: 148mm; }
+
+              div.page-header {
+                position: fixed;
+                top: 20px;
+              }
+                div.page-header {
+                position: fixed;
+                bottom: 0px;
+              }
+
+            }
+            /*///////////////////////////end of paper.css//////////////////////////*/
+            
+            
+            /*//////////////////////// start main.css /////////////////////////////*/
+            /*@import url('https://fonts.googleapis.com/css?family=Roboto');*/
+
+            body { text-align: justify; font-family: 'Roboto', sans-serif; }
+            .low-alpha { list-style-type: lower-alpha; }
+            p,li,span { font-size: 14px; }
+            .d-center { margin-left: auto;margin-right: auto;}
+            .col-12 { width: 100%; float: left;}
+            .col-8 { width: 66.6666%; float: left;}
+            .col-4 { width: 33.3333%; float: left;}
+            .text-center {text-align: center;}
+            .signature { width: auto; height: 50px; display: block; margin-right: auto; margin-left: auto; }
+            .signature.left { margin-left: inherit; margin-right: inherit;}
+            .mt { margin-top: 40px; }
+            .border-all { border: 1px solid #000; margin-bottom: 15px;}
+            .p-all-10 { padding: 10px; }
+            .mt-10 { margin-top: 15px; }
+            ol.sublist li:before {
+                content: ") ";
+                counter-increment: list;
+            }
+            .text-red { color: red; }
+            .text-blue { color: dodgerblue; }
+            hr {
+                display: block;
+                height: 1px;
+                border: 0;
+                border-top: 1px solid #ccc;
+                margin: 1em 0;
+                padding: 0; 
+            }
+            .text-underline { text-decoration: underline; }
+            .text-indent { text-indent: 10mm; }
+            .clear-indent { padding-left: 15px; }
+            .no-style { list-style: none; }
+            .pl-20 { padding-left: 20px;}
+            .mt-0 {margin-top: 0;}
+            .md-0 {margin-bottom: 0;}
+            .md-1 { margin-bottom: 1%; }
+            .md-2 { margin-bottom: 2%; }
+            .md-3 { margin-bottom: 3%; }
+            .md-4 { margin-bottom: 4%; }
+            .md-5 { margin-bottom: 5%; }
+
+            .pl-10 { padding-left: 10px; }
+            .pl-5 { padding-left: 5px; }
+
+            .mc-doc { float: left; display: block;}
+            .mc-doc.left { width: 39%; border-right: 1px solid lightgray; height: 257mm; }
+            .mc-doc.right { width: 55%; padding-left: 5%;}
+
+            .text-lightgray { color: lightgray; }
+            .text-black { color: black; }
+
+            .img-resp { width: 100%; height: auto;}
+
+            .fr { float: right;}
+            .fl { float: left;}
+
+            .col-6 { width: 50%; float: left; }
+            .offset-6 { margin-left: 50%; }
+
+            .thai-lh { line-height: 26px; }
+
+            .big-checkbox { width: 20px; height: 20px; margin-top: 10px; }
+
+            .list-check>li { padding-bottom: 10px; }
+
+            .text-left { text-align: left; }
+            .text-right { text-align: right; }
+            /*///////////////////////// end main.css /////////////////////////////////////*/
+            
+            
+            /*//////////////////////////// start table.css ///////////////////////////////*/
+            .table-bordered {
+                border: 1px solid gray;
+            }
+
+            .table {
+                width: 100%;
+                max-width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            table {
+                border-collapse: collapse;
+                background-color: transparent;
+            }
+
+            .table-bordered thead td, .table-bordered thead th {
+                border-bottom-width: 2px;
+            }
+
+            .table thead th {
+                vertical-align: middle;
+                border-bottom: 2px solid gray;
+            }
+
+            .table-bordered td, .table-bordered th {
+                border: 1px solid gray;
+            }
+
+            .table td, .table th {
+                padding: 5px;
+                vertical-align: middle;
+                border-top: 1px solid gray;
+            }
+
+            th {
+                text-align: left;
+            }
+
+            .table-bordered td, .table-bordered th {
+                border: 1px solid gray;
+            }
+
+            .table td, .table th {
+                padding: 5px;
+                vertical-align: top;
+                border-top: 1px solid gray;
+            }
+
+            .table-bordered td, .table-bordered th {
+                border: 1px solid gray;
+            }
+
+            .table td, .table th {
+                padding: 5px;
+                vertical-align: middle ;
+                border-top: 1px solid gray;
+            }
+            table {
+                font-size: 12px;
+            }
+            table>p {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                font-size: 12px;
+            }
+            p {
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            /*///////////////////////////// end of table.css /////////////////////////////////*/
+            
+            /*///////////////////////////////////// utility //////////////////////////////////*/
+            .text-right { text-align: right; display: block;}
+
+            
+            
+            @page { size: A4 
+                @top-left {
+                    content: element(pageHeader);
+                }
+            }
+            .header{
+                position: running(pageHeader);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="A4">
+            <div class="page-header col-12">
+                <div class="pl-20mm pr-20mm">
+                    <img src="img/header-logo-01.png">
+                </div>
+            </div>
+            <section class="sheet padding-20mm d-center">
+                <article class="thai-lh">
+                    <!--<img src="img/header-logo-01.png" style="margin-top: -15px;">-->
+                    
+                    <h1 class="text-center" style="margin-top: 0px;"><strong>QUOTATION</strong></h1>
+                    
+                    <div class="col-12">
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td colspan="6" align="left"><p id="modal_print_validate">*ราคานี้มีอายุ 7 วัน นับตั้งแต่วันที่ได้รับใบเสนอราคา.</p></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="width: 80px;"><strong>Consulting Date</strong></td>
+                                    <td align="left" colspan="2"><p id="modal_print_con_dt">2018-01-14</p></td>
+                                    <td align="center" style="width: 80px;"><strong>Registration Date</strong></td>
+                                    <td colspan="2" style="width: 350px"><p id="modal_print_customer_reg_dt">2018-01-14</p></td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><strong>Doctor Name</strong></td>
+                                    <td colspan="5"><p id="modal_print_dr_name">Chung, YooSeok,Lee, SungJin</p></td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><strong>Customer Name</strong></td>
+                                    <td style="width: 300px;"><p id="modal_print_customer_name">kiatsakul เกียรติสกุล Sanguangit สงวนจิตต์</p></td>
+                                    <td align="center"><strong>Tel.</strong></td>
+                                    <td><p id="modal_print_customer_tel">0000000000</p></td>
+                                    <td align="center" style="width: 50px;"><strong>Email</strong></td>
+                                    <td><p id="modal_print_customer_email">dsafsdfas@gmail.com</p></td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><img id="modal_print_customer_image" style="max-width: 50px; max-height: 50px;" src="http://new.osa-global.com/data/customer/CTF701801140002/profile/thumbs/9a5d4d4ebdaf854a57677330a6ee9f69.jpg"></td>
+                                    <td></td>
+                                    <td align="center"><strong>Currency</strong></td>
+                                    <td><p id="modal_print_currency">THB</p></td>
+                                    <td align="center"><strong>Exchange Rate</strong></td>
+                                    <td><p id="modal_print_rate">30</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <td align="center" rowspan="2" style="vertical-align: middle;"><strong class="text-center">No.</strong></td>
+                                <td align="center"><strong class="text-center">Main Category</strong></td>
+                                <td align="center"><strong class="text-center">Minor Category</strong></td>
+                                <td align="center" colspan="2"><strong>Reoperation</strong></td>
+                                <td align="center"><strong>Promotion</strong></td>
+                                <td align="center" rowspan="2"><strong>Note</strong></td>
+                            </tr>
+                            <tr>
+                                <td align="center" colspan="2"><strong>Surgery Name</strong></td>
+                                <td align="center"><strong class="text-center">Ex</strong></td>
+                                <td align="center"><strong class="text-center">Price</strong></td>
+                                <td align="center"><strong class="text-center">Final Price</strong></td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td align="center" rowspan="2">
+                                        <p>0</p>
+                                    </td>
+                                    <td align="center">
+                                        <p>ฉีดผิวต่างๆ</p>
+                                    </td>
+                                    <td align="center">
+                                        <p>PRP</p>
+                                    </td>
+                                    <td colspan="2"></td>
+                                    <td></td>
+                                    <td rowspan="2">
+                                        <p></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" colspan="2">
+                                        <p>PRP 1 ครั้ง</p>
+                                    </td>
+                                    <td align="right">
+                                        <p>2.00</p>
+                                    </td>
+                                    <td align="right">
+                                        <p>25,000 ฿</p>
+                                    </td>
+                                    <td align="right">
+                                        <p class="text-red">6,000 ฿</p>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td align="center" rowspan="2">
+                                        <p>0</p>
+                                    </td>
+                                    <td align="center">
+                                        <p>ฉีดผิวต่างๆ</p>
+                                    </td>
+                                    <td align="center">
+                                        <p>PRP</p>
+                                    </td>
+                                    <td colspan="2"></td>
+                                    <td></td>
+                                    <td rowspan="2">
+                                        <p></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" colspan="2">
+                                        <p>PRP 1 ครั้ง</p>
+                                    </td>
+                                    <td align="right">
+                                        <p>2.00</p>
+                                    </td>
+                                    <td align="right">
+                                        <p>25,000 ฿</p>
+                                    </td>
+                                    <td align="right">
+                                        <p class="text-red">6,000 ฿</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    <strong>E-Voucher</strong>
+                                </td>
+                                <td colspan="1">
+                                </td>
+                                <td>
+                                    <strong class="text-right" id="modal_print_or_voucher"></strong>
+                                </td>
+                                <td align="right">
+                                    <strong class="text-red" id="modal_print_fn_voucher"></strong>
+                                </td>
+                                <td id="modal_print_td_sel_voucher" style="vertical-align: middle;text-align: center;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><strong>Sub-Total</strong></td>
+                                <td colspan="1"></td>
+                                <td align="right"><p>0000000000 $</p></td>
+                                <td>
+                                    <p align="right" class="text-red" id="modal_print_fn_subtotal">0000000000 $</p>
+                                </td>
+                                <td id="modal_print_td_sel_promotion" style="vertical-align: middle;text-align: center;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <strong>VAT</strong>
+                                </td>
+                                <td colspan="1">
+                                </td>
+                                <td>
+                                    <p class="text-right" id="modal_print_or_vat">000000000 $</p>
+                                </td>
+                                <td>
+                                    <p class="text-right text-red" id="modal_print_fn_vat">000000000 $</p>
+                                </td>
+                                <td id="modal_print_td_sel_vat" style="vertical-align: middle;text-align: center;"><span class="label label-warning" style="white-space: inherit;background-color: #2dbb29 !important;border:0 !important;-webkit-print-color-adjust: exact;">10 %</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><strong>Grand Total</strong></td>
+                                <td colspan="1"></td>
+                                <td>
+                                    <p class="text-right" id="modal_print_or_grandtotal">000000000 $</p>
+                                </td>
+                                <td>
+                                    <p class="text-right text-red" id="modal_print_fn_grandtotal">00000000 $</p>
+                                </td>
+                                <td><p></p></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <strong>Doctor Comment</strong>
+                                </td>
+                                <td colspan="6">
+                                    <strong id="modal_print_note"></strong>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <td colspan="4" class="text-center">
+                                    <strong>Manager Information</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="modal_print_td_manager_image" rowspan="4" style="width: 150px; overflow: hidden;">
+                                    <img id="modal_print_manager_image" src="http://new.osa-global.com/data/manager/cartoonhani/243063fa316c64a7d44f1f1394a0fad2.jpg" class="avatar img-thumbnail" alt="avatar" style="width:150px; height: 150px;"> <!-- manager picture -->
+                                </td>
+                                <td style="min-width: 80px;">
+                                    <strong>Name</strong>
+                                </td>
+                                <td colspan="2">
+                                    <p id="modal_print_manager_name" style="min-width: 300px;">Kittiya Soangpoo</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Tel.</strong>
+                                </td>
+                                <td colspan="4">
+                                    <p id="modal_print_manager_tel">0801048535</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Email.</strong>
+                                </td>
+                                <td class="td-data" colspan="4">
+                                    <p id="modal_print_manager_email">cartoonoh@gmail.com</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="manager_talk">
+                                    <strong id="modal_print_manager_msg_word">Line</strong>
+                                </td>
+                                <td colspan="4">
+                                    <p id="modal_print_manager_msg_value">cartoonkittiya</p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </body>
+</html>

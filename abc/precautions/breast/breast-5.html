@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="/../assets/css/gnb.css">
+    <script src="https://use.fontawesome.com/7b7699443a.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="/../assets/css/splash.css">
+    <link rel="stylesheet" href="/../assets/css/head-img.css">
+    <link rel="stylesheet" href="/../assets/css/doctor.css">
+    <link rel="stylesheet" href="/../assets/css/bootadmin.min.css">
+    <link rel="stylesheet" href="/../assets/css/fullpage.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <title>ABC - Asia Beauty Center</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Kanit');
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Kanit', sans-serif;
+        }
+        
+        .slide-caption {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            background: rgba(52, 58, 64,.5);
+            color: dimgrey;
+        }
+        
+        .carousel-indicators>li {
+            background-color: lightsteelblue;
+        }
+        
+        .carousel-indicators>li.active {
+            background-color: blueviolet;
+        }
+        
+        .bg-purple {
+            background: rgba(193,127,255,1);
+            background: -moz-linear-gradient(-45deg, rgba(193,127,255,1) 0%, rgba(152,255,252,1) 100%);
+            background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(193,127,255,1)), color-stop(100%, rgba(152,255,252,1)));
+            background: -webkit-linear-gradient(-45deg, rgba(193,127,255,1) 0%, rgba(152,255,252,1) 100%);
+            background: -o-linear-gradient(-45deg, rgba(193,127,255,1) 0%, rgba(152,255,252,1) 100%);
+            background: -ms-linear-gradient(-45deg, rgba(193,127,255,1) 0%, rgba(152,255,252,1) 100%);
+            background: linear-gradient(135deg, rgba(193,127,255,1) 0%, rgba(152,255,252,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c17fff', endColorstr='#98fffc', GradientType=1 );
+        }
+        
+        #map {
+            width: 100%;
+            height: 400px;
+            background-color: dimgrey;
+        }
+        
+        
+        
+        .bg-gradient-1 {
+            background: rgb(238, 174, 202);
+            background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+        }
+        
+        .underline-icon {
+            height: 5px;
+            width: 10%;
+            margin-bottom: 30px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /*.navbar {
+            background: transparent !important;
+            border-color: transparent !important;
+        }*/
+        
+        .nav-color {
+            background: #343a40 !important;
+        }
+        
+        .navbar-toggler {
+            padding: .25rem .25rem !important;
+        }
+        
+        .text-shadow {
+            text-shadow: 2px 2px #ff0000;
+        }
+        
+        .bg-grey {background: #edebef;}
+        
+        .btn-circle { border-radius: 50% !important; width: 50px !important; height: 50px !important; border: 0px; }
+        
+        .blur {
+            filter: blur(6px);
+            -webkit-filter: blur(6px);
+            -moz-filter: blur(6px);
+            -o-filter: blur(6px);
+        }
+        .mt-66 {
+            margin-top: 66px;
+        }
+        
+        .bg-login {
+            background: rgb(6,0,64);
+            background: linear-gradient(0deg, rgba(150,205,253,1) 0%, rgba(249,205,236,1) 100%);
+        }
+        
+        .bg-black {
+            background: #000;
+        }
+        
+        .dropdown-menu {
+            border: 0;
+            border-radius: 0;
+        }
+        
+        @media (min-width: 992px) {
+            .modal-lg {
+                max-width: 1000px;
+            }
+        }
+    </style>
+    
+    
+</head>
+    <body class="bg-grey">
+    
+    <!-- start mobile nav -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark d-block d-sm-block d-md-block d-lg-block d-xl-none">
+        <div class="row">
+            <div class="col-2 pt-3">
+                <a class="sidebar-toggle" href="#">
+                    <i class="fa fa-bars fa-2x text-light"></i>
+                </a>
+            </div>
+            <div class="col-8 text-center">
+                <a class="navbar-brand" href="#">
+                    <img src="/../img/nav-logo-white-landscape-01.png" style="height: 40px; width: auto;">
+                </a>
+            </div>
+            <div class="col-2 pt-3 text-right">
+                <a href="tel:+6620021919" id="dd_phone" class="">
+                    <i class="fa fa-phone text-light fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- end mobile nav -->
+    
+    <div class="d-flex">
+        
+        <!-- start pc nav -->
+        <div class="sidebar sidebar-dark bg-white border-right">
+            <ul class="list-unstyled">
+                <li class="text-center d-none d-sm-none d-md-block d-lg-block">
+                    <a href="index.html">
+                        <img class="img-fluid mt-5" src="../../assets/img/nav-logo-black.png">
+                    </a>
+                    <i class="fa fa-minus text-primary"></i>
+                </li>
+                <li>
+                    <a href="#sm_expand_1" data-toggle="collapse">แนะนำ</a>
+                    <ul id="sm_expand_1" class="list-unstyled collapse">
+                        <li><a href="intro/intro.html">แนะนำ ABC</a></li>
+                        <li><a href="intro/doctor.html">แนะนำศัลยแพทย์</a></li>
+                        <li><a href="intro/medicalkit.html">แนะนำอุปกรณ์ทางการแพทย์</a></li>
+                        <li><a href="intro/takeatour.html">Take a tour</a></li>
+                        <li><a href="intro/map.html">แผนที่และเวลาทำการ</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#sm_expand_2" data-toggle="collapse">ศัลยกรรมหน้าอก</a>
+                    <ul id="sm_expand_2" class="list-unstyled collapse">
+                        <li><a href="#">Perfectionist of BREAST SURGERY</a></li>
+                        <li><a href="#">แก้หน้าอกด้วย  Motiva</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#sm_expand_3" data-toggle="collapse">
+                        การดูแลหลังศัลยกรรม
+                    </a>
+                    <ul id="sm_expand_3" class="list-unstyled collapse">
+                        <li><a href="#">หน้าอก</a></li>
+                        <li><a href="#">สะโพก</a></li>
+                        <li><a href="#">ดูดไขมันและปรับรูปร่าง</a></li>
+                        <li><a href="#">จุดซ่อนเร้น</a></li>
+                        <li><a href="#">ใบหน้า</a></li>
+                        <li><a href="#">ผิวพรรณ</a></li>
+                        <li><a href="#">สร้างเต้านมใหม่</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Menu Item</a></li>
+                <li><a href="#">Menu Item</a></li>
+                <li><a href="#">Menu Item</a></li>
+            </ul>
+        </div>
+        <!-- end pc nav -->
+        
+        <!-- start content -->
+        <div id="fullpage" class="content">
+            
+            <!-- header img section -->
+    <section class="bg-white shadow-sm text-center section fp-auto-height">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="border-bottom col-12 pt-5 pb-5">
+                    <h5 class="text-center text-secondary">Asia Beauty Center</h5>
+                    <h1 class="text-center text-dark">ข้อควรปฏิบัติหลังการศัลยกรรม</h1>
+                    <i class="fa fa-minus text-primary"></i>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 pl-0 pr-0 border-bottom">
+                    <nav aria-label="breadcrumb text-center">
+                        <ol class="breadcrumb bg-dark mb-0 shadow-sm rounded-0">
+                            <li class="breadcrumb-item"><a href="../../index.html" class="text-white"><i class="fa fa-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="../index.html" class="text-white">ข้อควรปฏิบัติ</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">หลังยกกระชับหน้าอก</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+            
+        <section id="dataBlock" class="bg-login pt-5 section fp-auto-height-responsive">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-6 offset-xl-3 align-middle pb-5">
+                        <ul class="list-group text-center">
+                            <li class="list-group-item">
+                               <h3 class="mt-3">ข้อควรปฏิบัติหลังยกกระชับหน้าอก</h3>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-medkit fa-2x"></i>
+                                <p> ตัดไหมรอบปานนม หลังผ่าตัด 10-14 วัน </p>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-medkit fa-2x"></i>
+                                <p> สามารถอาบน้ำได้ในวันถัดไปหลังการตัดไหม อบตัว, ซาวน่าได้หลังผ่าตัด 6 สัปดาห์ </p>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-medkit fa-2x"></i>
+                                <p> ควรงดดื่่มเครื่องดื่มแอลกอฮอล์และงดสูบบุหรี่ 1 เดือนหลังศัลยกรรม เนื่องจากจะทำให้แผลหายช้าลง และอาจทำให้เกิดการอักเสบได้ </p>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-medkit fa-2x"></i>
+                                <p> หลังศัลยกรรม บางครั้งหัวนมอาจมีความรู้สึกไวกว่าปกติได้ อาการนี้จะค่อยๆดีขึ้นหลังผ่าตัด 3-6 เดือนแล้วแต่ร่างกายของแต่ละบุคคล </p>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-medkit fa-2x"></i>
+                                <p> กรณีที่บริเวณแผลผ่าตัดเกิดอาการบวมหรือปูดแดงขึ้น ให้ติดต่อโรงพยาบาลเพื่อพบแพทย์ </p>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-medkit fa-2x"></i>
+                                <p> บริเวณที่ผ่าตัดอาจมีความรู้สึกเจ็บแปลบๆ ได้ </p>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-medkit fa-2x"></i>
+                                <p> สามารถออกกำลังกายได้หลังผ่าตัด 3 สัปดาห์ </p>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-medkit fa-2x"></i>
+                                <p> ในช่วงแรกบริเวณแผลอาจมีความแข็งและแดง เมื่อเวลาผ่านไปจะค่อยๆจางลงตามลำดับ </p>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+            <!-- start footer section -->
+    <section class="section fp-auto-height border-top">
+        <div class="bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-4 border-right border-left">
+                                <a href="https://www.facebook.com/AsiaBeautyCenterthai/" class="btn btn-block" target="_blank">
+                                    <i class="fab fa-facebook fa-2x text-secondary"></i>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://www.youtube.com/channel/UCCGLjOLklw1oVGYOg3ENUQA" class="btn btn-block" target="_blank">
+                                    <i class="fab fa-youtube fa-2x text-secondary"></i>
+                                </a>
+                            </div>
+                            <div class="col-4 border-left border-right" target="_blank">
+                                <a href="https://line.me/R/ti/p/%40abcthailand" class="btn btn-block">
+                                    <i class="fab fa-line fa-2x text-secondary"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark pt-4 pb-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-lg-12">
+                        <img class="d-block mr-auto ml-auto" src="../../assets/img/nav-logo-white.png">
+                        <br>
+                    </div>
+                    <div class="col-12 col-sm-12 col-lg-12">
+                        <p class="text-center text-white">385 ซอยสุขุมวิท 63 แขวงคลองตันเหนือ เขตวัฒนา กรุงเทพมหานคร 10110 <br> Tel. (+66) 2 002 1919 | abcthailandgroup@gmail.com</p>
+                    </div>
+                </div>
+                        <!--<div class="row">
+                            <div class="col-12" style="font-size: .6rem;">
+                                <hr>
+                                <div class="row">
+                                    <div class="col-4 text-center">
+                                        <a href="#" class="text-secondary">คำชี้แจงสิทธิส่วนบุคคล</a>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <a href="#" class="text-secondary">ข้อกำหนดการใช้งาน</a>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <a href="#" class="text-secondary">แผนผังเว็บไซต์</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+            </div>
+        </div>
+        <div class="w-100 bg-dark pt-3 pb-2">
+            <hr>
+            <div class="col-12">
+                <p class="text-white text-center" style="font-size: 0.8rem;">
+                    &copy;2018. ASIABEAUTY-CENTER.COM ALL RIGHT RESERVED.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- end footer section -->
+        </div>
+        </div>
+
+<!--<script src="assets/js/jquery-3.2.1.slim.min.js"></script>-->
+        <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+        <script src="../assets/js/popper.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/smooth-scroll.js"></script>
+        <script src="../../assets/js/jquery.waypoint.js"></script>
+        <script src="../../assets/js/bootadmin.min.js"></script>
+        <script src="../../assets/js/fullpage.min.js"></script>
+        <script src="../../assets/js/fullpage.extension.min.js"></script>
+        <script src="../../assets/js/scrolloverflow.min.js"></script>
+        <script src="../../assets/js/jquery.waypoint.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                //Navigation
+                menu: '#menu',
+                lockAnchors: false,
+                anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+                navigation: false,
+                navigationPosition: 'right',
+                navigationTooltips: ['firstSlide', 'secondSlide'],
+                showActiveTooltip: false,
+                slidesNavigation: false,
+                slidesNavPosition: 'bottom',
+
+                //Scrolling
+                css3: true,
+                scrollingSpeed: 700,
+                autoScrolling: true,
+                fitToSection: true,
+                fitToSectionDelay: 1000,
+                scrollBar: false,
+                easing: 'easeInOutCubic',
+                easingcss3: 'ease',
+                loopBottom: false,
+                loopTop: false,
+                loopHorizontal: true,
+                continuousVertical: false,
+                continuousHorizontal: false,
+                scrollHorizontally: false,
+                interlockedSlides: false,
+                dragAndMove: true,
+                offsetSections: false,
+                resetSliders: false,
+                fadingEffect: false,
+                normalScrollElements: '#element1, .element2',
+                scrollOverflow: false,
+                scrollOverflowReset: false,
+                scrollOverflowOptions: null,
+                touchSensitivity: 15,
+                normalScrollElementTouchThreshold: 5,
+                bigSectionsDestination: null,
+
+                //Accessibility
+                keyboardScrolling: true,
+                animateAnchor: true,
+                recordHistory: true,
+
+                //Design
+                controlArrows: true,
+                verticalCentered: true,
+                sectionsColor : ['#ccc', '#fff'],
+                paddingTop: '0',
+                paddingBottom: '0',
+                fixedElements: '#header, .footer',
+                responsiveWidth: 1100,
+                responsiveHeight: 0,
+                responsiveSlides: false,
+                parallax: false,
+                parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+                //Custom selectors
+                sectionSelector: '.section',
+                slideSelector: '.slide',
+
+                lazyLoading: true,
+
+                //events
+                onLeave: function(index, nextIndex, direction){},
+                afterLoad: function(anchorLink, index){},
+                afterRender: function(){},
+                afterResize: function(){},
+                afterResponsive: function(isResponsive){},
+                afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+                onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){},
+	       });
+        });
+    </script>
+        
+    </body>
+</html>

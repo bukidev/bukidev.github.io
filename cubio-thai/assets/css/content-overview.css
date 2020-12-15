@@ -1,0 +1,122 @@
+#con{
+		padding:60px 40px 100px 40px; width:890px;
+	}
+
+	#con .tit{
+		font-family: 'kanit',sans-serif;
+		font-size: 23px;
+		/*text-transform: uppercase;*/
+		color: #000;
+		font-weight:400;
+		margin:0;
+		text-align:left;
+	}
+	
+	#con .h1{
+		font-family: sans-serif;
+		font-size: 14px;
+		/*text-transform: uppercase;*/
+		color: #000;
+		font-weight:normal;
+		line-height:27px;
+		margin-top:60px;
+		text-align:left;
+	}
+
+	#con .h1 span{color:#5674b9;}
+
+	#con .con_box{margin:30px 0;}
+
+	#con .con_txt{
+		font-family: sans-serif;
+		font-size: 14px;
+		color: #000;
+		text-align:justify;
+	}
+
+	#con .con_txt .st{/*작은타이틀*/
+		font-size: 16px;
+		color: #0e427c;
+		font-weight:400px;
+		background:url(http://admin.acus.kr/secure_zone/upFile/cubebio/editor/20171264910_editor_image.jpg) no-repeat left;
+		padding-left:20px;
+		margin-bottom:10px;
+	}
+
+	/* 미션 & 비전*/
+	#con .con_txt .two_box{padding-left:20px; width:870px;}
+	.two_box .box_tit1{
+		position:absolute;
+		margin:-15px 0 0 360px;
+		font-size:25px;
+		font-weight:600;
+		color:#5674b9;
+		padding:0 10px;
+		background:#fff;
+	}
+	/* 미션 */
+	.two_box .mission{
+		width:100%;
+		border:1px solid #5674b9;
+		border-top:4px solid #5674b9;
+		padding:50px 0;
+		text-align:center;
+		margin-bottom:30px;
+	}
+	.two_box .mission p:nth-child(1){font-size:20px;}
+	.two_box .mission p:nth-child(2){line-height:27px;}
+
+	.two_box .mission span{color:#5674b9;/* 포인트 */}
+	/* 미션// */
+
+	/* 비전 */
+	.two_box .box_tit2{
+		position:absolute;
+		margin:-15px 0 0 375px;
+		font-size:25px;
+		font-weight:600;
+		color:#0e427c;
+		padding:0 10px;
+		background:#fff;
+	}
+	.two_box .vision{
+		width:100%;
+		border:1px solid #0e427c;
+		border-top:4px solid #0e427c;
+		padding:50px 0;
+		text-align:center;
+	}
+	.two_box .vision p:nth-child(1){font-size:20px;}
+	.two_box .vision p:nth-child(2){line-height:27px;}
+
+	.two_box .vision span{color:#5674b9;/* 포인트 */}
+	/* 비전// */
+
+	/* 연혁 */
+	#con .con_txt .h_box{padding-left:20px; width:870px;}
+	#con .con_txt .h_box th{
+		background:#5674b9;
+		padding:8px 0;
+		color:#fff;
+		border-right:1px solid #fff;
+		font-weight:400;
+		font-size:14px;
+		text-align:center;
+	}
+	#con .con_txt .h_box th:nth-child(2){border-right:none;}
+
+	.con_txt .h_box tr td:nth-child(1){/* 구분 */
+		font-size:14px;
+		text-align:center;
+		padding:8px 0; 
+		background:#e8effa;
+		border-bottom:1px solid #a5c9f8;
+		border-right:1px solid #a5c9f8;
+	}
+	.con_txt .h_box tr td:nth-child(2){
+		font-size:14px;
+		text-align:left;
+		padding:8px 0 8px 30px;
+		border-bottom:1px solid #d7d7d7;
+	}
+	/* 연혁// */

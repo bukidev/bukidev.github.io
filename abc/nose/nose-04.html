@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/gnb.css">
+    <script src="https://use.fontawesome.com/7b7699443a.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/splash.css">
+    <link rel="stylesheet" href="../assets/css/head-img.css">
+    <link rel="stylesheet" href="../assets/css/doctor.css">
+    <link rel="stylesheet" href="../assets/css/bootadmin.min.css">
+    <link rel="stylesheet" href="../assets/css/fullpage.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <title>ABC - Asia Beauty Center</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Kanit');
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Kanit', sans-serif;
+        }
+        
+        .slide-caption {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            background: rgba(52, 58, 64,.5);
+            color: dimgrey;
+        }
+        
+        .carousel-indicators>li {
+            background-color: lightsteelblue;
+        }
+        
+        .carousel-indicators>li.active {
+            background-color: blueviolet;
+        }
+        
+        .bg-purple {
+            background: rgba(193,127,255,1);
+            background: -moz-linear-gradient(-45deg, rgba(193,127,255,1) 0%, rgba(152,255,252,1) 100%);
+            background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(193,127,255,1)), color-stop(100%, rgba(152,255,252,1)));
+            background: -webkit-linear-gradient(-45deg, rgba(193,127,255,1) 0%, rgba(152,255,252,1) 100%);
+            background: -o-linear-gradient(-45deg, rgba(193,127,255,1) 0%, rgba(152,255,252,1) 100%);
+            background: -ms-linear-gradient(-45deg, rgba(193,127,255,1) 0%, rgba(152,255,252,1) 100%);
+            background: linear-gradient(135deg, rgba(193,127,255,1) 0%, rgba(152,255,252,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c17fff', endColorstr='#98fffc', GradientType=1 );
+        }
+        
+        #map {
+            width: 100%;
+            height: 400px;
+            background-color: dimgrey;
+        }
+        
+        
+        
+        .bg-gradient-1 {
+            background: rgb(238, 174, 202);
+            background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+        }
+        
+        .underline-icon {
+            height: 5px;
+            width: 10%;
+            margin-bottom: 30px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /*.navbar {
+            background: transparent !important;
+            border-color: transparent !important;
+        }*/
+        
+        .nav-color {
+            background: #343a40 !important;
+        }
+        
+        .navbar-toggler {
+            padding: .25rem .25rem !important;
+        }
+        
+        .text-shadow {
+            text-shadow: 2px 2px #ff0000;
+        }
+        
+        .bg-grey {background: #edebef;}
+        
+        .btn-circle { border-radius: 50% !important; width: 50px !important; height: 50px !important; border: 0px; }
+        
+        .blur {
+            filter: blur(6px);
+            -webkit-filter: blur(6px);
+            -moz-filter: blur(6px);
+            -o-filter: blur(6px);
+        }
+        .mt-66 {
+            margin-top: 66px;
+        }
+        
+        .bg-login {
+            background: rgb(6,0,64);
+            background: linear-gradient(0deg, rgba(150,205,253,1) 0%, rgba(249,205,236,1) 100%);
+        }
+        
+        .bg-black {
+            background: #000;
+        }
+        
+        .dropdown-menu {
+            border: 0;
+            border-radius: 0;
+        }
+        
+        @media (min-width: 992px) {
+            .modal-lg {
+                max-width: 1000px;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body class="bg-white">
+    
+    
+    <nav class="navbar navbar-expand navbar-dark bg-dark d-block d-sm-block d-md-block d-lg-block d-xl-none">
+        <div class="row">
+            <div class="col-2 pt-3">
+                <a class="sidebar-toggle" href="#">
+                    <i class="fa fa-bars fa-2x text-light"></i>
+                </a>
+            </div>
+            <div class="col-8 text-center">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/img/nav-logo-white-landscape-01.png" style="height: 45px; width: auto;">
+                </a>
+            </div>
+            <div class="col-2 pt-3 text-right">
+                <a href="tel:+6620021919" id="dd_phone" class="">
+                    <i class="fa fa-phone text-light fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex">
+    <div class="sidebar sidebar-dark bg-white border-right">
+            <ul class="list-unstyled">
+                <li class="text-center d-none d-sm-none d-md-block d-lg-block">
+                    <a href="/index.html">
+                        <img class="img-fluid mt-5" src="../assets/img/nav-logo-black.png">
+                    </a>
+                    <i class="fa fa-minus text-primary"></i>
+                </li>
+                <li>
+                    <a href="#sm_expand_1" data-toggle="collapse">
+                        แนะนำ
+                    </a>
+                    <ul id="sm_expand_1" class="list-unstyled collapse">
+                        <li><a href="#">แนะนำ ABC</a></li>
+                        <li><a href="doctor.html">แนะนำศัลยแพทย์</a></li>
+                        <li><a href="#">แนะนำอุปกรณ์ทางการแพทย์</a></li>
+                        <li><a href="#">Take a tour</a></li>
+                        <li><a href="map.html">แผนที่และเวลาทำการ</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#sm_expand_2" data-toggle="collapse">
+                        ศัลยกรรมหน้าอก
+                    </a>
+                    <ul id="sm_expand_2" class="list-unstyled collapse">
+                        <li><a href="#">Perfectionist of BREAST SURGERY</a></li>
+                        <li><a href="#">แก้หน้าอกด้วย  Motiva</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="../precautions/index.html">
+                        การดูแลหลังศัลยกรรม
+                    </a>
+                </li>
+            </ul>
+        </div>
+    
+    
+    <div id="fullpage" class="content">
+    
+    <!-- header img section -->
+    <section class="bg-login shadow-sm text-center section fp-auto-height">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="border-bottom col-12 pt-5 pb-5">
+                    <h5 class="text-center text-secondary">Asia Beauty Center</h5>
+                    <h1 class="text-center text-dark">ศัลยกรรมตกแต่งปลายจมูก</h1>
+                    <i class="fa fa-minus text-primary"></i>
+                    <p class="text-center text-secondary">หากมีปลายจมูกโด่ง ปราดเปรียวขึ้น<br>ไม่เพียงแต่จะช่วยให้หน้าดูมีมิติมากขึ้น แต่ยังช่วยให้ดูอ่อนเยาว์ลงได้อีกด้วย</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 pl-0 pr-0 border-bottom">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb bg-dark m-auto shadow-sm rounded-0 text-center">
+                            <li class="breadcrumb-item"><a href="#" class="text-white"><i class="fa fa-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="#" class="text-white">ศัลยกรรมจมูก</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">ศัลยกรรมตกแต่งปลายจมูก</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section class="section nose-04-01 fp-auto-height-responsive pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 col-md-6 pt-5 pb-5 text-left">
+                    <p class="text-secondary">Nose plastic surgery</p>
+                    <h1 class="text-dark"><strong>ศัลยกรรม<br>แก้จมูก</strong></h1>
+                    <h3 class="text-secondary">วิเคราะห์สาเหตุ<br>ของความผิดพลาด<br>อย่างละเอียด</h3>
+                    <br>
+                    <i class="fa fa-minus text-primary"></i>
+                    <br>
+                    <br>
+                    <p class="text-secondary">เป็นการผ่าตัดที่ยากกว่าการผ่าตัดครั้งแรก<br>เพราะรอยแผลและรอยบอบช้ำของเนื้อเยื่อที่เกิดจาการผ่าตัดครั้งก่อน </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section fp-auto-height">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-12 col-md-4 col-lg-4 col-xl-3 p-5" style="background: rgba(42,49,150,1);
+background: -moz-linear-gradient(top, rgba(42,49,150,1) 0%, rgba(32,124,229,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(42,49,150,1)), color-stop(100%, rgba(32,124,229,1)));
+background: -webkit-linear-gradient(top, rgba(42,49,150,1) 0%, rgba(32,124,229,1) 100%);
+background: -o-linear-gradient(top, rgba(42,49,150,1) 0%, rgba(32,124,229,1) 100%);
+background: -ms-linear-gradient(top, rgba(42,49,150,1) 0%, rgba(32,124,229,1) 100%);
+background: linear-gradient(to bottom, rgba(42,49,150,1) 0%, rgba(32,124,229,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a3196', endColorstr='#207ce5', GradientType=0 );">
+                    <h2 class="text-white"><strong>ศัลยกรรม<br>แก้จมูก</strong></h2>
+                    <p class="text-light">Nose plastic surgery </p>
+                    <i class="fa fa-minus text-white"></i>
+                </div>
+                <div class="col-12 col-md-8 col-lg-8 col-xl-9 p-5" style="background: rgba(32,124,229,1);
+background: -moz-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(255,130,240,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(32,124,229,1)), color-stop(100%, rgba(255,130,240,1)));
+background: -webkit-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(255,130,240,1) 100%);
+background: -o-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(255,130,240,1) 100%);
+background: -ms-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(255,130,240,1) 100%);
+background: linear-gradient(to bottom, rgba(32,124,229,1) 0%, rgba(255,130,240,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207ce5', endColorstr='#ff82f0', GradientType=0 );">
+                    <p class="text-white">
+                        การศัลยกรรมแก้ไขจมูก เป็นการผ่าตัดที่ยากกว่าการผ่าตัดครั้งแรกเพราะว่ามีทั้งรอยแผลและรอยบอบช้ำของเนื้อเยื่อที่เกิดจาการผ่าตัดครั้งก่อน เพราะเหตุนี้ ประสบการ์ณที่หลากหลายในการศัลยกรรมจมูกและการวิเคราะห์ศัลยกรรมจมูกครั้งก่อนโดยละเอียดก่อนการผ่าตัดแก้ไข จึงเป็นสิ่งจำเป็น อีกทั้งยังต้องวิเคราะห์สาเหตุของความผิดพลาดอย่างละเอียดเพราะสภาพของเนื้อเยื่อหรือกระดูกอ่อนอาจมีปัญหา 
+                    </p>
+                    <i class="fa fa-minus text-white"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section class="section fp-auto-height-responsive pt-5 pb-5">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-12 text-secondary text-center">
+                    <h1 class="text-dark">ปัจจัยหลัก</h1>
+                    <h3 class="text-dark">ในการศัลยกรรม<span class="text-secondary">แก้ไขจมูก</span></h3>
+                    <i class="fa fa-minus text-primary"></i>
+                    <br>
+                    <p>วิธีศัลยกรรมปลายจมูกแตกต่างกันตามรูปทรงของจมูกแต่ละคน รูจมูกใหญ่ ดูกว้าง 
+ต้องตัดเนื้อเยื่อกระดูกอ่อนบริเวณปีกจมูกและปรับให้ชิดกัน </p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 col-md-4 col-xl-4 text-center p-5">
+                    <h2 class="text-primary"><span></span>01</h2>
+                    <img class="w-100" src="../assets/img/nose/cont-04/nose-04-cont-02-01.png">
+                    <p>กรณีซิลิโคนเคลื่อน</p>
+                </div>
+                <div class="col-12 col-md-4 col-xl-4 text-center p-5">
+                    <h2 class="text-primary"><span></span>02</h2>
+                    <img class="w-100" src="../assets/img/nose/cont-04/nose-04-cont-02-02.png">
+                    <p>กรณีความโด่งของสันจมูกยังไม่ถูกใจ</p>
+                </div>
+                <div class="col-12 col-md-4 col-xl-4 text-center p-5">
+                    <h2 class="text-primary"><span></span>03</h2>
+                    <img class="w-100" src="../assets/img/nose/cont-04/nose-04-cont-02-03.png">
+                    <p>กรณีเกิดอาการแพ้หรือการอักเสบ</p>
+                </div>
+                <div class="col-12 col-md-4 col-xl-4 text-center p-5">
+                    <h2 class="text-primary"><span></span>04</h2>
+                    <img class="w-100" src="../assets/img/nose/cont-04/nose-04-cont-02-04.png">
+                    <p>กรณีมองเห็นซิลิโคนชัดเจนหรือเป็นสีแดง</p>
+                </div>
+                <div class="col-12 col-md-4 col-xl-4 text-center p-5">
+                    <h2 class="text-primary"><span></span>05</h2>
+                    <img class="w-100" src="../assets/img/nose/cont-04/nose-04-cont-02-05.png">
+                    <p>กรณีจมูกเบี้ยว</p>
+                </div>
+                <div class="col-12 col-md-4 col-xl-4 text-center p-5">
+                    <h2 class="text-primary"><span></span>06</h2>
+                    <img class="w-100" src="../assets/img/nose/cont-04/nose-04-cont-02-06.png">
+                    <p>กรณีปลายจมูกรั้งขึ้นเพราะพังผืด</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section class="section fp-auto-height-responsive">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-xl-12 text-center p-5" style="vertical-align: middle">
+                    <h1 class="text-dark mt-5">ช่วงเวลาที่ควรทำศัลยกรรมแก้จมูก</h1>
+                    <i class="fa fa-minus text-primary"></i>
+                    <br>
+                    <br>
+                    <p class="text-secondary">การศัลยกรรมแก้ไขโดยปกติควรทำหลังจากทำศัลยกรรมครั้งแรกไปแล้ว 6 เดือน - 1 ปี แผลถึงจะหายสนิทดีและเนื้อเยื่อต่างๆก็จะเข้าที่ดี การพยายามศัลยกรรมแก้ไขอีกครั้งในตอนที่ผลการศัลยกรรมยังออกมาได้ไม่เต็มที่นั้น จะยิ่งทำให้ผลลัพธ์จริงๆยิ่งออกมาแย่ลงกว่าเดิม
+                    จึงจำเป็นต้องปรึกษากับผู้เชี่ยวชาญ สิ่งสำคัญคือต้องเลือกผู้เชี่ยวชาญที่มากประสบการณ์ มีประสบการณ์มากเท่ากับความยากของการผ่าตัดครั้งแรก</p>
+                </div>
+            </div>
+        </div>    
+    </section>
+        
+    <section class="section fp-auto-height-responsive nose-04-02">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-xl-12 pt-5 pb-5 text-center text-white">
+                    <h1 class="text-white">วิธีศัลยกรรมแก้ไขจมูก </h1>
+                    <h3 class="text-white">Nose revision rhinoplasty</h3>
+                    <i class="fa fa-minus text-white"></i>
+                    <br>
+                    <br>
+                    <h1>01</h1>
+                    <h5>วางยานอนหลับก่อนจึงทำการผ่าตัด<br>โดยปราศจากความเจ็บปวด</h5>
+                    <br>
+                    <h1>02</h1>
+                    <h5>ออกแบบรูปทรงโดยการใช้เนื้อเยื่อ<br>ของตัวเองให้ได้มากที่สุด<br>และพยายามใช้ซิลิโคนให้น้อยที่สุด</h5>
+                    <br>
+                    <h1>03</h1>
+                    <h5>หากมีอาการอักเสบ<br>ต้องแก้ให้อาการหายก่อนแล้วจึงค่อยผ่าตัด<br>หรืออาจมีกรณีที่ต้องรอดูอาการ<br>หลายเดือนก่อนจึงค่อยทำการผ่าตัด</h5>
+                    <br>
+                    <h1>04</h1>
+                    <h5>ในกรณีที่อักเสบหรือไม่ถูกกับซิลิโคนอย่างใดอย่างหนึ่ง<br>จะเสริมสันจมูกด้วยเนื้อเยื่อผิวหนังของตัวเอง</h5>
+                    <br>
+                    <h1>05</h1>
+                    <h5>การศัลยกรรมแก้ไขจะใช้เวลาพักฟื้นมากกว่า<br>การทำศัลยกรรมครั้งแรกในกรณีที่เนื้อเยื่อ<br>หรือกระดูกอ่อนถูกทำลายเสียหายมาก<br>จากการทำผ่าตัดครั้งแรก<br>ต้องรอดูอาการและจำเป็นต้องผ่าตัด<br>ตามลำดับขั้นตอน</h5>
+                </div>
+            </div>
+        </div>    
+    </section>
+        
+    <section class="section fp-auto-height">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-xl-4 content-label pt-5 pb-5 text-center">
+                    <h2 class="text-white text-center"><strong>กระบวนการศัลยกรรมจมูก</strong></h2>
+                    <h3 class="text-center text-light">รพ. ศัลยกรรมตกแต่ง BongBong</h3>
+                    <br>
+                    <i class="fa fa-minus text-white"></i>
+                    <br>
+                    <div class="row">
+                        <div class="col-12 col-md-4 col-lg-4 col-xl-12 text-center">
+                            <div class="col-12 p-2">
+                                <h1 class="text-white"><strong>1</strong></h1>
+                                <p class="text-white mt-2">แสกนจมูกด้วยเครื่อง<br><strong>MOTIVA X DIVINA</strong></p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4 col-xl-12 text-center">
+                            <div class="col-12 p-2">
+                                <h1 class="text-white"><strong>2</strong></h1>
+                                <p class="text-white mt-2">คำนวณได้อย่างแม่นยำจากภาพถ่าย<br><strong>vertex 3D CT</strong></p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4 col-xl-12 text-center">
+                            <div class="col-12 p-2">
+                                <h1 class="text-white"><strong>3</strong></h1>
+                                <p class="text-white mt-2">ปรึกษาและให้คำแนะนำแบบละเอียดเพื่อวางแผน<br><strong>ศัลยกรรมจมูก</strong>ที่เหมาะกับลูกค้าทุกท่าน</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-8 pt-5 text-center pb-5" style="background: #f49ac1;">
+                    <h2 class="text-white text-center"><strong>จุดเด่นของศัลยกรรมจมุกของรพ. Bongbong</strong></h2>
+                    <h3 class="text-center text-light">Bong Bong Plastic surgery clinic</h3>
+                    <br>
+                    <i class="fa fa-minus text-white"></i>
+                    <br>
+                    <div class="row">
+                        <div class="col-12 col-md-3 col-lg-3 col-xl-12 text-center">
+                            <div class="col-12 p-2">
+                                <h5 class="text-white"><strong>ใช้เครื่องตรวจภายในจมูก กับ CT แสกน 3มิติที่ทันสมัย</strong></h5>
+                                <p class="text-white mt-2">ออกแบบรูปทรงจมูกที่มีสไตล์มีความเป็นตัวของตัวเองจากการวิเคราะห์ภาพรวมของใบหน้าเมื่อจมูกมารวมกันหลังจากตรวจภายในจมูกและ CT แสกน 3มิติ</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-lg-3 col-xl-12 text-center">
+                            <div class="col-12 p-2">
+                                <h5 class="text-white"><strong>ดำเนินการปลอดภัยจากผู้เชี่ยวชาญด้านการศัลยกรรมจมูก</strong></h5>
+                                <p class="text-white mt-2">มีผู้เชี่ยวชาญด้านการศัลยกรรมจมูกและวิสัญญีแพทย์คอยดูแลและสรรสร้างจมูกที่สวยงาม</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-lg-3 col-xl-12 text-center">
+                            <div class="col-12 p-2">
+                                <h5 class="text-white"><strong>เทคนิคพิเศษจากการเก็บภาพกราฟฟิกของลูกค้าที่หลากหลาย </strong></h5>
+                                <p class="text-white mt-2">ลูกค้าสามารถเลือกรูปแบบจมูกที่เข้ากับใบหน้าของตัวเองมากที่สุด ได้จากภาพกราฟฟิกที่เราเก็บข้อมูลมาจากลูกค้าที่เคยเข้ามารับการศัลยกรรมกับเราหรือลูกค้าที่เข้ามาแก้จมูกกับเรา </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-lg-3 col-xl-12 text-center">
+                            <div class="col-12 p-2">
+                                <h5 class="text-white"><strong>ใช้กระดูกอ่อนเชิงกรานและเนื้อเยื่อผิวหนังของตนเอง </strong></h5>
+                                <p class="text-white mt-2">ที่รพ. ศัลยกรรมตกแต่ง BongBong เราศัลยกรรมจมูกอย่างปลอดภัยเพราะเราใช้กระดูกอ่อนเชิงกรานหรือเนื้อเยื่อผิวหนังของตนเองซึ่งเข้ากันได้กับร่างกายตนเอง (สามารถใส่ซิลิโคนข้างบนกระดูกอ่อนหรือบนเนื้อเยื่อผิวหนังได้เช่นกัน)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- start footer section -->
+    <section class="section fp-auto-height border-top">
+        <div class="bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-4 border-right border-left">
+                                <a href="https://www.facebook.com/AsiaBeautyCenterthai/" class="btn btn-block" target="_blank">
+                                    <i class="fab fa-facebook fa-2x text-secondary"></i>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://www.youtube.com/channel/UCCGLjOLklw1oVGYOg3ENUQA" class="btn btn-block" target="_blank">
+                                    <i class="fab fa-youtube fa-2x text-secondary"></i>
+                                </a>
+                            </div>
+                            <div class="col-4 border-left border-right" target="_blank">
+                                <a href="https://line.me/R/ti/p/%40abcthailand" class="btn btn-block">
+                                    <i class="fab fa-line fa-2x text-secondary"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark pt-4 pb-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-lg-12">
+                        <img class="d-block mr-auto ml-auto" src="../assets/img/nav-logo-white.png">
+                        <br>
+                    </div>
+                    <div class="col-12 col-sm-12 col-lg-12">
+                        <p class="text-center text-white">385 ซอยสุขุมวิท 63 แขวงคลองตันเหนือ เขตวัฒนา กรุงเทพมหานคร 10110 <br> Tel. (+66) 2 002 1919 | abcthailandgroup@gmail.com</p>
+                    </div>
+                </div>
+                        <!--<div class="row">
+                            <div class="col-12" style="font-size: .6rem;">
+                                <hr>
+                                <div class="row">
+                                    <div class="col-4 text-center">
+                                        <a href="#" class="text-secondary">คำชี้แจงสิทธิส่วนบุคคล</a>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <a href="#" class="text-secondary">ข้อกำหนดการใช้งาน</a>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <a href="#" class="text-secondary">แผนผังเว็บไซต์</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+            </div>
+        </div>
+        <div class="w-100 bg-dark pt-3 pb-2">
+            <hr>
+            <div class="col-12">
+                <p class="text-white text-center" style="font-size: 0.8rem;">
+                    &copy;2018. ASIABEAUTY-CENTER.COM ALL RIGHT RESERVED.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- end footer section -->
+        
+    </div>
+        
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="../assets/js/jquery.waypoint.js"></script>
+    <script src="../assets/js/bootadmin.min.js"></script>
+    <script src="../assets/js/fullpage.min.js"></script>
+    <script src="../assets/js/fullpage.extension.min.js"></script>
+    <script src="../assets/js/scrolloverflow.min.js"></script>
+    <script src="../assets/js/jquery.waypoint.js"></script>
+    <!--<script src="../assets/js/parallax.js"></script>-->
+    
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                //Navigation
+                menu: '#menu',
+                lockAnchors: false,
+                anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+                navigation: false,
+                navigationPosition: 'right',
+                navigationTooltips: ['firstSlide', 'secondSlide'],
+                showActiveTooltip: false,
+                slidesNavigation: false,
+                slidesNavPosition: 'bottom',
+
+                //Scrolling
+                css3: true,
+                scrollingSpeed: 700,
+                autoScrolling: true,
+                fitToSection: true,
+                fitToSectionDelay: 1000,
+                scrollBar: false,
+                easing: 'easeInOutCubic',
+                easingcss3: 'ease',
+                loopBottom: false,
+                loopTop: false,
+                loopHorizontal: true,
+                continuousVertical: false,
+                continuousHorizontal: false,
+                scrollHorizontally: false,
+                interlockedSlides: false,
+                dragAndMove: true,
+                offsetSections: false,
+                resetSliders: false,
+                fadingEffect: false,
+                normalScrollElements: '#element1, .element2',
+                scrollOverflow: true,
+                scrollOverflowReset: false,
+                scrollOverflowOptions: null,
+                touchSensitivity: 15,
+                normalScrollElementTouchThreshold: 5,
+                bigSectionsDestination: null,
+
+                //Accessibility
+                keyboardScrolling: true,
+                animateAnchor: true,
+                recordHistory: true,
+
+                //Design
+                controlArrows: true,
+                verticalCentered: true,
+                sectionsColor : ['#ccc', '#fff'],
+                paddingTop: '0',
+                paddingBottom: '0',
+                fixedElements: '#header, .footer',
+                responsiveWidth: 1100,
+                responsiveHeight: 0,
+                responsiveSlides: false,
+                parallax: false,
+                parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+                //Custom selectors
+                sectionSelector: '.section',
+                slideSelector: '.slide',
+
+                lazyLoading: true,
+
+                //events
+                onLeave: function(index, nextIndex, direction){},
+                afterLoad: function(anchorLink, index){},
+                afterRender: function(){},
+                afterResize: function(){},
+                afterResponsive: function(isResponsive){},
+                afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+                onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){},
+	       });
+        });
+    </script>
+    <script>
+        
+    </script>
+</body>
+</html>
